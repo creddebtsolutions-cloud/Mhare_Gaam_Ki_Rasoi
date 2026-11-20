@@ -1,0 +1,39 @@
+{
+  "id": "in.mharegaamkirasoi.app",
+  "name": "Mhare Gaam Ki Rasoi",
+  "short_name": "Gaam Ki Rasoi",
+  "description": "100% Pure Vegetarian Restaurant - Ghar Jaisa Swaad, Sai Plaza, Meerut, Uttar Pradesh",
+  "lang": "en-IN",
+  "dir": "ltr",
+  "start_url": "/?app=1",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#F8EFE0",
+  "theme_color": "#5A2E16",
+  "categories": ["food", "shopping", "lifestyle"],
+  "icons": [
+    {
+      "src": "/static/assets/logo.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Thali Specials",
+      "short_name": "Thalis",
+      "description": "Order authentic gaam ki thalis",
+      "url": "/?app=1&cat=cat_thali",
+      "icons": [{ "src": "/static/assets/logo.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Paneer Specials",
+      "short_name": "Paneer",
+      "description": "Order delicious shahi & kadhai paneer",
+      "url": "/?app=1&cat=cat_paneer",
+      "icons": [{ "src": "/static/assets/logo.png", "sizes": "192x192" }]
+    }
+  ]
+}

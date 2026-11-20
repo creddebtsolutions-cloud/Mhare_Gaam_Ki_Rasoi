@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Receipt #{{ order.order_number }} - Mhare Gaam Ki Rasoi</title>
+  <style>
+    @media print {
+      body { margin: 0; padding: 0; }
+      .no-print { display: none !important; }
+    }
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 13px;
+      color: #000;
+      background: #fdfdfd;
+      margin: 20px;
+    }
+    .ticket {
+      width: 78mm;
+      margin: 0 auto;
+      padding: 10px;
+      border: 1px solid #ddd;
+      background: #fff;
+    }
+    .center { text-align: center; }
+    .right { text-align: right; }
+    .bold { font-weight: bold; }
+    .title { font-size: 17px; font-weight: bold; margin-bottom: 2px; }
+    .tagline { font-size: 12px; font-style: italic; margin-bottom: 4px; }
+    .divider { border-top: 1px dashed #000; margin: 8px 0; }
+    table { width: 100%; border-collapse: collapse; margin: 8px 0; }
+    th { text-align: left; border-bottom: 1px dashed #000; padding-bottom: 4px; }
+    td { padding: 4px 0; vertical-align: top; }
+    .btn-print {
+      display: block;
+      width: 78mm;
+      margin: 15px auto;
+      padding: 10px;
+      background: #5A2E16;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<button class="btn-print no-print" onclick="window.print()">🖨️ PRINT RECEIPT</button>
+
+<div class="ticket" id="printableInvoice">
+  <div class="center">
+    <div class="title">{{ settings.restaurant_name }}</div>
+    <div class="tagline">"{{ settings.tagline }}"</div>
+    <div>100% Pure Vegetarian</div>
+    <div>{{ settings.address }}</div>
+    <div>Phone: {{ settings.phone }}</div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div>
+    <div><strong>Order #:</strong> {{ order.order_number }}</div>
+    <div><strong>Type:</strong> {{ order.order_type }}{% if order.table_number %} ({{ order.table_number }}){% endif %}</div>
+    <div><strong>Date/Time:</strong> {{ order.created_at }}</div>
+    <div><strong>Customer:</strong> {{ order.customer_name }}</div>
+    {% if order.customer_phone %}<div><strong>Phone:</strong> {{ order.customer_phone }}</div>{% endif %}
+  </div>
+
+  <div class="divider"></div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th class="center">Qty</th>
+        <th class="right">Price</th>
+        <th class="right">Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for itm in items %}
+      <tr>
+        <td>{{ itm.item_name }}</td>
+        <td class="center">{{ itm.quantity }}</td>
+        <td class="right">₹{{ itm.item_price|int }}</td>
+        <td class="right">₹{{ itm.subtotal|int }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <div class="divider"></div>
+
+  <table>
+    <tr>
+      <td>Item Subtotal:</td>
+      <td class="right">₹{{ order.subtotal }}</td>
+    </tr>
+    {% if order.discount > 0 %}
+    <tr>
+      <td>Discount Saved:</td>
+      <td class="right">-₹{{ order.discount }}</td>
+    </tr>
+    {% endif %}
+    {% if order.packaging_fee > 0 %}
+    <tr>
+      <td>Packaging:</td>
+      <td class="right">₹{{ order.packaging_fee }}</td>
+    </tr>
+    {% endif %}
+    {% if order.delivery_fee > 0 %}
+    <tr>
+      <td>Delivery Fee:</td>
+      <td class="right">₹{{ order.delivery_fee }}</td>
+    </tr>
+    {% endif %}
+    <tr>
+      <td>GST ({{ settings.gst_percentage }}%):</td>
+      <td class="right">₹{{ order.taxes }}</td>
+    </tr>
+    <tr class="bold" style="font-size: 15px;">
+      <td>GRAND TOTAL:</td>
+      <td class="right">₹{{ order.grand_total }}</td>
+    </tr>
+  </table>
+
+  <div class="divider"></div>
+
+  <div>
+    <div><strong>Payment:</strong> {{ order.payment_method }} ({{ order.payment_status }})</div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="center" style="margin-top: 10px;">
+    <div>*** Ram Ram! 🙏 ***</div>
+    <div>Thank you for choosing Gaam Ka Swad!</div>
+    <div>Visit Again Soon!</div>
+  </div>
+</div>
+
+<script>
+  // Auto-trigger print if requested via query param
+  if (window.location.search.includes('print=true')) {
+    window.onload = function() { window.print(); }
+  }
+</script>
+</body>
+</html>

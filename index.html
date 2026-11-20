@@ -2,805 +2,974 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mhare Gaam Ki Rasoi • Android App Live Preview</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Rozha+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Mhare Gaam Ki Rasoi | Pure Veg Restaurant in Meerut</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Mhare Gaam Ki Rasoi - 100% Pure Vegetarian Restaurant located at Sai Plaza, Meerut. Ghar Jaisa Swaad, authentic village-inspired traditional food delivery and dine-in.">
+  <meta property="og:title" content="Mhare Gaam Ki Rasoi - Ghar Jaisa Swaad">
+  <meta property="og:description" content="Authentic pure vegetarian food made with traditional warmth and desi ghee. Sai Plaza, Meerut.">
+  <meta property="og:image" content="/static/assets/logo.png">
+  <link rel="icon" type="image/png" href="/static/assets/logo.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#5A2E16">
+
+  <!-- Core Theme & Platform Stylesheets -->
+  <link rel="stylesheet" href="/static/css/theme.css">
+  <link rel="stylesheet" href="/static/css/customer.css">
+  <link rel="stylesheet" href="/static/css/admin.css">
+  <link rel="stylesheet" href="/static/css/kds.css">
+  <link rel="stylesheet" href="/static/css/pos.css">
+  <link rel="stylesheet" href="/static/css/delivery.css">
 </head>
-<body class="device-phone-mode">
+<body class="desi-bg-pattern">
 
-  <!-- Desktop Presentation Toolbar -->
-  <header class="preview-toolbar">
-    <div class="toolbar-brand">
-      <img src="images/restaurant_logo.jpg" alt="Logo" class="toolbar-logo">
-      <div>
-        <h1 class="toolbar-title">Mhare Gaam Ki Rasoi</h1>
-        <p class="toolbar-subtitle">Android Application Live Interactive Preview (Kotlin & Jetpack Compose Parity)</p>
-      </div>
-    </div>
-    <div class="toolbar-actions">
-      <div class="view-toggles">
-        <button id="toggleDeviceBtn" class="btn-toggle active" title="Switch between Android Phone Frame and Full Screen">
-          <span class="icon">📱</span> Android View
-        </button>
-        <button id="toggleFullscreenBtn" class="btn-toggle" title="Full Browser View">
-          <span class="icon">🖥️</span> Responsive View
-        </button>
-      </div>
-      <div class="quick-links">
-        <a href="admin.html" class="btn-toggle" style="background: var(--terracotta); color: #FFF; text-decoration: none; font-weight: 700;">
-          <span>⚙️</span> Admin Panel
-        </a>
-        <span class="badge-tag">Pure Desi Ghee</span>
-      </div>
-    </div>
-  </header>
+  <!-- Top Global Demo Bar (Role Switcher & Device Frame Controller) -->
+  <div class="role-switcher-bar" id="globalRoleToolbar">
+    <label style="color: var(--color-golden-light); font-size: 0.76rem; font-weight: 700; display: flex; align-items: center; gap: 4px;">
+      <span>🌾</span>
+      <select id="globalRoleSelect">
+        <option value="CUSTOMER">📱 Customer App</option>
+        <option value="ADMIN">📊 Admin Dashboard</option>
+        <option value="CHEF">👨‍🍳 Kitchen Display (Chef)</option>
+        <option value="BILL_COUNTER">📠 POS Billing Counter</option>
+        <option value="DELIVERY_ADMIN">🛵 Delivery Admin (Fleet Lead)</option>
+        <option value="DELIVERY_AGENT">🛵 Delivery Agent (Ramesh)</option>
+      </select>
+    </label>
+    <button id="globalFrameToggleBtn" title="Toggle device frame vs fullscreen">📱 Mobile Frame</button>
+    <button onclick="MainApp.openAuthModal()" style="background: var(--color-terracotta);">🔑 Switch User</button>
+  </div>
 
-  <!-- Device Simulator Container -->
-  <main class="simulator-wrapper">
-    <div class="phone-frame" id="phoneFrame">
-      
-      <!-- Android Phone Status Bar -->
-      <div class="android-status-bar">
-        <span class="status-time" id="statusTime">12:30</span>
-        <div class="camera-notch"></div>
-        <div class="status-icons">
-          <span class="icon-wifi">📶</span>
-          <span class="icon-signal">5G</span>
-          <span class="icon-battery">🔋 98%</span>
+  <!-- Main Multi-Portal Container -->
+  <div class="device-frame-wrapper" id="deviceFrameWrapper">
+
+    <!-- ========================================================
+         PORTAL 1: CUSTOMER MOBILE EXPERIENCE
+         ======================================================== -->
+    <div class="mobile-app-shell" id="portalCustomer">
+
+      <!-- 1. Splash Screen (2 seconds duration with original reference logo) -->
+      <div class="splash-screen" id="splashScreen">
+        <div class="splash-logo-wrap">
+          <img src="/static/assets/logo.png" alt="Mhare Gaam Ki Rasoi Logo" />
         </div>
+        <div class="splash-pure-veg">
+          <div class="veg-badge"></div>
+          <span>100% Pure Vegetarian</span>
+        </div>
+        <div class="splash-tagline">"Serving the taste of home"</div>
+        <div style="font-size: 0.85rem; color: var(--color-muted-brown); margin-top: 6px;">Sai Plaza, Meerut</div>
+        <div class="splash-spinner"></div>
       </div>
 
-      <!-- Slide Bar / Navigation Drawer (Triggered by clicking logo) -->
-      <div class="slide-drawer-backdrop" id="slideDrawerBackdrop"></div>
-      <aside class="slide-drawer" id="slideDrawer" aria-label="Portal Navigation Drawer">
-        <div class="drawer-header">
-          <div class="drawer-header-top">
-            <div class="drawer-logo-ring">
-              <img src="images/restaurant_logo.jpg" alt="Rasoi Logo">
+      <!-- 2. Onboarding Screen (3 slides) -->
+      <div class="onboarding-screen" id="onboardingScreen" style="display: none;">
+        <div class="onboarding-slides-container">
+          <div class="onboarding-slide" id="onboardingSlide">
+            <div class="onboarding-slide-img">
+              <img src="/static/assets/logo.png" alt="Rasoi Traditional Food" />
             </div>
-            <button class="drawer-close-btn" id="drawerCloseBtn" title="Close Drawer">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-            </button>
-          </div>
-          <h3 class="drawer-brand-name">Mhare Gaam Ki Rasoi</h3>
-          <p class="drawer-tagline">ghar jaisa swaad • <span>घर जैसा स्वाद</span></p>
-          <div class="drawer-badge-pill">🌾 Pure Bilona Desi Ghee • Woodfire Chulha</div>
-        </div>
-
-        <div class="drawer-body">
-          <div class="drawer-section-title">
-            <span class="lock-icon">🔒</span> MANAGEMENT & PORTAL LOGINS
-            <small>अधिकृत कर्मचारी एवं प्रबंधन प्रवेश</small>
-          </div>
-
-          <div class="drawer-menu-list">
-            <!-- 1. Admin Login -->
-            <a href="admin.html?role=admin" class="drawer-item role-admin" id="drawerAdminLoginBtn">
-              <div class="drawer-item-icon">👑</div>
-              <div class="drawer-item-content">
-                <div class="drawer-item-title-row">
-                  <span class="drawer-item-title">Admin Login</span>
-                  <span class="drawer-pill pill-admin">Full Access</span>
-                </div>
-                <div class="drawer-item-hindi">प्रबंधक / सुपर एडमिन</div>
-                <div class="drawer-item-desc">Full control, menu catalog, revenue reports, orders & staff permissions</div>
-              </div>
-              <span class="drawer-item-arrow">➔</span>
-            </a>
-
-            <!-- 2. Staff Login -->
-            <a href="admin.html?role=staff" class="drawer-item role-staff" id="drawerStaffLoginBtn">
-              <div class="drawer-item-icon">🍽️</div>
-              <div class="drawer-item-content">
-                <div class="drawer-item-title-row">
-                  <span class="drawer-item-title">Staff Login</span>
-                  <span class="drawer-pill pill-staff">POS Desk</span>
-                </div>
-                <div class="drawer-item-hindi">स्टाफ काउंटर (POS)</div>
-                <div class="drawer-item-desc">Take orders, dine-in table bookings & billing</div>
-              </div>
-              <span class="drawer-item-arrow">➔</span>
-            </a>
-
-            <!-- 3. Kitchen Login -->
-            <a href="admin.html?role=kitchen" class="drawer-item role-kitchen" id="drawerKitchenLoginBtn">
-              <div class="drawer-item-icon">🔥</div>
-              <div class="drawer-item-content">
-                <div class="drawer-item-title-row">
-                  <span class="drawer-item-title">Kitchen Login</span>
-                  <span class="drawer-pill pill-kitchen">Live Chulha</span>
-                </div>
-                <div class="drawer-item-hindi">रसोई चूल्हा मास्टर (KDS)</div>
-                <div class="drawer-item-desc">Live Chulha orders, cooking timer & food prep</div>
-              </div>
-              <span class="drawer-item-arrow">➔</span>
-            </a>
-
-            <!-- 4. Delivery Login -->
-            <a href="admin.html?role=delivery" class="drawer-item role-delivery" id="drawerDeliveryLoginBtn">
-              <div class="drawer-item-icon">🛵</div>
-              <div class="drawer-item-content">
-                <div class="drawer-item-title-row">
-                  <span class="drawer-item-title">Delivery Login</span>
-                  <span class="drawer-pill pill-delivery">Rider Partner</span>
-                </div>
-                <div class="drawer-item-hindi">डिलीवरी राइडर पार्टनर</div>
-                <div class="drawer-item-desc">Assigned orders, route navigation & drop status</div>
-              </div>
-              <span class="drawer-item-arrow">➔</span>
-            </a>
-          </div>
-
-          <div class="drawer-divider"></div>
-
-          <!-- Return to Customer App -->
-          <div class="drawer-return-store" id="drawerReturnStoreBtn">
-            <span class="store-icon">🛒</span>
-            <div style="flex: 1;">
-              <strong>Customer Storefront</strong>
-              <small>ग्राहक ऐप पर वापस जाएं</small>
-            </div>
-            <span class="arrow-right">➔</span>
-          </div>
-
-          <div class="drawer-footer">
-            <p>📍 Sai Plaza, Meerut, Uttar Pradesh</p>
-            <p>100% Pure Vegetarian Traditional Food</p>
-            <span class="version-tag">Mhare Gaam Ki Rasoi • v1.0.0</span>
+            <h2 class="onboarding-title" id="onboardingTitle">Gaam Ka Swad, Ab Aapke Ghar</h2>
+            <p class="onboarding-desc" id="onboardingDesc">
+              Authentic vegetarian food made with the warmth and flavours of a traditional Indian kitchen.
+            </p>
           </div>
         </div>
-      </aside>
 
-      <!-- App Header / Top App Bar -->
-      <header class="app-top-bar" id="appTopBar">
-        <div class="top-bar-left">
-          <button class="nav-back-btn" id="navBackBtn" style="display: none;">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        <div>
+          <div class="onboarding-dots">
+            <div class="onboarding-dot active" id="dot1"></div>
+            <div class="onboarding-dot" id="dot2"></div>
+            <div class="onboarding-dot" id="dot3"></div>
+          </div>
+          <button class="btn btn-terracotta btn-block btn-lg" onclick="CustomerApp.finishOnboarding()">
+            GET STARTED ➔
           </button>
-          <div class="brand-info" id="brandInfo">
-            <div class="logo-circle clickable-logo" id="topLogoBtn" title="Click to open Admin, Staff, Kitchen & Delivery Logins">
-              <img src="images/restaurant_logo.jpg" alt="Rasoi Logo">
-              <span class="logo-ripple-hint"></span>
-            </div>
-            <div class="brand-text">
-              <h2 class="restaurant-name">Mhare Gaam Ki Rasoi</h2>
-              <p class="tagline">ghar jaisa swaad • <span class="hindi-tag">घर जैसा स्वाद</span></p>
+        </div>
+      </div>
+
+      <!-- 3. Customer Top Header -->
+      <header class="customer-header">
+        <div class="header-top-row">
+          <div class="location-box" onclick="CustomerApp.openCheckoutModal()">
+            <span class="loc-icon">📍</span>
+            <div class="loc-text-wrap">
+              <h4>Sai Plaza, Meerut ▾</h4>
+              <p>Uttar Pradesh, India</p>
             </div>
           </div>
-          <h2 class="screen-title" id="screenTitle" style="display: none;">Menu</h2>
+          <div class="header-actions">
+            <div class="action-icon-btn" onclick="CustomerApp.switchTab('orders')" title="Notifications & Orders">
+              <span>🔔</span>
+              <div class="badge-notification"></div>
+            </div>
+            <div class="action-icon-btn" onclick="MainApp.openAuthModal()" title="Profile & Login">
+              <span>👤</span>
+            </div>
+          </div>
         </div>
 
-        <div class="top-bar-right">
-          <button class="top-cart-btn" id="topCartBtn" title="View Thali">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-            <span class="cart-badge" id="cartBadge" style="display: none;">0</span>
-          </button>
+        <div class="greeting-banner">
+          <div class="greeting-text">
+            <h2>Ram Ram! 🙏 <span id="customerGreetingName">Gaurav</span></h2>
+            <p>Ghar Jaisa Swaad, taaza aur shuddh!</p>
+          </div>
+          <div class="pure-veg-tag">
+            <div class="veg-badge"></div>
+            <span>100% PURE VEG</span>
+          </div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-bar-wrap">
+          <span class="search-icon-left">🔍</span>
+          <input type="text" class="search-input" id="homeSearchInput" 
+                 placeholder="Search dishes, thali, paneer..." 
+                 onfocus="CustomerApp.switchTab('search')" />
+          <button class="search-mic-btn" onclick="RasoiSaathi.toggleChat()" title="Ask AI Rasoi Saathi">✨ AI</button>
         </div>
       </header>
 
-      <!-- Main Screen Content Area -->
-      <div class="app-viewport" id="appViewport">
-
-        <!-- 1. HOME SCREEN (Active by default, instant load with zero delay) -->
-        <section class="screen active" id="homeScreen">
-          <!-- Search Bar -->
-          <div class="search-box-container">
-            <div class="search-box">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-              <input type="text" id="homeSearchInput" placeholder="Search Bajra Roti, Handi Dal, Churma...">
-            </div>
+      <!-- TAB 1: HOME SCREEN -->
+      <main id="view-home" class="tab-view" style="display: block;">
+        <!-- Branded Hero Banner -->
+        <section class="hero-banner">
+          <div class="hero-banner-content">
+            <span class="hero-sub">🌾 100% Pure Vegetarian</span>
+            <h2 class="hero-title">Gaam Ka Swad, Ab Aapke Ghar!</h2>
+            <p class="hero-tagline">"Ghar Jaisa Swaad"</p>
+            <button class="btn btn-golden btn-sm" onclick="CustomerApp.switchTab('menu')">
+              ORDER NOW ➔
+            </button>
           </div>
+          <img src="/static/assets/logo.png" alt="Brand Logo" class="hero-banner-img" />
+        </section>
 
-          <!-- Hero Village Banner -->
-          <div class="hero-banner">
-            <img src="images/hero_village_rasoi.jpg" alt="Village Rasoi Ambiance" class="hero-bg">
-            <div class="hero-overlay"></div>
-            <div class="hero-content">
-              <div class="hero-pill">🔥 असली देसी स्वाद • Woodfire Chulha</div>
-              <h2 class="hero-title">Mhare Gaam Ki Rasoi</h2>
-              <p class="hero-desc">Slow-cooked in clay pots with pure Bilona Desi Cow Ghee</p>
-              <div class="hero-btns">
-                <button class="btn btn-primary btn-sm" id="heroOrderBtn">Order Food</button>
-                <button class="btn btn-glass btn-sm" id="heroBookBtn">Book Baithak</button>
-              </div>
-            </div>
-          </div>
+        <!-- Categories Scroller -->
+        <div class="category-scroller-wrap" id="categoryScroller"></div>
 
-          <!-- Promo Coupon Card -->
-          <div class="promo-card" id="promoCardGaam">
-            <div class="promo-icon">🏷️</div>
-            <div class="promo-info">
-              <h4 class="promo-title">Flat ₹100 OFF with code 'GAAM100'</h4>
-              <p class="promo-desc">On orders above ₹399 • Tap to apply</p>
-            </div>
-            <button class="btn-coupon-apply" id="applyGaamPromoBtn">APPLY</button>
-          </div>
-
-          <!-- Category Chips Carousel -->
+        <!-- Today's Special Section -->
+        <section>
           <div class="section-header">
-            <h3 class="section-title">Rasoi Categories</h3>
-            <button class="section-link" id="viewAllCategoriesBtn">View All →</button>
+            <h3 class="section-title">✨ Today's Special</h3>
+            <span class="section-see-all" onclick="CustomerApp.switchTab('menu')">See All ➔</span>
           </div>
-          <div class="category-carousel" id="homeCategoryCarousel"></div>
+          <div class="dish-horizontal-scroll" id="homeSpecialsList"></div>
+        </section>
 
-          <!-- Signature Specialties -->
+        <!-- Thali Specials Section -->
+        <section>
           <div class="section-header">
+            <h3 class="section-title">🍱 Thali Specials</h3>
+            <span class="section-see-all" onclick="CustomerApp.selectCategory('cat_thali')">View ➔</span>
+          </div>
+          <div id="homeThaliList"></div>
+        </section>
+
+        <!-- Best Sellers Section -->
+        <section>
+          <div class="section-header">
+            <h3 class="section-title">🔥 Best Sellers</h3>
+            <span class="section-see-all" onclick="CustomerApp.switchTab('menu')">Explore All ➔</span>
+          </div>
+          <div id="homeBestsellersList"></div>
+        </section>
+      </main>
+
+      <!-- TAB 2: FULL MENU SCREEN -->
+      <main id="view-menu" class="tab-view" style="display: none; padding-top: 10px;">
+        <div class="section-header">
+          <h3 class="section-title">🍲 Rasoi Menu (100% Pure Veg)</h3>
+        </div>
+        <div id="menuDishesList"></div>
+      </main>
+
+      <!-- TAB 3: SEARCH SCREEN -->
+      <main id="view-search" class="tab-view" style="display: none; padding: 14px 18px;">
+        <div class="search-bar-wrap" style="margin-bottom: 14px;">
+          <span class="search-icon-left">🔍</span>
+          <input type="text" class="search-input" id="globalSearchInput" 
+                 placeholder="Search by dish, paneer, thali, spice..." 
+                 oninput="CustomerApp.runSearch()" />
+        </div>
+        <div style="display: flex; gap: 8px; overflow-x: auto; margin-bottom: 16px; scrollbar-width: none;">
+          <button class="badge-pill badge-featured" onclick="CustomerApp.runSearch()">All</button>
+          <button class="badge-pill badge-bestseller" onclick="CustomerApp.runSearch()">Bestsellers</button>
+          <button class="badge-pill badge-discount" onclick="CustomerApp.runSearch()">Under ₹200</button>
+          <button class="badge-pill badge-spice" onclick="CustomerApp.runSearch()">Spicy</button>
+        </div>
+        <div id="searchResultsList"></div>
+      </main>
+
+      <!-- TAB 4: ORDERS SCREEN -->
+      <main id="view-orders" class="tab-view" style="display: none; padding: 16px 18px;">
+        <div class="section-header" style="padding-left: 0;">
+          <h3 class="section-title">📦 My Orders</h3>
+        </div>
+        <div id="myOrdersList"></div>
+      </main>
+
+      <!-- TAB 5: PROFILE & REWARDS SCREEN -->
+      <main id="view-profile" class="tab-view" style="display: none; padding: 20px 18px;">
+        <div class="card-surface" style="padding: 20px; text-align: center; margin-bottom: 16px;">
+          <div style="width: 70px; height: 70px; border-radius: 50%; background: var(--color-primary); color: var(--color-golden-light); font-size: 2rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px; border: 2px solid var(--color-golden);">
+            👤
+          </div>
+          <h3 id="profileUserName" style="font-family: var(--font-brand); color: var(--color-primary); font-size: 1.25rem;">Gaurav Singh</h3>
+          <p id="profileUserPhone" style="color: var(--color-muted-brown); font-size: 0.88rem;">+91 98765 43210</p>
+        </div>
+
+        <!-- Mhare Gaam Rewards Banner -->
+        <div class="card-surface" style="background: linear-gradient(135deg, var(--color-primary), var(--color-terracotta)); color: #fff; padding: 18px; margin-bottom: 16px; border: 1.5px solid var(--color-golden);">
+          <div style="display: flex; align-items: center; justify-content: space-between;">
             <div>
-              <h3 class="section-title">Gaam Signature Specialties</h3>
-              <p class="section-subtitle">Simmered overnight on traditional earthen chulhas</p>
+              <div style="font-size: 0.8rem; letter-spacing: 0.5px; color: var(--color-golden-light); text-transform: uppercase;">Mhare Gaam Rewards</div>
+              <div id="profileRewardsPoints" style="font-size: 1.6rem; font-weight: 800; font-family: var(--font-brand); margin-top: 2px;">70 Points</div>
+              <div style="font-size: 0.78rem; opacity: 0.9;">Earn 5 points on every ₹100 spent</div>
             </div>
-          </div>
-          <div class="dishes-list" id="homeSignatureList"></div>
-
-          <!-- Why Mhare Gaam Ki Rasoi -->
-          <div class="heritage-card">
-            <h4 class="heritage-title">Why Mhare Gaam Ki Rasoi?</h4>
-            <div class="heritage-items">
-              <div class="heritage-item">🏺 <strong>Earthen Clay Pots (Handi)</strong>: 18-hour slow dum simmering</div>
-              <div class="heritage-item">🔥 <strong>Firewood Mud Chulha</strong>: Imparts authentic rustic smokiness</div>
-              <div class="heritage-item">🧈 <strong>100% Pure Desi Ghee</strong>: Hand-churned Vedic Bilona cow ghee</div>
-              <div class="heritage-item">🌾 <strong>Stone Ground Grains</strong>: Fresh Bajra, Jowar & Makka rotis</div>
-            </div>
-          </div>
-        </section>
-
-        <!-- 3. MENU SCREEN -->
-        <section class="screen" id="menuScreen">
-          <!-- Search & Veg Toggle -->
-          <div class="menu-filters-bar">
-            <div class="search-box">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-              <input type="text" id="menuSearchInput" placeholder="Search dishes, thalis, lassi...">
-            </div>
-            <div class="veg-toggle-row">
-              <div class="veg-label">
-                <span class="veg-badge-dot"></span>
-                <span>Pure Veg Only / शुद्ध शाकाहारी</span>
-              </div>
-              <label class="switch">
-                <input type="checkbox" id="vegFilterToggle">
-                <span class="slider round"></span>
-              </label>
-            </div>
-          </div>
-
-          <!-- Category Tabs -->
-          <div class="category-carousel menu-categories" id="menuTabsContainer"></div>
-
-          <!-- Items Count Header -->
-          <div class="menu-items-header">
-            <span id="menuResultsCount">Showing 8 dishes</span>
-          </div>
-
-          <!-- Menu Items List -->
-          <div class="dishes-list" id="menuItemsList"></div>
-        </section>
-
-        <!-- 4. CART SCREEN (RASOI THALI) -->
-        <section class="screen" id="cartScreen">
-          <!-- Order Type Switcher -->
-          <div class="order-type-tabs">
-            <button class="order-type-btn active" data-type="delivery">
-              <span class="type-main">Delivery</span>
-              <span class="type-sub">घर पर</span>
-            </button>
-            <button class="order-type-btn" data-type="dine_in">
-              <span class="type-main">Dine-In</span>
-              <span class="type-sub">बैठक में</span>
-            </button>
-            <button class="order-type-btn" data-type="takeaway">
-              <span class="type-main">Takeaway</span>
-              <span class="type-sub">पार्सल</span>
-            </button>
-          </div>
-
-          <div id="cartContentContainer">
-            <!-- Items injected by JS -->
-          </div>
-        </section>
-
-        <!-- 5. CHECKOUT SCREEN -->
-        <section class="screen" id="checkoutScreen">
-          <div class="checkout-form">
-            <!-- Destination Box -->
-            <div class="card checkout-card">
-              <div class="card-header-row">
-                <span class="icon">📍</span>
-                <h4 id="checkoutDestTitle">Delivery Address</h4>
-              </div>
-              <div id="checkoutDestInputWrapper">
-                <textarea id="checkoutAddress" class="input-text" rows="2">Plot 42, Green Avenue, Sector 14, Near Village Chowk</textarea>
-              </div>
-            </div>
-
-            <!-- Contact Box -->
-            <div class="card checkout-card">
-              <div class="card-header-row">
-                <span class="icon">👤</span>
-                <h4>Contact Details</h4>
-              </div>
-              <div class="form-group">
-                <label>Guest Name</label>
-                <input type="text" id="checkoutName" class="input-text" value="Gaurav Singh">
-              </div>
-              <div class="form-group">
-                <label>Phone Number</label>
-                <input type="tel" id="checkoutPhone" class="input-text" value="8979753636">
-              </div>
-            </div>
-
-            <!-- Payment Methods -->
-            <div class="card checkout-card">
-              <div class="card-header-row">
-                <span class="icon">💳</span>
-                <h4>Payment Method / भुगतान</h4>
-              </div>
-              <div class="payment-options">
-                <label class="payment-option selected" data-method="UPI">
-                  <input type="radio" name="paymentMethod" value="UPI" checked>
-                  <span class="pay-icon">📱</span>
-                  <div class="pay-text">
-                    <strong>PhonePe Scanner / UPI (7819952799@ybl)</strong>
-                    <span>Scan PhonePe QR Code, GPay, Paytm or transfer to UPI ID</span>
-                  </div>
-                </label>
-                <label class="payment-option" data-method="CASH">
-                  <input type="radio" name="paymentMethod" value="CASH">
-                  <span class="pay-icon">💵</span>
-                  <div class="pay-text">
-                    <strong id="cashOptionText">Cash on Delivery (COD)</strong>
-                    <span>Pay in cash to delivery rider on arrival</span>
-                  </div>
-                </label>
-                <label class="payment-option" data-method="CARD">
-                  <input type="radio" name="paymentMethod" value="CARD">
-                  <span class="pay-icon">💳</span>
-                  <div class="pay-text">
-                    <strong>Credit / Debit Card</strong>
-                    <span>Visa, Mastercard, RuPay</span>
-                  </div>
-                </label>
-              </div>
-
-              <!-- Dedicated PhonePe / UPI Scanner Payment Section -->
-              <div class="upi-payment-box" id="upiPaymentBox">
-                <div class="upi-box-header">
-                  <div class="upi-live-title">
-                    <span class="upi-live-dot"></span>
-                    <strong>Scan QR Code & Pay</strong>
-                  </div>
-                  <span class="upi-payable-pill">Pay Exactly: <strong id="upiPayAmountDisplay">₹0</strong></span>
-                </div>
-
-                <div class="upi-qr-card-body">
-                  <!-- PhonePe Official Merchant Header -->
-                  <div class="phonepe-merchant-header">
-                    <div class="phonepe-brand-chip">
-                      <span class="phonepe-brand-icon">पे</span>
-                      <span>PhonePe</span>
-                    </div>
-                    <div class="phonepe-merchant-name">
-                      Verified: <strong>ADITYA CHAUHAN</strong>
-                    </div>
-                  </div>
-
-                  <!-- Scanner View Tabs -->
-                  <div class="scanner-mode-tabs">
-                    <button type="button" class="scanner-tab-btn active" id="tabPhonepeScanner">
-                      <span>📱</span> PhonePe QR Scanner
-                    </button>
-                    <button type="button" class="scanner-tab-btn" id="tabDynamicQr">
-                      <span>⚡</span> Instant Amount QR
-                    </button>
-                  </div>
-
-                  <!-- 1. Official PhonePe Scanner Box -->
-                  <div class="phonepe-scanner-standee-box" id="phonepeScannerBox">
-                    <div class="phonepe-scanner-card-frame" id="phonepeScannerCardFrame" title="Tap to view full scanner" style="background: #FFF; padding: 12px; border: 2px solid #5f259f; border-radius: 12px;">
-                      <img src="images/phonepe_upi_qr.png" alt="PhonePe QR Scanner - Aditya Chauhan" class="phonepe-scanner-img" id="phonepeScannerImg" style="width: 100%; max-width: 240px; border-radius: 8px;">
-                      <div class="scanner-zoom-hint">🔍 Tap to Zoom</div>
-                    </div>
-                    <div class="scanner-action-buttons">
-                      <button type="button" class="btn-scanner-action" id="btnZoomScanner">🔍 Enlarge Scanner</button>
-                      <a href="images/phonepe_upi_qr.png" download="PhonePe_QR_Aditya_Chauhan.png" class="btn-scanner-action">⬇️ Save QR</a>
-                    </div>
-                  </div>
-
-                  <!-- 2. Dynamic Amount QR Box -->
-                  <div class="dynamic-qr-box" id="dynamicQrBox" style="display: none;">
-                    <div class="upi-qr-frame">
-                      <img id="checkoutUpiQrImg" src="" alt="Dynamic UPI QR Code" class="upi-qr-img">
-                      <div class="upi-qr-center-logo">
-                        <img src="images/restaurant_logo.jpg" alt="Logo">
-                      </div>
-                    </div>
-                    <span class="dynamic-qr-amount-tag">Exact Order Total Encoded</span>
-                  </div>
-
-                  <p class="upi-scan-note">Scan with PhonePe, Google Pay, Paytm, BHIM, Cred or any UPI app</p>
-
-                  <div class="upi-apps-badges">
-                    <span class="upi-app-badge phonepe">PhonePe</span>
-                    <span class="upi-app-badge gpay">GPay</span>
-                    <span class="upi-app-badge paytm">Paytm</span>
-                    <span class="upi-app-badge bhim">BHIM</span>
-                    <span class="upi-app-badge cred">Cred</span>
-                  </div>
-
-                  <div class="upi-info-col">
-                    <!-- UPI ID Box with One-Click Copy -->
-                    <div class="upi-id-badge-box">
-                      <div class="upi-id-details">
-                        <span class="upi-id-label">OFFICIAL RESTAURANT UPI ID:</span>
-                        <code class="upi-id-code" id="upiIdValue">7819952799@ybl</code>
-                      </div>
-                      <button type="button" class="btn-copy-upi" id="btnCopyUpiId" title="Copy UPI ID to clipboard">
-                        <span id="copyIcon">📋</span> <span id="copyText">Copy</span>
-                      </button>
-                    </div>
-
-                    <!-- Direct Mobile App Pay Link -->
-                    <a href="#" id="directUpiPayLink" class="btn-open-upi-app">
-                      <span>📱</span> <span>Tap to Pay in PhonePe / UPI App</span>
-                    </a>
-                  </div>
-                </div>
-
-                <!-- Mandatory Payment Verification Section (Don't confirm without payment) -->
-                <div class="upi-verification-panel">
-                  <div class="upi-verify-header">
-                    <span class="verify-icon">🛡️</span>
-                    <div>
-                      <strong>Payment Confirmation (Mandatory / अनिवार्य)</strong>
-                      <p>Transfer the exact amount, then enter the 12-digit UTR/Ref No. from your UPI receipt below to confirm.</p>
-                    </div>
-                  </div>
-
-                  <div class="utr-input-group">
-                    <div class="utr-label-row">
-                      <label for="checkoutUpiUtr">
-                        <span>12-Digit UPI Transaction / UTR:</span>
-                        <span class="required-star">*</span>
-                      </label>
-                      <button type="button" class="btn-utr-help" id="btnUtrHelp">❓ Where is UTR?</button>
-                    </div>
-                    <input type="text" id="checkoutUpiUtr" class="input-text utr-input"
-                      placeholder="Enter 12-digit UTR No. (e.g. 423589124567)" maxlength="16" autocomplete="off">
-                  </div>
-
-                  <!-- Guide popup / helper -->
-                  <div class="utr-help-card" id="utrHelpCard" style="display: none;">
-                    <strong>💡 Where to find your 12-digit UTR Number:</strong>
-                    <ul>
-                      <li><strong>PhonePe:</strong> View transaction history &rarr; Transfer Details &rarr; Look for "UTR" (12 digits)</li>
-                      <li><strong>Google Pay:</strong> Open payment receipt &rarr; Look for "UPI transaction ID"</li>
-                      <li><strong>Paytm:</strong> Open order details &rarr; Look for "UPI Reference No."</li>
-                    </ul>
-                  </div>
-
-                  <label class="upi-confirm-check-label">
-                    <input type="checkbox" id="upiConfirmPaidCheckbox">
-                    <span>I confirm that I have transferred <strong id="upiCheckboxAmountText">₹0</strong> to <code>7819952799@ybl</code> (Aditya Chauhan)</span>
-                  </label>
-
-                  <!-- Warning alert box if user tries to submit without payment -->
-                  <div class="upi-unpaid-warning" id="upiUnpaidWarning" style="display: none;">
-                    <span class="warning-icon">⚠️</span>
-                    <span id="upiWarningText"><strong>Payment Required:</strong> Order cannot be confirmed without completing the UPI payment and entering your 12-digit UTR number.</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Final Order Total Bar (Separated pill badge) -->
-            <button class="btn btn-primary btn-block btn-lg" id="confirmOrderBtn">
-              <span>🔒 Place Order & Light Chulha</span>
-              <strong id="checkoutTotalBtnText" class="btn-price-tag">₹0</strong>
-            </button>
-          </div>
-        </section>
-
-        <!-- 6. ORDER SUCCESS SCREEN -->
-        <section class="screen" id="orderSuccessScreen">
-          <div class="success-box">
-            <div class="success-check-circle">✓</div>
-            <h2 class="success-title">Order Placed Successfully!</h2>
-            <p class="success-hindi">चूल्हा जल चुका है - भोजन की तैयारी शुरू!</p>
-
-            <div class="card order-pass-card">
-              <span class="pass-label">ORDER ID</span>
-              <h3 class="pass-id" id="successOrderId">#MGK-849201</h3>
-              <div class="pass-brand">
-                <img src="images/restaurant_logo.jpg" alt="Logo">
-                <div>
-                  <strong>Mhare Gaam Ki Rasoi</strong>
-                  <span class="est-tag">Est: 25 - 35 mins</span>
-                </div>
-              </div>
-              <div class="pass-payment-status" id="successPaymentBox">
-                <span class="pay-icon-tag">💳</span>
-                <span id="successPaymentText">Paid via UPI • Verified</span>
-              </div>
-            </div>
-
-            <button class="btn btn-primary btn-block btn-lg" id="trackOrderActionBtn">Track Live Chulha Status</button>
-            <button class="btn btn-secondary btn-block" id="successHomeBtn">Back to Home</button>
-          </div>
-        </section>
-
-        <!-- 7. ORDER TRACKING SCREEN -->
-        <section class="screen" id="orderTrackingScreen">
-          <!-- Active Order Progress -->
-          <div class="card tracking-hero-card">
-            <div class="tracking-top-row">
-              <div>
-                <h3 class="est-time" id="trackingEstTime">Estimated: 30 mins</h3>
-                <p class="tracking-status-text" id="trackingStatusText">Kitchen received your order</p>
-              </div>
-              <span class="order-type-badge" id="trackingOrderTypeBadge">Delivery</span>
-            </div>
-            <div class="progress-bar-bg">
-              <div class="progress-bar-fill" id="trackingProgressFill" style="width: 20%;"></div>
-            </div>
-          </div>
-
-          <!-- Chulha Stages Timeline -->
-          <div class="card timeline-card">
-            <h4 class="card-title">Rasoi Live Progress / चूल्हे का हाल</h4>
-            <div class="timeline" id="trackingTimeline">
-              <!-- Steps injected via JS -->
-            </div>
-          </div>
-
-          <!-- Simulation Advance Button -->
-          <div class="card demo-sim-card">
-            <div class="demo-sim-text">
-              <strong>Interactive Demo Simulation</strong>
-              <p>Advance cooking stage to preview the live experience</p>
-            </div>
-            <button class="btn btn-primary btn-sm" id="advanceStageBtn">Advance Stage</button>
-          </div>
-
-          <!-- Restaurant Contact -->
-          <div class="card chef-contact-card">
-            <div class="chef-info">
-              <img src="images/restaurant_logo.jpg" alt="Restaurant Logo" class="chef-avatar">
-              <div>
-                <strong>Mhare Gaam Ki Rasoi</strong>
-                <span>Helpdesk & Orders: +91 89797 53636</span>
-              </div>
-            </div>
-            <button class="btn btn-secondary btn-sm" id="callRestaurantBtn">📞 Call Restaurant</button>
-          </div>
-
-          <!-- Order Summary Items -->
-          <div class="card order-items-summary-card" id="trackingItemsSummary"></div>
-        </section>
-
-        <!-- 8. BAITHAK TABLE BOOKING SCREEN -->
-        <section class="screen" id="tableBookingScreen">
-          <div class="baithak-wrapper">
-            <div class="card baithak-hero-card">
-              <h3 class="card-title">Gaam Baithak Booking</h3>
-              <p class="hindi-sub">देसी खाट, चौकी व पारिवारिक बैठक का आनंद लें</p>
-              <p class="desc-text">Reserve a private rustic dining space under neem trees with live folk music and fresh rotis served right to your khatiya.</p>
-            </div>
-
-            <!-- Booking Confirmation Alert (if booked) -->
-            <div class="card booking-success-card" id="bookingConfirmedCard" style="display: none;">
-              <div class="booking-success-icon">✓</div>
-              <div>
-                <h4 id="confirmedBookingCode">Baithak Confirmed!</h4>
-                <p id="confirmedBookingDetails">4 Guests • 08:00 PM • Village Charpai</p>
-              </div>
-            </div>
-
-            <!-- Seating Options -->
-            <div class="card">
-              <h4 class="card-title">Select Village Seating Style</h4>
-              <div class="seating-options">
-                <label class="seating-option selected">
-                  <input type="radio" name="seatingStyle" value="charpai" checked>
-                  <span class="seating-icon">🛏️</span>
-                  <div class="seating-text">
-                    <strong>Village Charpai / Khatiya (देसी खाट)</strong>
-                    <span class="sub">Outdoor breezy seating under rustic neem trees</span>
-                  </div>
-                </label>
-                <label class="seating-option">
-                  <input type="radio" name="seatingStyle" value="chowki">
-                  <span class="seating-icon">🪵</span>
-                  <div class="seating-text">
-                    <strong>Floor Chowki Baithak (चौकी बैठक)</strong>
-                    <span class="sub">Traditional floor dining on wooden carved chowkis</span>
-                  </div>
-                </label>
-                <label class="seating-option">
-                  <input type="radio" name="seatingStyle" value="table">
-                  <span class="seating-icon">🪑</span>
-                  <div class="seating-text">
-                    <strong>Heritage Family Table (लकड़ी की मेज)</strong>
-                    <span class="sub">Large rustic wooden table for family & group celebrations</span>
-                  </div>
-                </label>
-              </div>
-            </div>
-
-            <!-- Guests Count -->
-            <div class="card">
-              <h4 class="card-title">Number of Guests</h4>
-              <div class="guest-chips" id="guestCountChips">
-                <button class="chip" data-count="2">2</button>
-                <button class="chip active" data-count="4">4</button>
-                <button class="chip" data-count="6">6</button>
-                <button class="chip" data-count="8">8</button>
-                <button class="chip" data-count="12">12+</button>
-              </div>
-            </div>
-
-            <!-- Date & Time -->
-            <div class="card">
-              <h4 class="card-title">Choose Date & Time</h4>
-              <label class="label-sub">Date</label>
-              <div class="date-chips" id="dateChips">
-                <button class="chip active" data-date="Today, Evening">Today, Evening</button>
-                <button class="chip" data-date="Tomorrow">Tomorrow</button>
-                <button class="chip" data-date="Sunday Feast">Sunday Feast</button>
-              </div>
-
-              <label class="label-sub" style="margin-top: 12px;">Time Slot</label>
-              <div class="time-chips" id="timeChips">
-                <button class="chip" data-time="01:00 PM">01:00 PM</button>
-                <button class="chip" data-time="02:00 PM">02:00 PM</button>
-                <button class="chip" data-time="07:30 PM">07:30 PM</button>
-                <button class="chip active" data-time="08:30 PM">08:30 PM</button>
-                <button class="chip" data-time="09:30 PM">09:30 PM</button>
-              </div>
-            </div>
-
-            <!-- Guest Details -->
-            <div class="card">
-              <h4 class="card-title">Reservation Details</h4>
-              <div class="form-group">
-                <label>Name</label>
-                <input type="text" id="baithakName" class="input-text" value="Gaurav Singh">
-              </div>
-              <div class="form-group">
-                <label>Phone Number</label>
-                <input type="tel" id="baithakPhone" class="input-text" value="8979753636">
-              </div>
-              <div class="form-group">
-                <label>Special Requests (Optional)</label>
-                <input type="text" id="baithakNotes" class="input-text" placeholder="e.g. Birthday celebration, extra lantern, cot in corner">
-              </div>
-            </div>
-
-            <button class="btn btn-primary btn-block btn-lg" id="submitBaithakBtn">Reserve Village Baithak</button>
-          </div>
-        </section>
-
-        <!-- 9. MY ORDERS SCREEN -->
-        <section class="screen" id="ordersScreen">
-          <div class="orders-wrapper">
-            <h3 class="orders-title">Your Rasoi Orders</h3>
-            <div class="orders-list" id="pastOrdersList"></div>
-          </div>
-        </section>
-
-      </div>
-
-      <!-- Sticky Floating Cart Bar -->
-      <div class="floating-cart-bar" id="floatingCartBar" style="display: none;">
-        <div class="cart-bar-left">
-          <div class="cart-icon-box">🛍️</div>
-          <div>
-            <span class="cart-items-count" id="cartBarItemsText">1 item in Thali</span>
-            <h4 class="cart-total-price" id="cartBarTotalText">₹349</h4>
+            <div style="font-size: 2.4rem;">🎁</div>
           </div>
         </div>
-        <button class="btn-view-thali" id="cartBarViewBtn">
-          <span>View Rasoi Thali</span>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </button>
-      </div>
 
-      <!-- Android Bottom Navigation Bar -->
-      <nav class="app-bottom-nav" id="appBottomNav">
-        <button class="nav-item active" data-screen="homeScreen">
-          <span class="nav-icon">🏠</span>
-          <span class="nav-label">Home</span>
+        <div class="card-surface" style="padding: 12px; display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px;">
+          <div style="padding: 8px; border-bottom: 1px solid var(--border-subtle); display: flex; justify-content: space-between; cursor: pointer;" onclick="CustomerApp.switchTab('orders')">
+            <span>📦 My Past Orders</span>
+            <span>➔</span>
+          </div>
+          <div style="padding: 8px; border-bottom: 1px solid var(--border-subtle); display: flex; justify-content: space-between; cursor: pointer;" onclick="RasoiAPI.showToast('Sai Plaza, Meerut (Default)')">
+            <span>📍 Saved Delivery Addresses</span>
+            <span>➔</span>
+          </div>
+          <div style="padding: 8px; border-bottom: 1px solid var(--border-subtle); display: flex; justify-content: space-between; cursor: pointer;" onclick="CustomerApp.openCartDrawer()">
+            <span>🎟️ Available Coupons (WELCOME50, GAAM10)</span>
+            <span>➔</span>
+          </div>
+          <div style="padding: 8px; display: flex; justify-content: space-between; cursor: pointer;" onclick="MainApp.switchRole('ADMIN')">
+            <span>📊 Admin Management Portal</span>
+            <span>➔</span>
+          </div>
+        </div>
+
+        <button class="btn btn-outline btn-block" onclick="MainApp.handleLogout()">
+          LOGOUT
         </button>
-        <button class="nav-item" data-screen="menuScreen">
-          <span class="nav-icon">🍲</span>
-          <span class="nav-label">Menu</span>
-        </button>
-        <button class="nav-item" data-screen="tableBookingScreen">
-          <span class="nav-icon">🛏️</span>
-          <span class="nav-label">Baithak</span>
-        </button>
-        <button class="nav-item" data-screen="ordersScreen">
-          <span class="nav-icon">📜</span>
-          <span class="nav-label">Orders</span>
-        </button>
+      </main>
+
+      <!-- Customer Bottom Navigation Bar -->
+      <nav class="bottom-nav-bar">
+        <a class="nav-item active" data-tab="home">
+          <i>🏠</i>
+          <span>HOME</span>
+        </a>
+        <a class="nav-item" data-tab="menu">
+          <i>🍲</i>
+          <span>MENU</span>
+        </a>
+        <a class="nav-item" data-tab="search">
+          <i>🔍</i>
+          <span>SEARCH</span>
+        </a>
+        <a class="nav-item" data-tab="orders">
+          <i>📦</i>
+          <span>ORDERS</span>
+        </a>
+        <a class="nav-item" data-tab="profile">
+          <i>👤</i>
+          <span>PROFILE</span>
+        </a>
       </nav>
 
-      <!-- Android Home Bar / Navigation Pill -->
-      <div class="android-nav-bar">
-        <div class="home-pill"></div>
+      <!-- AI Rasoi Saathi Floating Action Button (FAB) -->
+      <div class="ai-saathi-fab" id="aiSaathiFab" title="Chat with AI Rasoi Saathi">
+        <div style="font-size: 1.4rem;">✨</div>
+        <span>SAATHI</span>
       </div>
 
-      <!-- Scanner Lightbox Modal for Enlarge View -->
-      <div class="scanner-lightbox-modal" id="scannerLightboxModal" style="display: none;">
-        <div class="scanner-lightbox-content">
-          <button class="scanner-lightbox-close" id="closeScannerLightboxBtn" title="Close">✕</button>
-          <img src="images/phonepe_upi_qr.png" alt="Official PhonePe QR Scanner - Aditya Chauhan" class="scanner-lightbox-img" style="max-width: 320px; border-radius: 12px;">
-          <div class="scanner-lightbox-footer">
-            <span class="lightbox-name">ADITYA CHAUHAN • 7819952799@ybl</span>
-            <a href="images/phonepe_upi_qr.png" download="PhonePe_QR_Aditya_Chauhan.png" class="btn-lightbox-download">⬇️ Download QR Code</a>
+    </div><!-- End portalCustomer -->
+
+
+    <!-- ========================================================
+         PORTAL 2: SUPER ADMIN DASHBOARD
+         ======================================================== -->
+    <div class="admin-layout" id="portalAdmin" style="display: none; width: 100%;">
+      <!-- Sidebar -->
+      <aside class="admin-sidebar">
+        <div class="admin-brand-header">
+          <img src="/static/assets/logo.png" alt="Logo" />
+          <div>
+            <h3>Gaam Ki Rasoi</h3>
+            <p>SUPER ADMIN PORTAL</p>
           </div>
         </div>
-      </div>
 
-      <!-- Item Customization Modal Bottom Sheet -->
-      <div class="modal-backdrop" id="itemDetailModal" style="display: none;">
-        <div class="bottom-sheet">
-          <div class="sheet-image-wrapper">
-            <img src="" alt="Dish" id="modalDishImage">
-            <button class="sheet-close-btn" id="modalCloseBtn">✕</button>
+        <ul class="admin-nav-list">
+          <li><a class="admin-nav-link active" data-admin-tab="overview"><i>📊</i> Overview & KPIs</a></li>
+          <li><a class="admin-nav-link" data-admin-tab="orders"><i>📦</i> Live Orders Dispatch</a></li>
+          <li><a class="admin-nav-link" data-admin-tab="menu"><i>🍲</i> Menu & Pricing CRUD</a></li>
+          <li><a class="admin-nav-link" data-admin-tab="coupons"><i>🎟️</i> Coupons & Offers</a></li>
+          <li><a class="admin-nav-link" data-admin-tab="settings"><i>⚙️</i> Restaurant Settings</a></li>
+        </ul>
+
+        <div class="admin-user-footer">
+          <div class="admin-user-info">
+            <h5>Admin</h5>
+            <span>Super Admin</span>
           </div>
-          <div class="sheet-body">
-            <div class="sheet-header">
-              <div class="badge-row">
-                <span class="veg-badge-dot"></span>
-                <span class="badge-ghee" id="modalGheeBadge">शुद्ध देसी घी</span>
+          <button class="btn btn-sm btn-outline" style="color: #fff; border-color: rgba(255,255,255,0.3);" onclick="MainApp.switchRole('CUSTOMER')">Exit</button>
+        </div>
+      </aside>
+
+      <!-- Main Admin Content Area -->
+      <main class="admin-main">
+        <header class="admin-topbar">
+          <div class="admin-topbar-title">
+            <h2>Mhare Gaam Ki Rasoi</h2>
+            <p>Sai Plaza, Meerut • Management Console</p>
+          </div>
+          <div class="admin-topbar-actions">
+            <div class="store-status-toggle" id="adminStoreStatusBadge">Store: OPEN</div>
+            <button class="btn btn-terracotta btn-sm" onclick="AdminApp.openAddDishModal()">+ Add New Dish</button>
+          </div>
+        </header>
+
+        <div class="admin-content-body">
+          <!-- SECTION 1: OVERVIEW -->
+          <div id="adminSec-overview" class="admin-tab-section">
+            <div class="kpi-grid" style="margin-bottom: 24px;">
+              <div class="kpi-card">
+                <div class="kpi-data">
+                  <h4>Total Sales</h4>
+                  <div class="kpi-value" id="statTotalSales">₹0</div>
+                  <div class="kpi-sub">↑ 18% vs last week</div>
+                </div>
+                <div class="kpi-icon-wrap">💰</div>
               </div>
-              <h3 class="sheet-title" id="modalDishTitle">Gaam Ki Thali</h3>
-              <p class="sheet-hindi" id="modalDishHindi">गाम की थाली</p>
-              <p class="sheet-desc" id="modalDishDesc"></p>
+
+              <div class="kpi-card">
+                <div class="kpi-data">
+                  <h4>Total Orders</h4>
+                  <div class="kpi-value" id="statTotalOrders">0</div>
+                  <div class="kpi-sub">Active & Completed</div>
+                </div>
+                <div class="kpi-icon-wrap">🍱</div>
+              </div>
+
+              <div class="kpi-card">
+                <div class="kpi-data">
+                  <h4>In Kitchen (Prep)</h4>
+                  <div class="kpi-value" id="statPreparing">0</div>
+                  <div class="kpi-sub" style="color: var(--color-terracotta);">Being cooked</div>
+                </div>
+                <div class="kpi-icon-wrap">👨‍🍳</div>
+              </div>
+
+              <div class="kpi-card">
+                <div class="kpi-data">
+                  <h4>Ready for Dispatch</h4>
+                  <div class="kpi-value" id="statReady">0</div>
+                  <div class="kpi-sub">Packaged & Hot</div>
+                </div>
+                <div class="kpi-icon-wrap">📦</div>
+              </div>
+
+              <div class="kpi-card">
+                <div class="kpi-data">
+                  <h4>Delivered Today</h4>
+                  <div class="kpi-value" id="statCompleted">0</div>
+                  <div class="kpi-sub">Delighted guests</div>
+                </div>
+                <div class="kpi-icon-wrap">🛵</div>
+              </div>
             </div>
 
-            <div class="custom-section">
-              <h5 class="custom-title">Choose Spice Level / तीखापन चुनें</h5>
-              <div class="spice-options" id="modalSpiceOptions">
-                <!-- injected by JS -->
+            <!-- Chart & Top Dishes -->
+            <div class="admin-chart-row">
+              <div class="chart-card">
+                <div class="chart-header">
+                  <h3 class="chart-title">Weekly Sales Performance (₹)</h3>
+                  <span style="font-size: 0.8rem; color: var(--color-muted-brown);">Current Week</span>
+                </div>
+                <div class="sales-bar-chart" id="adminSalesBarChart"></div>
+              </div>
+
+              <div class="chart-card">
+                <div class="chart-header">
+                  <h3 class="chart-title">Top Selling Dishes</h3>
+                </div>
+                <div id="adminTopDishesList"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTION 2: LIVE ORDERS -->
+          <div id="adminSec-orders" class="admin-tab-section" style="display: none;">
+            <div class="data-table-container">
+              <div class="table-header-tools">
+                <h3 class="chart-title">Live Orders & Dispatch Board</h3>
+                <select id="adminOrderStatusFilter" onchange="AdminApp.fetchOrders()" style="padding: 6px 12px; border-radius: var(--radius-sm); border: 1px solid var(--border-card);">
+                  <option value="ALL">All Statuses</option>
+                  <option value="PLACED">Placed</option>
+                  <option value="ACCEPTED">Accepted</option>
+                  <option value="PREPARING">Preparing</option>
+                  <option value="READY">Ready</option>
+                  <option value="OUT_FOR_DELIVERY">Out for Delivery</option>
+                  <option value="DELIVERED">Delivered</option>
+                </select>
+              </div>
+              <table class="admin-table">
+                <thead>
+                  <tr>
+                    <th>Order #</th>
+                    <th>Customer</th>
+                    <th>Type</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                    <th>Assign Rider</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody id="adminOrdersTableBody"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- SECTION 3: MENU CRUD -->
+          <div id="adminSec-menu" class="admin-tab-section" style="display: none;">
+            <div class="data-table-container">
+              <div class="table-header-tools">
+                <h3 class="chart-title">Restaurant Menu Items (100% Pure Veg)</h3>
+                <button class="btn btn-terracotta btn-sm" onclick="AdminApp.openAddDishModal()">+ Add New Dish</button>
+              </div>
+              <table class="admin-table">
+                <thead>
+                  <tr>
+                    <th>Dish</th>
+                    <th>Category</th>
+                    <th>Price (₹)</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="adminMenuTableBody"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- SECTION 4: COUPONS -->
+          <div id="adminSec-coupons" class="admin-tab-section" style="display: none;">
+            <div class="card-surface" style="padding: 18px; margin-bottom: 20px;">
+              <h4 style="font-family: var(--font-brand); color: var(--color-primary); margin-bottom: 12px;">Create New Promo Coupon</h4>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px;">
+                <input type="text" id="newCouponCode" placeholder="Code (e.g. GAAM20)" style="padding: 8px; border: 1px solid var(--border-card); border-radius: 4px;" />
+                <select id="newCouponType" style="padding: 8px; border: 1px solid var(--border-card); border-radius: 4px;">
+                  <option value="PERCENTAGE">% Percentage Discount</option>
+                  <option value="FLAT">Flat ₹ Discount</option>
+                </select>
+                <input type="number" id="newCouponVal" placeholder="Value (e.g. 20)" style="padding: 8px; border: 1px solid var(--border-card); border-radius: 4px;" />
+                <input type="number" id="newCouponMin" placeholder="Min Order (₹)" style="padding: 8px; border: 1px solid var(--border-card); border-radius: 4px;" />
+                <input type="number" id="newCouponMax" placeholder="Max Discount (₹)" style="padding: 8px; border: 1px solid var(--border-card); border-radius: 4px;" />
+                <button class="btn btn-primary btn-sm" onclick="AdminApp.submitNewCoupon()">Save Coupon</button>
               </div>
             </div>
 
-            <div class="custom-section">
-              <h5 class="custom-title">Gaam Add-ons / अतिरिक्त स्वाद</h5>
-              <div class="addons-list" id="modalAddonsList">
-                <!-- injected by JS -->
-              </div>
+            <div class="data-table-container">
+              <table class="admin-table">
+                <thead>
+                  <tr>
+                    <th>Code</th>
+                    <th>Discount</th>
+                    <th>Min Order</th>
+                    <th>Max Discount</th>
+                    <th>Redemptions</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="adminCouponsTableBody"></tbody>
+              </table>
             </div>
+          </div>
 
-            <div class="custom-section">
-              <h5 class="custom-title">Special Note for Chulha Chef</h5>
-              <input type="text" id="modalChefNote" class="input-text" placeholder="e.g. Crisp roti, extra ghee, less chillies...">
-            </div>
-
-            <div class="sheet-footer">
-              <div class="quantity-stepper">
-                <button id="modalQtyMinus">-</button>
-                <span id="modalQtyText">1</span>
-                <button id="modalQtyPlus">+</button>
+          <!-- SECTION 5: RESTAURANT SETTINGS -->
+          <div id="adminSec-settings" class="admin-tab-section" style="display: none;">
+            <div class="card-surface" style="padding: 24px; max-width: 600px;">
+              <h3 class="chart-title" style="margin-bottom: 18px;">Store Configuration</h3>
+              <div style="display: flex; flex-direction: column; gap: 14px;">
+                <div>
+                  <label style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 4px;">Store Status:</label>
+                  <select id="setStoreStatus" style="width: 100%; padding: 8px; border: 1px solid var(--border-card); border-radius: 4px;">
+                    <option value="OPEN">OPEN (Accepting Orders)</option>
+                    <option value="BUSY">BUSY (High Kitchen Delay)</option>
+                    <option value="CLOSED">CLOSED</option>
+                  </select>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                  <div>
+                    <label style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 4px;">Opening Time:</label>
+                    <input type="text" id="setOpenTime" style="width: 100%; padding: 8px; border: 1px solid var(--border-card); border-radius: 4px;" />
+                  </div>
+                  <div>
+                    <label style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 4px;">Closing Time:</label>
+                    <input type="text" id="setCloseTime" style="width: 100%; padding: 8px; border: 1px solid var(--border-card); border-radius: 4px;" />
+                  </div>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                  <div>
+                    <label style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 4px;">Delivery Radius (km):</label>
+                    <input type="number" id="setRadius" style="width: 100%; padding: 8px; border: 1px solid var(--border-card); border-radius: 4px;" />
+                  </div>
+                  <div>
+                    <label style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 4px;">Delivery Fee (₹):</label>
+                    <input type="number" id="setDeliveryFee" style="width: 100%; padding: 8px; border: 1px solid var(--border-card); border-radius: 4px;" />
+                  </div>
+                </div>
+                <div>
+                  <label style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 4px;">GST Percentage (%):</label>
+                  <input type="number" id="setGst" style="width: 100%; padding: 8px; border: 1px solid var(--border-card); border-radius: 4px;" />
+                </div>
+                <div>
+                  <label style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 4px;">Contact Phone / WhatsApp:</label>
+                  <input type="text" id="setPhone" style="width: 100%; padding: 8px; border: 1px solid var(--border-card); border-radius: 4px;" />
+                </div>
+                <button class="btn btn-primary btn-lg" onclick="AdminApp.saveSettings()">Save Restaurant Settings</button>
               </div>
-              <button class="btn btn-primary btn-lg" id="modalAddToCartBtn">
-                Add to Thali • <span id="modalAddPriceText">₹349</span>
-              </button>
             </div>
           </div>
         </div>
+      </main>
+    </div><!-- End portalAdmin -->
+
+
+    <!-- ========================================================
+         PORTAL 3: CHEF KITCHEN DISPLAY SYSTEM (KDS)
+         ======================================================== -->
+    <div class="kds-layout" id="portalChef" style="display: none; width: 100%;">
+      <header class="kds-header">
+        <div class="kds-brand">
+          <img src="/static/assets/logo.png" alt="Logo" />
+          <h3>Gaam Ki Rasoi <span class="kds-role-tag">KITCHEN DISPLAY (CHEF)</span></h3>
+        </div>
+        <div class="kds-summary-stats">
+          <div class="kds-stat-pill">New: <span id="countNew" style="color: #FFC043; font-weight: 800;">0</span></div>
+          <div class="kds-stat-pill">Accepted: <span id="countAccepted" style="color: #FFA575; font-weight: 800;">0</span></div>
+          <div class="kds-stat-pill">Cooking: <span id="countPrep" style="color: var(--color-golden-light); font-weight: 800;">0</span></div>
+          <div class="kds-stat-pill">Ready: <span id="countReady" style="color: #79D968; font-weight: 800;">0</span></div>
+        </div>
+        <div class="kds-clock" id="kdsClock">12:00:00</div>
+      </header>
+
+      <div class="kds-columns-container">
+        <!-- Col 1: NEW -->
+        <div class="kds-column col-new">
+          <div class="kds-column-header">
+            <span>1. New Tickets</span>
+            <span class="kds-column-badge">NEW</span>
+          </div>
+          <div class="kds-ticket-list" id="kdsListNew"></div>
+        </div>
+
+        <!-- Col 2: ACCEPTED -->
+        <div class="kds-column col-accepted">
+          <div class="kds-column-header">
+            <span>2. Confirmed</span>
+            <span class="kds-column-badge">ACCEPTED</span>
+          </div>
+          <div class="kds-ticket-list" id="kdsListAccepted"></div>
+        </div>
+
+        <!-- Col 3: PREPARING -->
+        <div class="kds-column col-preparing">
+          <div class="kds-column-header">
+            <span>3. In Handi / Tandoor</span>
+            <span class="kds-column-badge">COOKING</span>
+          </div>
+          <div class="kds-ticket-list" id="kdsListPreparing"></div>
+        </div>
+
+        <!-- Col 4: READY -->
+        <div class="kds-column col-ready">
+          <div class="kds-column-header">
+            <span>4. Packed / Ready</span>
+            <span class="kds-column-badge">READY</span>
+          </div>
+          <div class="kds-ticket-list" id="kdsListReady"></div>
+        </div>
       </div>
+    </div><!-- End portalChef -->
 
-      <!-- Toast Notification Container -->
-      <div class="toast-container" id="toastContainer"></div>
 
+    <!-- ========================================================
+         PORTAL 4: BILLING COUNTER POS TERMINAL
+         ======================================================== -->
+    <div class="pos-layout" id="portalPos" style="display: none; width: 100%;">
+      <!-- Left: Menu Grid & Quick Add -->
+      <section class="pos-menu-section">
+        <header class="pos-header">
+          <div class="pos-brand-info">
+            <img src="/static/assets/logo.png" alt="Logo" />
+            <div>
+              <h3>Mhare Gaam Ki Rasoi</h3>
+              <span style="font-size: 0.75rem; color: var(--color-muted-brown);">FRONT DESK POS TERMINAL</span>
+            </div>
+          </div>
+
+          <div class="pos-order-type-tabs">
+            <button class="pos-type-btn active" data-type="DINE_IN" onclick="PosApp.setOrderType('DINE_IN')">🍽️ Dine-In</button>
+            <button class="pos-type-btn" data-type="TAKEAWAY" onclick="PosApp.setOrderType('TAKEAWAY')">🛍️ Takeaway</button>
+            <button class="pos-type-btn" data-type="DELIVERY" onclick="PosApp.setOrderType('DELIVERY')">🛵 Delivery</button>
+          </div>
+
+          <div style="width: 220px;">
+            <input type="text" id="posSearchInput" class="search-input" placeholder="Quick search..." oninput="PosApp.renderItemsGrid()" />
+          </div>
+        </header>
+
+        <div class="pos-category-bar" id="posCategoryBar"></div>
+        <div class="pos-items-grid" id="posItemsGrid"></div>
+
+        <!-- Bottom section: Today's Orders Table -->
+        <div style="background: var(--color-light-cream); border-top: 1px solid var(--border-card); padding: 12px 20px; max-height: 180px; overflow-y: auto;">
+          <h4 style="font-size: 0.85rem; font-weight: 700; color: var(--color-primary); margin-bottom: 6px;">Today's Counter Orders</h4>
+          <table class="admin-table" style="font-size: 0.8rem;">
+            <thead>
+              <tr>
+                <th>Order #</th>
+                <th>Type</th>
+                <th>Guest</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>Receipt</th>
+              </tr>
+            </thead>
+            <tbody id="posTodayOrdersTable"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Right: Active Bill & Checkout -->
+      <aside class="pos-billing-section">
+        <div class="pos-bill-header">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h4 style="font-family: var(--font-brand); color: var(--color-primary); font-size: 1.1rem;">Current Bill</h4>
+            <button class="btn btn-sm btn-outline" onclick="PosApp.cart = []; PosApp.renderCart();">Clear</button>
+          </div>
+
+          <div class="pos-table-selector-wrap" id="posTableSelectWrap">
+            <label style="font-size: 0.78rem; font-weight: 700; color: var(--color-dark-text); display: block; margin-bottom: 4px;">Assign Table:</label>
+            <select id="posTableSelector"></select>
+          </div>
+
+          <div id="posCustomerInfoWrap" style="display: none; margin-top: 10px;">
+            <input type="text" id="posCustName" placeholder="Guest Name" style="width: 100%; padding: 6px 10px; margin-bottom: 6px; border: 1px solid var(--border-card); border-radius: 4px; font-size: 0.85rem;" />
+            <input type="tel" id="posCustPhone" placeholder="Phone Number" style="width: 100%; padding: 6px 10px; border: 1px solid var(--border-card); border-radius: 4px; font-size: 0.85rem;" />
+          </div>
+
+          <div style="margin-top: 8px;">
+            <input type="text" id="posInstructions" placeholder="Cooking notes (e.g. Less spicy, extra butter)" style="width: 100%; padding: 6px 10px; border: 1px solid var(--border-card); border-radius: 4px; font-size: 0.82rem;" />
+          </div>
+        </div>
+
+        <div class="pos-cart-list" id="posCartList"></div>
+
+        <div class="pos-bill-summary">
+          <div class="pos-calc-row">
+            <span>Item Subtotal:</span>
+            <span id="posSubtotal">₹0</span>
+          </div>
+          <div class="pos-calc-row">
+            <span>GST (5%):</span>
+            <span id="posTaxes">₹0</span>
+          </div>
+          <div class="pos-calc-total">
+            <span>Grand Total:</span>
+            <span id="posGrandTotal">₹0</span>
+          </div>
+        </div>
+
+        <div class="pos-actions-wrap">
+          <div style="font-size: 0.78rem; font-weight: 700; color: var(--color-dark-text);">Payment Mode:</div>
+          <div class="pos-payment-methods">
+            <div class="pos-pay-btn selected" data-method="CASH" onclick="PosApp.setPaymentMethod('CASH')">💵 Cash</div>
+            <div class="pos-pay-btn" data-method="UPI" onclick="PosApp.setPaymentMethod('UPI')">📱 UPI QR</div>
+            <div class="pos-pay-btn" data-method="CARD" onclick="PosApp.setPaymentMethod('CARD')">💳 Card</div>
+          </div>
+
+          <!-- Cash Change Calculator -->
+          <div id="posCashCalculator" style="background: var(--color-warm-cream); padding: 8px 12px; border-radius: 4px; border: 1px solid var(--border-card); font-size: 0.82rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span>Cash Tendered:</span>
+              <input type="number" id="posCashTendered" placeholder="₹" style="width: 80px; padding: 3px 6px; font-weight: 700;" oninput="PosApp.calculateChange()" />
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 4px; font-weight: 700; color: var(--color-primary);">
+              <span>Change to Return:</span>
+              <span id="posCashChange">₹0</span>
+            </div>
+          </div>
+
+          <button class="btn btn-terracotta btn-lg" id="posBtnSubmitOrder" onclick="PosApp.submitPosOrder()">
+            GENERATE INVOICE • ₹0
+          </button>
+        </div>
+      </aside>
+    </div><!-- End portalPos -->
+
+
+    <!-- ========================================================
+         PORTAL 5: DELIVERY FLEET PARTNER (RIDER)
+         ======================================================== -->
+    <div class="delivery-layout" id="portalDelivery" style="display: none; width: 100%;">
+      <header class="delivery-header">
+        <div class="rider-badge-info">
+          <div class="rider-avatar">🛵</div>
+          <div>
+            <h3 id="riderName" style="font-family: var(--font-brand); font-size: 1.15rem; color: var(--color-warm-cream);">Ramesh Kumar</h3>
+            <span id="riderVehicle" style="font-size: 0.74rem; color: var(--color-golden-light);">UP15-AB-1234 • Meerut Fleet</span>
+          </div>
+        </div>
+        <div class="rider-duty-toggle online" id="riderDutyToggle" onclick="DeliveryApp.toggleDuty()">
+          ● ON DUTY
+        </div>
+      </header>
+
+      <div style="padding: 16px 16px 6px;">
+        <h3 style="font-family: var(--font-brand); color: var(--color-primary); font-size: 1.15rem;">Active Deliveries</h3>
+      </div>
+      <div id="deliveryActiveList"></div>
+
+      <div style="padding: 14px 16px 6px;">
+        <h4 style="font-size: 0.9rem; font-weight: 700; color: var(--color-dark-text);">Completed Deliveries Today</h4>
+      </div>
+      <div id="deliveryCompletedList"></div>
+    </div><!-- End portalDelivery -->
+
+  </div><!-- End deviceFrameWrapper -->
+
+
+  <!-- ========================================================
+       GLOBAL INTERACTIVE MODALS
+       ======================================================== -->
+
+  <!-- 1. Dish Detail Bottom Sheet Modal -->
+  <div class="modal-backdrop" id="dishDetailModal">
+    <div class="modal-sheet" id="dishDetailContent"></div>
+  </div>
+
+  <!-- 2. Cart Drawer Modal -->
+  <div class="modal-backdrop" id="cartDrawerModal">
+    <div class="modal-sheet" id="cartDrawerContent"></div>
+  </div>
+
+  <!-- 3. Checkout Modal -->
+  <div class="modal-backdrop" id="checkoutModal">
+    <div class="modal-sheet" id="checkoutContent"></div>
+  </div>
+
+  <!-- 4. Order Live Tracking Modal -->
+  <div class="modal-backdrop" id="orderTrackingModal">
+    <div class="modal-sheet" id="orderTrackingContent"></div>
+  </div>
+
+  <!-- 5. AI Assistant "Rasoi Saathi" Chat Drawer Modal -->
+  <div class="modal-backdrop" id="aiChatModal">
+    <div class="modal-sheet">
+      <div class="ai-chat-window">
+        <div class="ai-chat-header">
+          <div class="ai-profile-info">
+            <div class="ai-avatar">✨</div>
+            <div>
+              <h3 style="font-family: var(--font-brand); color: var(--color-primary); font-size: 1.1rem;">Rasoi Saathi</h3>
+              <p style="font-size: 0.74rem; color: var(--color-secondary); font-weight: 600;">AI Food Assistant • 100% Pure Veg</p>
+            </div>
+          </div>
+          <button onclick="RasoiSaathi.toggleChat()" style="background: none; border: none; font-size: 1.3rem; cursor: pointer;">✕</button>
+        </div>
+
+        <div class="ai-messages-container" id="aiMessagesList">
+          <div class="ai-bubble bot">
+            Ram Ram ji! 🙏 Main hoon aapka <strong>Rasoi Saathi</strong>.<br/><br/>
+            Aap mujhse budget recommendations, menu items ke ingredients, spice level ya live order status pooch sakte hain!
+          </div>
+        </div>
+
+        <!-- Quick prompts scroller -->
+        <div class="ai-quick-prompts">
+          <div class="ai-chip" onclick="RasoiSaathi.sendQuickPrompt('Mere paas ₹500 hain, 2 logon ke liye kya order karu?')">
+            💰 ₹500 for 2 People
+          </div>
+          <div class="ai-chip" onclick="RasoiSaathi.sendQuickPrompt('Mujhe paneer mein kuch spicy suggest karo.')">
+            🌶️ Spicy Paneer
+          </div>
+          <div class="ai-chip" onclick="RasoiSaathi.sendQuickPrompt('Kaunsi thali sabse popular hai?')">
+            🍱 Popular Thali
+          </div>
+          <div class="ai-chip" onclick="RasoiSaathi.sendQuickPrompt('Aaj ke active coupons kya hain?')">
+            🎟️ Current Offers
+          </div>
+          <div class="ai-chip" onclick="RasoiSaathi.sendQuickPrompt('Mera order kahan pahucha?')">
+            📦 Track Order
+          </div>
+        </div>
+
+        <div class="ai-input-row">
+          <input type="text" id="aiChatInput" placeholder="Poochiye (e.g. ₹400 mein 2 thali suggest karo)..." />
+          <button class="btn btn-terracotta btn-sm" onclick="RasoiSaathi.sendMessage()">➔</button>
+        </div>
+      </div>
     </div>
-  </main>
+  </div>
 
-  <script src="app.js"></script>
+
+
+  <!-- 7. Admin Add Dish Modal -->
+  <div class="modal-backdrop" id="adminAddDishModal">
+    <div class="modal-sheet">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+        <h3 style="font-family: var(--font-brand); color: var(--color-primary); font-size: 1.25rem;">Add New Menu Dish</h3>
+        <button onclick="document.getElementById('adminAddDishModal').classList.remove('active')" style="background: none; border: none; font-size: 1.3rem; cursor: pointer;">✕</button>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <input type="text" id="newDishName" placeholder="Dish Name (e.g. Shahi Malai Kofta)" style="padding: 10px; border-radius: 4px; border: 1px solid var(--border-card);" />
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+          <input type="number" id="newDishPrice" placeholder="Price (₹)" style="padding: 10px; border-radius: 4px; border: 1px solid var(--border-card);" />
+          <select id="newDishCat" style="padding: 10px; border-radius: 4px; border: 1px solid var(--border-card);">
+            <option value="cat_paneer">Paneer Specials</option>
+            <option value="cat_dal">Dal & Kadhi</option>
+            <option value="cat_thali">Thali Specials</option>
+            <option value="cat_specials">Mhare Gaam Specials</option>
+            <option value="cat_breads">Indian Breads</option>
+            <option value="cat_desserts">Mithai & Desserts</option>
+          </select>
+        </div>
+        <textarea id="newDishDesc" placeholder="Description of flavors, cooking style and ingredients..." style="padding: 10px; border-radius: 4px; border: 1px solid var(--border-card); height: 80px;"></textarea>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+          <select id="newDishSpice" style="padding: 10px; border-radius: 4px; border: 1px solid var(--border-card);">
+            <option value="Mild">Mild</option>
+            <option value="Medium" selected>Medium</option>
+            <option value="Desi Spicy">Desi Spicy</option>
+          </select>
+          <label style="display: flex; align-items: center; gap: 8px; font-weight: 700; cursor: pointer;">
+            <input type="checkbox" id="newDishBestseller" />
+            <span>Mark Bestseller</span>
+          </label>
+        </div>
+        <button class="btn btn-primary btn-block btn-lg" onclick="AdminApp.submitNewDish()">Save Dish to Menu</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8. Customer Review Modal -->
+  <div class="modal-backdrop" id="customerReviewModal">
+    <div class="modal-sheet">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+        <h3 style="font-family: var(--font-brand); color: var(--color-primary); font-size: 1.25rem;">Khane Ka Swaad Kaisa Laga?</h3>
+        <button onclick="document.getElementById('customerReviewModal').classList.remove('active')" style="background: none; border: none; font-size: 1.3rem; cursor: pointer;">✕</button>
+      </div>
+      <div style="text-align: center; margin-bottom: 16px;">
+        <div style="font-size: 2.2rem; margin-bottom: 6px;" id="reviewStarRating">⭐⭐⭐⭐⭐</div>
+        <p style="font-size: 0.85rem; color: var(--color-muted-brown);">Aapki rating rasoi ki shaan badhati hai! 🙏</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div>
+          <label style="font-weight: 700; font-size: 0.82rem; display: block; margin-bottom: 4px;">Overall Rating (1 to 5):</label>
+          <select id="reviewRatingVal" style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid var(--border-card);">
+            <option value="5">⭐⭐⭐⭐⭐ 5 Star - Outstanding / Asli Desi Swaad!</option>
+            <option value="4">⭐⭐⭐⭐ 4 Star - Very Good</option>
+            <option value="3">⭐⭐⭐ 3 Star - Average</option>
+            <option value="2">⭐⭐ 2 Star - Needs Improvement</option>
+            <option value="1">⭐ 1 Star - Disappointed</option>
+          </select>
+        </div>
+        <textarea id="reviewCommentText" placeholder="Dal makhani, paneer ya roti ka taste kaisa tha? Likhein..." style="width: 100%; height: 75px; padding: 10px; border-radius: 4px; border: 1px solid var(--border-card);"></textarea>
+        <button class="btn btn-terracotta btn-block btn-lg" onclick="CustomerApp.submitActiveReview()">
+          SUBMIT REVIEW 🙏
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Authentication & Role Switcher Modal -->
+  <div class="modal-backdrop" id="authModal">
+    <div class="modal-sheet" style="max-width: 480px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; border-bottom: 1px solid var(--border-subtle); padding-bottom: 10px;">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <img src="/static/assets/logo.png" alt="Logo" style="height: 38px; width: auto;" />
+          <div>
+            <h3 style="font-family: var(--font-brand); color: var(--color-primary); margin: 0; font-size: 1.15rem;">Staff & User Login</h3>
+            <span style="font-size: 0.75rem; color: var(--color-forest-green); font-weight: 700;">100% Pure Vegetarian • Meerut</span>
+          </div>
+        </div>
+        <button onclick="document.getElementById('authModal').classList.remove('active')" style="background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--color-muted-brown);">✕</button>
+      </div>
+
+      <!-- Quick 1-Click Role Logins for Instant Testing -->
+      <div style="margin-bottom: 18px;">
+        <div style="font-size: 0.78rem; font-weight: 700; color: var(--color-muted-brown); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">⚡ Quick 1-Click Access</div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+          <button class="btn btn-outline" style="padding: 8px 10px; font-size: 0.78rem; text-align: left;" onclick="MainApp.handleQuickLogin('ADMIN')">
+            👑 <strong>Super Admin</strong><br><small style="opacity: 0.8;">Admin@1234</small>
+          </button>
+          <button class="btn btn-outline" style="padding: 8px 10px; font-size: 0.78rem; text-align: left; border-color: var(--color-terracotta);" onclick="MainApp.handleQuickLogin('DELIVERY_ADMIN')">
+            🛵 <strong>Delivery Admin</strong><br><small style="color: var(--color-terracotta);">Delivery@1234</small>
+          </button>
+          <button class="btn btn-outline" style="padding: 8px 10px; font-size: 0.78rem; text-align: left;" onclick="MainApp.handleQuickLogin('DELIVERY_AGENT')">
+            🛵 <strong>Delivery Rider</strong><br><small style="opacity: 0.8;">Agent@1234</small>
+          </button>
+          <button class="btn btn-outline" style="padding: 8px 10px; font-size: 0.78rem; text-align: left;" onclick="MainApp.handleQuickLogin('CHEF')">
+            👨‍🍳 <strong>Kitchen Chef</strong><br><small style="opacity: 0.8;">Chef@1234</small>
+          </button>
+          <button class="btn btn-outline" style="padding: 8px 10px; font-size: 0.78rem; text-align: left;" onclick="MainApp.handleQuickLogin('BILL_COUNTER')">
+            📠 <strong>POS Cashier</strong><br><small style="opacity: 0.8;">Bill@1234</small>
+          </button>
+          <button class="btn btn-outline" style="padding: 8px 10px; font-size: 0.78rem; text-align: left;" onclick="MainApp.handleQuickLogin('CUSTOMER')">
+            👤 <strong>Customer (Gaurav)</strong><br><small style="opacity: 0.8;">Customer@1234</small>
+          </button>
+        </div>
+      </div>
+
+      <!-- Manual ID & Password Form -->
+      <div style="border-top: 1px solid var(--border-subtle); padding-top: 14px; margin-bottom: 14px;">
+        <div style="font-size: 0.78rem; font-weight: 700; color: var(--color-muted-brown); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">🔑 Custom ID & Password Login</div>
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <input type="text" id="manualAuthIdentifier" placeholder="Username, Email (e.g. delivery@rasoi.in) or Phone" style="width: 100%; padding: 10px; border: 1px solid var(--border-card); border-radius: var(--radius-sm); font-size: 0.88rem;" />
+          <input type="password" id="manualAuthPassword" placeholder="Password (e.g. Delivery@1234)" style="width: 100%; padding: 10px; border: 1px solid var(--border-card); border-radius: var(--radius-sm); font-size: 0.88rem;" />
+          <button class="btn btn-terracotta btn-block" onclick="MainApp.handleManualLogin()">LOGIN TO PORTAL</button>
+        </div>
+      </div>
+
+      <!-- Fast Customer Phone OTP -->
+      <div style="border-top: 1px solid var(--border-subtle); padding-top: 12px;">
+        <div style="font-size: 0.78rem; font-weight: 700; color: var(--color-muted-brown); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px;">📱 Customer Fast Phone Login</div>
+        <div style="display: flex; gap: 6px;">
+          <input type="tel" id="authPhoneInput" placeholder="10-digit Mobile Number" maxlength="10" style="flex: 1; padding: 8px 10px; border: 1px solid var(--border-card); border-radius: var(--radius-sm); font-size: 0.85rem;" />
+          <button class="btn btn-primary" style="padding: 8px 14px; font-size: 0.82rem;" onclick="MainApp.handleCustomerOtpSubmit()">Send OTP</button>
+        </div>
+      </div>
+
+      <!-- Legal Links for Google Play Store compliance -->
+      <div style="margin-top: 16px; text-align: center; font-size: 0.75rem; color: var(--color-muted-brown);">
+        <a href="/privacy-policy" target="_blank" style="color: var(--color-terracotta); text-decoration: none; font-weight: 700;">Privacy Policy</a> • 
+        <a href="/terms" target="_blank" style="color: var(--color-terracotta); text-decoration: none; font-weight: 700;">Terms of Service</a> • 
+        <span>FSSAI Lic: 22723000000000</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/static/js/api.js"></script>
+  <script src="/static/js/chime.js"></script>
+  <script src="/static/js/customer_app.js"></script>
+  <script src="/static/js/ai_assistant.js"></script>
+  <script src="/static/js/kds_app.js"></script>
+  <script src="/static/js/pos_app.js"></script>
+  <script src="/static/js/admin_app.js"></script>
+  <script src="/static/js/delivery_app.js"></script>
+  <script src="/static/js/main.js"></script>
+
+  <!-- PWA Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js').catch(err => console.log('SW reg error', err));
+    }
+  </script>
 </body>
 </html>

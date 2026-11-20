@@ -1,0 +1,111 @@
+/* ============================================================
+   DELIVERY PARTNER / RIDER PORTAL STYLING
+   Mobile-friendly dashboard for delivery fleet on the road
+   ============================================================ */
+
+.delivery-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #F8EFE0;
+  max-width: 540px;
+  margin: 0 auto;
+  box-shadow: var(--shadow-md);
+}
+
+.delivery-header {
+  background: var(--color-primary-dark);
+  color: var(--color-warm-cream);
+  padding: 18px 20px;
+  border-bottom: 2px solid var(--color-golden);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rider-badge-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.rider-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--color-terracotta);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  border: 2px solid var(--color-golden-light);
+}
+
+.rider-duty-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.rider-duty-toggle.online {
+  background: rgba(62, 125, 50, 0.2);
+  color: #79D968;
+  border: 1px solid var(--color-success);
+}
+
+.rider-duty-toggle.offline {
+  background: rgba(255, 255, 255, 0.1);
+  color: #bbb;
+  border: 1px solid #777;
+}
+
+/* Delivery Order Card */
+.delivery-card {
+  background: var(--color-light-cream);
+  border: 1.5px solid var(--border-card);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  margin: 14px 16px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.delivery-card.active-run {
+  border-color: var(--color-terracotta);
+  box-shadow: 0 4px 16px rgba(183, 90, 40, 0.2);
+}
+
+.delivery-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed var(--border-subtle);
+}
+
+.delivery-order-no {
+  font-family: monospace;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--color-primary);
+}
+
+.delivery-loc-box {
+  background: var(--color-warm-cream);
+  padding: 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-card);
+}
+
+.delivery-actions-row {
+  display: flex;
+  gap: 8px;
+}

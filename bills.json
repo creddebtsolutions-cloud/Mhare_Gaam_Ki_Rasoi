@@ -1,33 +1,5 @@
 [
   {
-    "id": "BILL-MGK-1306",
-    "table": "Table 5",
-    "staffUser": "staff1",
-    "staffName": "Ramesh Kumar (Floor Captain)",
-    "customerName": "Guest (Table 5)",
-    "customerPhone": "In-House",
-    "items": [
-      {
-        "id": "pizza_smokey_farmhouse",
-        "name": "Smokey Farmhouse Veggie Pizza",
-        "hindiName": "स्मोकी फार्महाउस वेज पिज़्ज़ा",
-        "price": 249,
-        "quantity": 1,
-        "total": 249
-      }
-    ],
-    "subtotal": 249,
-    "gst": 12,
-    "discount": 0,
-    "total": 261,
-    "paymentMethod": "CASH",
-    "paymentStatus": "PAID",
-    "notes": "",
-    "date": "19 Nov 2026",
-    "timestamp": "15:53",
-    "createdAt": "2026-11-19T10:23:49.203Z"
-  },
-  {
     "id": "BILL-4976",
     "table": "Table 2",
     "staffUser": "staff1",

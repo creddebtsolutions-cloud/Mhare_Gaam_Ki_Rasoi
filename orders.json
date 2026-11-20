@@ -1,230 +1,5 @@
 [
   {
-    "id": "KOT-3307",
-    "name": "Rashmi",
-    "customerName": "Rashmi",
-    "phone": "In-House",
-    "customerPhone": "In-House",
-    "orderType": "dine_in",
-    "address": "Table 5",
-    "table": "Table 5",
-    "staff": "Ramesh Kumar (Floor Captain)",
-    "staffUser": "staff1",
-    "receivedBy": "staff1",
-    "timestamp": "17:26",
-    "items": [
-      {
-        "id": "pizza_smokey_paneer_tikka",
-        "name": "Smokey Paneer Tikka Pizza",
-        "hindiName": "चूल्हा स्मोकी पनीर टिक्का पिज़्ज़ा",
-        "price": 269,
-        "quantity": 1
-      }
-    ],
-    "notes": "Standard Gaam Style",
-    "total": 269,
-    "status": "CONFIRMED",
-    "stageIndex": 4,
-    "updatedAt": "2026-11-19T14:10:07.681Z"
-  },
-  {
-    "id": "KOT-5992",
-    "name": "Anjali",
-    "customerName": "Anjali",
-    "phone": "In-House",
-    "customerPhone": "In-House",
-    "orderType": "dine_in",
-    "address": "Table 5",
-    "table": "Table 5",
-    "staff": "Ramesh Kumar (Floor Captain)",
-    "staffUser": "staff1",
-    "receivedBy": "staff1",
-    "timestamp": "16:02",
-    "items": [
-      {
-        "id": "pizza_smokey_margherita",
-        "name": "Smokey Margherita Double Cheese Pizza",
-        "hindiName": "स्मोकी मार्गरीटा डबल चीज़ पिज़्ज़ा",
-        "price": 199,
-        "quantity": 1
-      },
-      {
-        "id": "coffee_vanilla_float",
-        "name": "Vanilla Ice Cream Cold Coffee Float",
-        "hindiName": "वैनिला फ्लोट कोल्ड कॉफ़ी",
-        "price": 129,
-        "quantity": 1
-      },
-      {
-        "id": "coffee_caramel_crunch",
-        "name": "Caramel Crunch Cold Coffee",
-        "hindiName": "कैरेमल क्रंच कोल्ड कॉफ़ी",
-        "price": 119,
-        "quantity": 1
-      }
-    ],
-    "notes": "Standard Gaam Style",
-    "total": 469,
-    "status": "CONFIRMED",
-    "stageIndex": 4,
-    "updatedAt": "2026-11-19T11:02:59.921Z"
-  },
-  {
-    "id": "KOT-6731",
-    "name": "Guest (Table 5)",
-    "customerName": "Guest (Table 5)",
-    "phone": "In-House",
-    "customerPhone": "In-House",
-    "orderType": "dine_in",
-    "address": "Table 5",
-    "table": "Table 5",
-    "staff": "Ramesh Kumar (Floor Captain)",
-    "staffUser": "staff1",
-    "receivedBy": "staff1",
-    "timestamp": "15:51",
-    "items": [
-      {
-        "id": "pizza_smokey_farmhouse",
-        "name": "Smokey Farmhouse Veggie Pizza",
-        "hindiName": "स्मोकी फार्महाउस वेज पिज़्ज़ा",
-        "price": 249,
-        "quantity": 1
-      }
-    ],
-    "notes": "Standard Gaam Style",
-    "total": 261,
-    "status": "DELIVERED",
-    "stageIndex": 5,
-    "updatedAt": "2026-11-19T10:22:33.119Z",
-    "settledWithBillId": "BILL-MGK-1306"
-  },
-  {
-    "id": "KOT-9872",
-    "name": "Guest (Table 1)",
-    "customerName": "Guest (Table 1)",
-    "phone": "In-House",
-    "customerPhone": "In-House",
-    "orderType": "dine_in",
-    "address": "Table 1",
-    "table": "Table 1",
-    "staff": "Ramesh Kumar (Floor Captain)",
-    "staffUser": "staff1",
-    "receivedBy": "staff1",
-    "timestamp": "12:36",
-    "items": [
-      {
-        "id": "thali_bajra_saag",
-        "name": "Chulha Bajra Roti & Saag Thali",
-        "hindiName": "चूल्हा बाजरा रोटी व साग थाली",
-        "price": 289,
-        "quantity": 1
-      },
-      {
-        "id": "thali_special",
-        "name": "Mhare Gaam Ki Special Thali",
-        "hindiName": "म्‍हारे गाम की स्पेशल थाली",
-        "price": 349,
-        "quantity": 1
-      }
-    ],
-    "notes": "Standard Gaam Style",
-    "total": 670,
-    "status": "CONFIRMED",
-    "stageIndex": 4,
-    "updatedAt": "2026-11-19T10:30:01.073Z"
-  },
-  {
-    "id": "KOT-2493",
-    "name": "Guest (Table 1)",
-    "customerName": "Guest (Table 1)",
-    "phone": "In-House",
-    "customerPhone": "In-House",
-    "orderType": "dine_in",
-    "address": "Table 1",
-    "table": "Table 1",
-    "staff": "Ramesh Kumar (Floor Captain)",
-    "staffUser": "staff1",
-    "receivedBy": "staff1",
-    "timestamp": "12:36",
-    "items": [
-      {
-        "id": "thali_special",
-        "name": "Mhare Gaam Ki Special Thali",
-        "hindiName": "म्‍हारे गाम की स्पेशल थाली",
-        "price": 349,
-        "quantity": 1
-      },
-      {
-        "id": "handi_paneer",
-        "name": "Gaam Handi Paneer Kadhai",
-        "hindiName": "गाम हांडी पनीर कढ़ाई",
-        "price": 299,
-        "quantity": 1
-      }
-    ],
-    "notes": "Standard Gaam Style",
-    "total": 680,
-    "status": "CONFIRMED",
-    "stageIndex": 4,
-    "updatedAt": "2026-11-19T10:30:03.085Z"
-  },
-  {
-    "id": "KOT-2846",
-    "name": "Guest (Table 1)",
-    "customerName": "Guest (Table 1)",
-    "phone": "In-House",
-    "customerPhone": "In-House",
-    "orderType": "dine_in",
-    "address": "Table 1",
-    "table": "Table 1",
-    "staff": "Ramesh Kumar (Floor Captain)",
-    "staffUser": "staff1",
-    "receivedBy": "staff1",
-    "timestamp": "03:21 pm",
-    "items": [
-      {
-        "id": "thali_bajra_saag",
-        "name": "Chulha Bajra Roti & Saag Thali",
-        "hindiName": "चूल्हा बाजरा रोटी व साग थाली",
-        "price": 289,
-        "quantity": 1
-      }
-    ],
-    "notes": "Standard Gaam Style",
-    "total": 303,
-    "status": "CONFIRMED",
-    "stageIndex": 4,
-    "updatedAt": "2026-11-19T10:29:58.697Z"
-  },
-  {
-    "id": "KOT-6512",
-    "name": "Guest (Table 1)",
-    "customerName": "Guest (Table 1)",
-    "phone": "In-House",
-    "customerPhone": "In-House",
-    "orderType": "dine_in",
-    "address": "Table 1",
-    "table": "Table 1",
-    "staff": "Ramesh Kumar (Floor Captain)",
-    "staffUser": "staff1",
-    "receivedBy": "staff1",
-    "timestamp": "03:21 pm",
-    "items": [
-      {
-        "id": "thali_special",
-        "name": "Mhare Gaam Ki Special Thali",
-        "hindiName": "म्‍हारे गाम की स्पेशल थाली",
-        "price": 349,
-        "quantity": 1
-      }
-    ],
-    "notes": "Standard Gaam Style",
-    "total": 366,
-    "status": "CONFIRMED",
-    "stageIndex": 4,
-    "updatedAt": "2026-11-19T10:30:01.254Z"
-  },
-  {
     "id": "KOT-3121",
     "name": "Aditya",
     "customerName": "Aditya",
@@ -248,9 +23,9 @@
     ],
     "notes": "Standard Gaam Style",
     "total": 261,
-    "status": "CONFIRMED",
-    "stageIndex": 4,
-    "updatedAt": "2026-11-19T10:30:03.824Z",
+    "status": "CHULHA_PREP",
+    "stageIndex": 2,
+    "updatedAt": "2026-11-06T06:13:00.774Z",
     "deliveryNotes": "Sent to Chulha by Staff",
     "updatedBy": "Head Manager"
   },
@@ -278,9 +53,9 @@
     ],
     "notes": "Standard Gaam Style",
     "total": 269,
-    "status": "CONFIRMED",
-    "stageIndex": 4,
-    "updatedAt": "2026-11-19T10:30:04.481Z",
+    "status": "CHULHA_PREP",
+    "stageIndex": 2,
+    "updatedAt": "2026-11-06T06:13:02.117Z",
     "deliveryNotes": "Sent to Chulha by Staff",
     "updatedBy": "Head Manager"
   },
@@ -457,7 +232,7 @@
   },
   {
     "id": "DELIV-1793611430437",
-    "status": "CONFIRMED",
+    "status": "DELIVERED",
     "paymentStatus": "PAID",
     "deliveredAt": "2026-11-02T09:23:50.508Z",
     "paymentCollected": true,
@@ -466,9 +241,7 @@
     "customerPhone": "",
     "phone": "In-House",
     "staffUser": "staff1",
-    "staff": "Staff 1 - Floor Captain",
-    "stageIndex": 4,
-    "updatedAt": "2026-11-19T10:30:01.410Z"
+    "staff": "Staff 1 - Floor Captain"
   },
   {
     "id": "DELIV-1793611430437",
@@ -515,7 +288,7 @@
   },
   {
     "id": "POS-1793611430281",
-    "status": "CONFIRMED",
+    "status": "PACKED_READY",
     "updatedBy": "Chef Balbir (Chulha Head)",
     "customerName": "",
     "name": "",
@@ -525,7 +298,7 @@
     "staff": "Staff 1 - Floor Captain",
     "stageIndex": 4,
     "deliveryNotes": "Packed in Earthen Pots - Ready for Dispatch",
-    "updatedAt": "2026-11-09T11:03:07.589Z"
+    "updatedAt": "2026-11-03T05:10:25.667Z"
   },
   {
     "id": "POS-1793611430281",
@@ -627,17 +400,16 @@
     "orderType": "delivery",
     "paymentMethod": "COD",
     "paymentMode": "CASH",
-    "paymentStatus": "PAID",
+    "paymentStatus": "PENDING",
     "upiUtr": null,
-    "stageIndex": 5,
+    "stageIndex": 4,
     "timestamp": "11:23 AM",
     "staffUser": "delivery",
     "staff": "Rider 1 - Gaam Delivery Partner",
-    "status": "DELIVERED",
+    "status": "PACKED_READY",
     "deliveryNotes": "Packed in Earthen Pots - Ready for Dispatch",
-    "updatedAt": "2026-11-09T10:56:55.489Z",
-    "updatedBy": "Chef Balbir (Chulha Head)",
-    "deliveredAt": "16:26"
+    "updatedAt": "2026-11-02T11:06:44.584Z",
+    "updatedBy": "Chef Balbir (Chulha Head)"
   },
   {
     "id": "KOT-1764",
@@ -684,7 +456,7 @@
       }
     ],
     "total": 189,
-    "status": "CONFIRMED",
+    "status": "DELIVERED",
     "stageIndex": 4,
     "paymentMode": "COD",
     "paymentStatus": "PAID",
@@ -693,7 +465,7 @@
     "name": "Ankit Verma",
     "phone": "9876543210",
     "deliveryUserId": "usr_delivery1",
-    "updatedAt": "2026-11-19T10:30:07.440Z",
+    "updatedAt": "2026-11-02T05:40:42.345Z",
     "updatedBy": "Sonu Rider (Delivery Partner)",
     "paymentMethod": "CASH_ON_DELIVERY",
     "deliveredAt": "2026-11-02T05:40:42.347Z"
@@ -740,7 +512,7 @@
       }
     ],
     "total": 189,
-    "status": "CONFIRMED",
+    "status": "DELIVERED",
     "stageIndex": 4,
     "paymentMode": "COD",
     "paymentStatus": "PAID",
@@ -749,7 +521,7 @@
     "name": "Ankit Verma",
     "phone": "9876543210",
     "deliveryUserId": "usr_delivery1",
-    "updatedAt": "2026-11-19T10:30:07.489Z",
+    "updatedAt": "2026-11-02T05:32:40.414Z",
     "updatedBy": "Sonu Rider (Delivery Partner)",
     "paymentMethod": "CASH_ON_DELIVERY",
     "deliveredAt": "2026-11-02T05:32:40.408Z"
@@ -1068,17 +840,16 @@
     "orderType": "delivery",
     "paymentMethod": "COD",
     "paymentMode": "CASH",
-    "paymentStatus": "PAID",
+    "paymentStatus": "PENDING",
     "upiUtr": null,
-    "stageIndex": 5,
+    "stageIndex": 4,
     "timestamp": "03:20 PM",
     "staffUser": "delivery",
     "staff": "Rider 1 - Gaam Delivery Partner",
-    "status": "DELIVERED",
-    "updatedAt": "2026-11-09T10:57:25.733Z",
+    "status": "PACKED_READY",
+    "updatedAt": "2026-11-02T11:07:09.421Z",
     "deliveryNotes": "Packed in Earthen Pots - Ready for Dispatch",
-    "updatedBy": "Chef Balbir (Chulha Head)",
-    "deliveredAt": "16:27"
+    "updatedBy": "Chef Balbir (Chulha Head)"
   },
   {
     "id": "TEST-PASS-02",
@@ -1100,12 +871,11 @@
     "staff": "Rider 1 - Gaam Delivery Partner",
     "paymentStatus": "PAID",
     "paymentMethod": "PREPAID",
-    "status": "DELIVERED",
-    "stageIndex": 5,
-    "updatedAt": "2026-11-09T10:57:01.699Z",
+    "status": "PACKED_READY",
+    "stageIndex": 4,
+    "updatedAt": "2026-11-02T11:07:10.130Z",
     "deliveryNotes": "Packed in Earthen Pots - Ready for Dispatch",
-    "updatedBy": "Chef Balbir (Chulha Head)",
-    "deliveredAt": "16:27"
+    "updatedBy": "Chef Balbir (Chulha Head)"
   },
   {
     "id": "MGK-719445",
@@ -1207,17 +977,16 @@
     "paymentMethod": "PREPAID",
     "paymentMode": "UPI",
     "paymentStatus": "PAID",
-    "stageIndex": 5,
+    "stageIndex": 4,
     "timestamp": "02:48 PM",
     "customerName": "Gaurav Singh",
     "customerPhone": "8979753636",
     "staffUser": "delivery",
     "staff": "Rider 1 - Gaam Delivery Partner",
-    "status": "DELIVERED",
-    "updatedAt": "2026-11-09T10:57:05.438Z",
+    "status": "PACKED_READY",
+    "updatedAt": "2026-11-02T11:07:10.805Z",
     "deliveryNotes": "Packed in Earthen Pots - Ready for Dispatch",
-    "updatedBy": "Chef Balbir (Chulha Head)",
-    "deliveredAt": "16:27"
+    "updatedBy": "Chef Balbir (Chulha Head)"
   },
   {
     "id": "KOT-8912",
@@ -1402,15 +1171,14 @@
     "paymentMethod": "PREPAID",
     "paymentMode": "UPI",
     "paymentStatus": "PAID",
-    "stageIndex": 5,
+    "stageIndex": 4,
     "timestamp": "04:30 PM",
     "staffUser": "delivery",
     "staff": "Rider 1 - Gaam Delivery Partner",
-    "status": "DELIVERED",
-    "updatedAt": "2026-11-09T10:57:10.069Z",
+    "status": "PACKED_READY",
+    "updatedAt": "2026-11-02T11:07:13.597Z",
     "deliveryNotes": "Packed in Earthen Pots - Ready for Dispatch",
-    "updatedBy": "Chef Balbir (Chulha Head)",
-    "deliveredAt": "16:27"
+    "updatedBy": "Chef Balbir (Chulha Head)"
   },
   {
     "id": "KOT-3201",

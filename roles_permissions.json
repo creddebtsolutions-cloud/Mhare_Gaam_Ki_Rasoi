@@ -1,0 +1,116 @@
+{
+  "roles": {
+    "SUPER_ADMIN": {
+      "name": "Super Admin",
+      "description": "Full access to the entire application, system configurations, and all branches",
+      "permissions": [
+        "dashboard.view",
+        "users.manage",
+        "staff.view",
+        "staff.create",
+        "staff.update",
+        "staff.disable",
+        "kitchen.view",
+        "kitchen.update",
+        "delivery.view",
+        "delivery.assign",
+        "delivery.update",
+        "menu.view",
+        "menu.create",
+        "menu.update",
+        "menu.delete",
+        "categories.manage",
+        "orders.view",
+        "orders.create",
+        "orders.update",
+        "orders.cancel",
+        "orders.status",
+        "bookings.manage",
+        "customers.view",
+        "customers.update",
+        "reports.view",
+        "reports.sales",
+        "reports.payments",
+        "reports.delivery",
+        "reports.kitchen",
+        "notifications.manage",
+        "offers.manage",
+        "settings.view",
+        "settings.update",
+        "branch.manage",
+        "roles.manage"
+      ]
+    },
+    "ADMIN": {
+      "name": "Admin",
+      "description": "Operational manager for orders, menu, kitchen, staff, table bookings and delivery",
+      "permissions": [
+        "dashboard.view",
+        "orders.view",
+        "orders.create",
+        "orders.update",
+        "orders.status",
+        "customers.view",
+        "menu.view",
+        "menu.create",
+        "menu.update",
+        "menu.delete",
+        "kitchen.view",
+        "kitchen.update",
+        "delivery.view",
+        "delivery.assign",
+        "delivery.update",
+        "staff.view",
+        "staff.create",
+        "staff.update",
+        "staff.disable",
+        "bookings.manage",
+        "reports.view",
+        "notifications.manage"
+      ]
+    },
+    "STAFF": {
+      "name": "Floor Staff",
+      "description": "Floor and counter staff for taking table orders, POS billing, and table bookings",
+      "permissions": [
+        "dashboard.view",
+        "orders.view",
+        "orders.create",
+        "orders.update",
+        "orders.status",
+        "customers.view",
+        "bookings.manage"
+      ]
+    },
+    "KITCHEN": {
+      "name": "Kitchen Chulha Master",
+      "description": "Kitchen Display System (KDS) for preparing and managing live food tickets",
+      "permissions": [
+        "kitchen.view",
+        "kitchen.update",
+        "orders.view",
+        "orders.status"
+      ]
+    },
+    "DELIVERY": {
+      "name": "Delivery Partner",
+      "description": "Delivery rider console for receiving assigned orders, navigation, and completing drop-offs",
+      "permissions": [
+        "delivery.view",
+        "delivery.update",
+        "orders.view"
+      ]
+    }
+  },
+  "branches": [
+    {
+      "id": "main_rasoi",
+      "name": "Mhare Gaam Ki Rasoi - Main Branch",
+      "code": "MGKR-01",
+      "city": "Gurugram / Delhi NCR",
+      "address": "Sector 14, Main Gaam Marg, Near Chulha Chowk",
+      "phone": "+91 98765 43210",
+      "status": "ACTIVE"
+    }
+  ]
+}

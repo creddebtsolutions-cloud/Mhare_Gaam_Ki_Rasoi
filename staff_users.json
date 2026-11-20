@@ -1,0 +1,4200 @@
+{
+  "users": [
+    {
+      "id": "usr_superadmin",
+      "username": "superadmin",
+      "email": "superadmin@mharegaam.com",
+      "mobile": "9876500001",
+      "name": "Chaudhary Sahib (Owner)",
+      "employeeId": "EMP-SA01",
+      "password": "Super@1234",
+      "altPassword": "gaam123",
+      "role": "SUPER_ADMIN",
+      "branchId": "main_rasoi",
+      "status": "ACTIVE",
+      "permissions": [
+        "dashboard.view",
+        "users.manage",
+        "staff.view",
+        "staff.create",
+        "staff.update",
+        "staff.disable",
+        "kitchen.view",
+        "kitchen.update",
+        "delivery.view",
+        "delivery.assign",
+        "delivery.update",
+        "menu.view",
+        "menu.create",
+        "menu.update",
+        "menu.delete",
+        "categories.manage",
+        "orders.view",
+        "orders.create",
+        "orders.update",
+        "orders.cancel",
+        "orders.status",
+        "bookings.manage",
+        "customers.view",
+        "customers.update",
+        "reports.view",
+        "reports.sales",
+        "reports.payments",
+        "reports.delivery",
+        "reports.kitchen",
+        "notifications.manage",
+        "offers.manage",
+        "settings.view",
+        "settings.update",
+        "branch.manage",
+        "roles.manage"
+      ],
+      "createdDate": "2026-09-01T10:00:00.000Z",
+      "lastLogin": "2026-09-30T10:50:30.864Z"
+    },
+    {
+      "id": "usr_admin",
+      "username": "admin",
+      "email": "admin@mharegaam.com",
+      "mobile": "9876500002",
+      "name": "Head Manager",
+      "employeeId": "EMP-AD01",
+      "password": "admin@1234",
+      "altPassword": "gaam123",
+      "role": "ADMIN",
+      "branchId": "main_rasoi",
+      "status": "ACTIVE",
+      "permissions": [
+        "dashboard.view",
+        "orders.view",
+        "orders.create",
+        "orders.update",
+        "orders.status",
+        "customers.view",
+        "menu.view",
+        "menu.create",
+        "menu.update",
+        "menu.delete",
+        "kitchen.view",
+        "kitchen.update",
+        "delivery.view",
+        "delivery.assign",
+        "delivery.update",
+        "staff.view",
+        "staff.create",
+        "staff.update",
+        "staff.disable",
+        "bookings.manage",
+        "reports.view",
+        "notifications.manage"
+      ],
+      "createdDate": "2026-09-01T10:00:00.000Z",
+      "lastLogin": "2026-11-20T05:36:29.325Z"
+    },
+    {
+      "id": "usr_staff1",
+      "username": "staff1",
+      "email": "staff1@mharegaam.com",
+      "mobile": "9876500011",
+      "name": "Ramesh Kumar (Floor Captain)",
+      "employeeId": "EMP-ST01",
+      "password": "staff1@1234",
+      "altPassword": "staff123",
+      "role": "STAFF",
+      "branchId": "main_rasoi",
+      "status": "ACTIVE",
+      "permissions": [
+        "dashboard.view",
+        "orders.view",
+        "orders.create",
+        "orders.update",
+        "orders.status",
+        "customers.view",
+        "bookings.manage"
+      ],
+      "createdDate": "2026-09-05T10:00:00.000Z",
+      "lastLogin": "2026-11-19T11:56:32.159Z"
+    },
+    {
+      "id": "usr_staff2",
+      "username": "staff2",
+      "email": "staff2@mharegaam.com",
+      "mobile": "9876500012",
+      "name": "Pooja Sharma (Table Attendant)",
+      "employeeId": "EMP-ST02",
+      "password": "staff@1234",
+      "altPassword": "staff102",
+      "role": "STAFF",
+      "branchId": "main_rasoi",
+      "status": "ACTIVE",
+      "permissions": [
+        "dashboard.view",
+        "orders.view",
+        "orders.create",
+        "orders.update",
+        "orders.status",
+        "customers.view",
+        "bookings.manage"
+      ],
+      "createdDate": "2026-09-06T10:00:00.000Z",
+      "lastLogin": "2026-10-07T05:52:02.395Z"
+    },
+    {
+      "id": "usr_kitchen1",
+      "username": "kitchen",
+      "email": "kitchen@mharegaam.com",
+      "mobile": "9876500021",
+      "name": "Chef Balbir (Chulha Head)",
+      "employeeId": "EMP-KT01",
+      "password": "Kitchen@1234",
+      "altPassword": "kitchen123",
+      "role": "KITCHEN",
+      "branchId": "main_rasoi",
+      "status": "ACTIVE",
+      "permissions": [
+        "kitchen.view",
+        "kitchen.update",
+        "orders.view",
+        "orders.status"
+      ],
+      "createdDate": "2026-09-02T10:00:00.000Z",
+      "lastLogin": "2026-11-19T14:18:32.732Z"
+    },
+    {
+      "id": "usr_delivery1",
+      "username": "delivery",
+      "email": "delivery@mharegaam.com",
+      "mobile": "9876500031",
+      "name": "Sonu Rider (Delivery Partner)",
+      "employeeId": "EMP-DL01",
+      "password": "Delivery@1234",
+      "altPassword": "delivery123",
+      "role": "DELIVERY",
+      "branchId": "main_rasoi",
+      "status": "ACTIVE",
+      "permissions": [
+        "delivery.view",
+        "delivery.update",
+        "orders.view"
+      ],
+      "createdDate": "2026-09-03T10:00:00.000Z",
+      "lastLogin": "2026-11-19T14:17:52.208Z"
+    },
+    {
+      "id": "usr_mw08dgtz",
+      "username": "staff_mw08dgvp",
+      "name": "gaurav",
+      "email": "",
+      "mobile": "7906870209",
+      "employeeId": "EMP-837",
+      "password": "admin@1234",
+      "altPassword": "gaam909",
+      "role": "STAFF",
+      "branchId": "main_rasoi",
+      "status": "ACTIVE",
+      "permissions": [
+        "dashboard.view",
+        "orders.view",
+        "orders.create",
+        "orders.update",
+        "orders.status",
+        "customers.view",
+        "bookings.manage"
+      ],
+      "createdDate": "2026-11-03T05:11:50.276Z",
+      "lastLogin": null
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "aud_1795153059714_wwjxp",
+      "userId": "system",
+      "userName": "admin",
+      "role": "UNKNOWN",
+      "action": "UPDATE_SETTINGS",
+      "entityType": "SETTINGS",
+      "entityId": "business_compliance",
+      "timestamp": "2026-11-20T05:37:39.714Z",
+      "metadata": {
+        "gstNumber": "06AABCM1234F1Z8",
+        "fssaiLicense": "10824001000542"
+      }
+    },
+    {
+      "id": "aud_1795152962711_f1edn",
+      "userId": "system",
+      "userName": "admin",
+      "role": "UNKNOWN",
+      "action": "UPDATE_SETTINGS",
+      "entityType": "SETTINGS",
+      "entityId": "business_compliance",
+      "timestamp": "2026-11-20T05:36:02.712Z",
+      "metadata": {
+        "gstNumber": "06AABCM1234F1Z8",
+        "fssaiLicense": "10824001000542"
+      }
+    },
+    {
+      "id": "aud_1795097788741_jd2em",
+      "userId": "system",
+      "userName": "admin",
+      "role": "UNKNOWN",
+      "action": "UPDATE_SETTINGS",
+      "entityType": "SETTINGS",
+      "entityId": "business_compliance",
+      "timestamp": "2026-11-19T14:16:28.741Z",
+      "metadata": {
+        "gstNumber": "06AABCM1234F1Z8",
+        "fssaiLicense": "10824001000542"
+      }
+    },
+    {
+      "id": "aud_1795097407727_gxg67",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-3307",
+      "timestamp": "2026-11-19T14:10:07.727Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "CONFIRMED",
+        "orderId": "KOT-3307"
+      }
+    },
+    {
+      "id": "aud_1795097374504_v89gt",
+      "userId": "system",
+      "userName": "admin",
+      "role": "UNKNOWN",
+      "action": "UPDATE_SETTINGS",
+      "entityType": "SETTINGS",
+      "entityId": "business_compliance",
+      "timestamp": "2026-11-19T14:09:34.506Z",
+      "metadata": {
+        "gstNumber": "NA",
+        "fssaiLicense": "NA"
+      }
+    },
+    {
+      "id": "aud_1795086179938_ifmnl",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-5992",
+      "timestamp": "2026-11-19T11:02:59.938Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "CONFIRMED",
+        "orderId": "KOT-5992"
+      }
+    },
+    {
+      "id": "aud_1795084207493_1sw73",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "TEST-DELIV-1793597560383",
+      "timestamp": "2026-11-19T10:30:07.493Z",
+      "metadata": {
+        "from": "DELIVERED",
+        "to": "CONFIRMED",
+        "orderId": "TEST-DELIV-1793597560383"
+      }
+    },
+    {
+      "id": "aud_1795084207445_66447",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "TEST-DELIV-1793598042318",
+      "timestamp": "2026-11-19T10:30:07.445Z",
+      "metadata": {
+        "from": "DELIVERED",
+        "to": "CONFIRMED",
+        "orderId": "TEST-DELIV-1793598042318"
+      }
+    },
+    {
+      "id": "aud_1795084204486_qk1ve",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-2285",
+      "timestamp": "2026-11-19T10:30:04.486Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "KOT-2285"
+      }
+    },
+    {
+      "id": "aud_1795084203828_iapmm",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-3121",
+      "timestamp": "2026-11-19T10:30:03.828Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "KOT-3121"
+      }
+    },
+    {
+      "id": "aud_1795084203089_52d71",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-2493",
+      "timestamp": "2026-11-19T10:30:03.089Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "KOT-2493"
+      }
+    },
+    {
+      "id": "aud_1795084201414_hhk8f",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "DELIV-1793611430437",
+      "timestamp": "2026-11-19T10:30:01.414Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "DELIV-1793611430437"
+      }
+    },
+    {
+      "id": "aud_1795084201262_3i4qp",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-6512",
+      "timestamp": "2026-11-19T10:30:01.262Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "KOT-6512"
+      }
+    },
+    {
+      "id": "aud_1795084201206_7jp65",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-2493",
+      "timestamp": "2026-11-19T10:30:01.206Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "KOT-2493"
+      }
+    },
+    {
+      "id": "aud_1795084201077_hsguk",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-9872",
+      "timestamp": "2026-11-19T10:30:01.077Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "KOT-9872"
+      }
+    },
+    {
+      "id": "aud_1795084200377_swh8y",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "DELIV-1793611430437",
+      "timestamp": "2026-11-19T10:30:00.377Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "DELIV-1793611430437"
+      }
+    },
+    {
+      "id": "aud_1795084200189_s6jw1",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-6512",
+      "timestamp": "2026-11-19T10:30:00.189Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "KOT-6512"
+      }
+    },
+    {
+      "id": "aud_1795084200085_4yu42",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-2493",
+      "timestamp": "2026-11-19T10:30:00.085Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "KOT-2493"
+      }
+    },
+    {
+      "id": "aud_1795084200027_cfgxl",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-9872",
+      "timestamp": "2026-11-19T10:30:00.027Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "KOT-9872"
+      }
+    },
+    {
+      "id": "aud_1795084198700_jjuib",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-2846",
+      "timestamp": "2026-11-19T10:29:58.700Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "KOT-2846"
+      }
+    },
+    {
+      "id": "aud_1795084198654_3bewj",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-9872",
+      "timestamp": "2026-11-19T10:29:58.654Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "KOT-9872"
+      }
+    },
+    {
+      "id": "aud_1795083753145_e6702",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-6731",
+      "timestamp": "2026-11-19T10:22:33.145Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "CONFIRMED",
+        "orderId": "KOT-6731"
+      }
+    },
+    {
+      "id": "aud_1795083748421_n0zur",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-6731",
+      "timestamp": "2026-11-19T10:22:28.421Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "CHULHA_PREP",
+        "orderId": "KOT-6731"
+      }
+    },
+    {
+      "id": "aud_1794898800426_qwdnl",
+      "userId": "system",
+      "userName": "admin",
+      "role": "UNKNOWN",
+      "action": "UPDATE_SETTINGS",
+      "entityType": "SETTINGS",
+      "entityId": "business_compliance",
+      "timestamp": "2026-11-17T07:00:00.426Z",
+      "metadata": {
+        "gstNumber": "NA",
+        "fssaiLicense": "NA"
+      }
+    },
+    {
+      "id": "aud_1794898762662_3593m",
+      "userId": "system",
+      "userName": "admin",
+      "role": "UNKNOWN",
+      "action": "UPDATE_SETTINGS",
+      "entityType": "SETTINGS",
+      "entityId": "business_compliance",
+      "timestamp": "2026-11-17T06:59:22.664Z",
+      "metadata": {
+        "gstNumber": "06AABCM1234F1Z8",
+        "fssaiLicense": "10824001000542"
+      }
+    },
+    {
+      "id": "aud_1794222187594_r2vma",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "POS-1793611430281",
+      "timestamp": "2026-11-09T11:03:07.594Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "POS-1793611430281"
+      }
+    },
+    {
+      "id": "aud_1794222185932_yhde3",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "POS-1793611430281",
+      "timestamp": "2026-11-09T11:03:05.932Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "CONFIRMED",
+        "orderId": "POS-1793611430281"
+      }
+    },
+    {
+      "id": "aud_1794222182308_gpwng",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "DELIV-1793611430437",
+      "timestamp": "2026-11-09T11:03:02.308Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "DELIV-1793611430437"
+      }
+    },
+    {
+      "id": "aud_1794222181763_twn21",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "DELIV-1793611430437",
+      "timestamp": "2026-11-09T11:03:01.763Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "DELIV-1793611430437"
+      }
+    },
+    {
+      "id": "aud_1794222178642_mebbr",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "DELIV-1793611430437",
+      "timestamp": "2026-11-09T11:02:58.642Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "DELIV-1793611430437"
+      }
+    },
+    {
+      "id": "aud_1794222174992_2xp17",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "DELIV-1793611430437",
+      "timestamp": "2026-11-09T11:02:54.992Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "DELIV-1793611430437"
+      }
+    },
+    {
+      "id": "aud_1794222172795_yrwrb",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "DELIV-1793611430437",
+      "timestamp": "2026-11-09T11:02:52.795Z",
+      "metadata": {
+        "from": "DELIVERED",
+        "to": "CONFIRMED",
+        "orderId": "DELIV-1793611430437"
+      }
+    },
+    {
+      "id": "aud_1794222170913_bm0fg",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-2285",
+      "timestamp": "2026-11-09T11:02:50.913Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "CONFIRMED",
+        "orderId": "KOT-2285"
+      }
+    },
+    {
+      "id": "aud_1794222168874_ujhbp",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-3121",
+      "timestamp": "2026-11-09T11:02:48.874Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "CONFIRMED",
+        "orderId": "KOT-3121"
+      }
+    },
+    {
+      "id": "aud_1794222164439_9ypcq",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-6512",
+      "timestamp": "2026-11-09T11:02:44.439Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "CONFIRMED",
+        "orderId": "KOT-6512"
+      }
+    },
+    {
+      "id": "aud_1794222161446_9y3cd",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-2846",
+      "timestamp": "2026-11-09T11:02:41.446Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "CONFIRMED",
+        "orderId": "KOT-2846"
+      }
+    },
+    {
+      "id": "aud_1794222154571_jlb5z",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-2493",
+      "timestamp": "2026-11-09T11:02:34.571Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "CONFIRMED",
+        "orderId": "KOT-2493"
+      }
+    },
+    {
+      "id": "aud_1794222148768_k1zq8",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-9872",
+      "timestamp": "2026-11-09T11:02:28.768Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "KOT-9872"
+      }
+    },
+    {
+      "id": "aud_1794221845739_jgh9o",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-713704",
+      "timestamp": "2026-11-09T10:57:25.739Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "DELIVERED",
+        "orderId": "MGK-713704"
+      }
+    },
+    {
+      "id": "aud_1794221830073_f1sf6",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-511110",
+      "timestamp": "2026-11-09T10:57:10.073Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "DELIVERED",
+        "orderId": "MGK-511110"
+      }
+    },
+    {
+      "id": "aud_1794221825442_7uwjp",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-719445",
+      "timestamp": "2026-11-09T10:57:05.442Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "DELIVERED",
+        "orderId": "MGK-719445"
+      }
+    },
+    {
+      "id": "aud_1794221821704_eyhu4",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "TEST-PASS-02",
+      "timestamp": "2026-11-09T10:57:01.704Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "DELIVERED",
+        "orderId": "TEST-PASS-02"
+      }
+    },
+    {
+      "id": "aud_1794221815500_pktv4",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-223962",
+      "timestamp": "2026-11-09T10:56:55.501Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "DELIVERED",
+        "orderId": "MGK-223962"
+      }
+    },
+    {
+      "id": "aud_1794208029154_rivky",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-9872",
+      "timestamp": "2026-11-09T07:07:09.154Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "CONFIRMED",
+        "orderId": "KOT-9872"
+      }
+    },
+    {
+      "id": "aud_1794207921758_n1x22",
+      "userId": "system",
+      "userName": "admin",
+      "role": "UNKNOWN",
+      "action": "UPDATE_SETTINGS",
+      "entityType": "SETTINGS",
+      "entityId": "business_compliance",
+      "timestamp": "2026-11-09T07:05:21.759Z",
+      "metadata": {
+        "gstNumber": "06AABCM1234F1Z8",
+        "fssaiLicense": "10824001000542"
+      }
+    },
+    {
+      "id": "aud_1794204928948_pz2vf",
+      "userId": "system",
+      "userName": "admin",
+      "role": "UNKNOWN",
+      "action": "UPDATE_SETTINGS",
+      "entityType": "SETTINGS",
+      "entityId": "business_compliance",
+      "timestamp": "2026-11-09T06:15:28.949Z",
+      "metadata": {
+        "gstNumber": "06AABCM1234F1Z8",
+        "fssaiLicense": "10824001000542"
+      }
+    },
+    {
+      "id": "aud_1793960967214_80e7v",
+      "userId": "usr_staff1",
+      "userName": "Ramesh Kumar (Floor Captain)",
+      "role": "STAFF",
+      "action": "LOGOUT",
+      "entityType": "AUTH",
+      "entityId": "usr_staff1",
+      "timestamp": "2026-11-06T10:29:27.215Z",
+      "metadata": {}
+    },
+    {
+      "id": "aud_1793960957005_wmthg",
+      "userId": "usr_staff1",
+      "userName": "Ramesh Kumar (Floor Captain)",
+      "role": "STAFF",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_staff1",
+      "timestamp": "2026-11-06T10:29:17.005Z",
+      "metadata": {
+        "client": "Dalvik/2.1.0 (Linux; U; Android 12; M2101K7AI Build/SKQ1.210908.001)"
+      }
+    },
+    {
+      "id": "aud_1793958947143_gxegr",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-2846",
+      "timestamp": "2026-11-06T09:55:47.143Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CHULHA_PREP",
+        "orderId": "KOT-2846"
+      }
+    },
+    {
+      "id": "aud_1793958944919_y2fyc",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-2846",
+      "timestamp": "2026-11-06T09:55:44.919Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "CONFIRMED",
+        "orderId": "KOT-2846"
+      }
+    },
+    {
+      "id": "aud_1793958938890_2rjyc",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-2846",
+      "timestamp": "2026-11-06T09:55:38.890Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "CHULHA_PREP",
+        "orderId": "KOT-2846"
+      }
+    },
+    {
+      "id": "aud_1793958929508_x1060",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-2846",
+      "timestamp": "2026-11-06T09:55:29.508Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "CHULHA_PREP",
+        "orderId": "KOT-2846"
+      }
+    },
+    {
+      "id": "aud_1793958849360_vojl6",
+      "userId": "usr_delivery1",
+      "userName": "Sonu Rider (Delivery Partner)",
+      "role": "DELIVERY",
+      "action": "LOGOUT",
+      "entityType": "AUTH",
+      "entityId": "usr_delivery1",
+      "timestamp": "2026-11-06T09:54:09.360Z",
+      "metadata": {}
+    },
+    {
+      "id": "aud_1793958822350_16zi0",
+      "userId": "usr_delivery1",
+      "userName": "Sonu Rider (Delivery Partner)",
+      "role": "DELIVERY",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_delivery1",
+      "timestamp": "2026-11-06T09:53:42.350Z",
+      "metadata": {
+        "client": "Dalvik/2.1.0 (Linux; U; Android 12; M2101K7AI Build/SKQ1.210908.001)"
+      }
+    },
+    {
+      "id": "aud_1793958637520_wdqz5",
+      "userId": "usr_staff1",
+      "userName": "Ramesh Kumar (Floor Captain)",
+      "role": "STAFF",
+      "action": "LOGOUT",
+      "entityType": "AUTH",
+      "entityId": "usr_staff1",
+      "timestamp": "2026-11-06T09:50:37.520Z",
+      "metadata": {}
+    },
+    {
+      "id": "aud_1793958628697_28f5t",
+      "userId": "usr_staff1",
+      "userName": "Ramesh Kumar (Floor Captain)",
+      "role": "STAFF",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_staff1",
+      "timestamp": "2026-11-06T09:50:28.697Z",
+      "metadata": {
+        "client": "Dalvik/2.1.0 (Linux; U; Android 12; M2101K7AI Build/SKQ1.210908.001)"
+      }
+    },
+    {
+      "id": "aud_1793958327784_bemgg",
+      "userId": "usr_admin",
+      "userName": "Head Manager",
+      "role": "ADMIN",
+      "action": "LOGOUT",
+      "entityType": "AUTH",
+      "entityId": "usr_admin",
+      "timestamp": "2026-11-06T09:45:27.784Z",
+      "metadata": {}
+    },
+    {
+      "id": "aud_1793958316293_0mixq",
+      "userId": "usr_admin",
+      "userName": "Head Manager",
+      "role": "ADMIN",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_admin",
+      "timestamp": "2026-11-06T09:45:16.293Z",
+      "metadata": {
+        "client": "Dalvik/2.1.0 (Linux; U; Android 12; M2101K7AI Build/SKQ1.210908.001)"
+      }
+    },
+    {
+      "id": "aud_1793947554633_ai10a",
+      "userId": "usr_staff1",
+      "userName": "Ramesh Kumar (Floor Captain)",
+      "role": "STAFF",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_staff1",
+      "timestamp": "2026-11-06T06:45:54.633Z",
+      "metadata": {
+        "client": "Dalvik/2.1.0 (Linux; U; Android 12; M2101K7AI Build/SKQ1.210908.001)"
+      }
+    },
+    {
+      "id": "aud_1793947524552_d1600",
+      "userId": "usr_admin",
+      "userName": "Head Manager",
+      "role": "ADMIN",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_admin",
+      "timestamp": "2026-11-06T06:45:24.552Z",
+      "metadata": {
+        "client": "Dalvik/2.1.0 (Linux; U; Android 12; M2101K7AI Build/SKQ1.210908.001)"
+      }
+    },
+    {
+      "id": "aud_1793945916719_u7lu7",
+      "userId": "usr_delivery1",
+      "userName": "Sonu Rider (Delivery Partner)",
+      "role": "DELIVERY",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_delivery1",
+      "timestamp": "2026-11-06T06:18:36.719Z",
+      "metadata": {
+        "client": "Dalvik/2.1.0 (Linux; U; Android 12; M2101K7AI Build/SKQ1.210908.001)"
+      }
+    },
+    {
+      "id": "aud_1793945896844_0yqu8",
+      "userId": "usr_kitchen1",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "KITCHEN",
+      "action": "LOGOUT",
+      "entityType": "AUTH",
+      "entityId": "usr_kitchen1",
+      "timestamp": "2026-11-06T06:18:16.844Z",
+      "metadata": {}
+    },
+    {
+      "id": "aud_1793945849431_yvz3j",
+      "userId": "usr_kitchen1",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "KITCHEN",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_kitchen1",
+      "timestamp": "2026-11-06T06:17:29.431Z",
+      "metadata": {
+        "client": "Dalvik/2.1.0 (Linux; U; Android 12; M2101K7AI Build/SKQ1.210908.001)"
+      }
+    },
+    {
+      "id": "aud_1793945820906_tcoeh",
+      "userId": "usr_staff1",
+      "userName": "Ramesh Kumar (Floor Captain)",
+      "role": "STAFF",
+      "action": "LOGOUT",
+      "entityType": "AUTH",
+      "entityId": "usr_staff1",
+      "timestamp": "2026-11-06T06:17:00.906Z",
+      "metadata": {}
+    },
+    {
+      "id": "aud_1793945797461_4fcfe",
+      "userId": "usr_staff1",
+      "userName": "Ramesh Kumar (Floor Captain)",
+      "role": "STAFF",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_staff1",
+      "timestamp": "2026-11-06T06:16:37.461Z",
+      "metadata": {
+        "client": "Dalvik/2.1.0 (Linux; U; Android 12; M2101K7AI Build/SKQ1.210908.001)"
+      }
+    },
+    {
+      "id": "aud_1793945779674_bvkx8",
+      "userId": "usr_admin",
+      "userName": "Head Manager",
+      "role": "ADMIN",
+      "action": "LOGOUT",
+      "entityType": "AUTH",
+      "entityId": "usr_admin",
+      "timestamp": "2026-11-06T06:16:19.674Z",
+      "metadata": {}
+    },
+    {
+      "id": "aud_1793945741632_31lgu",
+      "userId": "usr_admin",
+      "userName": "Head Manager",
+      "role": "ADMIN",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_admin",
+      "timestamp": "2026-11-06T06:15:41.632Z",
+      "metadata": {
+        "client": "Dalvik/2.1.0 (Linux; U; Android 12; M2101K7AI Build/SKQ1.210908.001)"
+      }
+    },
+    {
+      "id": "aud_1793945618924_eyrqu",
+      "userId": "usr_staff1",
+      "userName": "Ramesh Kumar (Floor Captain)",
+      "role": "STAFF",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_staff1",
+      "timestamp": "2026-11-06T06:13:38.924Z",
+      "metadata": {
+        "client": "Dalvik/2.1.0 (Linux; U; Android 12; M2101K7AI Build/SKQ1.210908.001)"
+      }
+    },
+    {
+      "id": "aud_1793945591086_7or9v",
+      "userId": "usr_admin",
+      "userName": "Head Manager",
+      "role": "ADMIN",
+      "action": "LOGOUT",
+      "entityType": "AUTH",
+      "entityId": "usr_admin",
+      "timestamp": "2026-11-06T06:13:11.086Z",
+      "metadata": {}
+    },
+    {
+      "id": "aud_1793945582128_uawgg",
+      "userId": "Head Manager",
+      "userName": "Head Manager",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-2285",
+      "timestamp": "2026-11-06T06:13:02.128Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CHULHA_PREP",
+        "orderId": "KOT-2285"
+      }
+    },
+    {
+      "id": "aud_1793945580783_aby91",
+      "userId": "Head Manager",
+      "userName": "Head Manager",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-3121",
+      "timestamp": "2026-11-06T06:13:00.783Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CHULHA_PREP",
+        "orderId": "KOT-3121"
+      }
+    },
+    {
+      "id": "aud_1793877733308_uen4f",
+      "userId": "usr_admin",
+      "userName": "Head Manager",
+      "role": "ADMIN",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_admin",
+      "timestamp": "2026-11-05T11:22:13.308Z",
+      "metadata": {
+        "client": "Dalvik/2.1.0 (Linux; U; Android 11; SM-A307FN Build/RP1A.200720.012)"
+      }
+    },
+    {
+      "id": "aud_1793877703332_cmfii",
+      "userId": "usr_staff1",
+      "userName": "Ramesh Kumar (Floor Captain)",
+      "role": "STAFF",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_staff1",
+      "timestamp": "2026-11-05T11:21:43.332Z",
+      "metadata": {
+        "client": "Dalvik/2.1.0 (Linux; U; Android 11; SM-A307FN Build/RP1A.200720.012)"
+      }
+    },
+    {
+      "id": "aud_1793877682718_a0x9l",
+      "userId": "usr_admin",
+      "userName": "Head Manager",
+      "role": "ADMIN",
+      "action": "LOGOUT",
+      "entityType": "AUTH",
+      "entityId": "usr_admin",
+      "timestamp": "2026-11-05T11:21:22.718Z",
+      "metadata": {}
+    },
+    {
+      "id": "aud_1793877579742_56dok",
+      "userId": "usr_admin",
+      "userName": "Head Manager",
+      "role": "ADMIN",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_admin",
+      "timestamp": "2026-11-05T11:19:39.743Z",
+      "metadata": {
+        "client": "Dalvik/2.1.0 (Linux; U; Android 11; SM-A307FN Build/RP1A.200720.012)"
+      }
+    },
+    {
+      "id": "aud_1793848860670_hj3ve",
+      "userId": "system",
+      "userName": "admin",
+      "role": "UNKNOWN",
+      "action": "UPDATE_SETTINGS",
+      "entityType": "SETTINGS",
+      "entityId": "business_compliance",
+      "timestamp": "2026-11-05T03:21:00.672Z",
+      "metadata": {
+        "gstNumber": "06AABCM1234F1Z8",
+        "fssaiLicense": "10824001000542"
+      }
+    },
+    {
+      "id": "aud_1793812121940_x02yt",
+      "userId": "system",
+      "userName": "admin",
+      "role": "UNKNOWN",
+      "action": "UPDATE_SETTINGS",
+      "entityType": "SETTINGS",
+      "entityId": "business_compliance",
+      "timestamp": "2026-11-04T17:08:41.940Z",
+      "metadata": {
+        "gstNumber": "06AABCM1234F1Z8",
+        "fssaiLicense": "10824001000542"
+      }
+    },
+    {
+      "id": "aud_1793812092342_t1804",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-3121",
+      "timestamp": "2026-11-04T17:08:12.343Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "CONFIRMED",
+        "orderId": "KOT-3121"
+      }
+    },
+    {
+      "id": "aud_1793809895142_t9k8u",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-2285",
+      "timestamp": "2026-11-04T16:31:35.142Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "CONFIRMED",
+        "orderId": "KOT-2285"
+      }
+    },
+    {
+      "id": "aud_1793792759987_qnt9q",
+      "userId": "usr_delivery1",
+      "userName": "Sonu Rider (Delivery Partner)",
+      "role": "DELIVERY",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_delivery1",
+      "timestamp": "2026-11-04T11:45:59.988Z",
+      "metadata": {
+        "client": "Dalvik/2.1.0 (Linux; U; Android 11; SM-A307FN Build/RP1A.200720.012)"
+      }
+    },
+    {
+      "id": "aud_1793792735048_6yq0c",
+      "userId": "usr_kitchen1",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "KITCHEN",
+      "action": "LOGOUT",
+      "entityType": "AUTH",
+      "entityId": "usr_kitchen1",
+      "timestamp": "2026-11-04T11:45:35.049Z",
+      "metadata": {}
+    },
+    {
+      "id": "aud_1793792712286_7damp",
+      "userId": "usr_kitchen1",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "KITCHEN",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_kitchen1",
+      "timestamp": "2026-11-04T11:45:12.288Z",
+      "metadata": {
+        "client": "Dalvik/2.1.0 (Linux; U; Android 11; SM-A307FN Build/RP1A.200720.012)"
+      }
+    },
+    {
+      "id": "aud_1793682710351_aakqa",
+      "userId": "usr_admin",
+      "userName": "Head Manager",
+      "role": "ADMIN",
+      "action": "STAFF_CREATED",
+      "entityType": "STAFF",
+      "entityId": "usr_mw08dgtz",
+      "timestamp": "2026-11-03T05:11:50.351Z",
+      "metadata": {
+        "name": "gaurav",
+        "role": "STAFF",
+        "employeeId": "EMP-837"
+      }
+    },
+    {
+      "id": "aud_1793682672979_n4xfz",
+      "userId": "usr_admin",
+      "userName": "Head Manager",
+      "role": "ADMIN",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_admin",
+      "timestamp": "2026-11-03T05:11:12.979Z",
+      "metadata": {
+        "client": "Dalvik/2.1.0 (Linux; U; Android 12; M2101K7AI Build/SKQ1.210908.001)"
+      }
+    },
+    {
+      "id": "aud_1793682630338_tpjl2",
+      "userId": "usr_kitchen1",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "KITCHEN",
+      "action": "LOGOUT",
+      "entityType": "AUTH",
+      "entityId": "usr_kitchen1",
+      "timestamp": "2026-11-03T05:10:30.338Z",
+      "metadata": {}
+    },
+    {
+      "id": "aud_1793682625678_2yg92",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "POS-1793611430281",
+      "timestamp": "2026-11-03T05:10:25.678Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "PACKED_READY",
+        "orderId": "POS-1793611430281"
+      }
+    },
+    {
+      "id": "aud_1793682625411_px46u",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "POS-1793611430281",
+      "timestamp": "2026-11-03T05:10:25.411Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "PACKED_READY",
+        "orderId": "POS-1793611430281"
+      }
+    },
+    {
+      "id": "aud_1793682625138_wn403",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "POS-1793611430281",
+      "timestamp": "2026-11-03T05:10:25.138Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "PACKED_READY",
+        "orderId": "POS-1793611430281"
+      }
+    },
+    {
+      "id": "aud_1793682624907_5e5pc",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "POS-1793611430281",
+      "timestamp": "2026-11-03T05:10:24.907Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "PACKED_READY",
+        "orderId": "POS-1793611430281"
+      }
+    },
+    {
+      "id": "aud_1793682624577_spfgj",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "POS-1793611430281",
+      "timestamp": "2026-11-03T05:10:24.577Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "PACKED_READY",
+        "orderId": "POS-1793611430281"
+      }
+    },
+    {
+      "id": "aud_1793682624308_9ndon",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "POS-1793611430281",
+      "timestamp": "2026-11-03T05:10:24.308Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "PACKED_READY",
+        "orderId": "POS-1793611430281"
+      }
+    },
+    {
+      "id": "aud_1793682624029_89yr4",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "POS-1793611430281",
+      "timestamp": "2026-11-03T05:10:24.029Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "PACKED_READY",
+        "orderId": "POS-1793611430281"
+      }
+    },
+    {
+      "id": "aud_1793682623729_68l6o",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "POS-1793611430281",
+      "timestamp": "2026-11-03T05:10:23.729Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "PACKED_READY",
+        "orderId": "POS-1793611430281"
+      }
+    },
+    {
+      "id": "aud_1793682623430_yd1j5",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "POS-1793611430281",
+      "timestamp": "2026-11-03T05:10:23.430Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "PACKED_READY",
+        "orderId": "POS-1793611430281"
+      }
+    },
+    {
+      "id": "aud_1793682623149_4kjhn",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "POS-1793611430281",
+      "timestamp": "2026-11-03T05:10:23.149Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "PACKED_READY",
+        "orderId": "POS-1793611430281"
+      }
+    },
+    {
+      "id": "aud_1793682622826_fsr0e",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "POS-1793611430281",
+      "timestamp": "2026-11-03T05:10:22.826Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "PACKED_READY",
+        "orderId": "POS-1793611430281"
+      }
+    },
+    {
+      "id": "aud_1793682622541_yfvdk",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "POS-1793611430281",
+      "timestamp": "2026-11-03T05:10:22.541Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "PACKED_READY",
+        "orderId": "POS-1793611430281"
+      }
+    },
+    {
+      "id": "aud_1793682622240_n24bn",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "POS-1793611430281",
+      "timestamp": "2026-11-03T05:10:22.240Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "PACKED_READY",
+        "orderId": "POS-1793611430281"
+      }
+    },
+    {
+      "id": "aud_1793682621943_ax8qm",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "POS-1793611430281",
+      "timestamp": "2026-11-03T05:10:21.943Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "PACKED_READY",
+        "orderId": "POS-1793611430281"
+      }
+    },
+    {
+      "id": "aud_1793682621685_sjtj6",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "POS-1793611430281",
+      "timestamp": "2026-11-03T05:10:21.685Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "PACKED_READY",
+        "orderId": "POS-1793611430281"
+      }
+    },
+    {
+      "id": "aud_1793682621482_jxb18",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "POS-1793611430281",
+      "timestamp": "2026-11-03T05:10:21.482Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "PACKED_READY",
+        "orderId": "POS-1793611430281"
+      }
+    },
+    {
+      "id": "aud_1793682621198_obn4n",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "POS-1793611430281",
+      "timestamp": "2026-11-03T05:10:21.198Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "PACKED_READY",
+        "orderId": "POS-1793611430281"
+      }
+    },
+    {
+      "id": "aud_1793682620628_jdef7",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "POS-1793611430281",
+      "timestamp": "2026-11-03T05:10:20.628Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "PACKED_READY",
+        "orderId": "POS-1793611430281"
+      }
+    },
+    {
+      "id": "aud_1793682620328_df9i2",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "POS-1793611430281",
+      "timestamp": "2026-11-03T05:10:20.328Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "PACKED_READY",
+        "orderId": "POS-1793611430281"
+      }
+    },
+    {
+      "id": "aud_1793682620009_6k91j",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "POS-1793611430281",
+      "timestamp": "2026-11-03T05:10:20.009Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "PACKED_READY",
+        "orderId": "POS-1793611430281"
+      }
+    },
+    {
+      "id": "aud_1793682619746_2i4t8",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "POS-1793611430281",
+      "timestamp": "2026-11-03T05:10:19.746Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "PACKED_READY",
+        "orderId": "POS-1793611430281"
+      }
+    },
+    {
+      "id": "aud_1793682619413_8rokd",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "POS-1793611430281",
+      "timestamp": "2026-11-03T05:10:19.413Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "PACKED_READY",
+        "orderId": "POS-1793611430281"
+      }
+    },
+    {
+      "id": "aud_1793682618835_9wgyz",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "POS-1793611430281",
+      "timestamp": "2026-11-03T05:10:18.836Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "PACKED_READY",
+        "orderId": "POS-1793611430281"
+      }
+    },
+    {
+      "id": "aud_1793682618061_s8mhy",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "POS-1793611430281",
+      "timestamp": "2026-11-03T05:10:18.061Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "PACKED_READY",
+        "orderId": "POS-1793611430281"
+      }
+    },
+    {
+      "id": "aud_1793682616586_5asoz",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "POS-1793611430281",
+      "timestamp": "2026-11-03T05:10:16.586Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "PACKED_READY",
+        "orderId": "POS-1793611430281"
+      }
+    },
+    {
+      "id": "aud_1793682614081_cduq9",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "POS-1793611430281",
+      "timestamp": "2026-11-03T05:10:14.081Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "PACKED_READY",
+        "orderId": "POS-1793611430281"
+      }
+    },
+    {
+      "id": "aud_1793682544096_3e5v5",
+      "userId": "usr_kitchen1",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "KITCHEN",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_kitchen1",
+      "timestamp": "2026-11-03T05:09:04.096Z",
+      "metadata": {
+        "client": "Dalvik/2.1.0 (Linux; U; Android 12; M2101K7AI Build/SKQ1.210908.001)"
+      }
+    },
+    {
+      "id": "aud_1793682387833_zex4a",
+      "userId": "usr_admin",
+      "userName": "Head Manager",
+      "role": "ADMIN",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_admin",
+      "timestamp": "2026-11-03T05:06:27.833Z",
+      "metadata": {
+        "client": "Dalvik/2.1.0 (Linux; U; Android 12; M2101K7AI Build/SKQ1.210908.001)"
+      }
+    },
+    {
+      "id": "aud_1793682345095_0xzab",
+      "userId": "usr_staff1",
+      "userName": "Ramesh Kumar (Floor Captain)",
+      "role": "STAFF",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_staff1",
+      "timestamp": "2026-11-03T05:05:45.096Z",
+      "metadata": {
+        "client": "Dalvik/2.1.0 (Linux; U; Android 12; M2101K7AI Build/SKQ1.210908.001)"
+      }
+    },
+    {
+      "id": "aud_1793621064263_i43h8",
+      "userId": "usr_admin",
+      "userName": "Head Manager",
+      "role": "ADMIN",
+      "action": "LOGOUT",
+      "entityType": "AUTH",
+      "entityId": "usr_admin",
+      "timestamp": "2026-11-02T12:04:24.264Z",
+      "metadata": {}
+    },
+    {
+      "id": "aud_1793621060452_rcfjs",
+      "userId": "usr_admin",
+      "userName": "Head Manager",
+      "role": "ADMIN",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_admin",
+      "timestamp": "2026-11-02T12:04:20.452Z",
+      "metadata": {
+        "client": "Dalvik/2.1.0 (Linux; U; Android 11; SM-A307FN Build/RP1A.200720.012)"
+      }
+    },
+    {
+      "id": "aud_1793617777026_h9pfy",
+      "userId": "usr_admin",
+      "userName": "Head Manager",
+      "role": "ADMIN",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_admin",
+      "timestamp": "2026-11-02T11:09:37.026Z",
+      "metadata": {
+        "client": "Dalvik/2.1.0 (Linux; U; Android 12; M2101K7AI Build/SKQ1.210908.001)"
+      }
+    },
+    {
+      "id": "aud_1793617765700_n3bvn",
+      "userId": "usr_admin",
+      "userName": "Head Manager",
+      "role": "ADMIN",
+      "action": "LOGOUT",
+      "entityType": "AUTH",
+      "entityId": "usr_admin",
+      "timestamp": "2026-11-02T11:09:25.700Z",
+      "metadata": {}
+    },
+    {
+      "id": "aud_1793617751223_v240k",
+      "userId": "usr_admin",
+      "userName": "Head Manager",
+      "role": "ADMIN",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_admin",
+      "timestamp": "2026-11-02T11:09:11.223Z",
+      "metadata": {
+        "client": "Dalvik/2.1.0 (Linux; U; Android 12; M2101K7AI Build/SKQ1.210908.001)"
+      }
+    },
+    {
+      "id": "aud_1793617712394_3xy17",
+      "userId": "Ramesh Kumar (Floor Captain)",
+      "userName": "Ramesh Kumar (Floor Captain)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-1764",
+      "timestamp": "2026-11-02T11:08:32.394Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "DELIVERED",
+        "orderId": "KOT-1764"
+      }
+    },
+    {
+      "id": "aud_1793617710497_r4tg3",
+      "userId": "Ramesh Kumar (Floor Captain)",
+      "userName": "Ramesh Kumar (Floor Captain)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "TEST-POS-1793597560286",
+      "timestamp": "2026-11-02T11:08:30.497Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "DELIVERED",
+        "orderId": "TEST-POS-1793597560286"
+      }
+    },
+    {
+      "id": "aud_1793617708852_hc3zs",
+      "userId": "Ramesh Kumar (Floor Captain)",
+      "userName": "Ramesh Kumar (Floor Captain)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-7993",
+      "timestamp": "2026-11-02T11:08:28.852Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "DELIVERED",
+        "orderId": "KOT-7993"
+      }
+    },
+    {
+      "id": "aud_1793617706459_za517",
+      "userId": "Ramesh Kumar (Floor Captain)",
+      "userName": "Ramesh Kumar (Floor Captain)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-2691",
+      "timestamp": "2026-11-02T11:08:26.459Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "DELIVERED",
+        "orderId": "KOT-2691"
+      }
+    },
+    {
+      "id": "aud_1793617701743_2y0g8",
+      "userId": "Ramesh Kumar (Floor Captain)",
+      "userName": "Ramesh Kumar (Floor Captain)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-319482",
+      "timestamp": "2026-11-02T11:08:21.743Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "DELIVERED",
+        "orderId": "MGK-319482"
+      }
+    },
+    {
+      "id": "aud_1793617699518_xgilh",
+      "userId": "Ramesh Kumar (Floor Captain)",
+      "userName": "Ramesh Kumar (Floor Captain)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-702624",
+      "timestamp": "2026-11-02T11:08:19.518Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "DELIVERED",
+        "orderId": "MGK-702624"
+      }
+    },
+    {
+      "id": "aud_1793617698477_o7ywi",
+      "userId": "Ramesh Kumar (Floor Captain)",
+      "userName": "Ramesh Kumar (Floor Captain)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-713001",
+      "timestamp": "2026-11-02T11:08:18.477Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "DELIVERED",
+        "orderId": "MGK-713001"
+      }
+    },
+    {
+      "id": "aud_1793617695640_9ujm3",
+      "userId": "Ramesh Kumar (Floor Captain)",
+      "userName": "Ramesh Kumar (Floor Captain)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-3179",
+      "timestamp": "2026-11-02T11:08:15.640Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "DELIVERED",
+        "orderId": "KOT-3179"
+      }
+    },
+    {
+      "id": "aud_1793617693845_brd5y",
+      "userId": "Ramesh Kumar (Floor Captain)",
+      "userName": "Ramesh Kumar (Floor Captain)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-8912",
+      "timestamp": "2026-11-02T11:08:13.845Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "DELIVERED",
+        "orderId": "KOT-8912"
+      }
+    },
+    {
+      "id": "aud_1793617692550_4v10k",
+      "userId": "Ramesh Kumar (Floor Captain)",
+      "userName": "Ramesh Kumar (Floor Captain)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-5400",
+      "timestamp": "2026-11-02T11:08:12.551Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "DELIVERED",
+        "orderId": "KOT-5400"
+      }
+    },
+    {
+      "id": "aud_1793617691776_yd1s7",
+      "userId": "Ramesh Kumar (Floor Captain)",
+      "userName": "Ramesh Kumar (Floor Captain)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-305178",
+      "timestamp": "2026-11-02T11:08:11.776Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "DELIVERED",
+        "orderId": "MGK-305178"
+      }
+    },
+    {
+      "id": "aud_1793617688954_g7y21",
+      "userId": "Ramesh Kumar (Floor Captain)",
+      "userName": "Ramesh Kumar (Floor Captain)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-4839",
+      "timestamp": "2026-11-02T11:08:08.954Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "DELIVERED",
+        "orderId": "KOT-4839"
+      }
+    },
+    {
+      "id": "aud_1793617666874_ermlb",
+      "userId": "Ramesh Kumar (Floor Captain)",
+      "userName": "Ramesh Kumar (Floor Captain)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-4037",
+      "timestamp": "2026-11-02T11:07:46.874Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "DELIVERED",
+        "orderId": "KOT-4037"
+      }
+    },
+    {
+      "id": "aud_1793617663263_hspkl",
+      "userId": "usr_staff1",
+      "userName": "Ramesh Kumar (Floor Captain)",
+      "role": "STAFF",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_staff1",
+      "timestamp": "2026-11-02T11:07:43.263Z",
+      "metadata": {
+        "client": "Dalvik/2.1.0 (Linux; U; Android 12; M2101K7AI Build/SKQ1.210908.001)"
+      }
+    },
+    {
+      "id": "aud_1793617646580_fvl42",
+      "userId": "usr_kitchen1",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "KITCHEN",
+      "action": "LOGOUT",
+      "entityType": "AUTH",
+      "entityId": "usr_kitchen1",
+      "timestamp": "2026-11-02T11:07:26.580Z",
+      "metadata": {}
+    },
+    {
+      "id": "aud_1793617639030_9jwjl",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "POS-1793611430281",
+      "timestamp": "2026-11-02T11:07:19.030Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "PACKED_READY",
+        "orderId": "POS-1793611430281"
+      }
+    },
+    {
+      "id": "aud_1793617638174_x1z9h",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-319482",
+      "timestamp": "2026-11-02T11:07:18.174Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "PACKED_READY",
+        "orderId": "MGK-319482"
+      }
+    },
+    {
+      "id": "aud_1793617637334_6mo93",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "POS-1793611430281",
+      "timestamp": "2026-11-02T11:07:17.334Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "PACKED_READY",
+        "orderId": "POS-1793611430281"
+      }
+    },
+    {
+      "id": "aud_1793617636589_id86m",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-7993",
+      "timestamp": "2026-11-02T11:07:16.589Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "PACKED_READY",
+        "orderId": "KOT-7993"
+      }
+    },
+    {
+      "id": "aud_1793617636016_ptbg2",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-2691",
+      "timestamp": "2026-11-02T11:07:16.016Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "PACKED_READY",
+        "orderId": "KOT-2691"
+      }
+    },
+    {
+      "id": "aud_1793617635448_pk61q",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-305178",
+      "timestamp": "2026-11-02T11:07:15.448Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "PACKED_READY",
+        "orderId": "MGK-305178"
+      }
+    },
+    {
+      "id": "aud_1793617634845_8qdri",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-702624",
+      "timestamp": "2026-11-02T11:07:14.845Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "PACKED_READY",
+        "orderId": "MGK-702624"
+      }
+    },
+    {
+      "id": "aud_1793617634246_1q1wi",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-713001",
+      "timestamp": "2026-11-02T11:07:14.246Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "PACKED_READY",
+        "orderId": "MGK-713001"
+      }
+    },
+    {
+      "id": "aud_1793617633603_u2vfs",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-511110",
+      "timestamp": "2026-11-02T11:07:13.603Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "PACKED_READY",
+        "orderId": "MGK-511110"
+      }
+    },
+    {
+      "id": "aud_1793617632738_ubg94",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-3179",
+      "timestamp": "2026-11-02T11:07:12.738Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "PACKED_READY",
+        "orderId": "KOT-3179"
+      }
+    },
+    {
+      "id": "aud_1793617631828_ngq5u",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-8912",
+      "timestamp": "2026-11-02T11:07:11.828Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "PACKED_READY",
+        "orderId": "KOT-8912"
+      }
+    },
+    {
+      "id": "aud_1793617630813_xgcps",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-719445",
+      "timestamp": "2026-11-02T11:07:10.813Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "PACKED_READY",
+        "orderId": "MGK-719445"
+      }
+    },
+    {
+      "id": "aud_1793617630136_7zhnd",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "TEST-PASS-02",
+      "timestamp": "2026-11-02T11:07:10.136Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "PACKED_READY",
+        "orderId": "TEST-PASS-02"
+      }
+    },
+    {
+      "id": "aud_1793617629427_0kkmv",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-713704",
+      "timestamp": "2026-11-02T11:07:09.427Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "PACKED_READY",
+        "orderId": "MGK-713704"
+      }
+    },
+    {
+      "id": "aud_1793617628575_kmnsw",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-5400",
+      "timestamp": "2026-11-02T11:07:08.575Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "PACKED_READY",
+        "orderId": "KOT-5400"
+      }
+    },
+    {
+      "id": "aud_1793617616052_l71hj",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-1764",
+      "timestamp": "2026-11-02T11:06:56.052Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "PACKED_READY",
+        "orderId": "KOT-1764"
+      }
+    },
+    {
+      "id": "aud_1793617604620_pjjun",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-223962",
+      "timestamp": "2026-11-02T11:06:44.620Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "PACKED_READY",
+        "orderId": "MGK-223962"
+      }
+    },
+    {
+      "id": "aud_1793617602616_sqsgj",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "POS-1793611430281",
+      "timestamp": "2026-11-02T11:06:42.616Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "PACKED_READY",
+        "orderId": "POS-1793611430281"
+      }
+    },
+    {
+      "id": "aud_1793617598042_x0734",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "POS-1793611430281",
+      "timestamp": "2026-11-02T11:06:38.042Z",
+      "metadata": {
+        "from": "FOOD_READY",
+        "to": "PACKED_READY",
+        "orderId": "POS-1793611430281"
+      }
+    },
+    {
+      "id": "aud_1793617584964_wiwfl",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-1764",
+      "timestamp": "2026-11-02T11:06:24.964Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CHULHA_PREP",
+        "orderId": "KOT-1764"
+      }
+    },
+    {
+      "id": "aud_1793617583453_fx9f7",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-223962",
+      "timestamp": "2026-11-02T11:06:23.453Z",
+      "metadata": {
+        "to": "CHULHA_PREP",
+        "orderId": "MGK-223962"
+      }
+    },
+    {
+      "id": "aud_1793617581225_ue8dm",
+      "userId": "usr_kitchen1",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "KITCHEN",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_kitchen1",
+      "timestamp": "2026-11-02T11:06:21.225Z",
+      "metadata": {
+        "client": "Dalvik/2.1.0 (Linux; U; Android 12; M2101K7AI Build/SKQ1.210908.001)"
+      }
+    },
+    {
+      "id": "aud_1793617425902_zyi23",
+      "userId": "usr_admin",
+      "userName": "Head Manager",
+      "role": "ADMIN",
+      "action": "LOGOUT",
+      "entityType": "AUTH",
+      "entityId": "usr_admin",
+      "timestamp": "2026-11-02T11:03:45.902Z",
+      "metadata": {}
+    },
+    {
+      "id": "aud_1793617421062_ydjr4",
+      "userId": "usr_admin",
+      "userName": "Head Manager",
+      "role": "ADMIN",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_admin",
+      "timestamp": "2026-11-02T11:03:41.063Z",
+      "metadata": {
+        "client": "Dalvik/2.1.0 (Linux; U; Android 11; SM-A307FN Build/RP1A.200720.012)"
+      }
+    },
+    {
+      "id": "aud_1793611700389_ggwsb",
+      "userId": "delivery",
+      "userName": "delivery",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "DELIV-1793611700292",
+      "timestamp": "2026-11-02T09:28:20.389Z",
+      "metadata": {
+        "from": "OUT_FOR_DELIVERY",
+        "to": "DELIVERED",
+        "orderId": "DELIV-1793611700292"
+      }
+    },
+    {
+      "id": "aud_1793611700358_ajgx4",
+      "userId": "delivery",
+      "userName": "delivery",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "DELIV-1793611700292",
+      "timestamp": "2026-11-02T09:28:20.358Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "OUT_FOR_DELIVERY",
+        "orderId": "DELIV-1793611700292"
+      }
+    },
+    {
+      "id": "aud_1793611700274_0p9wu",
+      "userId": "kitchen",
+      "userName": "kitchen",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-4037",
+      "timestamp": "2026-11-02T09:28:20.274Z",
+      "metadata": {
+        "from": "HANDI_SIMMER",
+        "to": "PACKED_READY",
+        "orderId": "KOT-4037"
+      }
+    },
+    {
+      "id": "aud_1793611700242_1on4k",
+      "userId": "kitchen",
+      "userName": "kitchen",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-4037",
+      "timestamp": "2026-11-02T09:28:20.243Z",
+      "metadata": {
+        "from": "DELIVERED",
+        "to": "HANDI_SIMMER",
+        "orderId": "KOT-4037"
+      }
+    },
+    {
+      "id": "aud_1793611700073_jhysr",
+      "userId": "system",
+      "userName": "admin",
+      "role": "UNKNOWN",
+      "action": "UPDATE_SETTINGS",
+      "entityType": "SETTINGS",
+      "entityId": "business_compliance",
+      "timestamp": "2026-11-02T09:28:20.073Z",
+      "metadata": {
+        "gstNumber": "06AABCM1234F1Z8",
+        "fssaiLicense": "10824001000542"
+      }
+    },
+    {
+      "id": "aud_1793611700041_2k8o3",
+      "userId": "system",
+      "userName": "Admin",
+      "role": "UNKNOWN",
+      "action": "DELETE_TABLE",
+      "entityType": "TABLE",
+      "entityId": "table_mvz23h2l_j5b",
+      "timestamp": "2026-11-02T09:28:20.041Z",
+      "metadata": {
+        "tableName": "Baithak Test 506"
+      }
+    },
+    {
+      "id": "aud_1793611700017_ra5ao",
+      "userId": "system",
+      "userName": "Admin",
+      "role": "UNKNOWN",
+      "action": "ADD_TABLE",
+      "entityType": "TABLE",
+      "entityId": "table_mvz23h2l_j5b",
+      "timestamp": "2026-11-02T09:28:20.017Z",
+      "metadata": {
+        "tableName": "Baithak Test 506",
+        "category": "Standard Table",
+        "capacity": 6
+      }
+    },
+    {
+      "id": "aud_1793611699927_1c4xj",
+      "userId": "usr_admin",
+      "userName": "Head Manager",
+      "role": "ADMIN",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_admin",
+      "timestamp": "2026-11-02T09:28:19.927Z",
+      "metadata": {
+        "client": "node"
+      }
+    },
+    {
+      "id": "aud_1793611642727_p1ton",
+      "userId": "delivery",
+      "userName": "delivery",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "DELIV-1793611642638",
+      "timestamp": "2026-11-02T09:27:22.727Z",
+      "metadata": {
+        "from": "OUT_FOR_DELIVERY",
+        "to": "DELIVERED",
+        "orderId": "DELIV-1793611642638"
+      }
+    },
+    {
+      "id": "aud_1793611642694_dwky4",
+      "userId": "delivery",
+      "userName": "delivery",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "DELIV-1793611642638",
+      "timestamp": "2026-11-02T09:27:22.694Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "OUT_FOR_DELIVERY",
+        "orderId": "DELIV-1793611642638"
+      }
+    },
+    {
+      "id": "aud_1793611642621_t1kan",
+      "userId": "kitchen",
+      "userName": "kitchen",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-4839",
+      "timestamp": "2026-11-02T09:27:22.621Z",
+      "metadata": {
+        "from": "HANDI_SIMMER",
+        "to": "PACKED_READY",
+        "orderId": "KOT-4839"
+      }
+    },
+    {
+      "id": "aud_1793611642596_nitji",
+      "userId": "kitchen",
+      "userName": "kitchen",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-4839",
+      "timestamp": "2026-11-02T09:27:22.596Z",
+      "metadata": {
+        "from": "DELIVERED",
+        "to": "HANDI_SIMMER",
+        "orderId": "KOT-4839"
+      }
+    },
+    {
+      "id": "aud_1793611642378_z1fpo",
+      "userId": "system",
+      "userName": "admin",
+      "role": "UNKNOWN",
+      "action": "UPDATE_SETTINGS",
+      "entityType": "SETTINGS",
+      "entityId": "business_compliance",
+      "timestamp": "2026-11-02T09:27:22.378Z",
+      "metadata": {
+        "gstNumber": "06AABCM1234F1Z8",
+        "fssaiLicense": "10824001000542"
+      }
+    },
+    {
+      "id": "aud_1793611642348_8dhqk",
+      "userId": "system",
+      "userName": "Admin",
+      "role": "UNKNOWN",
+      "action": "DELETE_TABLE",
+      "entityType": "TABLE",
+      "entityId": "table_mvz228k9_bzv",
+      "timestamp": "2026-11-02T09:27:22.348Z",
+      "metadata": {
+        "tableName": "Baithak Test 629"
+      }
+    },
+    {
+      "id": "aud_1793611642333_7qjhi",
+      "userId": "system",
+      "userName": "Admin",
+      "role": "UNKNOWN",
+      "action": "ADD_TABLE",
+      "entityType": "TABLE",
+      "entityId": "table_mvz228k9_bzv",
+      "timestamp": "2026-11-02T09:27:22.333Z",
+      "metadata": {
+        "tableName": "Baithak Test 629",
+        "category": "Standard Table",
+        "capacity": 6
+      }
+    },
+    {
+      "id": "aud_1793611642236_n14cp",
+      "userId": "usr_admin",
+      "userName": "Head Manager",
+      "role": "ADMIN",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_admin",
+      "timestamp": "2026-11-02T09:27:22.236Z",
+      "metadata": {
+        "client": "node"
+      }
+    },
+    {
+      "id": "aud_1793611579476_3uwub",
+      "userId": "delivery",
+      "userName": "delivery",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "DELIV-1793611566660",
+      "timestamp": "2026-11-02T09:26:19.476Z",
+      "metadata": {
+        "from": "OUT_FOR_DELIVERY",
+        "to": "DELIVERED",
+        "orderId": "DELIV-1793611566660"
+      }
+    },
+    {
+      "id": "aud_1793611579449_htt80",
+      "userId": "delivery",
+      "userName": "delivery",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "DELIV-1793611566660",
+      "timestamp": "2026-11-02T09:26:19.449Z",
+      "metadata": {
+        "from": "FOOD_READY",
+        "to": "OUT_FOR_DELIVERY",
+        "orderId": "DELIV-1793611566660"
+      }
+    },
+    {
+      "id": "aud_1793611430190_7mk6v",
+      "userId": "system",
+      "userName": "admin",
+      "role": "UNKNOWN",
+      "action": "UPDATE_SETTINGS",
+      "entityType": "SETTINGS",
+      "entityId": "business_compliance",
+      "timestamp": "2026-11-02T09:23:50.191Z",
+      "metadata": {
+        "gstNumber": "06AABCM1234F1Z8",
+        "fssaiLicense": "10824001000542"
+      }
+    },
+    {
+      "id": "aud_1793611430140_0jhtj",
+      "userId": "system",
+      "userName": "Admin",
+      "role": "UNKNOWN",
+      "action": "ADD_TABLE",
+      "entityType": "TABLE",
+      "entityId": "table_mvz1xoty_l3f",
+      "timestamp": "2026-11-02T09:23:50.140Z",
+      "metadata": {
+        "tableName": "Baithak 99",
+        "category": "Standard Table",
+        "capacity": 6
+      }
+    },
+    {
+      "id": "aud_1793611430011_q0qay",
+      "userId": "usr_admin",
+      "userName": "Head Manager",
+      "role": "ADMIN",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_admin",
+      "timestamp": "2026-11-02T09:23:50.012Z",
+      "metadata": {
+        "client": "node"
+      }
+    },
+    {
+      "id": "aud_1793599999744_rqtir",
+      "userId": "system",
+      "userName": "admin",
+      "role": "UNKNOWN",
+      "action": "UPDATE_SETTINGS",
+      "entityType": "SETTINGS",
+      "entityId": "business_compliance",
+      "timestamp": "2026-11-02T06:13:19.744Z",
+      "metadata": {
+        "gstNumber": "06AABCM1234F1Z8",
+        "fssaiLicense": "10824001000542"
+      }
+    },
+    {
+      "id": "aud_1793598257451_yq7hl",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-1764",
+      "timestamp": "2026-11-02T05:44:17.451Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "CONFIRMED",
+        "orderId": "KOT-1764"
+      }
+    },
+    {
+      "id": "aud_1793598163224_f5nod",
+      "userId": "system",
+      "userName": "admin",
+      "role": "UNKNOWN",
+      "action": "UPDATE_SETTINGS",
+      "entityType": "SETTINGS",
+      "entityId": "business_compliance",
+      "timestamp": "2026-11-02T05:42:43.224Z",
+      "metadata": {
+        "gstNumber": "NA",
+        "fssaiLicense": "NA"
+      }
+    },
+    {
+      "id": "aud_1793598042352_6dhw2",
+      "userId": "Sonu Rider (Delivery Partner)",
+      "userName": "Sonu Rider (Delivery Partner)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "TEST-DELIV-1793598042318",
+      "timestamp": "2026-11-02T05:40:42.352Z",
+      "metadata": {
+        "from": "OUT_FOR_DELIVERY",
+        "to": "DELIVERED",
+        "orderId": "TEST-DELIV-1793598042318"
+      }
+    },
+    {
+      "id": "aud_1793598042331_nemg8",
+      "userId": "Sonu Rider (Delivery Partner)",
+      "userName": "Sonu Rider (Delivery Partner)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "TEST-DELIV-1793598042318",
+      "timestamp": "2026-11-02T05:40:42.331Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "OUT_FOR_DELIVERY",
+        "orderId": "TEST-DELIV-1793598042318"
+      }
+    },
+    {
+      "id": "aud_1793598042293_jawmo",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "TEST-POS-1793598042222",
+      "timestamp": "2026-11-02T05:40:42.293Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "PACKED_READY",
+        "orderId": "TEST-POS-1793598042222"
+      }
+    },
+    {
+      "id": "aud_1793598042275_2cbnh",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "TEST-POS-1793598042222",
+      "timestamp": "2026-11-02T05:40:42.275Z",
+      "metadata": {
+        "from": "DELIVERED",
+        "to": "CHULHA_PREP",
+        "orderId": "TEST-POS-1793598042222"
+      }
+    },
+    {
+      "id": "aud_1793598042182_2ddyc",
+      "userId": "usr_delivery1",
+      "userName": "Sonu Rider (Delivery Partner)",
+      "role": "DELIVERY",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_delivery1",
+      "timestamp": "2026-11-02T05:40:42.182Z",
+      "metadata": {
+        "client": "Android App"
+      }
+    },
+    {
+      "id": "aud_1793598042141_05ouo",
+      "userId": "usr_kitchen1",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "KITCHEN",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_kitchen1",
+      "timestamp": "2026-11-02T05:40:42.141Z",
+      "metadata": {
+        "client": "Android App"
+      }
+    },
+    {
+      "id": "aud_1793598042108_nudhi",
+      "userId": "usr_staff1",
+      "userName": "Ramesh Kumar (Floor Captain)",
+      "role": "STAFF",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_staff1",
+      "timestamp": "2026-11-02T05:40:42.108Z",
+      "metadata": {
+        "client": "Android App"
+      }
+    },
+    {
+      "id": "aud_1793598042073_eityc",
+      "userId": "usr_admin",
+      "userName": "Head Manager",
+      "role": "ADMIN",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_admin",
+      "timestamp": "2026-11-02T05:40:42.073Z",
+      "metadata": {
+        "client": "Android App"
+      }
+    },
+    {
+      "id": "aud_1793597560420_3f32k",
+      "userId": "Sonu Rider (Delivery Partner)",
+      "userName": "Sonu Rider (Delivery Partner)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "TEST-DELIV-1793597560383",
+      "timestamp": "2026-11-02T05:32:40.420Z",
+      "metadata": {
+        "from": "OUT_FOR_DELIVERY",
+        "to": "DELIVERED",
+        "orderId": "TEST-DELIV-1793597560383"
+      }
+    },
+    {
+      "id": "aud_1793597560400_y7g2z",
+      "userId": "Sonu Rider (Delivery Partner)",
+      "userName": "Sonu Rider (Delivery Partner)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "TEST-DELIV-1793597560383",
+      "timestamp": "2026-11-02T05:32:40.400Z",
+      "metadata": {
+        "from": "PACKED_READY",
+        "to": "OUT_FOR_DELIVERY",
+        "orderId": "TEST-DELIV-1793597560383"
+      }
+    },
+    {
+      "id": "aud_1793597560367_z5c5m",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "TEST-POS-1793597560286",
+      "timestamp": "2026-11-02T05:32:40.367Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "PACKED_READY",
+        "orderId": "TEST-POS-1793597560286"
+      }
+    },
+    {
+      "id": "aud_1793597560352_bzk6r",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "TEST-POS-1793597560286",
+      "timestamp": "2026-11-02T05:32:40.352Z",
+      "metadata": {
+        "from": "DELIVERED",
+        "to": "CHULHA_PREP",
+        "orderId": "TEST-POS-1793597560286"
+      }
+    },
+    {
+      "id": "aud_1793597560254_1ak39",
+      "userId": "usr_delivery1",
+      "userName": "Sonu Rider (Delivery Partner)",
+      "role": "DELIVERY",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_delivery1",
+      "timestamp": "2026-11-02T05:32:40.254Z",
+      "metadata": {
+        "client": "Android App"
+      }
+    },
+    {
+      "id": "aud_1793597560230_o9de6",
+      "userId": "usr_kitchen1",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "KITCHEN",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_kitchen1",
+      "timestamp": "2026-11-02T05:32:40.230Z",
+      "metadata": {
+        "client": "Android App"
+      }
+    },
+    {
+      "id": "aud_1793597560198_oulf7",
+      "userId": "usr_staff1",
+      "userName": "Ramesh Kumar (Floor Captain)",
+      "role": "STAFF",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_staff1",
+      "timestamp": "2026-11-02T05:32:40.198Z",
+      "metadata": {
+        "client": "Android App"
+      }
+    },
+    {
+      "id": "aud_1793597560164_nb316",
+      "userId": "usr_admin",
+      "userName": "Head Manager",
+      "role": "ADMIN",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_admin",
+      "timestamp": "2026-11-02T05:32:40.164Z",
+      "metadata": {
+        "client": "Android App"
+      }
+    },
+    {
+      "id": "aud_1793596870749_u2rto",
+      "userId": "usr_kitchen1",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "KITCHEN",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_kitchen1",
+      "timestamp": "2026-11-02T05:21:10.749Z",
+      "metadata": {
+        "client": "Dalvik/2.1.0 (Linux; U; Android 11; SM-A307FN Build/RP1A.200720.012)"
+      }
+    },
+    {
+      "id": "aud_1793596300417_5ba5w",
+      "userId": "usr_staff1",
+      "userName": "Ramesh Kumar (Floor Captain)",
+      "role": "STAFF",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_staff1",
+      "timestamp": "2026-11-02T05:11:40.417Z",
+      "metadata": {
+        "client": "Dalvik/2.1.0 (Linux; U; Android 11; SM-A307FN Build/RP1A.200720.012)"
+      }
+    },
+    {
+      "id": "aud_1793594907721_7fa3l",
+      "userId": "system",
+      "userName": "admin",
+      "role": "UNKNOWN",
+      "action": "UPDATE_SETTINGS",
+      "entityType": "SETTINGS",
+      "entityId": "business_compliance",
+      "timestamp": "2026-11-02T04:48:27.749Z",
+      "metadata": {
+        "gstNumber": "06AABCM1234F1Z8",
+        "fssaiLicense": "10824001000542"
+      }
+    },
+    {
+      "id": "aud_1791872888023_lgwnp",
+      "userId": "usr_staff1",
+      "userName": "Ramesh Kumar (Floor Captain)",
+      "role": "STAFF",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_staff1",
+      "timestamp": "2026-10-13T06:28:08.024Z",
+      "metadata": {
+        "client": "Dalvik/2.1.0 (Linux; U; Android 11; SM-A307FN Build/RP1A.200720.012)"
+      }
+    },
+    {
+      "id": "aud_1791870849224_qe4dm",
+      "userId": "usr_admin",
+      "userName": "Head Manager",
+      "role": "ADMIN",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_admin",
+      "timestamp": "2026-10-13T05:54:09.224Z",
+      "metadata": {
+        "client": "Dalvik/2.1.0 (Linux; U; Android 12; M2101K7AI Build/SKQ1.210908.001)"
+      }
+    },
+    {
+      "id": "aud_1791867736660_ihv5y",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-319482",
+      "timestamp": "2026-10-13T05:02:16.660Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CHULHA_PREP",
+        "orderId": "MGK-319482"
+      }
+    },
+    {
+      "id": "aud_1791867735775_6ri54",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-702624",
+      "timestamp": "2026-10-13T05:02:15.775Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CHULHA_PREP",
+        "orderId": "MGK-702624"
+      }
+    },
+    {
+      "id": "aud_1791867734942_xsapp",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-713001",
+      "timestamp": "2026-10-13T05:02:14.942Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CHULHA_PREP",
+        "orderId": "MGK-713001"
+      }
+    },
+    {
+      "id": "aud_1791867733876_785f8",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-511110",
+      "timestamp": "2026-10-13T05:02:13.876Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CHULHA_PREP",
+        "orderId": "MGK-511110"
+      }
+    },
+    {
+      "id": "aud_1791867732823_tcpde",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-3179",
+      "timestamp": "2026-10-13T05:02:12.823Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CHULHA_PREP",
+        "orderId": "KOT-3179"
+      }
+    },
+    {
+      "id": "aud_1791867731968_01270",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-8912",
+      "timestamp": "2026-10-13T05:02:11.968Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CHULHA_PREP",
+        "orderId": "KOT-8912"
+      }
+    },
+    {
+      "id": "aud_1791867730836_5nv6x",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-719445",
+      "timestamp": "2026-10-13T05:02:10.836Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CHULHA_PREP",
+        "orderId": "MGK-719445"
+      }
+    },
+    {
+      "id": "aud_1791867730115_fwii7",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "TEST-PASS-02",
+      "timestamp": "2026-10-13T05:02:10.115Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CHULHA_PREP",
+        "orderId": "TEST-PASS-02"
+      }
+    },
+    {
+      "id": "aud_1791867729337_xn3ji",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-713704",
+      "timestamp": "2026-10-13T05:02:09.337Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CHULHA_PREP",
+        "orderId": "MGK-713704"
+      }
+    },
+    {
+      "id": "aud_1791867726099_5rbv2",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-5400",
+      "timestamp": "2026-10-13T05:02:06.099Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CHULHA_PREP",
+        "orderId": "KOT-5400"
+      }
+    },
+    {
+      "id": "aud_1791867723007_vujog",
+      "userId": "Chef Balbir (Chulha Head)",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-305178",
+      "timestamp": "2026-10-13T05:02:03.007Z",
+      "metadata": {
+        "to": "CHULHA_PREP",
+        "orderId": "MGK-305178"
+      }
+    },
+    {
+      "id": "aud_1791867717560_uj2m8",
+      "userId": "usr_kitchen1",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "KITCHEN",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_kitchen1",
+      "timestamp": "2026-10-13T05:01:57.561Z",
+      "metadata": {
+        "client": "Dalvik/2.1.0 (Linux; U; Android 11; SM-A307FN Build/RP1A.200720.012)"
+      }
+    },
+    {
+      "id": "aud_1791375522038_xpvuk",
+      "userId": "system",
+      "userName": "admin",
+      "role": "UNKNOWN",
+      "action": "UPDATE_SETTINGS",
+      "entityType": "SETTINGS",
+      "entityId": "business_compliance",
+      "timestamp": "2026-10-07T12:18:42.038Z",
+      "metadata": {
+        "gstNumber": "NA",
+        "fssaiLicense": "NA"
+      }
+    },
+    {
+      "id": "aud_1791375369259_zcthx",
+      "userId": "system",
+      "userName": "admin",
+      "role": "UNKNOWN",
+      "action": "UPDATE_SETTINGS",
+      "entityType": "SETTINGS",
+      "entityId": "business_compliance",
+      "timestamp": "2026-10-07T12:16:09.259Z",
+      "metadata": {
+        "gstNumber": "NA",
+        "fssaiLicense": "NA"
+      }
+    },
+    {
+      "id": "aud_1791375369228_36en2",
+      "userId": "system",
+      "userName": "admin",
+      "role": "UNKNOWN",
+      "action": "UPDATE_SETTINGS",
+      "entityType": "SETTINGS",
+      "entityId": "business_compliance",
+      "timestamp": "2026-10-07T12:16:09.228Z",
+      "metadata": {
+        "gstNumber": "06AABCM1234F1Z8",
+        "fssaiLicense": "10824001000542"
+      }
+    },
+    {
+      "id": "aud_1791375369205_zbmtr",
+      "userId": "system",
+      "userName": "admin",
+      "role": "UNKNOWN",
+      "action": "UPDATE_SETTINGS",
+      "entityType": "SETTINGS",
+      "entityId": "business_compliance",
+      "timestamp": "2026-10-07T12:16:09.205Z",
+      "metadata": {
+        "gstNumber": "NA",
+        "fssaiLicense": "NA"
+      }
+    },
+    {
+      "id": "aud_1791375234454_e2418",
+      "userId": "system",
+      "userName": "admin",
+      "role": "UNKNOWN",
+      "action": "UPDATE_SETTINGS",
+      "entityType": "SETTINGS",
+      "entityId": "business_compliance",
+      "timestamp": "2026-10-07T12:13:54.454Z",
+      "metadata": {
+        "gstNumber": "NA",
+        "fssaiLicense": "NA"
+      }
+    },
+    {
+      "id": "aud_1791371571566_46ine",
+      "userId": "system",
+      "userName": "admin",
+      "role": "UNKNOWN",
+      "action": "UPDATE_SETTINGS",
+      "entityType": "SETTINGS",
+      "entityId": "business_compliance",
+      "timestamp": "2026-10-07T11:12:51.566Z",
+      "metadata": {
+        "gstNumber": "NA",
+        "fssaiLicense": "NA"
+      }
+    },
+    {
+      "id": "aud_1791371458240_b1ra1",
+      "userId": "system",
+      "userName": "admin",
+      "role": "UNKNOWN",
+      "action": "UPDATE_SETTINGS",
+      "entityType": "SETTINGS",
+      "entityId": "business_compliance",
+      "timestamp": "2026-10-07T11:10:58.240Z",
+      "metadata": {
+        "gstNumber": "NA",
+        "fssaiLicense": "NA"
+      }
+    },
+    {
+      "id": "aud_1791371085601_oilj7",
+      "userId": "system",
+      "userName": "admin",
+      "role": "UNKNOWN",
+      "action": "UPDATE_SETTINGS",
+      "entityType": "SETTINGS",
+      "entityId": "business_compliance",
+      "timestamp": "2026-10-07T11:04:45.601Z",
+      "metadata": {
+        "gstNumber": "NA",
+        "fssaiLicense": "NA"
+      }
+    },
+    {
+      "id": "aud_1791370957603_rrqu7",
+      "userId": "system",
+      "userName": "admin",
+      "role": "UNKNOWN",
+      "action": "UPDATE_SETTINGS",
+      "entityType": "SETTINGS",
+      "entityId": "business_compliance",
+      "timestamp": "2026-10-07T11:02:37.603Z",
+      "metadata": {
+        "gstNumber": "06AABCM1234F1Z8",
+        "fssaiLicense": "10824001000542"
+      }
+    },
+    {
+      "id": "aud_1791370957578_42xzl",
+      "userId": "system",
+      "userName": "admin",
+      "role": "UNKNOWN",
+      "action": "UPDATE_SETTINGS",
+      "entityType": "SETTINGS",
+      "entityId": "business_compliance",
+      "timestamp": "2026-10-07T11:02:37.578Z",
+      "metadata": {
+        "gstNumber": "06AABCM8888F1Z8",
+        "fssaiLicense": "10824001888888"
+      }
+    },
+    {
+      "id": "aud_1791370656564_j55bx",
+      "userId": "system",
+      "userName": "admin",
+      "role": "UNKNOWN",
+      "action": "UPDATE_SETTINGS",
+      "entityType": "SETTINGS",
+      "entityId": "business_compliance",
+      "timestamp": "2026-10-07T10:57:36.564Z",
+      "metadata": {
+        "gstNumber": "06AABCM1234F1Z8",
+        "fssaiLicense": "10824001000542"
+      }
+    },
+    {
+      "id": "aud_1791369706698_cnl7b",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-5865",
+      "timestamp": "2026-10-07T10:41:46.699Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "CONFIRMED",
+        "orderId": "KOT-5865"
+      }
+    },
+    {
+      "id": "aud_1791367907330_m3ob7",
+      "userId": "system",
+      "userName": "admin",
+      "role": "UNKNOWN",
+      "action": "ADD_TABLE",
+      "entityType": "TABLE",
+      "entityId": "table_muxy77jt_5a3",
+      "timestamp": "2026-10-07T10:11:47.330Z",
+      "metadata": {
+        "tableName": "Table 6",
+        "category": "Standard Table",
+        "capacity": 4
+      }
+    },
+    {
+      "id": "aud_1791367636698_ftgip",
+      "userId": "system",
+      "userName": "admin",
+      "role": "UNKNOWN",
+      "action": "DELETE_TABLE",
+      "entityType": "TABLE",
+      "entityId": "table_muxy1eoi_3hn",
+      "timestamp": "2026-10-07T10:07:16.699Z",
+      "metadata": {
+        "tableName": "Machan Baithak 1"
+      }
+    },
+    {
+      "id": "aud_1791367636660_xd6u5",
+      "userId": "system",
+      "userName": "admin",
+      "role": "UNKNOWN",
+      "action": "ADD_TABLE",
+      "entityType": "TABLE",
+      "entityId": "table_muxy1eoi_3hn",
+      "timestamp": "2026-10-07T10:07:16.661Z",
+      "metadata": {
+        "tableName": "Machan Baithak 1",
+        "category": "Khatiya Baithak",
+        "capacity": 6
+      }
+    },
+    {
+      "id": "aud_1791352423145_stble",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-5400",
+      "timestamp": "2026-10-07T05:53:43.145Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "KOT-5400"
+      }
+    },
+    {
+      "id": "aud_1791352029842_n6krg",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-5400",
+      "timestamp": "2026-10-07T05:47:09.842Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "CONFIRMED",
+        "orderId": "KOT-5400"
+      }
+    },
+    {
+      "id": "aud_1791351886416_a8sih",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "TEST-PASS-02",
+      "timestamp": "2026-10-07T05:44:46.416Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "CONFIRMED",
+        "orderId": "TEST-PASS-02"
+      }
+    },
+    {
+      "id": "aud_1791351884526_ocds4",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "TEST-PASS-02",
+      "timestamp": "2026-10-07T05:44:44.526Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CHULHA_PREP",
+        "orderId": "TEST-PASS-02"
+      }
+    },
+    {
+      "id": "aud_1791349885406_2hit4",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-319482",
+      "timestamp": "2026-10-07T05:11:25.406Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "MGK-319482"
+      }
+    },
+    {
+      "id": "aud_1791349882812_lcwmb",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-319482",
+      "timestamp": "2026-10-07T05:11:22.812Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "MGK-319482"
+      }
+    },
+    {
+      "id": "aud_1791349881467_68gu0",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-3179",
+      "timestamp": "2026-10-07T05:11:21.467Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "KOT-3179"
+      }
+    },
+    {
+      "id": "aud_1791349827353_i2koe",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-8912",
+      "timestamp": "2026-10-07T05:10:27.353Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "KOT-8912"
+      }
+    },
+    {
+      "id": "aud_1791349826736_irdcr",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-2493",
+      "timestamp": "2026-10-07T05:10:26.736Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "KOT-2493"
+      }
+    },
+    {
+      "id": "aud_1791349826662_1yse5",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-8912",
+      "timestamp": "2026-10-07T05:10:26.662Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "KOT-8912"
+      }
+    },
+    {
+      "id": "aud_1791349825949_d3b21",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-719445",
+      "timestamp": "2026-10-07T05:10:25.949Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "MGK-719445"
+      }
+    },
+    {
+      "id": "aud_1791349825018_lg1os",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "TEST-PASS-02",
+      "timestamp": "2026-10-07T05:10:25.018Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "TEST-PASS-02"
+      }
+    },
+    {
+      "id": "aud_1791349819064_7n8w5",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-702624",
+      "timestamp": "2026-10-07T05:10:19.064Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "MGK-702624"
+      }
+    },
+    {
+      "id": "aud_1791349818986_3zmbl",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-713001",
+      "timestamp": "2026-10-07T05:10:18.986Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "MGK-713001"
+      }
+    },
+    {
+      "id": "aud_1791349818920_3nve5",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-511110",
+      "timestamp": "2026-10-07T05:10:18.920Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "MGK-511110"
+      }
+    },
+    {
+      "id": "aud_1791349818830_ep8pq",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-2493",
+      "timestamp": "2026-10-07T05:10:18.830Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "KOT-2493"
+      }
+    },
+    {
+      "id": "aud_1791349818755_8580x",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-3179",
+      "timestamp": "2026-10-07T05:10:18.755Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "KOT-3179"
+      }
+    },
+    {
+      "id": "aud_1791349818675_708j2",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-719445",
+      "timestamp": "2026-10-07T05:10:18.675Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "MGK-719445"
+      }
+    },
+    {
+      "id": "aud_1791349818594_l8iz0",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-713704",
+      "timestamp": "2026-10-07T05:10:18.595Z",
+      "metadata": {
+        "to": "CONFIRMED",
+        "orderId": "MGK-713704"
+      }
+    },
+    {
+      "id": "aud_1791028633634_f374k",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "TEST-PASS-02",
+      "timestamp": "2026-10-03T11:57:13.634Z",
+      "metadata": {
+        "to": "CONFIRMED",
+        "orderId": "TEST-PASS-02"
+      }
+    },
+    {
+      "id": "aud_1791028632710_wn4vy",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-719445",
+      "timestamp": "2026-10-03T11:57:12.710Z",
+      "metadata": {
+        "to": "CONFIRMED",
+        "orderId": "MGK-719445"
+      }
+    },
+    {
+      "id": "aud_1791028631221_lvutw",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-8912",
+      "timestamp": "2026-10-03T11:57:11.221Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "CONFIRMED",
+        "orderId": "KOT-8912"
+      }
+    },
+    {
+      "id": "aud_1791028627608_4vq6i",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-713001",
+      "timestamp": "2026-10-03T11:57:07.610Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "MGK-713001"
+      }
+    },
+    {
+      "id": "aud_1791018935720_zmaks",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-3179",
+      "timestamp": "2026-10-03T09:15:35.720Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "CONFIRMED",
+        "orderId": "KOT-3179"
+      }
+    },
+    {
+      "id": "aud_1791017525574_oxwk7",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-702624",
+      "timestamp": "2026-10-03T08:52:05.574Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "MGK-702624"
+      }
+    },
+    {
+      "id": "aud_1791017525534_vjqbk",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-713001",
+      "timestamp": "2026-10-03T08:52:05.535Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "MGK-713001"
+      }
+    },
+    {
+      "id": "aud_1791017525491_pffxu",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-511110",
+      "timestamp": "2026-10-03T08:52:05.491Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "MGK-511110"
+      }
+    },
+    {
+      "id": "aud_1791017525414_18i0p",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-2493",
+      "timestamp": "2026-10-03T08:52:05.414Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "CONFIRMED",
+        "orderId": "KOT-2493"
+      }
+    },
+    {
+      "id": "aud_1791017292554_f8c3t",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-319482",
+      "timestamp": "2026-10-03T08:48:12.554Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "MGK-319482"
+      }
+    },
+    {
+      "id": "aud_1791017290896_zqcar",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-319482",
+      "timestamp": "2026-10-03T08:48:10.896Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "CONFIRMED",
+        "orderId": "MGK-319482"
+      }
+    },
+    {
+      "id": "aud_1791017289522_xfxlh",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-3201",
+      "timestamp": "2026-10-03T08:48:09.522Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "CONFIRMED",
+        "orderId": "KOT-3201"
+      }
+    },
+    {
+      "id": "aud_1791017194324_kejl5",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-702624",
+      "timestamp": "2026-10-03T08:46:34.324Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "CONFIRMED",
+        "orderId": "MGK-702624"
+      }
+    },
+    {
+      "id": "aud_1791017194252_azdzb",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-713001",
+      "timestamp": "2026-10-03T08:46:34.252Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "CONFIRMED",
+        "orderId": "MGK-713001"
+      }
+    },
+    {
+      "id": "aud_1791017193901_r7im7",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-511110",
+      "timestamp": "2026-10-03T08:46:33.948Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "CONFIRMED",
+        "orderId": "MGK-511110"
+      }
+    },
+    {
+      "id": "aud_1791014221550_ltyvo",
+      "userId": "usr_admin",
+      "userName": "Head Manager",
+      "role": "ADMIN",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_admin",
+      "timestamp": "2026-10-03T07:57:01.550Z",
+      "metadata": {
+        "client": "node"
+      }
+    },
+    {
+      "id": "aud_1791014221501_9673w",
+      "userId": "usr_kitchen1",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "KITCHEN",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_kitchen1",
+      "timestamp": "2026-10-03T07:57:01.501Z",
+      "metadata": {
+        "client": "node"
+      }
+    },
+    {
+      "id": "aud_1791013202780_p3key",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-319482",
+      "timestamp": "2026-10-03T07:40:02.780Z",
+      "metadata": {
+        "from": "CHULHA_PREP",
+        "to": "CHULHA_PREP",
+        "orderId": "MGK-319482"
+      }
+    },
+    {
+      "id": "aud_1791013200163_fgb15",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-319482",
+      "timestamp": "2026-10-03T07:40:00.163Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CHULHA_PREP",
+        "orderId": "MGK-319482"
+      }
+    },
+    {
+      "id": "aud_1791013199586_7ltyb",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "KOT-3201",
+      "timestamp": "2026-10-03T07:39:59.586Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CHULHA_PREP",
+        "orderId": "KOT-3201"
+      }
+    },
+    {
+      "id": "aud_1791013198861_i8tcr",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-702624",
+      "timestamp": "2026-10-03T07:39:58.861Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CHULHA_PREP",
+        "orderId": "MGK-702624"
+      }
+    },
+    {
+      "id": "aud_1791013198842_yti3c",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-713001",
+      "timestamp": "2026-10-03T07:39:58.842Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CHULHA_PREP",
+        "orderId": "MGK-713001"
+      }
+    },
+    {
+      "id": "aud_1791013198823_5410n",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-511110",
+      "timestamp": "2026-10-03T07:39:58.823Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CHULHA_PREP",
+        "orderId": "MGK-511110"
+      }
+    },
+    {
+      "id": "aud_1791013198069_r6wad",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-702624",
+      "timestamp": "2026-10-03T07:39:58.069Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "MGK-702624"
+      }
+    },
+    {
+      "id": "aud_1791013198040_wkrwa",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-713001",
+      "timestamp": "2026-10-03T07:39:58.040Z",
+      "metadata": {
+        "from": "CONFIRMED",
+        "to": "CONFIRMED",
+        "orderId": "MGK-713001"
+      }
+    },
+    {
+      "id": "aud_1791013197990_bbzw6",
+      "userId": "staff",
+      "userName": "Staff",
+      "role": "STAFF",
+      "action": "ORDER_STATUS_CHANGED",
+      "entityType": "ORDER",
+      "entityId": "MGK-511110",
+      "timestamp": "2026-10-03T07:39:57.991Z",
+      "metadata": {
+        "to": "CONFIRMED",
+        "orderId": "MGK-511110"
+      }
+    },
+    {
+      "id": "aud_1790765430941_8ydqz",
+      "userId": "usr_delivery1",
+      "userName": "Sonu Rider (Delivery Partner)",
+      "role": "DELIVERY",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_delivery1",
+      "timestamp": "2026-09-30T10:50:30.941Z",
+      "metadata": {
+        "client": "Android App"
+      }
+    },
+    {
+      "id": "aud_1790765430913_hcvhy",
+      "userId": "usr_kitchen1",
+      "userName": "Chef Balbir (Chulha Head)",
+      "role": "KITCHEN",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_kitchen1",
+      "timestamp": "2026-09-30T10:50:30.913Z",
+      "metadata": {
+        "client": "Android App"
+      }
+    },
+    {
+      "id": "aud_1790765430882_zkmsh",
+      "userId": "usr_superadmin",
+      "userName": "Chaudhary Sahib (Owner)",
+      "role": "SUPER_ADMIN",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_superadmin",
+      "timestamp": "2026-09-30T10:50:30.882Z",
+      "metadata": {
+        "client": "Android App"
+      }
+    },
+    {
+      "id": "aud_1790765430846_b11on",
+      "userId": "usr_admin",
+      "userName": "Head Manager",
+      "role": "ADMIN",
+      "action": "LOGIN",
+      "entityType": "AUTH",
+      "entityId": "usr_admin",
+      "timestamp": "2026-09-30T10:50:30.846Z",
+      "metadata": {
+        "client": "Android App"
+      }
+    }
+  ]
+}

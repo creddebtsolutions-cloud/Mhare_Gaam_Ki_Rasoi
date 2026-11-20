@@ -1,0 +1,66 @@
+[
+  {
+    "id": "BKG-1793611700102",
+    "customerName": "Suresh Kumar",
+    "phone": "9811122233",
+    "guestCount": 4,
+    "date": "2026-11-02",
+    "time": "07:30 PM",
+    "area": "Courtyard Baithak",
+    "status": "CONFIRMED"
+  },
+  {
+    "id": "BKG-1793611642416",
+    "customerName": "Suresh Kumar",
+    "phone": "9811122233",
+    "guestCount": 4,
+    "date": "2026-11-02",
+    "time": "07:30 PM",
+    "area": "Courtyard Baithak",
+    "status": "CONFIRMED"
+  },
+  {
+    "id": "MGKR-7082",
+    "name": "Gaurav Singh",
+    "phone": "7906870209",
+    "guests": "4",
+    "date": "Sunday Feast",
+    "time": "07:30 PM",
+    "seating": "Family Table",
+    "notes": ""
+  },
+  {
+    "id": "MGKR-3647",
+    "name": "Gaurav Singh",
+    "phone": "7906870209",
+    "guests": "4",
+    "date": "Sunday Feast",
+    "time": "07:30 PM",
+    "seating": "Village Charpai",
+    "notes": ""
+  },
+  {
+    "id": "MGKR-8492",
+    "name": "Gaurav Singh",
+    "phone": "8979753636",
+    "guests": 4,
+    "date": "Today, Evening",
+    "time": "08:30 PM",
+    "seating": "Village Charpai / Khatiya (देसी खाट)",
+    "notes": "Under neem tree shade with warm lantern",
+    "status": "Confirmed",
+    "createdAt": "Today, 01:10 PM"
+  },
+  {
+    "id": "MGKR-4521",
+    "name": "Vikram Verma",
+    "phone": "9988776655",
+    "guests": 6,
+    "date": "Tomorrow",
+    "time": "07:30 PM",
+    "seating": "Heritage Family Table (लकड़ी की मेज)",
+    "notes": "Family anniversary celebration",
+    "status": "Confirmed",
+    "createdAt": "Today, 11:20 AM"
+  }
+]

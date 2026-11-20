@@ -1,0 +1,616 @@
+[
+  {
+    "id": "BILL-MGK-1306",
+    "table": "Table 5",
+    "staffUser": "staff1",
+    "staffName": "Ramesh Kumar (Floor Captain)",
+    "customerName": "Guest (Table 5)",
+    "customerPhone": "In-House",
+    "items": [
+      {
+        "id": "pizza_smokey_farmhouse",
+        "name": "Smokey Farmhouse Veggie Pizza",
+        "hindiName": "स्मोकी फार्महाउस वेज पिज़्ज़ा",
+        "price": 249,
+        "quantity": 1,
+        "total": 249
+      }
+    ],
+    "subtotal": 249,
+    "gst": 12,
+    "discount": 0,
+    "total": 261,
+    "paymentMethod": "CASH",
+    "paymentStatus": "PAID",
+    "notes": "",
+    "date": "19 Nov 2026",
+    "timestamp": "15:53",
+    "createdAt": "2026-11-19T10:23:49.203Z"
+  },
+  {
+    "id": "BILL-4976",
+    "table": "Table 2",
+    "staffUser": "staff1",
+    "staffName": "Staff 1 - Floor Captain",
+    "customerName": "Chaudhary Veer",
+    "customerPhone": "9876543210",
+    "items": [
+      {
+        "id": "handi_paneer",
+        "name": "Gaam Handi Paneer Kadhai",
+        "hindiName": "गाम हांडी पनीर कढ़ाई",
+        "price": 299,
+        "quantity": 1
+      },
+      {
+        "id": "roti_bajra_makhan",
+        "name": "Tawa Bajra Roti with Makhan (2 Pcs)",
+        "hindiName": "बाजरा रोटी मक्‍खन वाली",
+        "price": 89,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 477,
+    "gst": 24,
+    "discount": 0,
+    "total": 501,
+    "paymentMethod": "UPI",
+    "paymentStatus": "PAID",
+    "notes": "",
+    "date": "2 Nov 2026",
+    "timestamp": "02:58 PM",
+    "createdAt": "2026-11-02T09:28:20.170Z"
+  },
+  {
+    "id": "BILL-8976",
+    "table": "Table 2",
+    "staffUser": "staff1",
+    "staffName": "Staff 1 - Floor Captain",
+    "customerName": "Chaudhary Veer",
+    "customerPhone": "9876543210",
+    "items": [
+      {
+        "id": "handi_paneer",
+        "name": "Gaam Handi Paneer Kadhai",
+        "hindiName": "गाम हांडी पनीर कढ़ाई",
+        "price": 299,
+        "quantity": 1
+      },
+      {
+        "id": "roti_bajra_makhan",
+        "name": "Tawa Bajra Roti with Makhan (2 Pcs)",
+        "hindiName": "बाजरा रोटी मक्‍खन वाली",
+        "price": 89,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 477,
+    "gst": 24,
+    "discount": 0,
+    "total": 501,
+    "paymentMethod": "UPI",
+    "paymentStatus": "PAID",
+    "notes": "",
+    "date": "2 Nov 2026",
+    "timestamp": "02:57 PM",
+    "createdAt": "2026-11-02T09:27:22.502Z"
+  },
+  {
+    "id": "BILL-1793611430302",
+    "table": "Table 1",
+    "staffUser": "staff1",
+    "staffName": "Staff 1 - Floor Captain",
+    "customerName": "Chaudhary Veer",
+    "customerPhone": "9876543210",
+    "items": [
+      {
+        "id": "handi_paneer",
+        "name": "Gaam Handi Paneer Kadhai",
+        "price": 299,
+        "quantity": 1,
+        "image": "images/dish_handi_paneer.jpg",
+        "selectedAddons": [
+          {
+            "name": "Extra Desi Ghee",
+            "price": 30
+          }
+        ]
+      },
+      {
+        "id": "roti_bajra_makhan",
+        "name": "Tawa Bajra Roti with Makhan (2 Pcs)",
+        "price": 89,
+        "quantity": 2,
+        "image": "images/dish_bajra_roti.jpg",
+        "selectedAddons": []
+      }
+    ],
+    "subtotal": 507,
+    "gst": 0,
+    "discount": 0,
+    "total": 0,
+    "paymentMethod": "CASH",
+    "paymentStatus": "PAID",
+    "notes": "",
+    "date": "2 Nov 2026",
+    "timestamp": "02:53 PM",
+    "createdAt": "2026-11-02T09:23:50.319Z"
+  },
+  {
+    "id": "BILL-MGK-4388",
+    "table": "Table 1",
+    "staffUser": "admin",
+    "staffName": "Head Manager",
+    "customerName": "Rohit Sharma (Test Guest)",
+    "customerPhone": "9811122233",
+    "items": [
+      {
+        "id": "dish_1",
+        "name": "Shahi Desi Thali",
+        "hindiName": "",
+        "price": 249,
+        "quantity": 2,
+        "total": 498
+      }
+    ],
+    "subtotal": 498,
+    "gst": 0,
+    "discount": 0,
+    "total": 498,
+    "paymentMethod": "CASH",
+    "paymentStatus": "PAID",
+    "notes": "",
+    "date": "2 Nov 2026",
+    "timestamp": "11:13 AM",
+    "createdAt": "2026-11-02T05:43:02.797Z"
+  },
+  {
+    "id": "BILL-2226-167",
+    "table": "Table 1",
+    "staffUser": "staff1",
+    "staffName": "Ramesh Kumar (Floor Captain)",
+    "customerName": "Rohit Sharma (Test Guest)",
+    "customerPhone": "9811122233",
+    "items": [
+      {
+        "name": "Shahi Desi Thali",
+        "price": 249,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 498,
+    "gst": 24.9,
+    "discount": 0,
+    "total": 522.9,
+    "paymentMethod": "CASH",
+    "paymentStatus": "PAID",
+    "notes": "",
+    "date": "2 Nov 2026",
+    "timestamp": "11:10 AM",
+    "createdAt": "2026-11-02T05:40:42.246Z"
+  },
+  {
+    "id": "BILL-0297-922",
+    "table": "Table 1",
+    "staffUser": "staff1",
+    "staffName": "Ramesh Kumar (Floor Captain)",
+    "customerName": "Rohit Sharma (Test Guest)",
+    "customerPhone": "9811122233",
+    "items": [
+      {
+        "name": "Shahi Desi Thali",
+        "price": 249,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 498,
+    "gst": 24.9,
+    "discount": 0,
+    "total": 522.9,
+    "paymentMethod": "CASH",
+    "paymentStatus": "PAID",
+    "notes": "",
+    "date": "2 Nov 2026",
+    "timestamp": "11:02 AM",
+    "createdAt": "2026-11-02T05:32:40.327Z"
+  },
+  {
+    "id": "BILL-MGK-2848",
+    "table": "Table 1",
+    "staffUser": "staff1",
+    "staffName": "Ramesh Kumar (Floor Captain)",
+    "customerName": "Guest (Table 1)",
+    "customerPhone": "In-House",
+    "items": [
+      {
+        "id": "handi_dal",
+        "name": "Chulha Handi Dal Makhani",
+        "hindiName": "चूल्हे की हांडी दाल मखनी",
+        "price": 269,
+        "quantity": 1,
+        "total": 269
+      }
+    ],
+    "subtotal": 269,
+    "gst": 0,
+    "discount": 0,
+    "total": 269,
+    "paymentMethod": "CARD",
+    "paymentStatus": "PAID",
+    "notes": "",
+    "date": "7 Oct 2026",
+    "timestamp": "05:49 PM",
+    "createdAt": "2026-10-07T12:19:45.379Z"
+  },
+  {
+    "id": "BILL-MGK-8429",
+    "table": "Table 1",
+    "staffUser": "staff3",
+    "staffName": "Staff 3 - Chowki Server",
+    "customerName": "In-House Guest",
+    "customerPhone": "",
+    "items": [
+      {
+        "id": "handi_dal",
+        "name": "Chulha Handi Dal Makhani",
+        "hindiName": "चूल्हे की हांडी दाल मखनी",
+        "price": 269,
+        "quantity": 1,
+        "total": 269
+      }
+    ],
+    "subtotal": 269,
+    "gst": 13,
+    "discount": 0,
+    "total": 282,
+    "paymentMethod": "UPI",
+    "paymentStatus": "PAID",
+    "notes": "",
+    "date": "7 Oct 2026",
+    "timestamp": "04:35 PM",
+    "createdAt": "2026-10-07T11:05:41.559Z"
+  },
+  {
+    "id": "BILL-MGK-5753",
+    "table": "Table 1",
+    "staffUser": "staff3",
+    "staffName": "Staff 3 - Chowki Server",
+    "customerName": "In-House Guest",
+    "customerPhone": "",
+    "items": [
+      {
+        "id": "thali_special",
+        "name": "Mhare Gaam Ki Special Thali",
+        "hindiName": "म्‍हारे गाम की स्पेशल थाली",
+        "price": 349,
+        "quantity": 1,
+        "total": 349
+      },
+      {
+        "id": "thali_bajra_saag",
+        "name": "Chulha Bajra Roti & Saag Thali",
+        "hindiName": "चूल्हा बाजरा रोटी व साग थाली",
+        "price": 289,
+        "quantity": 1,
+        "total": 289
+      }
+    ],
+    "subtotal": 638,
+    "gst": 32,
+    "discount": 0,
+    "total": 670,
+    "paymentMethod": "CASH",
+    "paymentStatus": "PAID",
+    "notes": "",
+    "date": "7 Oct 2026",
+    "timestamp": "04:35 PM",
+    "createdAt": "2026-10-07T11:05:12.706Z"
+  },
+  {
+    "id": "BILL-MGK-3810",
+    "table": "Table 1",
+    "staffUser": "staff3",
+    "staffName": "Staff 3 - Chowki Server",
+    "customerName": "Guest (Table 1)",
+    "customerPhone": "In-House",
+    "items": [
+      {
+        "id": "handi_paneer",
+        "name": "Gaam Handi Paneer Kadhai",
+        "hindiName": "गाम हांडी पनीर कढ़ाई",
+        "price": 299,
+        "quantity": 1,
+        "total": 299
+      }
+    ],
+    "subtotal": 299,
+    "gst": 15,
+    "discount": 0,
+    "total": 314,
+    "paymentMethod": "CASH",
+    "paymentStatus": "PAID",
+    "notes": "",
+    "date": "7 Oct 2026",
+    "timestamp": "04:12 PM",
+    "createdAt": "2026-10-07T10:42:32.348Z"
+  },
+  {
+    "id": "BILL-MGK-4050",
+    "table": "Table 1",
+    "staffUser": "staff1",
+    "staffName": "Ramesh Kumar (Floor Captain)",
+    "customerName": "In-House Guest",
+    "customerPhone": "",
+    "items": [
+      {
+        "id": "thali_bajra_saag",
+        "name": "Chulha Bajra Roti & Saag Thali",
+        "hindiName": "चूल्हा बाजरा रोटी व साग थाली",
+        "price": 289,
+        "quantity": 1,
+        "total": 289
+      }
+    ],
+    "subtotal": 289,
+    "gst": 14,
+    "discount": 0,
+    "total": 303,
+    "paymentMethod": "CASH",
+    "paymentStatus": "PAID",
+    "notes": "",
+    "date": "3 Oct 2026",
+    "timestamp": "02:20 PM",
+    "createdAt": "2026-10-03T08:50:38.827Z"
+  },
+  {
+    "id": "BILL-MGK-6233",
+    "table": "Table 2",
+    "staffUser": "staff2",
+    "staffName": "Staff 2 - Table Attendant",
+    "customerName": "In-House Guest",
+    "customerPhone": "",
+    "items": [
+      {
+        "id": "dish_thali_special",
+        "name": "Shahi Gaam Thali",
+        "hindiName": "शाही गाम थाली",
+        "price": 299,
+        "quantity": 2,
+        "total": 598
+      },
+      {
+        "id": "dish_bajra_roti",
+        "name": "Bajra Roti with Safed Makkhan",
+        "hindiName": "बाजरे की रोटी",
+        "price": 45,
+        "quantity": 4,
+        "total": 180
+      }
+    ],
+    "subtotal": 778,
+    "gst": 39,
+    "discount": 0,
+    "total": 817,
+    "paymentMethod": "CASH",
+    "paymentStatus": "PAID",
+    "notes": "",
+    "date": "28 Sept 2026",
+    "timestamp": "05:32 PM",
+    "createdAt": "2026-09-28T12:02:20.257Z"
+  },
+  {
+    "id": "BILL-MGK-1410",
+    "table": "Table 3",
+    "staffUser": "staff1",
+    "staffName": "Staff 1 - Floor Captain",
+    "customerName": "In-House Guest",
+    "customerPhone": "",
+    "items": [
+      {
+        "id": "thali_special",
+        "name": "Mhare Gaam Ki Special Thali",
+        "hindiName": "म्‍हारे गाम की स्पेशल थाली",
+        "price": 349,
+        "quantity": 1,
+        "total": 349
+      }
+    ],
+    "subtotal": 349,
+    "gst": 17,
+    "discount": 0,
+    "total": 366,
+    "paymentMethod": "CASH",
+    "paymentStatus": "PAID",
+    "notes": "",
+    "date": "28 Sept 2026",
+    "timestamp": "03:49 PM",
+    "createdAt": "2026-09-28T10:19:17.070Z"
+  },
+  {
+    "id": "BILL-MGK-9732",
+    "table": "Table 3",
+    "staffUser": "staff1",
+    "staffName": "Staff 1 - Floor Captain",
+    "customerName": "In-House Guest",
+    "customerPhone": "",
+    "items": [
+      {
+        "id": "drink_kesar_lassi",
+        "name": "Kulhad Kesar Malai Lassi",
+        "hindiName": "कुल्हड़ केसर मलाई लस्सी",
+        "price": 99,
+        "quantity": 1,
+        "total": 99
+      }
+    ],
+    "subtotal": 99,
+    "gst": 5,
+    "discount": 0,
+    "total": 104,
+    "paymentMethod": "CASH",
+    "paymentStatus": "PAID",
+    "notes": "",
+    "date": "28 Sept 2026",
+    "timestamp": "03:49 PM",
+    "createdAt": "2026-09-28T10:19:12.064Z"
+  },
+  {
+    "id": "BILL-MGK-9362",
+    "table": "Table 1",
+    "staffUser": "staff1",
+    "staffName": "Staff 1 - Floor Captain",
+    "customerName": "In-House Guest",
+    "customerPhone": "",
+    "items": [
+      {
+        "id": "handi_dal",
+        "name": "Chulha Handi Dal Makhani",
+        "hindiName": "चूल्हे की हांडी दाल मखनी",
+        "price": 269,
+        "quantity": 1,
+        "total": 269
+      },
+      {
+        "id": "thali_bajra_saag",
+        "name": "Chulha Bajra Roti & Saag Thali",
+        "hindiName": "चूल्हा बाजरा रोटी व साग थाली",
+        "price": 289,
+        "quantity": 1,
+        "total": 289
+      }
+    ],
+    "subtotal": 558,
+    "gst": 28,
+    "discount": 0,
+    "total": 586,
+    "paymentMethod": "CASH",
+    "paymentStatus": "PAID",
+    "notes": "",
+    "date": "28 Sept 2026",
+    "timestamp": "02:24 PM",
+    "createdAt": "2026-09-28T08:54:58.328Z"
+  },
+  {
+    "id": "BILL-MGK-7187",
+    "table": "Table 1",
+    "staffUser": "staff4",
+    "staffName": "Staff 4 - Charpai Captain",
+    "customerName": "In-House Guest",
+    "customerPhone": "",
+    "items": [
+      {
+        "id": "handi_paneer",
+        "name": "Gaam Handi Paneer Kadhai",
+        "hindiName": "गाम हांडी पनीर कढ़ाई",
+        "price": 299,
+        "quantity": 1,
+        "total": 299
+      }
+    ],
+    "subtotal": 299,
+    "gst": 15,
+    "discount": 0,
+    "total": 314,
+    "paymentMethod": "CASH",
+    "paymentStatus": "PAID",
+    "notes": "",
+    "date": "28 Sept 2026",
+    "timestamp": "12:21 PM",
+    "createdAt": "2026-09-28T06:51:15.111Z"
+  },
+  {
+    "id": "BILL-7259-546",
+    "table": "Charpai 1 (खाट)",
+    "staffUser": "staff4",
+    "staffName": "Staff 4 - Charpai Captain",
+    "customerName": "Suresh Verma",
+    "customerPhone": "9876543210",
+    "items": [
+      {
+        "id": "thali-01",
+        "name": "Mhare Gaam Ki Special Thali",
+        "price": 349,
+        "quantity": 2,
+        "total": 698
+      }
+    ],
+    "subtotal": 698,
+    "gst": 35,
+    "discount": 0,
+    "total": 733,
+    "paymentMethod": "UPI",
+    "paymentStatus": "PAID",
+    "notes": "",
+    "date": "28 Sept 2026",
+    "timestamp": "12:17 PM",
+    "createdAt": "2026-09-28T06:47:37.283Z"
+  },
+  {
+    "id": "BILL-MGK-7026",
+    "table": "Table 07 (Khatiya Baithak)",
+    "staffUser": "staff4",
+    "staffName": "Staff 4 - Charpai Captain",
+    "customerName": "Ch. Virender Singh",
+    "customerPhone": "+91 98123 45678",
+    "items": [
+      {
+        "id": "thali-01",
+        "name": "Mhare Gaam Ki Special Thali",
+        "hindiName": "म्हारे गाम की स्पेशल थाली",
+        "price": 349,
+        "quantity": 4
+      }
+    ],
+    "subtotal": 1396,
+    "gst": 70,
+    "discount": 0,
+    "total": 1466,
+    "paymentMethod": "UPI",
+    "paymentStatus": "PAID",
+    "notes": "Served on Charpai with extra desi ghee",
+    "date": "28 Sep 2026",
+    "timestamp": "11:58 AM",
+    "createdAt": "2026-09-28T06:28:00.000Z"
+  },
+  {
+    "id": "BILL-MGK-5412",
+    "table": "Table 1",
+    "staffUser": "staff1",
+    "staffName": "Staff 1 - Floor Captain",
+    "customerName": "Rajesh Kumar",
+    "customerPhone": "+91 98987 11223",
+    "items": [
+      {
+        "id": "curry-01",
+        "name": "Gaam Handi Paneer Kadhai",
+        "hindiName": "गाम हांड़ी पनीर कढ़ाई",
+        "price": 289,
+        "quantity": 2
+      },
+      {
+        "id": "roti-01",
+        "name": "Bajra Roti with Safed Makkhan",
+        "hindiName": "बाजरा रोटी सफेद मक्खन",
+        "price": 45,
+        "quantity": 4
+      },
+      {
+        "id": "bev-01",
+        "name": "Desi Kulhad Chaach (Bilona)",
+        "hindiName": "देसी कुल्हड़ छाछ (बिलौना)",
+        "price": 60,
+        "quantity": 2
+      }
+    ],
+    "subtotal": 878,
+    "gst": 44,
+    "discount": 0,
+    "total": 922,
+    "paymentMethod": "CASH",
+    "paymentStatus": "PAID",
+    "notes": "Extra makkhan given",
+    "date": "28 Sep 2026",
+    "timestamp": "11:30 AM",
+    "createdAt": "2026-09-28T06:00:00.000Z"
+  }
+]

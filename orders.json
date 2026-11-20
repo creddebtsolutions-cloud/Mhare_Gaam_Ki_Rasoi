@@ -1,0 +1,1893 @@
+[
+  {
+    "id": "KOT-3307",
+    "name": "Rashmi",
+    "customerName": "Rashmi",
+    "phone": "In-House",
+    "customerPhone": "In-House",
+    "orderType": "dine_in",
+    "address": "Table 5",
+    "table": "Table 5",
+    "staff": "Ramesh Kumar (Floor Captain)",
+    "staffUser": "staff1",
+    "receivedBy": "staff1",
+    "timestamp": "17:26",
+    "items": [
+      {
+        "id": "pizza_smokey_paneer_tikka",
+        "name": "Smokey Paneer Tikka Pizza",
+        "hindiName": "चूल्हा स्मोकी पनीर टिक्का पिज़्ज़ा",
+        "price": 269,
+        "quantity": 1
+      }
+    ],
+    "notes": "Standard Gaam Style",
+    "total": 269,
+    "status": "CONFIRMED",
+    "stageIndex": 4,
+    "updatedAt": "2026-11-19T14:10:07.681Z"
+  },
+  {
+    "id": "KOT-5992",
+    "name": "Anjali",
+    "customerName": "Anjali",
+    "phone": "In-House",
+    "customerPhone": "In-House",
+    "orderType": "dine_in",
+    "address": "Table 5",
+    "table": "Table 5",
+    "staff": "Ramesh Kumar (Floor Captain)",
+    "staffUser": "staff1",
+    "receivedBy": "staff1",
+    "timestamp": "16:02",
+    "items": [
+      {
+        "id": "pizza_smokey_margherita",
+        "name": "Smokey Margherita Double Cheese Pizza",
+        "hindiName": "स्मोकी मार्गरीटा डबल चीज़ पिज़्ज़ा",
+        "price": 199,
+        "quantity": 1
+      },
+      {
+        "id": "coffee_vanilla_float",
+        "name": "Vanilla Ice Cream Cold Coffee Float",
+        "hindiName": "वैनिला फ्लोट कोल्ड कॉफ़ी",
+        "price": 129,
+        "quantity": 1
+      },
+      {
+        "id": "coffee_caramel_crunch",
+        "name": "Caramel Crunch Cold Coffee",
+        "hindiName": "कैरेमल क्रंच कोल्ड कॉफ़ी",
+        "price": 119,
+        "quantity": 1
+      }
+    ],
+    "notes": "Standard Gaam Style",
+    "total": 469,
+    "status": "CONFIRMED",
+    "stageIndex": 4,
+    "updatedAt": "2026-11-19T11:02:59.921Z"
+  },
+  {
+    "id": "KOT-6731",
+    "name": "Guest (Table 5)",
+    "customerName": "Guest (Table 5)",
+    "phone": "In-House",
+    "customerPhone": "In-House",
+    "orderType": "dine_in",
+    "address": "Table 5",
+    "table": "Table 5",
+    "staff": "Ramesh Kumar (Floor Captain)",
+    "staffUser": "staff1",
+    "receivedBy": "staff1",
+    "timestamp": "15:51",
+    "items": [
+      {
+        "id": "pizza_smokey_farmhouse",
+        "name": "Smokey Farmhouse Veggie Pizza",
+        "hindiName": "स्मोकी फार्महाउस वेज पिज़्ज़ा",
+        "price": 249,
+        "quantity": 1
+      }
+    ],
+    "notes": "Standard Gaam Style",
+    "total": 261,
+    "status": "DELIVERED",
+    "stageIndex": 5,
+    "updatedAt": "2026-11-19T10:22:33.119Z",
+    "settledWithBillId": "BILL-MGK-1306"
+  },
+  {
+    "id": "KOT-9872",
+    "name": "Guest (Table 1)",
+    "customerName": "Guest (Table 1)",
+    "phone": "In-House",
+    "customerPhone": "In-House",
+    "orderType": "dine_in",
+    "address": "Table 1",
+    "table": "Table 1",
+    "staff": "Ramesh Kumar (Floor Captain)",
+    "staffUser": "staff1",
+    "receivedBy": "staff1",
+    "timestamp": "12:36",
+    "items": [
+      {
+        "id": "thali_bajra_saag",
+        "name": "Chulha Bajra Roti & Saag Thali",
+        "hindiName": "चूल्हा बाजरा रोटी व साग थाली",
+        "price": 289,
+        "quantity": 1
+      },
+      {
+        "id": "thali_special",
+        "name": "Mhare Gaam Ki Special Thali",
+        "hindiName": "म्‍हारे गाम की स्पेशल थाली",
+        "price": 349,
+        "quantity": 1
+      }
+    ],
+    "notes": "Standard Gaam Style",
+    "total": 670,
+    "status": "CONFIRMED",
+    "stageIndex": 4,
+    "updatedAt": "2026-11-19T10:30:01.073Z"
+  },
+  {
+    "id": "KOT-2493",
+    "name": "Guest (Table 1)",
+    "customerName": "Guest (Table 1)",
+    "phone": "In-House",
+    "customerPhone": "In-House",
+    "orderType": "dine_in",
+    "address": "Table 1",
+    "table": "Table 1",
+    "staff": "Ramesh Kumar (Floor Captain)",
+    "staffUser": "staff1",
+    "receivedBy": "staff1",
+    "timestamp": "12:36",
+    "items": [
+      {
+        "id": "thali_special",
+        "name": "Mhare Gaam Ki Special Thali",
+        "hindiName": "म्‍हारे गाम की स्पेशल थाली",
+        "price": 349,
+        "quantity": 1
+      },
+      {
+        "id": "handi_paneer",
+        "name": "Gaam Handi Paneer Kadhai",
+        "hindiName": "गाम हांडी पनीर कढ़ाई",
+        "price": 299,
+        "quantity": 1
+      }
+    ],
+    "notes": "Standard Gaam Style",
+    "total": 680,
+    "status": "CONFIRMED",
+    "stageIndex": 4,
+    "updatedAt": "2026-11-19T10:30:03.085Z"
+  },
+  {
+    "id": "KOT-2846",
+    "name": "Guest (Table 1)",
+    "customerName": "Guest (Table 1)",
+    "phone": "In-House",
+    "customerPhone": "In-House",
+    "orderType": "dine_in",
+    "address": "Table 1",
+    "table": "Table 1",
+    "staff": "Ramesh Kumar (Floor Captain)",
+    "staffUser": "staff1",
+    "receivedBy": "staff1",
+    "timestamp": "03:21 pm",
+    "items": [
+      {
+        "id": "thali_bajra_saag",
+        "name": "Chulha Bajra Roti & Saag Thali",
+        "hindiName": "चूल्हा बाजरा रोटी व साग थाली",
+        "price": 289,
+        "quantity": 1
+      }
+    ],
+    "notes": "Standard Gaam Style",
+    "total": 303,
+    "status": "CONFIRMED",
+    "stageIndex": 4,
+    "updatedAt": "2026-11-19T10:29:58.697Z"
+  },
+  {
+    "id": "KOT-6512",
+    "name": "Guest (Table 1)",
+    "customerName": "Guest (Table 1)",
+    "phone": "In-House",
+    "customerPhone": "In-House",
+    "orderType": "dine_in",
+    "address": "Table 1",
+    "table": "Table 1",
+    "staff": "Ramesh Kumar (Floor Captain)",
+    "staffUser": "staff1",
+    "receivedBy": "staff1",
+    "timestamp": "03:21 pm",
+    "items": [
+      {
+        "id": "thali_special",
+        "name": "Mhare Gaam Ki Special Thali",
+        "hindiName": "म्‍हारे गाम की स्पेशल थाली",
+        "price": 349,
+        "quantity": 1
+      }
+    ],
+    "notes": "Standard Gaam Style",
+    "total": 366,
+    "status": "CONFIRMED",
+    "stageIndex": 4,
+    "updatedAt": "2026-11-19T10:30:01.254Z"
+  },
+  {
+    "id": "KOT-3121",
+    "name": "Aditya",
+    "customerName": "Aditya",
+    "phone": "In-House",
+    "customerPhone": "In-House",
+    "orderType": "dine_in",
+    "address": "Table 3",
+    "table": "Table 3",
+    "staff": "Ramesh Kumar (Floor Captain)",
+    "staffUser": "staff1",
+    "receivedBy": "staff1",
+    "timestamp": "10:37 PM",
+    "items": [
+      {
+        "id": "pizza_smokey_farmhouse",
+        "name": "Smokey Farmhouse Veggie Pizza",
+        "hindiName": "स्मोकी फार्महाउस वेज पिज़्ज़ा",
+        "price": 249,
+        "quantity": 1
+      }
+    ],
+    "notes": "Standard Gaam Style",
+    "total": 261,
+    "status": "CONFIRMED",
+    "stageIndex": 4,
+    "updatedAt": "2026-11-19T10:30:03.824Z",
+    "deliveryNotes": "Sent to Chulha by Staff",
+    "updatedBy": "Head Manager"
+  },
+  {
+    "id": "KOT-2285",
+    "name": "Guest (Table 2)",
+    "customerName": "Guest (Table 2)",
+    "phone": "In-House",
+    "customerPhone": "In-House",
+    "orderType": "dine_in",
+    "address": "Table 2",
+    "table": "Table 2",
+    "staff": "Ramesh Kumar (Floor Captain)",
+    "staffUser": "staff1",
+    "receivedBy": "staff1",
+    "timestamp": "10:00 PM",
+    "items": [
+      {
+        "id": "pizza_smokey_paneer_tikka",
+        "name": "Smokey Paneer Tikka Pizza",
+        "hindiName": "चूल्हा स्मोकी पनीर टिक्का पिज़्ज़ा",
+        "price": 269,
+        "quantity": 1
+      }
+    ],
+    "notes": "Standard Gaam Style",
+    "total": 269,
+    "status": "CONFIRMED",
+    "stageIndex": 4,
+    "updatedAt": "2026-11-19T10:30:04.481Z",
+    "deliveryNotes": "Sent to Chulha by Staff",
+    "updatedBy": "Head Manager"
+  },
+  {
+    "id": "DELIV-1793611700292",
+    "name": "Kavita Yadav",
+    "customerName": "Kavita Yadav",
+    "phone": "9812345678",
+    "customerPhone": "9812345678",
+    "address": "House 14, Gaam Kheri Chowk, Near Panchayat Bhawan",
+    "deliveryAddress": "House 14, Gaam Kheri Chowk, Near Panchayat Bhawan",
+    "orderType": "delivery",
+    "status": "DELIVERED",
+    "paymentStatus": "PAID",
+    "paymentMode": "COD",
+    "items": [
+      {
+        "id": "thali_special",
+        "name": "Mhare Gaam Ki Special Thali",
+        "price": 349,
+        "quantity": 2
+      }
+    ],
+    "total": 738,
+    "timestamp": "01:00 PM",
+    "staffUser": "delivery",
+    "staff": "Rider 1 - Gaam Delivery Partner",
+    "stageIndex": 5,
+    "deliveryUserId": "usr_delivery1",
+    "deliveryNotes": "Dispatched on Gaam Hero Splendor rider bike",
+    "updatedAt": "2026-11-02T09:28:20.382Z",
+    "updatedBy": "delivery",
+    "deliveredAt": "01:45 PM"
+  },
+  {
+    "id": "KOT-4037",
+    "name": "Chaudhary Veer",
+    "customerName": "Chaudhary Veer",
+    "phone": "9876543210",
+    "customerPhone": "9876543210",
+    "orderType": "dine_in",
+    "address": "Table 2",
+    "table": "Table 2",
+    "staff": "Staff 1 - Floor Captain",
+    "staffUser": "staff1",
+    "receivedBy": "staff1",
+    "status": "DELIVERED",
+    "paymentStatus": "PENDING",
+    "paymentMode": "CASH",
+    "items": [
+      {
+        "id": "handi_paneer",
+        "name": "Gaam Handi Paneer Kadhai",
+        "hindiName": "गाम हांडी पनीर कढ़ाई",
+        "price": 299,
+        "quantity": 1
+      },
+      {
+        "id": "roti_bajra_makhan",
+        "name": "Tawa Bajra Roti with Makhan (2 Pcs)",
+        "hindiName": "बाजरा रोटी मक्‍खन वाली",
+        "price": 89,
+        "quantity": 2
+      }
+    ],
+    "notes": "Extra Desi Ghee on rotis",
+    "total": 501,
+    "timestamp": "12:30 PM",
+    "stageIndex": 6,
+    "settledWithBillId": "BILL-4976",
+    "updatedAt": "2026-11-02T11:07:46.861Z",
+    "updatedBy": "Ramesh Kumar (Floor Captain)",
+    "deliveryNotes": "Served hot to table guest"
+  },
+  {
+    "id": "DELIV-1793611642638",
+    "name": "Kavita Yadav",
+    "customerName": "Kavita Yadav",
+    "phone": "9812345678",
+    "customerPhone": "9812345678",
+    "address": "House 14, Gaam Kheri Chowk, Near Panchayat Bhawan",
+    "deliveryAddress": "House 14, Gaam Kheri Chowk, Near Panchayat Bhawan",
+    "orderType": "delivery",
+    "status": "DELIVERED",
+    "paymentStatus": "PAID",
+    "paymentMode": "COD",
+    "items": [
+      {
+        "id": "thali_special",
+        "name": "Mhare Gaam Ki Special Thali",
+        "price": 349,
+        "quantity": 2
+      }
+    ],
+    "total": 738,
+    "timestamp": "01:00 PM",
+    "staffUser": "delivery",
+    "staff": "Rider 1 - Gaam Delivery Partner",
+    "stageIndex": 5,
+    "deliveryUserId": "usr_delivery1",
+    "deliveryNotes": "Dispatched on Gaam Hero Splendor rider bike",
+    "updatedAt": "2026-11-02T09:27:22.719Z",
+    "updatedBy": "delivery",
+    "deliveredAt": "01:45 PM"
+  },
+  {
+    "id": "KOT-4839",
+    "name": "Chaudhary Veer",
+    "customerName": "Chaudhary Veer",
+    "phone": "9876543210",
+    "customerPhone": "9876543210",
+    "orderType": "dine_in",
+    "address": "Table 2",
+    "table": "Table 2",
+    "staff": "Staff 1 - Floor Captain",
+    "staffUser": "staff1",
+    "receivedBy": "staff1",
+    "status": "DELIVERED",
+    "paymentStatus": "PENDING",
+    "paymentMode": "CASH",
+    "items": [
+      {
+        "id": "handi_paneer",
+        "name": "Gaam Handi Paneer Kadhai",
+        "hindiName": "गाम हांडी पनीर कढ़ाई",
+        "price": 299,
+        "quantity": 1
+      },
+      {
+        "id": "roti_bajra_makhan",
+        "name": "Tawa Bajra Roti with Makhan (2 Pcs)",
+        "hindiName": "बाजरा रोटी मक्‍खन वाली",
+        "price": 89,
+        "quantity": 2
+      }
+    ],
+    "notes": "Extra Desi Ghee on rotis",
+    "total": 501,
+    "timestamp": "12:30 PM",
+    "stageIndex": 6,
+    "settledWithBillId": "BILL-8976",
+    "updatedAt": "2026-11-02T11:08:08.940Z",
+    "updatedBy": "Ramesh Kumar (Floor Captain)",
+    "deliveryNotes": "Served hot to table guest"
+  },
+  {
+    "id": "DELIV-1793611566660",
+    "name": "Kavita Yadav",
+    "customerName": "Kavita Yadav",
+    "phone": "9812345678",
+    "customerPhone": "9812345678",
+    "address": "House 14, Gaam Kheri Chowk",
+    "deliveryAddress": "House 14, Gaam Kheri Chowk",
+    "orderType": "delivery",
+    "status": "DELIVERED",
+    "paymentStatus": "PAID",
+    "paymentMode": "COD",
+    "items": [
+      {
+        "id": "thali_special",
+        "name": "Mhare Gaam Ki Special Thali",
+        "price": 349,
+        "quantity": 2
+      }
+    ],
+    "total": 738,
+    "timestamp": "12:00 PM",
+    "staffUser": "delivery",
+    "staff": "Rider 1 - Gaam Delivery Partner",
+    "stageIndex": 5,
+    "deliveryUserId": "usr_delivery1",
+    "updatedAt": "2026-11-02T09:26:19.469Z",
+    "updatedBy": "delivery"
+  },
+  {
+    "id": "DELIV-1793611430437",
+    "status": "CONFIRMED",
+    "paymentStatus": "PAID",
+    "deliveredAt": "2026-11-02T09:23:50.508Z",
+    "paymentCollected": true,
+    "customerName": "",
+    "name": "",
+    "customerPhone": "",
+    "phone": "In-House",
+    "staffUser": "staff1",
+    "staff": "Staff 1 - Floor Captain",
+    "stageIndex": 4,
+    "updatedAt": "2026-11-19T10:30:01.410Z"
+  },
+  {
+    "id": "DELIV-1793611430437",
+    "status": "OUT_FOR_DELIVERY",
+    "deliveryRider": "Sonu Rider (Delivery Partner)",
+    "riderPhone": "9876500031",
+    "dispatchedAt": "2026-11-02T09:23:50.482Z",
+    "customerName": "",
+    "name": "",
+    "customerPhone": "",
+    "phone": "In-House",
+    "staffUser": "staff1",
+    "staff": "Staff 1 - Floor Captain"
+  },
+  {
+    "id": "DELIV-1793611430437",
+    "orderNumber": "KOT-3215",
+    "type": "DELIVERY",
+    "orderType": "DELIVERY",
+    "status": "FOOD_READY",
+    "customerName": "Kavita Yadav",
+    "customerPhone": "9812345678",
+    "deliveryAddress": "House 14, Gaam Kheri Chowk, Near Panchayat Bhawan",
+    "paymentStatus": "PENDING",
+    "paymentMode": "COD",
+    "items": [
+      {
+        "id": "thali_special",
+        "name": "Mhare Gaam Ki Special Thali",
+        "price": 349,
+        "quantity": 2,
+        "image": "images/dish_thali.jpg"
+      }
+    ],
+    "itemCount": 2,
+    "subtotal": 698,
+    "deliveryFee": 40,
+    "grandTotal": 738,
+    "timestamp": "2026-11-02T09:23:50.437Z",
+    "name": "Kavita Yadav",
+    "phone": "9812345678",
+    "staffUser": "staff1",
+    "staff": "Staff 1 - Floor Captain"
+  },
+  {
+    "id": "POS-1793611430281",
+    "status": "CONFIRMED",
+    "updatedBy": "Chef Balbir (Chulha Head)",
+    "customerName": "",
+    "name": "",
+    "customerPhone": "",
+    "phone": "In-House",
+    "staffUser": "staff1",
+    "staff": "Staff 1 - Floor Captain",
+    "stageIndex": 4,
+    "deliveryNotes": "Packed in Earthen Pots - Ready for Dispatch",
+    "updatedAt": "2026-11-09T11:03:07.589Z"
+  },
+  {
+    "id": "POS-1793611430281",
+    "status": "CHULHA_PREP",
+    "updatedBy": "kitchen",
+    "kitchenNotes": "Clay handi simmering on slow wood fire",
+    "customerName": "",
+    "name": "",
+    "customerPhone": "",
+    "phone": "In-House",
+    "staffUser": "staff1",
+    "staff": "Staff 1 - Floor Captain"
+  },
+  {
+    "id": "POS-1793611430281",
+    "orderNumber": "KOT-4458",
+    "type": "DINE_IN",
+    "tableNumber": "Table 2",
+    "guestCount": 3,
+    "customerName": "Chaudhary Veer",
+    "customerPhone": "9876543210",
+    "orderType": "DINE_IN",
+    "status": "DELIVERED",
+    "paymentStatus": "PENDING",
+    "paymentMode": "CASH",
+    "staffId": "staff",
+    "staffName": "Staff 1 - Floor Captain",
+    "items": [
+      {
+        "id": "handi_paneer",
+        "name": "Gaam Handi Paneer Kadhai",
+        "price": 299,
+        "quantity": 1,
+        "image": "images/dish_handi_paneer.jpg",
+        "selectedAddons": [
+          {
+            "name": "Extra Desi Ghee",
+            "price": 30
+          }
+        ]
+      },
+      {
+        "id": "roti_bajra_makhan",
+        "name": "Tawa Bajra Roti with Makhan (2 Pcs)",
+        "price": 89,
+        "quantity": 2,
+        "image": "images/dish_bajra_roti.jpg",
+        "selectedAddons": []
+      }
+    ],
+    "itemCount": 3,
+    "subtotal": 507,
+    "gst": 25.35,
+    "discount": 0,
+    "grandTotal": 532.35,
+    "timestamp": "2026-11-02T09:23:50.282Z",
+    "name": "Chaudhary Veer",
+    "phone": "9876543210",
+    "staffUser": "staff1",
+    "staff": "Staff 1 - Floor Captain",
+    "stageIndex": 5,
+    "settledWithBillId": "BILL-1793611430302"
+  },
+  {
+    "id": "MGK-223962",
+    "name": "Gaurav Singh",
+    "customerName": "Gaurav Singh",
+    "phone": "8954925305",
+    "customerPhone": "8954925305",
+    "address": "D-26 Shradhapuri Phase 2",
+    "items": [
+      {
+        "id": "cart_1793598694335",
+        "item": {
+          "id": "pizza_smokey_paneer_tikka",
+          "name": "Smokey Paneer Tikka Pizza",
+          "hindiName": "चूल्हा स्मोकी पनीर टिक्का पिज़्ज़ा",
+          "categoryId": "pizzas",
+          "description": "Wood-fired crispy charred crust topped with marinated smoky tandoori paneer cubes, crunchy capsicum, charred red onions, gooey mozzarella cheese and mint chutney swirl.",
+          "price": 269,
+          "originalPrice": 310,
+          "image": "images/dish_smokey_pizza.jpg",
+          "isVeg": true,
+          "isBestseller": true,
+          "isVillageSpecial": true,
+          "isDesiGheeSpecial": false,
+          "isAvailable": true,
+          "prepTime": 18,
+          "rating": 4.9,
+          "reviewCount": 420
+        },
+        "quantity": 1,
+        "spice": "Medium / मध्यम",
+        "addons": [],
+        "instructions": ""
+      }
+    ],
+    "total": 347,
+    "orderType": "delivery",
+    "paymentMethod": "COD",
+    "paymentMode": "CASH",
+    "paymentStatus": "PAID",
+    "upiUtr": null,
+    "stageIndex": 5,
+    "timestamp": "11:23 AM",
+    "staffUser": "delivery",
+    "staff": "Rider 1 - Gaam Delivery Partner",
+    "status": "DELIVERED",
+    "deliveryNotes": "Packed in Earthen Pots - Ready for Dispatch",
+    "updatedAt": "2026-11-09T10:56:55.489Z",
+    "updatedBy": "Chef Balbir (Chulha Head)",
+    "deliveredAt": "16:26"
+  },
+  {
+    "id": "KOT-1764",
+    "name": "Rohit Sharma (Test Guest)",
+    "customerName": "Rohit Sharma (Test Guest)",
+    "phone": "9811122233",
+    "customerPhone": "9811122233",
+    "orderType": "dine_in",
+    "address": "Table 1",
+    "table": "Table 1",
+    "staff": "Head Manager",
+    "staffUser": "admin",
+    "receivedBy": "admin",
+    "timestamp": "11:13 AM",
+    "items": [
+      {
+        "id": "thali_bajra_saag",
+        "name": "Chulha Bajra Roti & Saag Thali",
+        "hindiName": "चूल्हा बाजरा रोटी व साग थाली",
+        "price": 289,
+        "quantity": 1
+      }
+    ],
+    "notes": "Standard Gaam Style",
+    "total": 289,
+    "status": "DELIVERED",
+    "stageIndex": 6,
+    "updatedAt": "2026-11-02T11:08:32.363Z",
+    "deliveryNotes": "Served hot to table guest",
+    "updatedBy": "Ramesh Kumar (Floor Captain)"
+  },
+  {
+    "id": "TEST-DELIV-1793598042318",
+    "customerName": "Ankit Verma",
+    "customerPhone": "9876543210",
+    "address": "Flat 402, Royal Residency, Meerut",
+    "orderType": "delivery",
+    "items": [
+      {
+        "id": "dish_2",
+        "name": "Handi Dal Makhani",
+        "price": 189,
+        "quantity": 1
+      }
+    ],
+    "total": 189,
+    "status": "CONFIRMED",
+    "stageIndex": 4,
+    "paymentMode": "COD",
+    "paymentStatus": "PAID",
+    "staffUser": "delivery",
+    "staff": "Sonu Rider (Delivery Partner)",
+    "name": "Ankit Verma",
+    "phone": "9876543210",
+    "deliveryUserId": "usr_delivery1",
+    "updatedAt": "2026-11-19T10:30:07.440Z",
+    "updatedBy": "Sonu Rider (Delivery Partner)",
+    "paymentMethod": "CASH_ON_DELIVERY",
+    "deliveredAt": "2026-11-02T05:40:42.347Z"
+  },
+  {
+    "id": "TEST-POS-1793598042222",
+    "customerName": "Rohit Sharma (Test Guest)",
+    "customerPhone": "9811122233",
+    "table": "Table 1",
+    "orderType": "dine_in",
+    "items": [
+      {
+        "id": "dish_1",
+        "name": "Shahi Desi Thali",
+        "price": 249,
+        "quantity": 2
+      }
+    ],
+    "total": 498,
+    "status": "DELIVERED",
+    "stageIndex": 5,
+    "paymentMode": "CASH",
+    "paymentStatus": "PENDING",
+    "staffUser": "staff1",
+    "staff": "Ramesh Kumar (Floor Captain)",
+    "name": "Rohit Sharma (Test Guest)",
+    "phone": "9811122233",
+    "settledWithBillId": "BILL-MGK-4388",
+    "updatedAt": "2026-11-02T05:40:42.286Z",
+    "updatedBy": "Chef Balbir (Chulha Head)"
+  },
+  {
+    "id": "TEST-DELIV-1793597560383",
+    "customerName": "Ankit Verma",
+    "customerPhone": "9876543210",
+    "address": "Flat 402, Royal Residency, Meerut",
+    "orderType": "delivery",
+    "items": [
+      {
+        "id": "dish_2",
+        "name": "Handi Dal Makhani",
+        "price": 189,
+        "quantity": 1
+      }
+    ],
+    "total": 189,
+    "status": "CONFIRMED",
+    "stageIndex": 4,
+    "paymentMode": "COD",
+    "paymentStatus": "PAID",
+    "staffUser": "delivery",
+    "staff": "Sonu Rider (Delivery Partner)",
+    "name": "Ankit Verma",
+    "phone": "9876543210",
+    "deliveryUserId": "usr_delivery1",
+    "updatedAt": "2026-11-19T10:30:07.489Z",
+    "updatedBy": "Sonu Rider (Delivery Partner)",
+    "paymentMethod": "CASH_ON_DELIVERY",
+    "deliveredAt": "2026-11-02T05:32:40.408Z"
+  },
+  {
+    "id": "TEST-POS-1793597560286",
+    "customerName": "Rohit Sharma (Test Guest)",
+    "customerPhone": "9811122233",
+    "table": "Table 1",
+    "orderType": "dine_in",
+    "items": [
+      {
+        "id": "dish_1",
+        "name": "Shahi Desi Thali",
+        "price": 249,
+        "quantity": 2
+      }
+    ],
+    "total": 498,
+    "status": "DELIVERED",
+    "stageIndex": 6,
+    "paymentMode": "CASH",
+    "paymentStatus": "PENDING",
+    "staffUser": "staff1",
+    "staff": "Ramesh Kumar (Floor Captain)",
+    "name": "Rohit Sharma (Test Guest)",
+    "phone": "9811122233",
+    "settledWithBillId": "BILL-0297-922",
+    "updatedAt": "2026-11-02T11:08:30.455Z",
+    "updatedBy": "Ramesh Kumar (Floor Captain)",
+    "deliveryNotes": "Served hot to table guest"
+  },
+  {
+    "id": "KOT-7993",
+    "name": "Guest (Table 1)",
+    "customerName": "Guest (Table 1)",
+    "phone": "In-House",
+    "customerPhone": "In-House",
+    "orderType": "dine_in",
+    "address": "Table 1",
+    "table": "Table 1",
+    "staff": "Ramesh Kumar (Floor Captain)",
+    "staffUser": "staff1",
+    "receivedBy": "staff1",
+    "timestamp": "12:41 PM",
+    "items": [
+      {
+        "id": "pizza_smokey_paneer_tikka",
+        "name": "Smokey Paneer Tikka Pizza",
+        "hindiName": "चूल्हा स्मोकी पनीर टिक्का पिज़्ज़ा",
+        "price": 269,
+        "quantity": 1
+      }
+    ],
+    "notes": "Standard Gaam Style",
+    "total": 269,
+    "status": "DELIVERED",
+    "stageIndex": 6,
+    "deliveryNotes": "Served hot to table guest",
+    "updatedAt": "2026-11-02T11:08:28.811Z",
+    "updatedBy": "Ramesh Kumar (Floor Captain)"
+  },
+  {
+    "id": "KOT-2691",
+    "name": "gyngun (Table 1)",
+    "customerName": "gyngun (Table 1)",
+    "phone": "In-House",
+    "customerPhone": "In-House",
+    "orderType": "dine_in",
+    "address": "Table 1",
+    "table": "Table 1",
+    "staff": "Ramesh Kumar (Floor Captain)",
+    "staffUser": "staff1",
+    "receivedBy": "staff1",
+    "timestamp": "05:51 PM",
+    "items": [
+      {
+        "id": "handi_paneer",
+        "name": "Gaam Handi Paneer Kadhai",
+        "hindiName": "गाम हांडी पनीर कढ़ाई",
+        "price": 299,
+        "quantity": 1
+      }
+    ],
+    "notes": "Standard Gaam Style",
+    "total": 299,
+    "status": "DELIVERED",
+    "stageIndex": 6,
+    "deliveryNotes": "Served hot to table guest",
+    "updatedAt": "2026-11-02T11:08:26.448Z",
+    "updatedBy": "Ramesh Kumar (Floor Captain)"
+  },
+  {
+    "id": "KOT-6599",
+    "name": "Guest (Table 1)",
+    "customerName": "Guest (Table 1)",
+    "phone": "In-House",
+    "customerPhone": "In-House",
+    "orderType": "dine_in",
+    "address": "Table 1",
+    "table": "Table 1",
+    "staff": "Ramesh Kumar (Floor Captain)",
+    "staffUser": "staff1",
+    "receivedBy": "staff1",
+    "timestamp": "05:49 PM",
+    "items": [
+      {
+        "id": "handi_dal",
+        "name": "Chulha Handi Dal Makhani",
+        "hindiName": "चूल्हे की हांडी दाल मखनी",
+        "price": 269,
+        "quantity": 1
+      }
+    ],
+    "notes": "Standard Gaam Style",
+    "total": 269,
+    "status": "DELIVERED",
+    "stageIndex": 5,
+    "settledWithBillId": "BILL-MGK-2848"
+  },
+  {
+    "id": "KOT-5865",
+    "name": "Guest (Table 1)",
+    "customerName": "Guest (Table 1)",
+    "phone": "In-House",
+    "customerPhone": "In-House",
+    "orderType": "dine_in",
+    "address": "Table 1",
+    "table": "Table 1",
+    "staff": "Staff 3 - Chowki Server",
+    "staffUser": "staff3",
+    "receivedBy": "staff3",
+    "timestamp": "04:06 PM",
+    "items": [
+      {
+        "id": "handi_paneer",
+        "name": "Gaam Handi Paneer Kadhai",
+        "hindiName": "गाम हांडी पनीर कढ़ाई",
+        "price": 299,
+        "quantity": 1
+      }
+    ],
+    "notes": "Standard Gaam Style",
+    "total": 314,
+    "status": "DELIVERED",
+    "stageIndex": 5,
+    "updatedAt": "2026-10-07T10:41:46.690Z",
+    "settledWithBillId": "BILL-MGK-3810"
+  },
+  {
+    "id": "MGK-305178",
+    "name": "Gaurav Singh",
+    "customerName": "Gaurav Singh",
+    "phone": "8979753636",
+    "customerPhone": "8979753636",
+    "address": "Table 07 (Khatiya Baithak)",
+    "items": [
+      {
+        "id": "cart_1791368534505",
+        "item": {
+          "id": "roti_bajra_makhan",
+          "name": "Tawa Bajra Roti with Makhan (2 Pcs)",
+          "hindiName": "बाजरा रोटी मक्‍खन वाली (2 नग)",
+          "categoryId": "rotis",
+          "description": "Hand-patted organic pearl millet rotis roasted on a clay tawa, served with a big dollop of fresh churned white butter.",
+          "price": 89,
+          "originalPrice": 100,
+          "image": "images/dish_thali.jpg",
+          "isVeg": true,
+          "isBestseller": true,
+          "isVillageSpecial": true,
+          "isDesiGheeSpecial": true,
+          "isAvailable": true,
+          "prepTime": 15,
+          "rating": 4.9,
+          "reviewCount": 310
+        },
+        "quantity": 1,
+        "spice": "Mild / सौम्य",
+        "addons": [
+          {
+            "id": "add_1",
+            "name": "Extra Pure Desi Ghee Dollop",
+            "hindi": "अतिरिक्त शुद्ध देसी घी",
+            "price": 30
+          }
+        ],
+        "instructions": ""
+      }
+    ],
+    "total": 125,
+    "orderType": "dine_in",
+    "paymentMethod": "COD",
+    "paymentMode": "CASH",
+    "paymentStatus": "PENDING",
+    "upiUtr": null,
+    "stageIndex": 6,
+    "timestamp": "03:52 PM",
+    "staffUser": "staff4",
+    "staff": "Staff 4 - Charpai Captain",
+    "status": "DELIVERED",
+    "deliveryNotes": "Served hot to table guest",
+    "updatedAt": "2026-11-02T11:08:11.730Z",
+    "updatedBy": "Ramesh Kumar (Floor Captain)"
+  },
+  {
+    "id": "KOT-5400",
+    "name": "Anjali",
+    "customerName": "Anjali",
+    "phone": "In-House",
+    "customerPhone": "In-House",
+    "orderType": "dine_in",
+    "address": "Table 2",
+    "table": "Table 2",
+    "staff": "Staff 6 - Order Runner",
+    "staffUser": "staff6",
+    "receivedBy": "staff6",
+    "timestamp": "11:15 AM",
+    "items": [
+      {
+        "id": "handi_paneer",
+        "name": "Gaam Handi Paneer Kadhai",
+        "hindiName": "गाम हांडी पनीर कढ़ाई",
+        "price": 299,
+        "quantity": 1
+      },
+      {
+        "id": "roti_bajra_makhan",
+        "name": "Tawa Bajra Roti with Makhan (2 Pcs)",
+        "hindiName": "बाजरा रोटी मक्‍खन वाली (2 नग)",
+        "price": 89,
+        "quantity": 1
+      }
+    ],
+    "notes": "Standard Gaam Style",
+    "total": 407,
+    "status": "DELIVERED",
+    "stageIndex": 6,
+    "updatedAt": "2026-11-02T11:08:12.500Z",
+    "deliveryNotes": "Served hot to table guest",
+    "updatedBy": "Ramesh Kumar (Floor Captain)"
+  },
+  {
+    "id": "MGK-713704",
+    "name": "Gaurav Singh",
+    "customerName": "Gaurav Singh",
+    "phone": "8979753636",
+    "customerPhone": "8979753636",
+    "address": "Plot 42, Green Avenue, Sector 14, Near Village Chowk",
+    "items": [
+      {
+        "id": "cart_1791280087621",
+        "item": {
+          "id": "thali_special",
+          "name": "Mhare Gaam Ki Special Thali",
+          "hindiName": "म्‍हारे गाम की स्पेशल थाली",
+          "categoryId": "thalis",
+          "description": "The ultimate royal village feast: 2 Bajra Rotis topped with melting white butter, Sarson Ka Saag, 24-hr Handi Dal Makhani, Desi Ghee Churma, Kadhi Pakoda, Steamed Rice, Village Raita, Gur, Garlic Chutney & Kulhad Chaach.",
+          "price": 349,
+          "originalPrice": 420,
+          "image": "images/dish_thali.jpg",
+          "isVeg": true,
+          "isBestseller": true,
+          "isVillageSpecial": true,
+          "isDesiGheeSpecial": true,
+          "prepTime": 25,
+          "rating": 4.9,
+          "reviewCount": 380,
+          "addons": [
+            {
+              "id": "add_1",
+              "name": "Extra Pure Desi Ghee Dollop",
+              "hindi": "अतिरिक्त शुद्ध देसी घी",
+              "price": 30
+            },
+            {
+              "id": "add_2",
+              "name": "Fresh White Butter (Makhan)",
+              "hindi": "घर का सफेद मक्खन",
+              "price": 35
+            },
+            {
+              "id": "add_3",
+              "name": "Pure Gud (Organic Jaggery)",
+              "hindi": "देसी गुड़ की डली",
+              "price": 20
+            },
+            {
+              "id": "add_4",
+              "name": "Village Garlic-Chilli Chutney",
+              "hindi": "लहसुन-लाल मिर्च चटनी",
+              "price": 15
+            },
+            {
+              "id": "add_5",
+              "name": "Clay Roasted Chulha Papad",
+              "hindi": "चूल्हे पर सिका पापड़",
+              "price": 20
+            }
+          ]
+        },
+        "quantity": 2,
+        "spice": "Medium / मध्यम",
+        "addons": [
+          {
+            "id": "add_1",
+            "name": "Extra Pure Desi Ghee Dollop",
+            "hindi": "अतिरिक्त शुद्ध देसी घी",
+            "price": 30
+          }
+        ],
+        "instructions": "Extra white butter please"
+      }
+    ],
+    "total": 821,
+    "orderType": "delivery",
+    "paymentMethod": "COD",
+    "paymentMode": "CASH",
+    "paymentStatus": "PAID",
+    "upiUtr": null,
+    "stageIndex": 5,
+    "timestamp": "03:20 PM",
+    "staffUser": "delivery",
+    "staff": "Rider 1 - Gaam Delivery Partner",
+    "status": "DELIVERED",
+    "updatedAt": "2026-11-09T10:57:25.733Z",
+    "deliveryNotes": "Packed in Earthen Pots - Ready for Dispatch",
+    "updatedBy": "Chef Balbir (Chulha Head)",
+    "deliveredAt": "16:27"
+  },
+  {
+    "id": "TEST-PASS-02",
+    "customerName": "Verified Buyer",
+    "orderType": "delivery",
+    "total": 349,
+    "paymentMode": "UPI",
+    "upiUtr": "423589124567",
+    "items": [
+      {
+        "name": "Thali",
+        "qty": 1
+      }
+    ],
+    "name": "Verified Buyer",
+    "customerPhone": "",
+    "phone": "In-House",
+    "staffUser": "delivery",
+    "staff": "Rider 1 - Gaam Delivery Partner",
+    "paymentStatus": "PAID",
+    "paymentMethod": "PREPAID",
+    "status": "DELIVERED",
+    "stageIndex": 5,
+    "updatedAt": "2026-11-09T10:57:01.699Z",
+    "deliveryNotes": "Packed in Earthen Pots - Ready for Dispatch",
+    "updatedBy": "Chef Balbir (Chulha Head)",
+    "deliveredAt": "16:27"
+  },
+  {
+    "id": "MGK-719445",
+    "name": "Gaurav Singh",
+    "phone": "8979753636",
+    "address": "Plot 42, Green Avenue, Sector 14, Near Village Chowk",
+    "items": [
+      {
+        "id": "cart_1791019050864",
+        "item": {
+          "id": "thali_special",
+          "name": "Mhare Gaam Ki Special Thali",
+          "hindiName": "म्‍हारे गाम की स्पेशल थाली",
+          "categoryId": "thalis",
+          "description": "The ultimate royal village feast: 2 Bajra Rotis topped with melting white butter, Sarson Ka Saag, 24-hr Handi Dal Makhani, Desi Ghee Churma, Kadhi Pakoda, Steamed Rice, Village Raita, Gur, Garlic Chutney & Kulhad Chaach.",
+          "price": 349,
+          "originalPrice": 420,
+          "image": "images/dish_thali.jpg",
+          "isVeg": true,
+          "isBestseller": true,
+          "isVillageSpecial": true,
+          "isDesiGheeSpecial": true,
+          "prepTime": 25,
+          "rating": 4.9,
+          "reviewCount": 380,
+          "addons": [
+            {
+              "id": "add_1",
+              "name": "Extra Pure Desi Ghee Dollop",
+              "hindi": "अतिरिक्त शुद्ध देसी घी",
+              "price": 30
+            },
+            {
+              "id": "add_2",
+              "name": "Fresh White Butter (Makhan)",
+              "hindi": "घर का सफेद मक्खन",
+              "price": 35
+            },
+            {
+              "id": "add_3",
+              "name": "Pure Gud (Organic Jaggery)",
+              "hindi": "देसी गुड़ की डली",
+              "price": 20
+            },
+            {
+              "id": "add_4",
+              "name": "Village Garlic-Chilli Chutney",
+              "hindi": "लहसुन-लाल मिर्च चटनी",
+              "price": 15
+            },
+            {
+              "id": "add_5",
+              "name": "Clay Roasted Chulha Papad",
+              "hindi": "चूल्हे पर सिका पापड़",
+              "price": 20
+            }
+          ]
+        },
+        "quantity": 1,
+        "spice": "Medium / मध्यम",
+        "addons": [
+          {
+            "id": "add_1",
+            "name": "Extra Pure Desi Ghee Dollop",
+            "hindi": "अतिरिक्त शुद्ध देसी घी",
+            "price": 30
+          }
+        ],
+        "instructions": "Extra white butter please"
+      },
+      {
+        "id": "cart_1791019069194",
+        "item": {
+          "id": "handi_kadhi",
+          "name": "Desi Ghee Kadhi Pakoda",
+          "hindiName": "देसी घी कढ़ी पकोड़ा",
+          "categoryId": "handi",
+          "description": "Sour buttermilk kadhi slow-simmered with crispy fenugreek onion pakodas, finished with a sizzling heeng-zeera desi ghee chhonk.",
+          "price": 219,
+          "originalPrice": 249,
+          "image": "images/dish_handi_dal.jpg",
+          "isVeg": true,
+          "isBestseller": true,
+          "isVillageSpecial": true,
+          "isDesiGheeSpecial": true,
+          "isAvailable": true,
+          "prepTime": 15,
+          "rating": 4.8,
+          "reviewCount": 142
+        },
+        "quantity": 1,
+        "spice": "Medium / मध्यम",
+        "addons": [],
+        "instructions": ""
+      }
+    ],
+    "total": 693,
+    "orderType": "delivery",
+    "paymentMethod": "PREPAID",
+    "paymentMode": "UPI",
+    "paymentStatus": "PAID",
+    "stageIndex": 5,
+    "timestamp": "02:48 PM",
+    "customerName": "Gaurav Singh",
+    "customerPhone": "8979753636",
+    "staffUser": "delivery",
+    "staff": "Rider 1 - Gaam Delivery Partner",
+    "status": "DELIVERED",
+    "updatedAt": "2026-11-09T10:57:05.438Z",
+    "deliveryNotes": "Packed in Earthen Pots - Ready for Dispatch",
+    "updatedBy": "Chef Balbir (Chulha Head)",
+    "deliveredAt": "16:27"
+  },
+  {
+    "id": "KOT-8912",
+    "name": "Dine-In (Table 07 (Khatiya Baithak))",
+    "phone": "In-House Guest",
+    "orderType": "dine_in",
+    "address": "Table 07 (Khatiya Baithak)",
+    "table": "Table 07 (Khatiya Baithak)",
+    "staff": "Staff 3 - Chowki Server",
+    "staffUser": "staff3",
+    "receivedBy": "staff3",
+    "timestamp": "02:46 PM",
+    "items": [
+      {
+        "id": "thali_bajra_saag",
+        "name": "Chulha Bajra Roti & Saag Thali",
+        "hindiName": "चूल्हा बाजरा रोटी व साग थाली",
+        "price": 289,
+        "quantity": 1
+      },
+      {
+        "id": "sweet_churma",
+        "name": "Pure Desi Ghee Gud Churma",
+        "hindiName": "शुद्ध देसी घी गुड़ चूरमा",
+        "price": 199,
+        "quantity": 1
+      }
+    ],
+    "notes": "Standard Gaam Style",
+    "total": 512,
+    "status": "DELIVERED",
+    "stageIndex": 6,
+    "customerName": "Dine-In (Table 07 (Khatiya Baithak))",
+    "customerPhone": "In-House Guest",
+    "updatedAt": "2026-11-02T11:08:13.806Z",
+    "deliveryNotes": "Served hot to table guest",
+    "updatedBy": "Ramesh Kumar (Floor Captain)"
+  },
+  {
+    "id": "KOT-3179",
+    "name": "Gaurav Singh",
+    "customerName": "Gaurav Singh",
+    "phone": "9876543210",
+    "customerPhone": "9876543210",
+    "orderType": "dine_in",
+    "table": "Table 07 (Khatiya Baithak)",
+    "address": "Table 07 (Khatiya Baithak)",
+    "staff": "Staff 4 - Charpai Captain",
+    "staffUser": "staff4",
+    "receivedBy": "staff4",
+    "timestamp": "02:45 PM",
+    "items": [
+      {
+        "id": "thali_special",
+        "name": "Mhare Gaam Ki Special Thali",
+        "hindiName": "म्‍हारे गाम की स्पेशल थाली",
+        "price": 349,
+        "quantity": 2
+      },
+      {
+        "id": "roti_bajra",
+        "name": "Chulha Bajra Roti with Safed Makkhan",
+        "hindiName": "बाजरा रोटी सफेद मक्खन",
+        "price": 45,
+        "quantity": 4
+      }
+    ],
+    "notes": "Extra white butter on bajra roti, crisp chapatis, serve piping hot",
+    "total": 878,
+    "status": "DELIVERED",
+    "stageIndex": 6,
+    "updatedAt": "2026-11-02T11:08:15.618Z",
+    "deliveryNotes": "Served hot to table guest",
+    "updatedBy": "Ramesh Kumar (Floor Captain)"
+  },
+  {
+    "id": "KOT-2493",
+    "name": "Dine-In (Table 1)",
+    "phone": "In-House Guest",
+    "orderType": "dine_in",
+    "address": "Table 1",
+    "table": "Table 1",
+    "staff": "Staff 3 - Chowki Server",
+    "staffUser": "staff3",
+    "receivedBy": "staff3",
+    "timestamp": "02:21 PM",
+    "items": [
+      {
+        "id": "thali_special",
+        "name": "Mhare Gaam Ki Special Thali",
+        "hindiName": "म्‍हारे गाम की स्पेशल थाली",
+        "price": 349,
+        "quantity": 1
+      },
+      {
+        "id": "thali_bajra_saag",
+        "name": "Chulha Bajra Roti & Saag Thali",
+        "hindiName": "चूल्हा बाजरा रोटी व साग थाली",
+        "price": 289,
+        "quantity": 1
+      }
+    ],
+    "notes": "Standard Gaam Style",
+    "total": 670,
+    "status": "DELIVERED",
+    "stageIndex": 5,
+    "updatedAt": "2026-10-07T05:10:26.729Z",
+    "settledWithBillId": "BILL-MGK-5753"
+  },
+  {
+    "id": "MGK-511110",
+    "name": "Gaurav Singh",
+    "phone": "8979753636",
+    "address": "Plot 42, Green Avenue, Sector 14, Near Village Chowk",
+    "items": [
+      {
+        "id": "cart_1790765984357",
+        "item": {
+          "id": "thali_special",
+          "name": "Mhare Gaam Ki Special Thali",
+          "hindiName": "म्‍हारे गाम की स्पेशल थाली",
+          "categoryId": "thalis",
+          "description": "The ultimate royal village feast: 2 Bajra Rotis topped with melting white butter, Sarson Ka Saag, 24-hr Handi Dal Makhani, Desi Ghee Churma, Kadhi Pakoda, Steamed Rice, Village Raita, Gur, Garlic Chutney & Kulhad Chaach.",
+          "price": 349,
+          "originalPrice": 420,
+          "image": "images/dish_thali.jpg",
+          "isVeg": true,
+          "isBestseller": true,
+          "isVillageSpecial": true,
+          "isDesiGheeSpecial": true,
+          "prepTime": 25,
+          "rating": 4.9,
+          "reviewCount": 380,
+          "addons": [
+            {
+              "id": "add_1",
+              "name": "Extra Pure Desi Ghee Dollop",
+              "hindi": "अतिरिक्त शुद्ध देसी घी",
+              "price": 30
+            },
+            {
+              "id": "add_2",
+              "name": "Fresh White Butter (Makhan)",
+              "hindi": "घर का सफेद मक्खन",
+              "price": 35
+            },
+            {
+              "id": "add_3",
+              "name": "Pure Gud (Organic Jaggery)",
+              "hindi": "देसी गुड़ की डली",
+              "price": 20
+            },
+            {
+              "id": "add_4",
+              "name": "Village Garlic-Chilli Chutney",
+              "hindi": "लहसुन-लाल मिर्च चटनी",
+              "price": 15
+            },
+            {
+              "id": "add_5",
+              "name": "Clay Roasted Chulha Papad",
+              "hindi": "चूल्हे पर सिका पापड़",
+              "price": 20
+            }
+          ]
+        },
+        "quantity": 1,
+        "spice": "Medium / मध्यम",
+        "addons": [
+          {
+            "id": "add_1",
+            "name": "Extra Pure Desi Ghee Dollop",
+            "hindi": "अतिरिक्त शुद्ध देसी घी",
+            "price": 30
+          }
+        ],
+        "instructions": "Extra white butter please"
+      }
+    ],
+    "total": 463,
+    "orderType": "delivery",
+    "paymentMethod": "PREPAID",
+    "paymentMode": "UPI",
+    "paymentStatus": "PAID",
+    "stageIndex": 5,
+    "timestamp": "04:30 PM",
+    "staffUser": "delivery",
+    "staff": "Rider 1 - Gaam Delivery Partner",
+    "status": "DELIVERED",
+    "updatedAt": "2026-11-09T10:57:10.069Z",
+    "deliveryNotes": "Packed in Earthen Pots - Ready for Dispatch",
+    "updatedBy": "Chef Balbir (Chulha Head)",
+    "deliveredAt": "16:27"
+  },
+  {
+    "id": "KOT-3201",
+    "name": "Dine-In (Table 1)",
+    "phone": "In-House Guest",
+    "orderType": "dine_in",
+    "address": "Table 1",
+    "table": "Table 1",
+    "staff": "Staff 2 - Table Attendant",
+    "staffUser": "staff2",
+    "receivedBy": "staff2",
+    "timestamp": "04:03 PM",
+    "items": [
+      {
+        "id": "thali_bajra_saag",
+        "name": "Chulha Bajra Roti & Saag Thali",
+        "hindiName": "चूल्हा बाजरा रोटी व साग थाली",
+        "price": 289,
+        "quantity": 1
+      }
+    ],
+    "notes": "Standard Gaam Style",
+    "total": 303,
+    "status": "DELIVERED",
+    "stageIndex": 5,
+    "updatedAt": "2026-10-03T08:48:09.499Z",
+    "settledWithBillId": "BILL-MGK-4050"
+  },
+  {
+    "id": "KOT-4293",
+    "name": "Dine-In (Table 3)",
+    "phone": "In-House Guest",
+    "orderType": "dine_in",
+    "address": "Table 3",
+    "table": "Table 3",
+    "staff": "Staff 1 - Floor Captain",
+    "staffUser": "staff1",
+    "receivedBy": "staff1",
+    "timestamp": "03:47 PM",
+    "items": [
+      {
+        "id": "drink_kesar_lassi",
+        "name": "Kulhad Kesar Malai Lassi",
+        "hindiName": "कुल्हड़ केसर मलाई लस्सी",
+        "price": 99,
+        "quantity": 1
+      }
+    ],
+    "notes": "Standard Gaam Style",
+    "total": 104,
+    "status": "DELIVERED",
+    "stageIndex": 5,
+    "settledWithBillId": "BILL-MGK-9732"
+  },
+  {
+    "id": "KOT-8934",
+    "name": "Dine-In (Table 3)",
+    "phone": "In-House Guest",
+    "orderType": "dine_in",
+    "address": "Table 3",
+    "table": "Table 3",
+    "staff": "Staff 1 - Floor Captain",
+    "staffUser": "staff1",
+    "receivedBy": "staff1",
+    "timestamp": "03:46 PM",
+    "items": [
+      {
+        "id": "thali_special",
+        "name": "Mhare Gaam Ki Special Thali",
+        "hindiName": "म्‍हारे गाम की स्पेशल थाली",
+        "price": 349,
+        "quantity": 1
+      }
+    ],
+    "notes": "Standard Gaam Style",
+    "total": 366,
+    "status": "DELIVERED",
+    "stageIndex": 5,
+    "settledWithBillId": "BILL-MGK-1410"
+  },
+  {
+    "id": "MGK-552190",
+    "name": "Sunil Verma",
+    "phone": "+91 98112 34567",
+    "address": "Villa 12, Block B, Silver Palms, Near City Mall",
+    "items": [
+      {
+        "name": "Chulha Bajra Roti & Saag Thali",
+        "quantity": 1,
+        "price": 289,
+        "spice": "Medium / मध्यम",
+        "addons": "Fresh White Butter (Makhan)"
+      },
+      {
+        "name": "Kulhad Kesar Malai Lassi",
+        "quantity": 1,
+        "price": 99,
+        "spice": "Mild / सौम्य",
+        "addons": ""
+      }
+    ],
+    "total": 453,
+    "orderType": "delivery",
+    "paymentMethod": "COD",
+    "paymentMode": "CASH",
+    "paymentStatus": "PENDING",
+    "status": "DELIVERED",
+    "stageIndex": 5,
+    "timestamp": "Today, 02:28 PM",
+    "staffUser": "delivery",
+    "staff": "Rider 1 - Gaam Delivery Partner"
+  },
+  {
+    "id": "MGK-224023",
+    "name": "Gaurav Singh",
+    "phone": "+91 89797 53636",
+    "address": "Plot 42, Green Avenue, Sector 14, Near Village Chowk",
+    "items": [
+      {
+        "id": "cart_1790582121799",
+        "item": {
+          "id": "thali_special",
+          "name": "Mhare Gaam Ki Special Thali",
+          "hindiName": "म्‍हारे गाम की स्पेशल थाली",
+          "categoryId": "thalis",
+          "description": "The ultimate royal village feast: 2 Bajra Rotis topped with melting white butter, Sarson Ka Saag, 24-hr Handi Dal Makhani, Desi Ghee Churma, Kadhi Pakoda, Steamed Rice, Village Raita, Gur, Garlic Chutney & Kulhad Chaach.",
+          "price": 349,
+          "originalPrice": 420,
+          "image": "images/dish_thali.jpg",
+          "isVeg": true,
+          "isBestseller": true,
+          "isVillageSpecial": true,
+          "isDesiGheeSpecial": true,
+          "prepTime": 25,
+          "rating": 4.9,
+          "reviewCount": 380,
+          "addons": [
+            {
+              "id": "add_1",
+              "name": "Extra Pure Desi Ghee Dollop",
+              "hindi": "अतिरिक्त शुद्ध देसी घी",
+              "price": 30
+            },
+            {
+              "id": "add_2",
+              "name": "Fresh White Butter (Makhan)",
+              "hindi": "घर का सफेद मक्खन",
+              "price": 35
+            },
+            {
+              "id": "add_3",
+              "name": "Pure Gud (Organic Jaggery)",
+              "hindi": "देसी गुड़ की डली",
+              "price": 20
+            },
+            {
+              "id": "add_4",
+              "name": "Village Garlic-Chilli Chutney",
+              "hindi": "लहसुन-लाल मिर्च चटनी",
+              "price": 15
+            },
+            {
+              "id": "add_5",
+              "name": "Clay Roasted Chulha Papad",
+              "hindi": "चूल्हे पर सिका पापड़",
+              "price": 20
+            }
+          ]
+        },
+        "quantity": 2,
+        "spice": "Medium / मध्यम",
+        "addons": [
+          {
+            "id": "add_1",
+            "name": "Extra Pure Desi Ghee Dollop",
+            "hindi": "अतिरिक्त शुद्ध देसी घी",
+            "price": 30
+          }
+        ],
+        "instructions": "Extra white butter please"
+      }
+    ],
+    "total": 861,
+    "orderType": "delivery",
+    "paymentMethod": "COD",
+    "paymentMode": "CASH",
+    "paymentStatus": "PENDING",
+    "status": "DELIVERED",
+    "stageIndex": 5,
+    "timestamp": "01:26 PM",
+    "deliveredAt": "02:21 PM",
+    "staffUser": "delivery",
+    "staff": "Rider 1 - Gaam Delivery Partner"
+  },
+  {
+    "id": "KOT-4442",
+    "name": "Dine-In (Table 1)",
+    "phone": "In-House Guest",
+    "orderType": "dine_in",
+    "address": "Table 1",
+    "table": "Table 1",
+    "staff": "Staff 1 - Floor Captain",
+    "timestamp": "05:44 PM",
+    "items": [
+      {
+        "id": "handi_paneer",
+        "name": "Gaam Handi Paneer Kadhai",
+        "hindiName": "गाम हांडी पनीर कढ़ाई",
+        "price": 299,
+        "quantity": 1
+      }
+    ],
+    "notes": "Standard Gaam Style",
+    "total": 314,
+    "status": "DELIVERED",
+    "stageIndex": 5,
+    "staffUser": "staff1",
+    "settledWithBillId": "BILL-MGK-7187"
+  },
+  {
+    "id": "MGK-713001",
+    "name": "Gaurav Singh",
+    "address": "Table 07 (Khatiya Baithak)",
+    "items": [
+      {
+        "id": "cart_1790511071002",
+        "item": {
+          "id": "thali_special",
+          "name": "Mhare Gaam Ki Special Thali",
+          "hindiName": "म्‍हारे गाम की स्पेशल थाली",
+          "categoryId": "thalis",
+          "description": "The ultimate royal village feast: 2 Bajra Rotis topped with melting white butter, Sarson Ka Saag, 24-hr Handi Dal Makhani, Desi Ghee Churma, Kadhi Pakoda, Steamed Rice, Village Raita, Gur, Garlic Chutney & Kulhad Chaach.",
+          "price": 349,
+          "originalPrice": 420,
+          "image": "images/dish_thali.jpg",
+          "isVeg": true,
+          "isBestseller": true,
+          "isVillageSpecial": true,
+          "isDesiGheeSpecial": true,
+          "prepTime": 25,
+          "rating": 4.9,
+          "reviewCount": 380,
+          "addons": [
+            {
+              "id": "add_1",
+              "name": "Extra Pure Desi Ghee Dollop",
+              "hindi": "अतिरिक्त शुद्ध देसी घी",
+              "price": 30
+            },
+            {
+              "id": "add_2",
+              "name": "Fresh White Butter (Makhan)",
+              "hindi": "घर का सफेद मक्खन",
+              "price": 35
+            },
+            {
+              "id": "add_3",
+              "name": "Pure Gud (Organic Jaggery)",
+              "hindi": "देसी गुड़ की डली",
+              "price": 20
+            },
+            {
+              "id": "add_4",
+              "name": "Village Garlic-Chilli Chutney",
+              "hindi": "लहसुन-लाल मिर्च चटनी",
+              "price": 15
+            },
+            {
+              "id": "add_5",
+              "name": "Clay Roasted Chulha Papad",
+              "hindi": "चूल्हे पर सिका पापड़",
+              "price": 20
+            }
+          ]
+        },
+        "quantity": 2,
+        "spice": "Medium / मध्यम",
+        "addons": [
+          {
+            "id": "add_1",
+            "name": "Extra Pure Desi Ghee Dollop",
+            "hindi": "अतिरिक्त शुद्ध देसी घी",
+            "price": 30
+          }
+        ],
+        "instructions": "Extra white butter please"
+      }
+    ],
+    "total": 796,
+    "orderType": "dine_in",
+    "stageIndex": 6,
+    "timestamp": "05:41 PM",
+    "status": "DELIVERED",
+    "staffUser": "staff4",
+    "staff": "Staff 4 - Charpai Captain",
+    "updatedAt": "2026-11-02T11:08:18.434Z",
+    "deliveryNotes": "Served hot to table guest",
+    "updatedBy": "Ramesh Kumar (Floor Captain)"
+  },
+  {
+    "id": "MGK-702624",
+    "name": "Gaurav Singh",
+    "address": "Table 07 (Khatiya Baithak)",
+    "items": [
+      {
+        "id": "cart_1790505565513",
+        "item": {
+          "id": "thali_special",
+          "name": "Mhare Gaam Ki Special Thali",
+          "hindiName": "म्‍हारे गाम की स्पेशल थाली",
+          "categoryId": "thalis",
+          "description": "The ultimate royal village feast: 2 Bajra Rotis topped with melting white butter, Sarson Ka Saag, 24-hr Handi Dal Makhani, Desi Ghee Churma, Kadhi Pakoda, Steamed Rice, Village Raita, Gur, Garlic Chutney & Kulhad Chaach.",
+          "price": 349,
+          "originalPrice": 420,
+          "image": "images/dish_thali.jpg",
+          "isVeg": true,
+          "isBestseller": true,
+          "isVillageSpecial": true,
+          "isDesiGheeSpecial": true,
+          "isAvailable": true,
+          "prepTime": 25,
+          "rating": 4.9,
+          "reviewCount": 380
+        },
+        "quantity": 1,
+        "spice": "Medium / मध्यम",
+        "addons": [
+          {
+            "id": "add_1",
+            "name": "Extra Pure Desi Ghee Dollop",
+            "hindi": "अतिरिक्त शुद्ध देसी घी",
+            "price": 30
+          }
+        ],
+        "instructions": ""
+      }
+    ],
+    "total": 341,
+    "orderType": "dine_in",
+    "stageIndex": 6,
+    "timestamp": "04:10 PM",
+    "status": "DELIVERED",
+    "staffUser": "staff4",
+    "staff": "Staff 4 - Charpai Captain",
+    "updatedAt": "2026-11-02T11:08:19.483Z",
+    "deliveryNotes": "Served hot to table guest",
+    "updatedBy": "Ramesh Kumar (Floor Captain)"
+  },
+  {
+    "id": "KOT-1963",
+    "name": "Dine-In (Table 1)",
+    "phone": "In-House Guest",
+    "orderType": "dine_in",
+    "address": "Table 1",
+    "table": "Table 1",
+    "staff": "Staff 1 - Floor Captain",
+    "timestamp": "03:07 PM",
+    "items": [
+      {
+        "id": "handi_dal",
+        "name": "Chulha Handi Dal Makhani",
+        "hindiName": "चूल्हे की हांडी दाल मखनी",
+        "price": 269,
+        "quantity": 1
+      },
+      {
+        "id": "thali_bajra_saag",
+        "name": "Chulha Bajra Roti & Saag Thali",
+        "hindiName": "चूल्हा बाजरा रोटी व साग थाली",
+        "price": 289,
+        "quantity": 1
+      }
+    ],
+    "notes": "Standard Gaam Style",
+    "total": 586,
+    "status": "DELIVERED",
+    "stageIndex": 5,
+    "staffUser": "staff1",
+    "settledWithBillId": "BILL-MGK-9362"
+  },
+  {
+    "id": "KOT-1024",
+    "name": "Dine-In (Table 2)",
+    "phone": "In-House Guest",
+    "orderType": "dine_in",
+    "address": "Table 2",
+    "table": "Table 2",
+    "staff": "Staff 1 - Floor Captain",
+    "timestamp": "11:50 AM",
+    "items": [
+      {
+        "id": "dish_thali_special",
+        "name": "Shahi Gaam Thali",
+        "hindiName": "शाही गाम थाली",
+        "price": 299,
+        "quantity": 2
+      },
+      {
+        "id": "dish_bajra_roti",
+        "name": "Bajra Roti with Safed Makkhan",
+        "hindiName": "बाजरे की रोटी",
+        "price": 45,
+        "quantity": 4
+      }
+    ],
+    "notes": "Crispy rotis with extra white makhan",
+    "total": 817,
+    "status": "DELIVERED",
+    "stageIndex": 5,
+    "staffUser": "staff1",
+    "settledWithBillId": "BILL-MGK-6233"
+  },
+  {
+    "id": "MGK-849201",
+    "name": "Gaurav Singh",
+    "phone": "8979753636",
+    "address": "Plot 42, Green Avenue, Sector 14",
+    "orderType": "delivery",
+    "tableNumber": null,
+    "items": [
+      {
+        "name": "Mhare Gaam Ki Special Thali",
+        "quantity": 1,
+        "price": 349,
+        "spice": "Medium / मध्यम",
+        "addons": "Extra Pure Desi Ghee Dollop"
+      },
+      {
+        "name": "Kulhad Kesar Malai Lassi",
+        "quantity": 2,
+        "price": 99,
+        "spice": "Mild / सौम्य",
+        "addons": ""
+      }
+    ],
+    "total": 597,
+    "paymentMethod": "PREPAID",
+    "paymentMode": "UPI",
+    "paymentStatus": "PAID",
+    "status": "DELIVERED",
+    "stageIndex": 5,
+    "timestamp": "Today, 02:15 PM",
+    "deliveredAt": "02:21 PM",
+    "staffUser": "delivery",
+    "staff": "Rider 1 - Gaam Delivery Partner"
+  },
+  {
+    "id": "MGK-319482",
+    "name": "Amit Sharma",
+    "phone": "9812345678",
+    "address": "Table 04 (Charpai Baithak)",
+    "orderType": "dine_in",
+    "tableNumber": "Table 04",
+    "items": [
+      {
+        "name": "Chulha Handi Dal Makhani",
+        "quantity": 1,
+        "price": 269,
+        "spice": "Medium / मध्यम",
+        "addons": "Fresh White Butter"
+      },
+      {
+        "name": "Tawa Bajra Roti with Makhan (2 Pcs)",
+        "quantity": 2,
+        "price": 89,
+        "spice": "Mild / सौम्य",
+        "addons": ""
+      }
+    ],
+    "total": 472,
+    "status": "DELIVERED",
+    "stageIndex": 6,
+    "timestamp": "Today, 01:45 PM",
+    "staffUser": "staff2",
+    "staff": "Staff 2 - Table Attendant",
+    "updatedAt": "2026-11-02T11:08:21.699Z",
+    "deliveryNotes": "Served hot to table guest",
+    "updatedBy": "Ramesh Kumar (Floor Captain)"
+  }
+]

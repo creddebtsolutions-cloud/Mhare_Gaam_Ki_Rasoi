@@ -1,0 +1,110 @@
+[
+  {
+    "id": "table_1",
+    "name": "Table 1",
+    "category": "Standard Table",
+    "capacity": 4,
+    "section": "Main Hall",
+    "isDefault": true
+  },
+  {
+    "id": "table_2",
+    "name": "Table 2",
+    "category": "Standard Table",
+    "capacity": 4,
+    "section": "Main Hall",
+    "isDefault": true
+  },
+  {
+    "id": "table_3",
+    "name": "Table 3",
+    "category": "Standard Table",
+    "capacity": 4,
+    "section": "Main Hall",
+    "isDefault": true
+  },
+  {
+    "id": "table_4",
+    "name": "Table 4",
+    "category": "Standard Table",
+    "capacity": 6,
+    "section": "Main Hall",
+    "isDefault": true
+  },
+  {
+    "id": "table_5",
+    "name": "Table 5",
+    "category": "Standard Table",
+    "capacity": 6,
+    "section": "Main Hall",
+    "isDefault": true
+  },
+  {
+    "id": "table_07",
+    "name": "Table 07 (Khatiya Baithak)",
+    "category": "Khatiya Baithak",
+    "capacity": 6,
+    "section": "Courtyard",
+    "isDefault": true
+  },
+  {
+    "id": "charpai_1",
+    "name": "Charpai 1 (खाट)",
+    "category": "Charpai",
+    "capacity": 4,
+    "section": "Courtyard",
+    "isDefault": true
+  },
+  {
+    "id": "charpai_2",
+    "name": "Charpai 2 (खाट)",
+    "category": "Charpai",
+    "capacity": 4,
+    "section": "Courtyard",
+    "isDefault": true
+  },
+  {
+    "id": "chowki_1",
+    "name": "Chowki 1 (बैठक)",
+    "category": "Chowki",
+    "capacity": 4,
+    "section": "Heritage Corner",
+    "isDefault": true
+  },
+  {
+    "id": "chowki_2",
+    "name": "Chowki 2 (बैठक)",
+    "category": "Chowki",
+    "capacity": 4,
+    "section": "Heritage Corner",
+    "isDefault": true
+  },
+  {
+    "id": "takeaway",
+    "name": "Takeaway Counter",
+    "category": "Counter",
+    "capacity": 1,
+    "section": "Front Desk",
+    "isDefault": true
+  },
+  {
+    "id": "table_muxy77jt_5a3",
+    "name": "Table 6",
+    "category": "Standard Table",
+    "capacity": 4,
+    "section": "Main Dining Hall",
+    "createdAt": "2026-10-07T10:11:47.321Z",
+    "createdBy": "admin",
+    "isCustom": true
+  },
+  {
+    "id": "table_mvz1xoty_l3f",
+    "name": "Baithak 99",
+    "category": "Standard Table",
+    "capacity": 6,
+    "section": "Dining Area",
+    "createdAt": "2026-11-02T09:23:50.134Z",
+    "createdBy": "admin",
+    "isCustom": true
+  }
+]

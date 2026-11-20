@@ -1,0 +1,148 @@
+{
+  "users": {
+    "admin": {
+      "password": "admin@1234",
+      "altPassword": "gaam123",
+      "recoveryPin": "RASOI2026",
+      "role": "Master Admin",
+      "name": "Head Admin",
+      "allowedTabs": [
+        "dishes",
+        "staff-pos",
+        "orders",
+        "bookings",
+        "staff-accounts"
+      ]
+    },
+    "staff": {
+      "password": "staff@1234",
+      "altPassword": "staff123",
+      "recoveryPin": "RASOI2026",
+      "role": "Floor Staff (In-House POS)",
+      "name": "Staff 1 - Floor Captain",
+      "staffNumber": 1,
+      "allowedTabs": [
+        "staff-pos",
+        "orders"
+      ]
+    },
+    "staff1": {
+      "password": "staff1@1234",
+      "altPassword": "staff123",
+      "recoveryPin": "RASOI2026",
+      "role": "Floor Staff (In-House POS)",
+      "name": "Staff 1 - Floor Captain",
+      "staffNumber": 1,
+      "allowedTabs": [
+        "staff-pos",
+        "orders"
+      ],
+      "updatedAt": "2026-09-27T10:43:59.785Z"
+    },
+    "staff2": {
+      "password": "staff@1234",
+      "altPassword": "staff102",
+      "recoveryPin": "RASOI2026",
+      "role": "Floor Staff (In-House POS)",
+      "name": "Staff 2 - Table Attendant",
+      "staffNumber": 2,
+      "allowedTabs": [
+        "staff-pos",
+        "orders"
+      ]
+    },
+    "staff3": {
+      "password": "staff@1234",
+      "altPassword": "staff103",
+      "recoveryPin": "RASOI2026",
+      "role": "Floor Staff (In-House POS)",
+      "name": "Staff 3 - Chowki Server",
+      "staffNumber": 3,
+      "allowedTabs": [
+        "staff-pos",
+        "orders"
+      ],
+      "updatedAt": "2026-09-27T09:52:46.106Z"
+    },
+    "staff4": {
+      "password": "staff@1234",
+      "altPassword": "staff104",
+      "recoveryPin": "RASOI2026",
+      "role": "Floor Staff (In-House POS)",
+      "name": "Staff 4 - Charpai Captain",
+      "staffNumber": 4,
+      "allowedTabs": [
+        "staff-pos",
+        "orders"
+      ]
+    },
+    "staff5": {
+      "password": "staff@1234",
+      "altPassword": "staff105",
+      "recoveryPin": "RASOI2026",
+      "role": "Floor Staff (In-House POS)",
+      "name": "Staff 5 - Billing Counter",
+      "staffNumber": 5,
+      "allowedTabs": [
+        "staff-pos",
+        "orders"
+      ]
+    },
+    "staff6": {
+      "password": "staff@1234",
+      "altPassword": "staff106",
+      "recoveryPin": "RASOI2026",
+      "role": "Floor Staff (In-House POS)",
+      "name": "Staff 6 - Order Runner",
+      "staffNumber": 6,
+      "allowedTabs": [
+        "staff-pos",
+        "orders"
+      ]
+    },
+    "kitchen": {
+      "password": "Kitchen@1234",
+      "altPassword": "kitchen123",
+      "recoveryPin": "RASOI2026",
+      "role": "Kitchen Display System (KDS)",
+      "name": "Chulha Master",
+      "allowedTabs": [
+        "orders"
+      ]
+    },
+    "gaam": {
+      "password": "gaam123",
+      "recoveryPin": "RASOI2026",
+      "role": "Kitchen Manager",
+      "name": "Gaam Manager",
+      "allowedTabs": [
+        "dishes",
+        "staff-pos",
+        "orders",
+        "bookings"
+      ]
+    },
+    "delivery": {
+      "password": "Delivery@1234",
+      "altPassword": "delivery123",
+      "recoveryPin": "RASOI2026",
+      "role": "Delivery Partner (Gaam Rider)",
+      "name": "Rider 1 - Gaam Delivery Partner",
+      "allowedTabs": [
+        "orders"
+      ],
+      "updatedAt": "2026-09-27T10:49:33.665Z"
+    },
+    "delivery1": {
+      "password": "Delivery@1234",
+      "altPassword": "delivery123",
+      "recoveryPin": "RASOI2026",
+      "role": "Delivery Partner (Gaam Rider)",
+      "name": "Rider 1 - Gaam Delivery Partner",
+      "allowedTabs": [
+        "orders"
+      ]
+    }
+  },
+  "masterRecoveryPin": "RASOI2026"
+}

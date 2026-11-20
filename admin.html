@@ -1,0 +1,1707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Admin Portal • Mhare Gaam Ki Rasoi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+
+<body class="device-phone-mode">
+
+  <!-- Desktop Presentation Toolbar -->
+  <header class="preview-toolbar">
+    <div class="toolbar-brand">
+      <img src="images/restaurant_logo.jpg" alt="Logo" class="toolbar-logo">
+      <div>
+        <h1 class="toolbar-title">Mhare Gaam Ki Rasoi</h1>
+        <p class="toolbar-subtitle">Admin & Staff Portal • Android Mobile Screen Previews</p>
+      </div>
+    </div>
+    <div class="toolbar-actions">
+      <!-- Role Preview Shortcuts -->
+      <div class="role-preview-chips" id="rolePreviewChips" title="Switch Android Screen Preview by Role">
+        <span class="preview-label">📱 Preview Screen:</span>
+        <button type="button" class="btn-role-preview active" data-role="admin">👑 Admin</button>
+        <button type="button" class="btn-role-preview" data-role="staff">🍽️ Staff POS</button>
+        <button type="button" class="btn-role-preview" data-role="kitchen">🔥 Kitchen KDS</button>
+        <button type="button" class="btn-role-preview" data-role="delivery">🛵 Delivery</button>
+      </div>
+      <!-- View Mode Toggles -->
+      <div class="view-toggles">
+        <button id="toggleDeviceBtn" class="btn-toggle active" title="Switch to Android Mobile Screen Frame">
+          <span class="icon">📱</span> Android View
+        </button>
+        <button id="toggleFullscreenBtn" class="btn-toggle" title="Full Width Desktop View">
+          <span class="icon">🖥️</span> Responsive View
+        </button>
+      </div>
+      <div class="quick-links">
+        <button type="button" id="btnToolbarInstallApk" class="btn-toggle" style="background: linear-gradient(135deg, #2E7D32, #43A047); color: #FFF; border: 1px solid #81C784; font-weight: 700; cursor: pointer;">
+          <span>📲</span> Install on Android
+        </button>
+        <a href="index.html" class="btn-toggle" style="background: var(--terracotta); color: #FFF; text-decoration: none; font-weight: 700;">
+          <span>🛒</span> Customer View
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Device Simulator Container -->
+  <main class="simulator-wrapper">
+    <div class="phone-frame" id="phoneFrame">
+      
+      <!-- Android Phone Status Bar -->
+      <div class="android-status-bar">
+        <span class="status-time" id="statusTime">12:30</span>
+        <div class="camera-notch"></div>
+        <div class="status-icons">
+          <span class="icon-wifi">📶</span>
+          <span class="icon-signal">5G</span>
+          <span class="icon-battery">🔋 98%</span>
+        </div>
+      </div>
+
+      <!-- Scrollable Admin Phone Viewport -->
+      <div class="admin-phone-viewport" id="adminPhoneViewport">
+
+  <!-- ==========================================
+       ADMIN LOGIN SCREEN (Shown if not logged in)
+       ========================================== -->
+  <div class="login-wrapper" id="adminLoginSection">
+    <div class="login-card">
+      <div class="login-header">
+        <div class="login-logo-ring">
+          <img src="images/restaurant_logo.jpg" alt="Logo">
+        </div>
+        <h2 class="login-title">Mhare Gaam Ki Rasoi</h2>
+        <p class="login-subtitle" id="loginSubtitle">Admin & Kitchen Management Portal</p>
+        <span class="login-hindi" id="loginHindiTag">रसोई प्रबंधन लॉगिन</span>
+
+        <!-- Role Switcher -->
+        <div class="login-role-tabs" id="loginRoleTabs">
+          <button type="button" class="login-role-tab active" data-role="admin">
+            👑 Admin
+          </button>
+          <button type="button" class="login-role-tab" data-role="staff">
+            🍽️ Staff POS
+          </button>
+          <button type="button" class="login-role-tab" data-role="kitchen">
+            🔥 Kitchen KDS
+          </button>
+          <button type="button" class="login-role-tab" data-role="delivery">
+            🛵 Delivery
+          </button>
+        </div>
+      </div>
+
+      <!-- 1. SIGN IN VIEW -->
+      <div id="loginViewContainer">
+        <form id="adminLoginForm" class="login-form">
+          <div class="form-group">
+            <label for="adminUsername" id="loginUsernameLabel">Admin ID</label>
+            <div class="input-with-icon">
+              <span class="input-icon" id="loginUsernameIcon">👤</span>
+              <input type="text" id="adminUsername" required placeholder="Enter Admin ID" autocomplete="username">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="adminPassword">Password</label>
+            <div class="input-with-icon">
+              <span class="input-icon">🔒</span>
+              <input type="password" id="adminPassword" required placeholder="Enter Password"
+                autocomplete="current-password">
+              <button type="button" class="btn-toggle-pwd" id="togglePasswordBtn"
+                title="Show / Hide Password">👁️</button>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block btn-lg" id="loginSubmitBtn">
+            <span id="loginSubmitLabel">Sign In to Rasoi Admin</span>
+            <span>→</span>
+          </button>
+
+          <div class="login-footer">
+            <span class="login-help-note" style="font-size: 0.78rem; color: var(--text-muted);">🔒 Password resets
+              managed by Master Admin</span>
+            <span class="footer-separator">•</span>
+            <a href="index.html" class="link-back-customer">Return to App</a>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div><!-- End #adminLoginSection -->
+
+  <!-- ==========================================
+       ADMIN DASHBOARD (Shown once authenticated)
+       ========================================== -->
+  <div id="adminDashboardWrapper" style="display: none;">
+    <!-- Admin Navigation Header -->
+    <header class="admin-header">
+      <div class="header-container">
+        <div class="header-top-row">
+          <div class="header-brand">
+            <img src="images/restaurant_logo.jpg" alt="Logo" class="admin-logo">
+            <div>
+              <h1 class="brand-title">Mhare Gaam Ki Rasoi</h1>
+              <span class="brand-badge">Admin & Rasoi Management Panel</span>
+            </div>
+          </div>
+          <div class="header-user-status-box">
+            <span class="admin-user-pill">👤 <strong id="loggedAdminName">admin</strong></span>
+            <!-- Order Ready Notification Bell (For Staff, Delivery & Admin) -->
+            <div class="header-notif-wrapper" id="headerNotifWrapper">
+              <button type="button" class="btn-header-notif" id="btnHeaderNotif" title="Order Notifications">
+                <span class="notif-bell-icon">🔔</span>
+                <span class="notif-badge" id="notifBadge" style="display: none;">0</span>
+              </button>
+              <div class="notif-dropdown-panel" id="notifDropdownPanel" style="display: none;">
+                <div class="notif-dropdown-header">
+                  <div class="notif-dropdown-title">
+                    <span>🔔 Order Notifications</span>
+                    <span class="notif-user-tag" id="notifUserTag">Staff</span>
+                  </div>
+                  <div class="notif-header-btns">
+                    <button type="button" class="btn-clear-notifs" id="btnClearNotifs">Mark all read</button>
+                    <button type="button" class="btn-close-notifs" id="btnCloseNotifDropdown" title="Close notifications">✕</button>
+                  </div>
+                </div>
+                <div class="notif-dropdown-list" id="notifDropdownList">
+                  <div class="notif-empty-state">No notifications yet</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-actions admin-action-strip">
+          <button class="btn btn-secondary btn-sm admin-only-settings-btn" id="openBusinessSettingsBtn"
+            title="Admin Portal Only: Manage GST Number & FSSAI License Number"
+            style="display: none; background: rgba(76, 175, 80, 0.15); border-color: #4CAF50; color: #81C784;">
+            📜 GST & FSSAI
+          </button>
+          <button class="btn btn-secondary btn-sm admin-only-settings-btn" id="openManageUsersModalBtn"
+            title="Manage Staff, Kitchen & Rider Passwords"
+            style="display: none; background: rgba(212, 136, 26, 0.15); border-color: var(--ghee-gold); color: #F5B041;">
+            👥 Passwords
+          </button>
+          <button class="btn btn-secondary btn-sm admin-only-settings-btn" id="openChangePasswordModalBtn"
+            title="Change Admin Password" style="display: none;">
+            🔑 Password
+          </button>
+          <button type="button" class="btn btn-sm" id="btnInstallApkHeader"
+            title="Download & Install Application on Android Device (.APK)"
+            style="background: linear-gradient(135deg, #2E7D32, #43A047); color: #FFF; font-weight: 700; border: 1px solid #81C784; box-shadow: 0 2px 6px rgba(46,125,50,0.35); border-radius: 8px; padding: 5px 10px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
+            <span>📲</span>
+            <span>Install APK</span>
+          </button>
+          <button class="btn btn-secondary btn-sm" id="adminLogoutBtn" title="Log Out">
+            🚪 Logout
+          </button>
+          <a href="index.html" class="btn btn-customer-view" title="Open Customer Mobile App">
+            📱 Customer View
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="admin-main">
+
+      <!-- Top Stats Row -->
+      <section class="stats-grid" id="adminStatsGrid">
+        <div class="stat-card">
+          <div class="stat-icon terracotta">🍲</div>
+          <div class="stat-info">
+            <span class="stat-label">Total Dishes</span>
+            <h3 class="stat-value" id="statTotalDishes">0</h3>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon gold">🔥</div>
+          <div class="stat-info">
+            <span class="stat-label">Active Orders</span>
+            <h3 class="stat-value" id="statActiveOrders">0</h3>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon green">🛏️</div>
+          <div class="stat-info">
+            <span class="stat-label">Baithak Bookings</span>
+            <h3 class="stat-value" id="statBookings">0</h3>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon mud">🧈</div>
+          <div class="stat-info">
+            <span class="stat-label">Desi Ghee Items</span>
+            <h3 class="stat-value" id="statDesiGhee">0</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- Navigation Tabs -->
+      <div class="admin-tabs" id="mainAdminTabs">
+        <button class="tab-btn active" data-tab="dishesTab" id="tabBtnDishes">
+          <span class="tab-icon">🍲</span> Manage Dishes
+        </button>
+        <button class="tab-btn" data-tab="posTab" id="tabBtnPos">
+          <span class="tab-icon">🍽️</span> In-House POS (<span class="tab-pill-badge">Staff</span>)
+        </button>
+        <button class="tab-btn" data-tab="ordersTab" id="tabBtnOrders">
+          <span class="tab-icon">🔥</span> Kitchen KDS (<span id="ordersCountBadge">0</span>)
+        </button>
+        <button class="tab-btn" data-tab="bookingsTab" id="tabBtnBookings">
+          <span class="tab-icon">🛏️</span> Baithak Reservations (<span id="bookingsCountBadge">0</span>)
+        </button>
+        <button class="tab-btn" data-tab="staffAccountsTab" id="tabBtnStaffAccounts">
+          <span class="tab-icon">👥</span> Staff & Rider Credentials (<span class="tab-pill-badge"
+            id="staffAccountsBadge">Staff & Rider</span>)
+        </button>
+        <button class="tab-btn" data-tab="billsTab" id="tabBtnBills">
+          <span class="tab-icon">🧾</span> Table Bills (<span id="billsCountBadge">0</span>)
+        </button>
+        <button class="tab-btn" data-tab="deliveryTab" id="tabBtnDelivery">
+          <span class="tab-icon">🛵</span> Delivery Portal (<span id="deliveryCountBadge">0</span>)
+        </button>
+      </div>
+
+      <!-- TAB 1: MANAGE DISHES -->
+      <section class="tab-pane active" id="dishesTab">
+        <div class="pane-toolbar">
+          <div class="toolbar-search">
+            <input type="text" id="dishSearchInput" placeholder="Search dishes by name or category...">
+          </div>
+          <div class="toolbar-filter">
+            <select id="dishCategoryFilter">
+              <option value="all">All Categories</option>
+              <option value="thalis">Gaam Thalis (थालियां)</option>
+              <option value="handi">Handi & Chulha (हांडी व चूल्हे से)</option>
+              <option value="rotis">Desi Rotis (सौंधी रोटियां)</option>
+              <option value="pizzas">🍕 Smokey Pizzas (स्मोकी पिज़्ज़ा)</option>
+              <option value="sweets">Churma & Sweets (चूरमा व मिठाई)</option>
+              <option value="beverages">☕ Kulhad Drinks & Cold Coffee (पेय)</option>
+            </select>
+          </div>
+          <button class="btn btn-primary" id="openAddDishModalBtn">
+            <span>➕</span> Add New Village Dish
+          </button>
+        </div>
+
+        <!-- Dishes Grid -->
+        <div class="dishes-grid" id="dishesGridContainer">
+          <!-- Rendered dynamically via JS -->
+        </div>
+      </section>
+
+      <!-- TAB 2: IN-HOUSE POS (STAFF ORDER TAKING TERMINAL) -->
+      <section class="tab-pane" id="posTab">
+        <div class="pos-layout">
+          <!-- Left: Table Selection & Menu Catalog -->
+          <div class="pos-menu-col">
+            <!-- Table Selector -->
+            <div class="pos-header-bar" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+              <div>
+                <h3 class="pos-section-title">📍 Select Table / Baithak</h3>
+                <p class="pos-section-sub">Choose where the guest is dining</p>
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                <!-- ADMIN ONLY BUTTON: ADD NEW TABLE -->
+                <button type="button" class="btn-add-table-header admin-only-element" id="btnOpenAddTableModal" style="display: none;" title="Admin Account Only: Add a new dining table or baithak">
+                  <span>➕</span> Add Table
+                </button>
+                <span class="active-table-badge" id="currentSelectedTableLabel">Table 1 (Dine-In)</span>
+              </div>
+            </div>
+
+            <div class="table-selector-chips" id="tableSelectorChips">
+              <button type="button" class="table-chip active" data-table="Table 1">Table 1</button>
+              <button type="button" class="table-chip" data-table="Table 2">Table 2</button>
+              <button type="button" class="table-chip" data-table="Table 3">Table 3</button>
+              <button type="button" class="table-chip" data-table="Table 4">Table 4</button>
+              <button type="button" class="table-chip" data-table="Table 5">Table 5</button>
+              <button type="button" class="table-chip" data-table="Table 07 (Khatiya Baithak)">Table 07 (Khatiya Baithak)</button>
+              <button type="button" class="table-chip" data-table="Charpai 1 (खाट)">Charpai 1 (खाट)</button>
+              <button type="button" class="table-chip" data-table="Charpai 2 (खाट)">Charpai 2 (खाट)</button>
+              <button type="button" class="table-chip" data-table="Chowki 1 (बैठक)">Chowki 1 (बैठक)</button>
+              <button type="button" class="table-chip" data-table="Chowki 2 (बैठक)">Chowki 2 (बैठक)</button>
+              <button type="button" class="table-chip" data-table="Takeaway Counter">Takeaway Counter</button>
+            </div>
+
+            <!-- POS Category Filter & Search -->
+            <div class="pos-filter-bar">
+              <div class="pos-search-box">
+                <input type="text" id="posDishSearch" placeholder="🔍 Search dish (e.g. Bajra Roti, Thali, Churma)...">
+              </div>
+              <div class="pos-cat-chips" id="posCategoryPills">
+                <button type="button" class="pos-cat-btn active" data-cat="all">All Dishes</button>
+                <button type="button" class="pos-cat-btn" data-cat="thalis">Gaam Thalis</button>
+                <button type="button" class="pos-cat-btn" data-cat="handi">Handi & Chulha</button>
+                <button type="button" class="pos-cat-btn" data-cat="rotis">Desi Rotis</button>
+                <button type="button" class="pos-cat-btn" data-cat="pizzas">🍕 Smokey Pizzas</button>
+                <button type="button" class="pos-cat-btn" data-cat="sweets">Churma & Sweets</button>
+                <button type="button" class="pos-cat-btn" data-cat="beverages">☕ Cold Coffee & Drinks</button>
+              </div>
+            </div>
+
+            <!-- POS Dishes Grid -->
+            <div class="pos-dishes-grid" id="posDishesContainer">
+              <!-- Dynamically populated via JS -->
+            </div>
+          </div>
+
+          <!-- Right: Current In-House Order Ticket (KOT Punch Pad) -->
+          <div class="pos-ticket-col" id="posTicketCol">
+            <div class="pos-ticket-card">
+              <div class="pos-ticket-header">
+                <div>
+                  <span class="pos-ticket-badge">IN-HOUSE KOT</span>
+                  <h3 class="pos-ticket-title" id="ticketTableTitle">Table 1</h3>
+                </div>
+                <div class="pos-ticket-meta">
+                  <span>Staff: <strong id="ticketStaffName">Captain</strong></span>
+                  <small id="ticketLiveTime">Ready to punch</small>
+                </div>
+              </div>
+
+              <!-- Active Table Orders Alert Banner (When table has live kitchen items) -->
+              <div class="active-table-orders-banner" id="activeTableOrdersBanner" style="display: none;">
+                <div class="active-banner-info">
+                  <span class="active-banner-icon">🛎️</span>
+                  <div>
+                    <strong id="activeBannerTitle">Live Kitchen Order Found</strong>
+                    <p id="activeBannerDetails">Order ready to settle</p>
+                  </div>
+                </div>
+                <div class="active-banner-actions">
+                  <button type="button" class="btn-load-table-order" id="btnLoadActiveOrder" title="Load items into POS ticket">📥 Load to Bill</button>
+                  <button type="button" class="btn-settle-table-order" id="btnDirectSettleOrder" title="Open billing settlement directly">⚡ Settle Bill</button>
+                </div>
+              </div>
+
+              <!-- Customer / Guest Details in POS Ticket -->
+              <div class="pos-ticket-customer-section">
+                <div class="pos-cust-row">
+                  <div class="pos-cust-field pos-cust-name-field">
+                    <label for="posCustomerName">
+                      <span class="cust-icon">👤</span> Customer Name <span class="cust-req-badge">(अतिथि का नाम)</span>
+                    </label>
+                    <input type="text" id="posCustomerName" class="pos-cust-input" placeholder="e.g. Gaurav Singh / Sharma Ji..." autocomplete="off">
+                  </div>
+                  <div class="pos-cust-field pos-cust-phone-field">
+                    <label for="posCustomerPhone">
+                      <span class="cust-icon">📱</span> Mobile No.
+                    </label>
+                    <input type="tel" id="posCustomerPhone" class="pos-cust-input" placeholder="Phone (optional)..." maxlength="10" autocomplete="off">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Items list -->
+              <div class="pos-ticket-items" id="ticketItemsList">
+                <div class="empty-ticket-state">
+                  <span style="font-size: 2.2rem;">🍽️</span>
+                  <h4>Ticket is Empty</h4>
+                  <p>Click any dish on the left to add it to Table 1</p>
+                </div>
+              </div>
+
+              <!-- Chef Cooking Notes -->
+              <div class="pos-ticket-notes">
+                <label for="posChefNotes">👨‍🍳 Special Chulha Cooking Notes:</label>
+                <input type="text" id="posChefNotes" placeholder="e.g. Extra butter on roti, medium spicy dal">
+              </div>
+
+              <!-- Total Bill Summary -->
+              <div class="pos-ticket-summary">
+                <div class="summary-row">
+                  <span>Items Subtotal:</span>
+                  <span id="posSubtotal">₹0</span>
+                </div>
+                <div class="summary-row">
+                  <span id="posGstLabel">GST (5%):</span>
+                  <span id="posGst">₹0</span>
+                </div>
+                <div class="summary-row grand-total">
+                  <span>Total Amount:</span>
+                  <strong id="posGrandTotal">₹0</strong>
+                </div>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="pos-ticket-actions">
+                <button type="button" class="btn btn-secondary" id="clearPosTicketBtn">
+                  🗑️ Clear
+                </button>
+                <button type="button" class="btn btn-primary btn-punch" id="punchKotBtn">
+                  <span>🔥 Push KOT</span>
+                  <span>→</span>
+                </button>
+                <button type="button" class="btn btn-billing-settle" id="openBillingModalBtn" title="Settle bill as per table number and respective staff">
+                  <span>🧾 Settle & Save Bill</span>
+                </button>
+              </div>
+
+              <!-- Quick Table Bills Action -->
+              <div class="pos-ticket-subactions" style="margin-top: 10px; display: flex; gap: 8px;">
+                <button type="button" class="btn btn-outline-bills" id="openTableBillsBtn" style="flex: 1;">
+                  📁 Saved Table Bills <span class="badge-count" id="savedBillsCountBadge">0</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating KOT Quick Bar (Push KOT shortcut) -->
+        <div class="pos-mobile-float-bar" id="posMobileFloatBar" style="display: none;">
+          <div class="pos-float-info" id="posFloatInfo" style="cursor: pointer;" title="View Order Ticket">
+            <span class="pos-float-icon">🛒</span>
+            <div>
+              <strong id="posFloatCount">0 Dishes</strong>
+              <span id="posFloatTotal">₹0</span>
+            </div>
+          </div>
+          <button type="button" class="btn-pos-float-action btn-push-kot-float" id="btnPosFloatAction" title="Push KOT order to Kitchen Chulha">
+            <span>🔥 Push KOT</span>
+            <span>➔</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- TAB 3: LIVE ORDERS & KITCHEN DISPLAY SYSTEM (KDS) -->
+      <section class="tab-pane" id="ordersTab">
+        <div class="pane-header kds-header-pane">
+          <div>
+            <h2 class="pane-title">🔥 Kitchen Display System (KDS)</h2>
+            <p class="pane-subtitle">Live firewood chulha cooking orders for kitchen chefs</p>
+          </div>
+          <div class="kds-quick-bar">
+            <div class="kds-clock-box">
+              <span>⏰</span>
+              <strong id="kdsClockDisplay">--:-- --</strong>
+            </div>
+            <button class="btn btn-secondary btn-sm" id="toggleKdsSoundBtn">
+              <span id="kdsSoundIcon">🔔</span> Sound: <span id="kdsSoundStatus">ON</span>
+            </button>
+            <button class="btn btn-secondary btn-sm" id="resetKdsPreparingBtn" onclick="resetAllDishesPreparing()"
+              title="Set all live dishes to Preparing first">🔥 Set All to Preparing</button>
+            <button class="btn btn-secondary btn-sm" id="refreshOrdersBtn">🔄 Refresh KOTs</button>
+          </div>
+        </div>
+
+        <!-- KDS Filter & View Mode Bar -->
+        <div class="kds-filter-bar">
+          <div class="kds-filter-chips-group">
+            <button class="kds-filter-chip active" data-filter="all">All Live Orders (<span id="kdsCountAll">0</span>)</button>
+            <button class="kds-filter-chip" data-filter="dine_in">🍽️ Dine-In Orders (<span id="kdsCountDineIn">0</span>)</button>
+            <button class="kds-filter-chip" data-filter="delivery">🛵 Delivery / Online (<span id="kdsCountDelivery">0</span>)</button>
+            <button class="kds-filter-chip" data-filter="cooking">🔥 Active on Chulha (<span id="kdsCountCooking">0</span>)</button>
+          </div>
+          <div class="kds-view-toggle-group">
+            <button type="button" class="kds-mode-btn active" id="kdsModeOrdersBtn" onclick="setKdsViewMode('orders')" title="Show complete order tickets with customer name and table details">
+              📋 Detailed Orders (Customer View)
+            </button>
+            <button type="button" class="kds-mode-btn" id="kdsModeDishesBtn" onclick="setKdsViewMode('dishes')" title="Show consolidated dish prep list">
+              🍲 Dish Prep Summary
+            </button>
+          </div>
+        </div>
+
+        <!-- Live Kitchen Orders Container -->
+        <div class="kds-orders-container" id="ordersGridContainer">
+          <!-- Rendered dynamically via JS -->
+        </div>
+      </section>
+
+      <!-- TAB 3: BAITHAK RESERVATIONS -->
+      <section class="tab-pane" id="bookingsTab">
+        <div class="pane-header">
+          <div>
+            <h2 class="pane-title">Gaam Baithak Table & Cot Bookings</h2>
+            <p class="pane-subtitle">Guest reservations for Village Charpai, Floor Chowki & Family Tables</p>
+          </div>
+          <button class="btn btn-secondary btn-sm" id="refreshBookingsBtn">🔄 Refresh Bookings</button>
+        </div>
+        <div class="table-responsive">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Booking ID</th>
+                <th>Guest Name</th>
+                <th>Phone</th>
+                <th>Guests</th>
+                <th>Date & Time</th>
+                <th>Seating Preference</th>
+                <th>Special Notes</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="bookingsTableBody">
+              <!-- Rendered dynamically via JS -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- TAB 5: STAFF CREDENTIALS & PASSWORD MANAGEMENT (ADMIN ONLY) -->
+      <section class="tab-pane" id="staffAccountsTab">
+        <div class="pane-header"
+          style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; flex-wrap: wrap; gap: 12px;">
+          <div>
+            <h2 style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--terracotta-dark);">👥 Staff
+              Credentials & Password Management</h2>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px;">
+              Manage login IDs, passwords, and terminal access for all 6 floor staff members, kitchen chefs, and admin
+              accounts.
+            </p>
+          </div>
+          <div style="display: flex; gap: 10px;">
+            <button class="btn btn-secondary btn-sm" id="refreshStaffAccountsBtn">🔄 Refresh Accounts</button>
+          </div>
+        </div>
+
+        <div class="security-banner-box"
+          style="background: var(--ghee-gold-bg); border: 1px solid var(--ghee-gold); border-radius: 12px; padding: 12px 18px; margin-bottom: 24px; display: flex; align-items: center; gap: 12px; font-size: 0.84rem; color: #5a3e11;">
+          <span style="font-size: 1.4rem;">🛡️</span>
+          <div>
+            <strong>Master Admin Password Control Active:</strong>
+            <span>Public password resets from outside the portal are disabled. All staff credentials, new passwords, and
+              resets are managed exclusively from this Admin Panel.</span>
+          </div>
+        </div>
+
+        <div class="staff-accounts-grid" id="staffAccountsGrid">
+          <!-- Rendered dynamically via renderStaffAccountsTab() -->
+        </div>
+      </section>
+
+      <!-- TAB 6: SAVED TABLE BILLS & INVOICES (Per Table & Respective Staff) -->
+      <section class="tab-pane" id="billsTab">
+        <div class="pane-header" style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; flex-wrap: wrap; gap: 12px;">
+          <div>
+            <h2 style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--terracotta-dark);">🧾 Saved Table Bills & Invoices</h2>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px;">
+              View and print customer bills organized per Table Number and their respective serving Staff member.
+            </p>
+          </div>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+            <button class="btn btn-secondary btn-sm admin-only-settings-btn" id="btnBillsTabGstFssai"
+              style="display: none; background: rgba(76, 175, 80, 0.15); border-color: #4CAF50; color: #2E7D32;"
+              title="Admin Only: Configure GST Number & FSSAI Details">
+              📜 GST & FSSAI Details
+            </button>
+            <button class="btn btn-primary btn-sm" id="btnQuickNewBillFromTab">➕ New Table Bill</button>
+            <button class="btn btn-secondary btn-sm" id="refreshBillsBtn">🔄 Refresh Bills</button>
+          </div>
+        </div>
+
+        <!-- Filter Toolbar -->
+        <div class="bills-filter-bar">
+          <div class="bills-filter-group">
+            <label for="billsFilterTable">📍 Table / Baithak:</label>
+            <select id="billsFilterTable">
+              <option value="all">All Tables (सभी टेबल)</option>
+              <option value="Table 1">Table 1</option>
+              <option value="Table 2">Table 2</option>
+              <option value="Table 3">Table 3</option>
+              <option value="Table 4">Table 4</option>
+              <option value="Table 5">Table 5</option>
+              <option value="Table 07">Table 07 (Khatiya Baithak)</option>
+              <option value="Charpai 1">Charpai 1 (खाट)</option>
+              <option value="Charpai 2">Charpai 2 (खाट)</option>
+              <option value="Chowki 1">Chowki 1 (बैठक)</option>
+              <option value="Chowki 2">Chowki 2 (बैठक)</option>
+              <option value="Takeaway Counter">Takeaway Counter</option>
+            </select>
+          </div>
+
+          <div class="bills-filter-group">
+            <label for="billsFilterStaff">👤 Respective Staff:</label>
+            <select id="billsFilterStaff">
+              <option value="all">All Staff (सभी कर्मचारी)</option>
+              <option value="my_bills" id="filterMyBillsOption">👤 My Staff Bills</option>
+              <option value="staff1">Staff 1 - Floor Captain</option>
+              <option value="staff2">Staff 2 - Table Attendant</option>
+              <option value="staff3">Staff 3 - Chowki Server</option>
+              <option value="staff4">Staff 4 - Charpai Captain</option>
+              <option value="staff5">Staff 5 - Billing Counter</option>
+              <option value="staff6">Staff 6 - Senior Steward</option>
+            </select>
+          </div>
+
+          <div class="bills-search-box">
+            <input type="text" id="billsSearchInput" placeholder="🔍 Search bill #, guest name, phone...">
+          </div>
+        </div>
+
+        <!-- Metric summary chips -->
+        <div class="bills-summary-row">
+          <div class="bills-stat-pill">
+            <span class="pill-label">Total Bills:</span>
+            <strong id="billsStatCount">0</strong>
+          </div>
+          <div class="bills-stat-pill highlight-gold">
+            <span class="pill-label">Total Collection:</span>
+            <strong id="billsStatTotal">₹0</strong>
+          </div>
+          <div class="bills-stat-pill">
+            <span class="pill-label">Cash:</span>
+            <strong id="billsStatCash">₹0</strong>
+          </div>
+          <div class="bills-stat-pill">
+            <span class="pill-label">UPI / QR:</span>
+            <strong id="billsStatUpi">₹0</strong>
+          </div>
+          <div class="bills-stat-pill">
+            <span class="pill-label">Card:</span>
+            <strong id="billsStatCard">₹0</strong>
+          </div>
+        </div>
+
+        <!-- Bills List Container -->
+        <div class="bills-cards-grid" id="billsCardsContainer">
+          <!-- Dynamically populated via renderBillsTab() -->
+        </div>
+      </section>
+
+      <!-- TAB 7: DELIVERY PARTNER DISPATCH PORTAL -->
+      <section class="tab-pane" id="deliveryTab">
+        <div class="pane-header delivery-header-pane">
+          <div>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span class="delivery-hero-icon" style="font-size: 1.8rem;">🛵</span>
+              <h2 class="pane-title" style="margin: 0; font-family: var(--font-serif); font-size: 1.55rem; color: var(--terracotta-dark);">Delivery Partner Portal • Live Dispatch</h2>
+            </div>
+            <p class="pane-subtitle" style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px;">
+              Live online customer delivery orders with Customer Name, Delivery Address, Mob No., Food Items & Delivery Settlement.
+            </p>
+          </div>
+          <div class="delivery-quick-bar" style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+            <div class="delivery-clock-box">
+              <span>⏰</span>
+              <strong id="deliveryClockDisplay">--:-- --</strong>
+            </div>
+            <button class="btn btn-secondary btn-sm" id="refreshDeliveryOrdersBtn">🔄 Refresh Orders</button>
+          </div>
+        </div>
+
+        <!-- Delivery Status Filter Bar -->
+        <div class="delivery-filter-bar">
+          <div class="delivery-filter-chips" id="deliveryFilterChips">
+            <button type="button" class="delivery-chip active" data-filter="all">
+              All Orders (<span id="deliveryCountAll">0</span>)
+            </button>
+            <button type="button" class="delivery-chip" data-filter="active">
+              🛵 Active (<span id="deliveryCountActive">0</span>)
+            </button>
+            <button type="button" class="delivery-chip" data-filter="delivered">
+              ✅ Delivered (<span id="deliveryCountDelivered">0</span>)
+            </button>
+            <button type="button" class="delivery-chip" data-filter="cod">
+              💵 COD (<span id="deliveryCountCod">0</span>)
+            </button>
+            <button type="button" class="delivery-chip" data-filter="prepaid">
+              💳 Prepaid (<span id="deliveryCountPrepaid">0</span>)
+            </button>
+          </div>
+          <div class="delivery-search-box">
+            <input type="text" id="deliverySearchInput" placeholder="🔍 Search customer name, mob no., address, order ID...">
+          </div>
+        </div>
+
+        <!-- Delivery Summary Metrics -->
+        <div class="delivery-metrics-row">
+          <div class="delivery-metric-card highlight-orange">
+            <div class="metric-icon">🛵</div>
+            <div>
+              <span class="metric-label">Active for Delivery</span>
+              <h3 class="metric-val" id="metricActiveDeliveries">0</h3>
+            </div>
+          </div>
+          <div class="delivery-metric-card highlight-green">
+            <div class="metric-icon">✅</div>
+            <div>
+              <span class="metric-label">Delivered Successfully</span>
+              <h3 class="metric-val" id="metricDeliveredToday">0</h3>
+            </div>
+          </div>
+          <div class="delivery-metric-card highlight-amber">
+            <div class="metric-icon">💵</div>
+            <div>
+              <span class="metric-label">COD Cash</span>
+              <h3 class="metric-val" id="metricTotalCodCash">₹0</h3>
+            </div>
+          </div>
+          <div class="delivery-metric-card highlight-blue">
+            <div class="metric-icon">💳</div>
+            <div>
+              <span class="metric-label">Prepaid Online</span>
+              <h3 class="metric-val" id="metricTotalPrepaidCash">₹0</h3>
+            </div>
+          </div>
+          <div class="delivery-metric-card highlight-gold">
+            <div class="metric-icon">💰</div>
+            <div>
+              <span class="metric-label">Total Delivery Value</span>
+              <h3 class="metric-val" id="metricTotalDeliveryCash">₹0</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Delivery Orders Cards List -->
+        <div class="delivery-orders-grid" id="deliveryOrdersContainer">
+          <!-- Dynamically populated via renderDeliveryPortal() -->
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ADD / EDIT DISH MODAL -->
+    <div class="modal-overlay" id="dishModal" style="display: none;">
+      <div class="modal-card">
+        <div class="modal-header">
+          <h3 class="modal-title" id="modalTitle">➕ Add New Village Dish</h3>
+          <button class="modal-close-btn" id="closeDishModalBtn">✕</button>
+        </div>
+        <form id="dishForm" class="modal-body">
+          <input type="hidden" id="dishEditId">
+
+          <div class="form-row">
+            <div class="form-group flex-1">
+              <label for="dishName">Dish Name (English) *</label>
+              <input type="text" id="dishName" required placeholder="e.g. Desi Ghee Paneer Bhurji">
+            </div>
+            <div class="form-group flex-1">
+              <label for="dishHindiName">Hindi Name (हिंदी में)</label>
+              <input type="text" id="dishHindiName" placeholder="e.g. देसी घी पनीर भुर्जी">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group flex-1">
+              <label for="dishCategory">Category *</label>
+              <select id="dishCategory" required>
+                <option value="thalis">Gaam Thalis (थालियां)</option>
+                <option value="handi">Handi & Chulha (हांडी व चूल्हे से)</option>
+                <option value="rotis">Desi Rotis (सौंधी रोटियां)</option>
+                <option value="pizzas">🍕 Smokey Pizzas (स्मोकी पिज़्ज़ा)</option>
+                <option value="sweets">Churma & Sweets (चूरमा व मिठाई)</option>
+                <option value="beverages">☕ Kulhad Drinks & Cold Coffee (पेय)</option>
+              </select>
+            </div>
+            <div class="form-group flex-1">
+              <label for="dishPrice">Selling Price (₹) *</label>
+              <input type="number" id="dishPrice" required min="10" placeholder="e.g. 249">
+            </div>
+            <div class="form-group flex-1">
+              <label for="dishOrigPrice">Original Price (₹ strikethrough)</label>
+              <input type="number" id="dishOrigPrice" placeholder="e.g. 299">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="dishDescription">Mouth-watering Description</label>
+            <textarea id="dishDescription" rows="2"
+              placeholder="e.g. Cooked slow on firewood mud chulha with pure bilona desi cow ghee..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>Dish Photo / Product Picture</label>
+
+            <!-- 1. Village Preset Selection -->
+            <div class="image-preset-picker" id="dishPresetPicker">
+              <label class="preset-option">
+                <input type="radio" name="imagePreset" value="images/dish_thali.jpg" checked>
+                <img src="images/dish_thali.jpg" alt="Thali">
+                <span>Gaam Thali</span>
+              </label>
+              <label class="preset-option">
+                <input type="radio" name="imagePreset" value="images/dish_handi_paneer.jpg">
+                <img src="images/dish_handi_paneer.jpg" alt="Handi Paneer">
+                <span>Handi Paneer</span>
+              </label>
+              <label class="preset-option">
+                <input type="radio" name="imagePreset" value="images/dish_handi_dal.jpg">
+                <img src="images/dish_handi_dal.jpg" alt="Handi Dal">
+                <span>Handi Dal</span>
+              </label>
+              <label class="preset-option">
+                <input type="radio" name="imagePreset" value="images/dish_kadhi_pakoda.jpg">
+                <img src="images/dish_kadhi_pakoda.jpg" alt="Kadhi Pakoda">
+                <span>Kadhi Pakoda</span>
+              </label>
+              <label class="preset-option">
+                <input type="radio" name="imagePreset" value="images/dish_bajra_saag.jpg">
+                <img src="images/dish_bajra_saag.jpg" alt="Bajra Saag">
+                <span>Bajra Saag</span>
+              </label>
+              <label class="preset-option">
+                <input type="radio" name="imagePreset" value="images/dish_bajra_roti.jpg">
+                <img src="images/dish_bajra_roti.jpg" alt="Bajra Roti">
+                <span>Bajra Roti</span>
+              </label>
+              <label class="preset-option">
+                <input type="radio" name="imagePreset" value="images/dish_rabri_malpua.jpg">
+                <img src="images/dish_rabri_malpua.jpg" alt="Rabri Malpua">
+                <span>Rabri Malpua</span>
+              </label>
+              <label class="preset-option">
+                <input type="radio" name="imagePreset" value="images/dish_churma.jpg">
+                <img src="images/dish_churma.jpg" alt="Churma">
+                <span>Churma</span>
+              </label>
+              <label class="preset-option">
+                <input type="radio" name="imagePreset" value="images/dish_masala_chaach.jpg">
+                <img src="images/dish_masala_chaach.jpg" alt="Masala Chaach">
+                <span>Masala Chaach</span>
+              </label>
+              <label class="preset-option">
+                <input type="radio" name="imagePreset" value="images/dish_kulhad_lassi.jpg">
+                <img src="images/dish_kulhad_lassi.jpg" alt="Lassi">
+                <span>Kulhad Lassi</span>
+              </label>
+              <label class="preset-option">
+                <input type="radio" name="imagePreset" value="images/dish_smokey_pizza.jpg">
+                <img src="images/dish_smokey_pizza.jpg" alt="Smokey Pizza">
+                <span>Smokey Pizza</span>
+              </label>
+              <label class="preset-option">
+                <input type="radio" name="imagePreset" value="images/dish_cold_coffee.jpg">
+                <img src="images/dish_cold_coffee.jpg" alt="Cold Coffee">
+                <span>Cold Coffee</span>
+              </label>
+              <label class="preset-option">
+                <input type="radio" name="imagePreset" value="images/hero_village_rasoi.jpg">
+                <img src="images/hero_village_rasoi.jpg" alt="Village Special">
+                <span>Village Rasoi</span>
+              </label>
+            </div>
+
+            <!-- 2. Product Picture Upload Dropzone & Button -->
+            <div class="dish-upload-box" id="dishUploadBox">
+              <input type="file" id="dishImageFileInput" accept="image/png, image/jpeg, image/jpg, image/webp"
+                style="display: none;">
+
+              <!-- Default Dropzone Prompt -->
+              <div class="upload-dropzone-content" id="uploadDropzonePrompt">
+                <div class="upload-icon-circle">📸</div>
+                <div class="upload-text-block">
+                  <span class="upload-headline"><strong>Upload Product Picture</strong> from your computer /
+                    phone</span>
+                  <span class="upload-subtext">Click <strong>Browse Picture</strong> or drag & drop image here (JPG,
+                    PNG, WEBP)</span>
+                </div>
+                <button type="button" class="btn btn-secondary btn-sm" id="btnTriggerImageUpload">
+                  📁 Browse Picture
+                </button>
+              </div>
+
+              <!-- Upload Active Preview Bar (shown when file selected / uploaded / editing) -->
+              <div class="upload-active-card" id="uploadActiveCard" style="display: none;">
+                <div class="upload-thumb-col">
+                  <img id="dishUploadPreviewImg" src="" alt="Product Picture Preview">
+                  <span class="upload-badge-tag">Custom Photo</span>
+                </div>
+                <div class="upload-meta-col">
+                  <strong id="uploadFileName">dish_photo.jpg</strong>
+                  <span class="upload-file-status" id="uploadFileStatus">✅ Photo ready to save with dish</span>
+                </div>
+                <div class="upload-actions-col">
+                  <button type="button" class="btn btn-secondary btn-sm" id="btnReplaceUploadedImage"
+                    title="Choose another photo">
+                    🔄 Replace
+                  </button>
+                  <button type="button" class="btn btn-danger btn-sm" id="btnRemoveUploadedImage"
+                    title="Remove custom photo and use preset">
+                    ✕ Remove
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hidden storage for uploaded image relative path -->
+            <input type="hidden" id="dishUploadedImageUrl" value="">
+
+            <!-- 3. Web URL fallback -->
+            <div class="custom-url-wrapper" style="margin-top: 8px;">
+              <input type="text" id="dishCustomImage" placeholder="Or enter custom image URL (e.g. https://...)"
+                style="font-size: 0.8rem;">
+            </div>
+          </div>
+
+          <div class="form-row checkbox-row">
+            <label class="checkbox-label">
+              <input type="checkbox" id="dishIsVeg" checked>
+              <span>🟢 Pure Vegetarian (शुद्ध शाकाहारी)</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" id="dishIsDesiGhee" checked>
+              <span>🧈 Pure Desi Ghee Special</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" id="dishIsVillageSpecial" checked>
+              <span>🌾 Gaam Signature Special</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" id="dishIsAvailable" checked>
+              <span>✅ In Stock / Available</span>
+            </label>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group flex-1">
+              <label for="dishPrepTime">Preparation Time (minutes)</label>
+              <input type="number" id="dishPrepTime" value="15" min="5" max="60">
+            </div>
+            <div class="form-group flex-1">
+              <label for="dishRating">Initial Rating (1.0 to 5.0)</label>
+              <input type="number" id="dishRating" step="0.1" value="4.9" min="1" max="5">
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" id="cancelDishModalBtn">Cancel</button>
+            <button type="submit" class="btn btn-primary" id="saveDishBtn">Save Village Dish</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- CHANGE PASSWORD MODAL (Dashboard) -->
+    <div class="modal-overlay" id="changePasswordModal" style="display: none;">
+      <div class="modal-card" style="max-width: 440px;">
+        <div class="modal-header">
+          <h3 class="modal-title">🔑 Change Password</h3>
+          <button class="modal-close-btn" id="closeChangePasswordModalBtn">✕</button>
+        </div>
+        <form id="changePasswordForm" class="modal-body">
+          <div class="form-group" style="margin-bottom: 14px;">
+            <label for="changeCurrentPassword">Current Password *</label>
+            <div class="input-with-icon">
+              <span class="input-icon">🔒</span>
+              <input type="password" id="changeCurrentPassword" required placeholder="Enter current password">
+              <button type="button" class="btn-toggle-pwd" id="toggleChangeCurrPwdBtn"
+                title="Show / Hide Password">👁️</button>
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-bottom: 14px;">
+            <label for="changeNewPassword">New Password *</label>
+            <div class="input-with-icon">
+              <span class="input-icon">🔑</span>
+              <input type="password" id="changeNewPassword" required minlength="4" placeholder="Enter new password">
+              <button type="button" class="btn-toggle-pwd" id="toggleChangeNewPwdBtn"
+                title="Show / Hide Password">👁️</button>
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-bottom: 14px;">
+            <label for="changeConfirmPassword">Confirm New Password *</label>
+            <div class="input-with-icon">
+              <span class="input-icon">✅</span>
+              <input type="password" id="changeConfirmPassword" required minlength="4"
+                placeholder="Re-enter new password">
+            </div>
+          </div>
+
+          <div class="modal-footer"
+            style="padding-top: 14px; border-top: 1px solid var(--border-clay); margin-top: 10px;">
+            <button type="button" class="btn btn-secondary" id="cancelChangePasswordBtn">Cancel</button>
+            <button type="submit" class="btn btn-primary" id="saveChangePasswordBtn">Save New Password</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- MANAGE STAFF & KITCHEN PASSWORDS MODAL (Admin Only) -->
+    <div class="modal-overlay" id="manageUsersModal" style="display: none;">
+      <div class="modal-card" style="max-width: 580px;">
+        <div class="modal-header">
+          <h3 class="modal-title">👥 Manage Staff & Kitchen Passwords</h3>
+          <button class="modal-close-btn" id="closeManageUsersModalBtn">✕</button>
+        </div>
+        <div class="modal-body" style="padding: 20px 24px;">
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 18px;">
+            As Master Admin, you can directly set or update the password for any staff member or kitchen chef instantly.
+          </p>
+
+          <div id="usersListContainer" style="display: flex; flex-direction: column; gap: 14px;">
+            <!-- Dynamically populated user rows -->
+          </div>
+
+          <div class="modal-footer"
+            style="padding-top: 18px; border-top: 1px solid var(--border-clay); margin-top: 20px;">
+            <button type="button" class="btn btn-secondary" id="closeManageUsersFooterBtn">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 0. ADD NEW TABLE / BAITHAK MODAL (ADMIN ONLY) -->
+    <div class="modal-overlay" id="addTableModal" style="display: none;">
+      <div class="modal-card" style="max-width: 490px;">
+        <div class="modal-header">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span style="font-size: 1.6rem;">🪑</span>
+            <div>
+              <h3 class="modal-title" style="margin: 0; line-height: 1.2;">Add New Table / Baithak</h3>
+              <small style="color: var(--text-muted); font-size: 0.78rem;">Admin Account Only • Available in POS & KOT Billing</small>
+            </div>
+          </div>
+          <button class="modal-close-btn" id="closeAddTableModalBtn">✕</button>
+        </div>
+
+        <div class="modal-body" style="padding: 20px 24px;">
+          <form id="addTableForm">
+            <div class="form-group" style="margin-bottom: 14px;">
+              <label for="newTableNameInput" style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 6px;">
+                Table / Baithak Name * <span style="color: var(--text-muted); font-weight: 400;">(e.g. Table 6, Khatiya 3, Haveli Baithak)</span>
+              </label>
+              <input type="text" id="newTableNameInput" placeholder="e.g. Table 6 (बगीचा बैठक)" required style="width: 100%; padding: 9px 12px; border: 1.5px solid var(--border-clay); border-radius: 8px; font-size: 0.95rem;">
+            </div>
+
+            <div class="form-group" style="margin-bottom: 14px;">
+              <label for="newTableCategorySelect" style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 6px;">
+                Seating Type / Baithak Style
+              </label>
+              <select id="newTableCategorySelect" style="width: 100%; padding: 9px 12px; border: 1.5px solid var(--border-clay); border-radius: 8px; font-size: 0.92rem; background: #FFF;">
+                <option value="Standard Table">🪑 Standard Table (मेज-कुर्सी)</option>
+                <option value="Khatiya Baithak">🌾 Khatiya / Charpai (खाट बैठक)</option>
+                <option value="Chowki Baithak">🪵 Traditional Chowki (चौकी बैठक)</option>
+                <option value="Family Mud Hut">🛖 Mud Hut Baithak (झोपड़ी बैठक)</option>
+                <option value="Open Air Lawn">🌳 Open Courtyard / Aangan (खुला आंगन)</option>
+                <option value="Special VIP Baithak">👑 Royal Baithak (शाही बैठक)</option>
+              </select>
+            </div>
+
+            <div class="form-row" style="display: flex; gap: 12px; margin-bottom: 14px;">
+              <div class="form-group" style="flex: 1; margin: 0;">
+                <label for="newTableCapacityInput" style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 6px;">
+                  Guest Capacity
+                </label>
+                <input type="number" id="newTableCapacityInput" value="4" min="1" max="50" style="width: 100%; padding: 9px 12px; border: 1.5px solid var(--border-clay); border-radius: 8px; font-size: 0.95rem;">
+              </div>
+
+              <div class="form-group" style="flex: 1; margin: 0;">
+                <label for="newTableSectionInput" style="font-weight: 700; font-size: 0.85rem; display: block; margin-bottom: 6px;">
+                  Section / Zone
+                </label>
+                <input type="text" id="newTableSectionInput" placeholder="e.g. Courtyard / Main Hall" value="Courtyard" style="width: 100%; padding: 9px 12px; border: 1.5px solid var(--border-clay); border-radius: 8px; font-size: 0.95rem;">
+              </div>
+            </div>
+
+            <div style="background: rgba(160,64,0,0.06); border: 1px dashed var(--terracotta); border-radius: 8px; padding: 10px 14px; font-size: 0.8rem; color: var(--terracotta-dark); display: flex; align-items: center; gap: 8px;">
+              <span>🛡️</span>
+              <span>Only Administrators can add or remove tables. All staff can take orders on them.</span>
+            </div>
+
+            <div style="margin-top: 18px; display: flex; justify-content: flex-end; gap: 10px;">
+              <button type="button" class="btn btn-secondary" id="cancelAddTableBtn" style="padding: 8px 16px;">Cancel</button>
+              <button type="submit" class="btn btn-primary" id="saveNewTableBtn" style="padding: 8px 20px; font-weight: 700; background: var(--terracotta); color: #FFF; border: none; border-radius: 8px; cursor: pointer;">
+                ➕ Save & Add Table
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1. BILLING SETTLEMENT MODAL (Save bill per table & respective staff) -->
+    <div class="modal-overlay" id="billingModal" style="display: none;">
+      <div class="modal-card" style="max-width: 640px;">
+        <div class="modal-header">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span style="font-size: 1.6rem;">🧾</span>
+            <div>
+              <h3 class="modal-title" style="margin: 0; line-height: 1.2;">Settle Table Bill & Save</h3>
+              <small style="color: var(--text-muted); font-size: 0.78rem;">Generate authentic bill per Table & Respective Staff</small>
+            </div>
+          </div>
+          <button class="modal-close-btn" id="closeBillingModalBtn">✕</button>
+        </div>
+
+        <div class="modal-body" style="padding: 18px 24px; max-height: calc(85vh - 120px); overflow-y: auto;">
+          <!-- Table & Staff Assignment Banner -->
+          <div class="bill-assign-banner">
+            <div class="bill-assign-badge">
+              <span class="assign-label">📍 Table / Baithak:</span>
+              <strong id="billModalTableLabel">Table 1</strong>
+            </div>
+            <div class="bill-assign-badge staff-badge">
+              <span class="assign-label">👤 Respective Staff:</span>
+              <strong id="billModalStaffLabel">Staff 1 - Floor Captain</strong>
+            </div>
+          </div>
+
+          <!-- Customer details (Optional) -->
+          <div class="form-row" style="margin-top: 14px; margin-bottom: 14px;">
+            <div class="form-group flex-1">
+              <label for="billCustomerName">Guest / Customer Name (Optional)</label>
+              <input type="text" id="billCustomerName" placeholder="e.g. Ch. Virender Singh">
+            </div>
+            <div class="form-group flex-1">
+              <label for="billCustomerPhone">Mobile No. (for SMS receipt)</label>
+              <input type="tel" id="billCustomerPhone" placeholder="e.g. 9812345678">
+            </div>
+          </div>
+
+          <!-- Bill Items Table -->
+          <div class="bill-items-table-wrapper">
+            <table class="bill-items-table">
+              <thead>
+                <tr>
+                  <th>Dish / Item</th>
+                  <th style="text-align: center;">Qty</th>
+                  <th style="text-align: right;">Rate</th>
+                  <th style="text-align: right;">Amount</th>
+                </tr>
+              </thead>
+              <tbody id="billModalItemsBody">
+                <!-- Dynamically populated -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Calculation Summary -->
+          <div class="bill-calc-box">
+            <div class="bill-calc-row">
+              <span>Items Subtotal:</span>
+              <span id="billModalSubtotal">₹0</span>
+            </div>
+            <div class="bill-calc-row">
+              <label for="billModalDiscount" style="margin: 0; font-size: 0.85rem; cursor: pointer;">Discount / Courtesy (₹):</label>
+              <input type="number" id="billModalDiscount" value="0" min="0" style="width: 80px; padding: 2px 6px; font-size: 0.85rem; text-align: right; border: 1px solid var(--border-clay); border-radius: 6px;">
+            </div>
+            <div class="bill-calc-row">
+              <span id="billModalGstLabel">GST (5% Desi Chulha):</span>
+              <span id="billModalGst">₹0</span>
+            </div>
+            <div class="bill-calc-row bill-grand-total-row">
+              <span>Grand Total Payable:</span>
+              <strong id="billModalGrandTotal">₹0</strong>
+            </div>
+          </div>
+
+          <!-- Payment Mode Selection -->
+          <div class="payment-method-section">
+            <label class="section-subheading">Select Payment Method:</label>
+            <div class="payment-modes-grid">
+              <label class="pay-mode-card active" data-mode="CASH">
+                <input type="radio" name="billPaymentMode" value="CASH" checked>
+                <span class="pay-mode-icon">💵</span>
+                <span class="pay-mode-title">Cash</span>
+                <span class="pay-mode-desc">रोकड़ भुगतान</span>
+              </label>
+
+              <label class="pay-mode-card" data-mode="UPI">
+                <input type="radio" name="billPaymentMode" value="UPI">
+                <span class="pay-mode-icon">📱</span>
+                <span class="pay-mode-title">UPI & QR</span>
+                <span class="pay-mode-desc">PhonePe / GPay</span>
+              </label>
+
+              <label class="pay-mode-card" data-mode="CARD">
+                <input type="radio" name="billPaymentMode" value="CARD">
+                <span class="pay-mode-icon">💳</span>
+                <span class="pay-mode-title">Card / EDC</span>
+                <span class="pay-mode-desc">POS मशीन</span>
+              </label>
+            </div>
+
+            <!-- Cash Tender box (shown when cash selected) -->
+            <div class="cash-calc-box" id="cashCalcBox">
+              <div style="display: flex; gap: 10px; align-items: center; justify-content: space-between;">
+                <label for="cashReceivedInput" style="font-size: 0.82rem; margin: 0;">Cash Received from Guest:</label>
+                <div style="display: flex; gap: 6px; align-items: center;">
+                  <span style="font-weight: 700; color: var(--terracotta);">₹</span>
+                  <input type="number" id="cashReceivedInput" placeholder="Enter amount" style="width: 110px; padding: 4px 8px; font-weight: 700; border-radius: 6px; border: 1px solid var(--border-clay);">
+                </div>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 6px; font-size: 0.85rem;">
+                <span style="color: var(--text-secondary);">Change to Return:</span>
+                <strong id="cashChangeDisplay" style="color: #2E7D32; font-size: 0.95rem;">₹0</strong>
+              </div>
+            </div>
+
+            <!-- UPI QR Box (shown when UPI selected) - Updated with New PhonePe QR -->
+            <div class="upi-qr-box" id="upiQrBox" style="display: none;">
+              <div class="upi-qr-card">
+                <div class="upi-qr-frame" id="adminQrFrame" style="cursor: pointer; position: relative; width: 105px; height: 105px; min-width: 105px;" title="Click to enlarge PhonePe QR code">
+                  <img src="images/phonepe_upi_qr.png" alt="PhonePe UPI QR - Aditya Chauhan" class="upi-qr-img" id="adminBillQrImg" style="border-radius: 6px;">
+                  <span style="position: absolute; bottom: 2px; right: 2px; background: rgba(0,0,0,0.7); color: #FFF; font-size: 0.6rem; padding: 1px 4px; border-radius: 3px; font-weight: 600;">🔍 Zoom</span>
+                </div>
+                <div class="upi-qr-text">
+                  <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap;">
+                    <span style="background: #5f259f; color: #FFF; font-size: 0.68rem; font-weight: 700; padding: 2px 6px; border-radius: 4px;">PhonePe</span>
+                    <strong style="color: #0D47A1; font-size: 0.88rem;">ADITYA CHAUHAN</strong>
+                  </div>
+                  <span style="color: #555; font-size: 0.76rem;">Scan with PhonePe, GPay, Paytm, BHIM</span>
+                  <div style="display: flex; align-items: center; gap: 6px; margin-top: 4px; flex-wrap: wrap;">
+                    <code id="adminBillUpiIdText" style="background: #E8EAF6; color: #1A237E; padding: 3px 8px; border-radius: 4px; font-weight: 700; font-size: 0.84rem; letter-spacing: 0.3px;">7819952799@ybl</code>
+                    <button type="button" id="btnCopyAdminBillUpi" style="border: none; background: #5f259f; color: #FFF; padding: 3px 8px; border-radius: 4px; font-size: 0.72rem; cursor: pointer; font-weight: 600;">📋 Copy</button>
+                  </div>
+                  <small style="color: #666; font-size: 0.74rem; margin-top: 2px;">Bill Amount: <strong id="adminBillUpiAmountDisplay" style="color: #2E7D32; font-size: 0.82rem;">₹0</strong></small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Notes -->
+          <div class="form-group" style="margin-top: 12px; margin-bottom: 0;">
+            <label for="billNotesInput">Bill Notes / Remarks (Optional)</label>
+            <input type="text" id="billNotesInput" placeholder="e.g. Paid via UPI, extra butter requested">
+          </div>
+
+          <!-- Respective Staff Notice -->
+          <div class="bill-audit-pill">
+            <span>📌</span>
+            <span>This bill will be saved under <strong>Table: <span id="billAuditTable">Table 1</span></strong> in <strong>Respective Staff: <span id="billAuditStaff">Staff 1</span></strong>.</span>
+          </div>
+
+          <div class="modal-footer" style="padding-top: 14px; border-top: 1px solid var(--border-clay); margin-top: 14px; display: flex; gap: 10px; justify-content: flex-end;">
+            <button type="button" class="btn btn-secondary" id="cancelBillingModalBtn">Cancel</button>
+            <button type="button" class="btn btn-secondary" id="saveBillOnlyBtn">
+              <span>💾 Save Bill</span>
+            </button>
+            <button type="button" class="btn btn-primary" id="saveAndPrintBillBtn">
+              <span>🖨️ Save & Print GST Invoice</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. QUICK SAVED TABLE BILLS MODAL (Direct access from POS Ticket) -->
+    <div class="modal-overlay" id="tableBillsModal" style="display: none;">
+      <div class="modal-card" style="max-width: 720px;">
+        <div class="modal-header">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span style="font-size: 1.6rem;">📁</span>
+            <div>
+              <h3 class="modal-title" style="margin: 0;">Saved Table Bills</h3>
+              <small style="color: var(--text-muted); font-size: 0.78rem;">Bills categorized per table number and respective staff</small>
+            </div>
+          </div>
+          <button class="modal-close-btn" id="closeTableBillsModalBtn">✕</button>
+        </div>
+        <div class="modal-body" style="padding: 18px 24px; max-height: calc(85vh - 100px); overflow-y: auto;">
+          <div class="quick-modal-filter-row" style="display: flex; gap: 10px; align-items: center; margin-bottom: 16px; flex-wrap: wrap;">
+            <select id="modalFilterTableSelect" style="padding: 6px 12px; border-radius: 8px; border: 1px solid var(--border-clay); font-size: 0.85rem;">
+              <option value="all">All Tables</option>
+              <option value="Table 1">Table 1</option>
+              <option value="Table 2">Table 2</option>
+              <option value="Table 3">Table 3</option>
+              <option value="Table 4">Table 4</option>
+              <option value="Table 5">Table 5</option>
+              <option value="Table 07">Table 07 (Khatiya Baithak)</option>
+              <option value="Charpai 1">Charpai 1 (खाट)</option>
+              <option value="Charpai 2">Charpai 2 (खाट)</option>
+              <option value="Chowki 1">Chowki 1 (बैठक)</option>
+              <option value="Chowki 2">Chowki 2 (बैठक)</option>
+              <option value="Takeaway Counter">Takeaway Counter</option>
+            </select>
+            <button type="button" class="btn btn-secondary btn-sm" id="btnToggleMyStaffBillsOnly">👤 My Staff Bills</button>
+            <span style="flex: 1;"></span>
+            <span style="font-size: 0.8rem; color: var(--text-secondary);" id="modalBillsCountLabel">0 bills found</span>
+          </div>
+
+          <div class="modal-bills-list" id="modalBillsList">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. PRINTABLE AUTHENTIC GST INVOICE MODAL -->
+    <div class="modal-overlay" id="printableBillModal" style="display: none;">
+      <div class="modal-card print-receipt-card" style="max-width: 440px; background: #FFF; box-shadow: 0 16px 40px rgba(0,0,0,0.3);">
+        <div class="no-print" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1px dashed #ddd;">
+          <span style="font-weight: 700; color: #333; font-size: 0.88rem;">🧾 Bill Receipt Preview</span>
+          <div style="display: flex; gap: 8px;">
+            <button type="button" class="btn btn-primary btn-sm" onclick="window.print()">🖨️ Print Slip</button>
+            <button type="button" class="btn btn-secondary btn-sm" id="closePrintableBillBtn">✕ Close</button>
+          </div>
+        </div>
+
+        <div class="printable-slip-content" id="printableSlipContent">
+          <!-- Dynamically populated via renderPrintableInvoice(bill) -->
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. ORDER READY DETAILS MODAL (Staff & Delivery Notifications) -->
+    <div class="modal-overlay" id="orderReadyDetailModal" style="display: none;">
+      <div class="modal-card" style="max-width: 600px; width: 95%; max-height: 90vh; display: flex; flex-direction: column;">
+        <div class="modal-header" style="background: linear-gradient(135deg, #FFF8E1, #FFF3E0); border-bottom: 1.5px solid var(--border-clay); padding: 16px 20px;">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span style="font-size: 1.8rem;" id="modalNotifIcon">🛎️</span>
+            <div>
+              <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                <h3 class="modal-title" id="modalNotifTitle" style="margin: 0; font-family: var(--font-serif); color: var(--terracotta-dark);">Order Ready to Serve</h3>
+                <span class="delivery-status-badge badge-out" id="modalNotifOrderIdBadge">#KOT</span>
+              </div>
+              <small style="color: var(--text-muted); font-size: 0.76rem;" id="modalNotifSubtitle">Prepared fresh from Rasoi Chulha</small>
+            </div>
+          </div>
+          <button class="modal-close-btn" id="closeOrderReadyModalBtn" title="Close details">✕</button>
+        </div>
+
+        <div class="modal-body" style="padding: 18px 20px; overflow-y: auto; flex: 1;">
+          <!-- Destination & Staff Alert Banner -->
+          <div class="ready-modal-banner" id="modalNotifBanner">
+            <!-- Dynamically populated -->
+          </div>
+
+          <!-- Food Items To Serve -->
+          <div style="margin: 16px 0 8px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <span style="font-size: 0.78rem; font-weight: 800; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.5px;">🍲 Food Items to Serve:</span>
+              <span id="modalNotifItemCount" style="font-size: 0.76rem; background: var(--surface-warm); padding: 2px 8px; border-radius: 10px; font-weight: 700;">0 items</span>
+            </div>
+            <div id="modalNotifItemsList" class="ready-modal-items-list">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+
+          <!-- Special Cooking / Guest Notes if any -->
+          <div id="modalNotifNotesContainer" style="display: none; margin-bottom: 14px;">
+            <!-- Dynamically populated -->
+          </div>
+
+          <!-- Order Financial & Payment Info Box -->
+          <div class="ready-modal-payment-box" id="modalNotifPaymentBox">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+        <!-- Modal Footer Actions -->
+        <div class="modal-footer ready-modal-footer" id="orderReadyModalFooter">
+          <button type="button" class="btn btn-secondary btn-sm" id="btnDismissOrderReadyModal">✕ Close</button>
+          <div class="ready-modal-actions" id="modalNotifActionButtons">
+            <!-- Dynamically populated action buttons -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. ADD NEW TABLE / BAITHAK MODAL (Admin Account Only) -->
+    <div class="modal-overlay" id="addTableModal" style="display: none; z-index: 9999;">
+      <div class="modal-card" style="max-width: 500px; width: 95%;">
+        <div class="modal-header" style="background: linear-gradient(135deg, #FFF3E0, #FFE0B2); border-bottom: 1.5px solid var(--border-clay); padding: 16px 20px;">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span style="font-size: 1.7rem;">🪑</span>
+            <div>
+              <h3 class="modal-title" style="margin: 0; font-family: var(--font-serif); color: var(--terracotta-dark);">Add New Table / Baithak</h3>
+              <small style="color: var(--text-muted); font-size: 0.78rem;">Admin Control: Create a new dining station for In-House POS</small>
+            </div>
+          </div>
+          <button type="button" class="modal-close-btn" id="closeAddTableModalBtn" title="Close">✕</button>
+        </div>
+
+        <form id="addTableForm">
+          <div class="modal-body" style="padding: 20px; display: flex; flex-direction: column; gap: 14px;">
+            <div class="form-group" style="margin: 0;">
+              <label for="newTableNameInput" style="font-weight: 700; font-size: 0.85rem; color: var(--text-primary); margin-bottom: 6px; display: block;">
+                Table / Baithak Name <span style="color: #D32F2F;">*</span>
+              </label>
+              <input type="text" id="newTableNameInput" required placeholder="e.g. Table 6, Mud Hut 1, Machan Baithak, VIP 1" style="width: 100%; padding: 10px 12px; border: 1.5px solid var(--border-clay); border-radius: 8px; font-size: 0.95rem; font-family: inherit;">
+              <small style="color: var(--text-muted); font-size: 0.74rem; margin-top: 4px; display: block;">Unique identifier displayed on POS terminal & KOT order slips.</small>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+              <div class="form-group" style="margin: 0;">
+                <label for="newTableCategorySelect" style="font-weight: 700; font-size: 0.85rem; color: var(--text-primary); margin-bottom: 6px; display: block;">
+                  Seating Category
+                </label>
+                <select id="newTableCategorySelect" style="width: 100%; padding: 9px 12px; border: 1.5px solid var(--border-clay); border-radius: 8px; font-size: 0.88rem; background: #FFF;">
+                  <option value="Standard Table">Standard Table (कुर्सी-मेज)</option>
+                  <option value="Khatiya Baithak">Khatiya Baithak (खटिया)</option>
+                  <option value="Charpai">Charpai (खाट)</option>
+                  <option value="Chowki">Chowki (चौकी / पाटा)</option>
+                  <option value="Mud Hut">Mud Hut (लिपी झोपड़ी)</option>
+                  <option value="Courtyard Lawn">Courtyard / Lawn (आँगन)</option>
+                  <option value="VIP Baithak">VIP Baithak (खास बैठक)</option>
+                  <option value="Counter">Counter / Takeaway</option>
+                </select>
+              </div>
+
+              <div class="form-group" style="margin: 0;">
+                <label for="newTableCapacityInput" style="font-weight: 700; font-size: 0.85rem; color: var(--text-primary); margin-bottom: 6px; display: block;">
+                  Guest Capacity
+                </label>
+                <input type="number" id="newTableCapacityInput" min="1" max="50" value="4" style="width: 100%; padding: 9px 12px; border: 1.5px solid var(--border-clay); border-radius: 8px; font-size: 0.88rem;">
+              </div>
+            </div>
+
+            <div class="form-group" style="margin: 0;">
+              <label for="newTableSectionSelect" style="font-weight: 700; font-size: 0.85rem; color: var(--text-primary); margin-bottom: 6px; display: block;">
+                Floor Section / Zone
+              </label>
+              <select id="newTableSectionSelect" style="width: 100%; padding: 9px 12px; border: 1.5px solid var(--border-clay); border-radius: 8px; font-size: 0.88rem; background: #FFF;">
+                <option value="Main Dining Hall">Main Dining Hall (हवेली हॉल)</option>
+                <option value="Open Courtyard">Open Courtyard (खुला आँगन)</option>
+                <option value="Heritage Corner">Heritage Corner (धरोहर कोना)</option>
+                <option value="Garden & Lawn">Garden & Lawn (बगीचा)</option>
+                <option value="VIP Pavilion">VIP Pavilion (शाही दालान)</option>
+                <option value="Front Desk">Front Desk / Counter</option>
+              </select>
+            </div>
+
+            <div class="add-table-admin-note" style="background: #E8F5E9; border-left: 4px solid #2E7D32; padding: 10px 12px; border-radius: 6px; font-size: 0.78rem; color: #1B5E20; display: flex; align-items: flex-start; gap: 8px;">
+              <span>🔒</span>
+              <span><strong>Admin Only Action:</strong> Once created, this table will be immediately accessible across In-House POS for all floor attendants & billing staff.</span>
+            </div>
+
+            <!-- Existing Custom Tables List for quick deletion/management -->
+            <div id="existingCustomTablesSection" style="display: none; border-top: 1px dashed var(--border-clay); padding-top: 12px; margin-top: 4px;">
+              <div style="font-size: 0.78rem; font-weight: 700; color: var(--text-secondary); margin-bottom: 8px; text-transform: uppercase;">
+                Manage Custom Tables:
+              </div>
+              <div id="customTablesList" style="display: flex; flex-direction: column; gap: 6px; max-height: 140px; overflow-y: auto;">
+                <!-- Populated dynamically -->
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer" style="padding: 14px 20px; border-top: 1px solid var(--border-clay); display: flex; justify-content: flex-end; gap: 10px;">
+            <button type="button" class="btn btn-secondary" id="cancelAddTableBtn">Cancel</button>
+            <button type="submit" class="btn btn-primary" id="submitAddTableBtn" style="background: #D96B27; border-color: #D96B27;">
+              <span>➕ Add Table to POS</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- 6. RESTAURANT BUSINESS & TAX COMPLIANCE MODAL (Admin Account Only) -->
+    <div class="modal-overlay" id="businessSettingsModal" style="display: none; z-index: 9999;">
+      <div class="modal-card" style="max-width: 540px; width: 95%;">
+        <div class="modal-header" style="background: linear-gradient(135deg, #E8F5E9, #C8E6C9); border-bottom: 1.5px solid #A5D6A7; padding: 16px 20px;">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span style="font-size: 1.7rem;">📜</span>
+            <div>
+              <h3 class="modal-title" style="margin: 0; font-family: var(--font-serif); color: #1B5E20;">GST & FSSAI Business Details</h3>
+              <small style="color: #2E7D32; font-size: 0.78rem;">Admin Portal Only • Official Tax & Food Safety Compliance</small>
+            </div>
+          </div>
+          <button type="button" class="modal-close-btn" id="closeBusinessSettingsModalBtn" title="Close">✕</button>
+        </div>
+
+        <form id="businessSettingsForm">
+          <div class="modal-body" style="padding: 20px; display: flex; flex-direction: column; gap: 14px; max-height: calc(85vh - 120px); overflow-y: auto;">
+            
+            <div class="compliance-banner" style="background: #F1F8E9; border-left: 4px solid #4CAF50; padding: 10px 12px; border-radius: 6px; font-size: 0.78rem; color: #2E7D32; display: flex; align-items: flex-start; gap: 8px;">
+              <span>🔒</span>
+              <span><strong>Admin Portal Only:</strong> The GST No. & FSSAI License configured here will automatically print on all official customer tax invoices, receipts, and order slips.</span>
+            </div>
+
+            <!-- GST Number Field -->
+            <div class="form-group" style="margin: 0;">
+              <label for="settingGstNoInput" style="font-weight: 700; font-size: 0.85rem; color: var(--text-primary); margin-bottom: 6px; display: flex; justify-content: space-between; align-items: center;">
+                <span>GST Identification Number (GSTIN)</span>
+                <span style="font-size: 0.72rem; color: var(--text-muted); font-weight: 400;">15-digit alphanumeric (Optional / NA)</span>
+              </label>
+              <input type="text" id="settingGstNoInput" placeholder="e.g. 06AABCM1234F1Z8 (Leave blank or NA if No GST)" maxlength="15" style="width: 100%; padding: 10px 12px; border: 1.5px solid var(--border-clay); border-radius: 8px; font-size: 0.95rem; font-family: monospace; letter-spacing: 1px; text-transform: uppercase;">
+              <small style="color: var(--text-muted); font-size: 0.74rem; margin-top: 4px; display: block;">💡 If you have no GST No. (or type NA), GST Rate automatically sets to <strong>0%</strong>.</small>
+            </div>
+
+            <!-- FSSAI License Number Field -->
+            <div class="form-group" style="margin: 0;">
+              <label for="settingFssaiNoInput" style="font-weight: 700; font-size: 0.85rem; color: var(--text-primary); margin-bottom: 6px; display: flex; justify-content: space-between; align-items: center;">
+                <span>FSSAI License / Registration No.</span>
+                <span style="font-size: 0.72rem; color: var(--text-muted); font-weight: 400;">14-digit numeric (or NA)</span>
+              </label>
+              <input type="text" id="settingFssaiNoInput" placeholder="e.g. 10824001000542 (or NA)" maxlength="14" style="width: 100%; padding: 10px 12px; border: 1.5px solid var(--border-clay); border-radius: 8px; font-size: 0.95rem; font-family: monospace; letter-spacing: 1px;">
+              <small style="color: var(--text-muted); font-size: 0.74rem; margin-top: 4px; display: block;">Food Safety and Standards Authority of India 14-digit registration number.</small>
+            </div>
+
+            <!-- Restaurant Registered Name -->
+            <div class="form-group" style="margin: 0;">
+              <label for="settingBusinessNameInput" style="font-weight: 700; font-size: 0.85rem; color: var(--text-primary); margin-bottom: 6px; display: block;">
+                Registered Restaurant / Trade Name
+              </label>
+              <input type="text" id="settingBusinessNameInput" required value="Mhare Gaam Ki Rasoi" style="width: 100%; padding: 9px 12px; border: 1.5px solid var(--border-clay); border-radius: 8px; font-size: 0.9rem;">
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+              <!-- Contact Phone -->
+              <div class="form-group" style="margin: 0;">
+                <label for="settingContactPhoneInput" style="font-weight: 700; font-size: 0.85rem; color: var(--text-primary); margin-bottom: 6px; display: block;">
+                  Outlet Contact Phone
+                </label>
+                <input type="text" id="settingContactPhoneInput" value="+91 78199 52799" style="width: 100%; padding: 9px 12px; border: 1.5px solid var(--border-clay); border-radius: 8px; font-size: 0.88rem;">
+              </div>
+
+              <!-- GST Rate -->
+              <div class="form-group" style="margin: 0;">
+                <label for="settingGstPercentInput" style="font-weight: 700; font-size: 0.85rem; color: var(--text-primary); margin-bottom: 6px; display: flex; justify-content: space-between; align-items: center;">
+                  <span>GST Rate (%)</span>
+                  <span id="gstRateStatusBadge" style="font-size: 0.72rem; padding: 2px 6px; border-radius: 4px; background: #E8F5E9; color: #2E7D32; font-weight: 700;">5%</span>
+                </label>
+                <input type="number" id="settingGstPercentInput" min="0" max="28" step="any" value="5" style="width: 100%; padding: 9px 12px; border: 1.5px solid var(--border-clay); border-radius: 8px; font-size: 0.95rem; font-weight: 700; background: #FFF;">
+                <!-- Quick Preset Clickers -->
+                <div style="display: flex; gap: 5px; margin-top: 5px; flex-wrap: wrap;">
+                  <button type="button" class="btn-gst-preset" data-rate="0" style="padding: 3px 8px; border-radius: 4px; border: 1px solid #CCC; background: #FFF; font-size: 0.73rem; cursor: pointer; font-weight: 700;">0% (No GST)</button>
+                  <button type="button" class="btn-gst-preset" data-rate="5" style="padding: 3px 8px; border-radius: 4px; border: 1px solid #CCC; background: #FFF; font-size: 0.73rem; cursor: pointer; font-weight: 700;">5%</button>
+                  <button type="button" class="btn-gst-preset" data-rate="12" style="padding: 3px 8px; border-radius: 4px; border: 1px solid #CCC; background: #FFF; font-size: 0.73rem; cursor: pointer; font-weight: 700;">12%</button>
+                  <button type="button" class="btn-gst-preset" data-rate="18" style="padding: 3px 8px; border-radius: 4px; border: 1px solid #CCC; background: #FFF; font-size: 0.73rem; cursor: pointer; font-weight: 700;">18%</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Address Field -->
+            <div class="form-group" style="margin: 0;">
+              <label for="settingAddressInput" style="font-weight: 700; font-size: 0.85rem; color: var(--text-primary); margin-bottom: 6px; display: block;">
+                Restaurant Address / Outlet Location
+              </label>
+              <input type="text" id="settingAddressInput" placeholder="Near Gaam Heritage Chaupal, Main Road" style="width: 100%; padding: 9px 12px; border: 1.5px solid var(--border-clay); border-radius: 8px; font-size: 0.88rem;">
+            </div>
+
+            <!-- Live Printable Receipt Header Preview -->
+            <div style="background: #FFFDF9; border: 1.5px dashed var(--border-clay); border-radius: 10px; padding: 12px; text-align: center;">
+              <div style="font-size: 0.72rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; margin-bottom: 6px; letter-spacing: 0.5px;">
+                🧾 Live Receipt Slip Preview
+              </div>
+              <div style="font-family: var(--font-serif); font-size: 1.05rem; font-weight: 800; color: var(--terracotta-dark);" id="previewReceiptName">
+                MHARE GAAM KI RASOI
+              </div>
+              <div style="font-size: 0.76rem; color: #666; margin-top: 2px;" id="previewReceiptTagline">
+                Pure Desi Ghee & Mud Chulha Flavours
+              </div>
+              <div style="font-size: 0.76rem; font-weight: 700; color: #1B5E20; margin-top: 4px; font-family: monospace; letter-spacing: 0.5px;" id="previewReceiptCompliance">
+                GSTIN: 06AABCM1234F1Z8 • FSSAI: 10824001000542
+              </div>
+            </div>
+
+          </div>
+
+          <div class="modal-footer" style="padding: 14px 20px; border-top: 1px solid var(--border-clay); display: flex; justify-content: flex-end; gap: 10px;">
+            <button type="button" class="btn btn-secondary" id="cancelBusinessSettingsBtn">Cancel</button>
+            <button type="submit" class="btn btn-primary" id="saveBusinessSettingsBtn" style="background: #2E7D32; border-color: #2E7D32;">
+              <span>💾 Save GST & FSSAI Details</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div><!-- End #adminDashboardWrapper -->
+
+      </div><!-- End #adminPhoneViewport -->
+
+      <!-- Android Navigation Bar (Home pill) -->
+      <div class="android-nav-bar">
+        <div class="home-pill"></div>
+      </div>
+    </div><!-- End #phoneFrame -->
+  </main><!-- End .simulator-wrapper -->
+
+
+  <!-- PROMINENT ORDER READY ALERT POPUP (For Staff & Delivery) -->
+  <div class="order-ready-alert-popup" id="orderReadyAlertPopup" style="display: none;">
+    <div class="order-ready-alert-card">
+      <div class="order-ready-alert-icon">🛎️</div>
+      <div class="order-ready-alert-body">
+        <div class="order-ready-alert-top">
+          <span class="order-ready-tag" id="readyAlertTag">KITCHEN ALERT • ORDER READY</span>
+          <span class="order-ready-time" id="readyAlertTime">Just now</span>
+        </div>
+        <h3 class="order-ready-title" id="readyAlertTitle">Your Order is Ready!</h3>
+        <p class="order-ready-msg" id="readyAlertMsg">Table 1: Gaam Handi Paneer Kadhai is prepared & ready to serve!</p>
+        <div class="order-ready-assigned" id="readyAlertAssigned">
+          <span>👤 Assigned Staff: <strong id="readyAlertStaffName">Staff 1 - Floor Captain</strong></span>
+        </div>
+      </div>
+      <button type="button" class="btn-dismiss-ready-alert" id="btnDismissReadyAlert" title="Dismiss">✕</button>
+    </div>
+  </div>
+
+  <!-- INSTALL APP ON ANDROID MODAL -->
+  <div class="modal-overlay" id="installAppModal" style="display: none; z-index: 10000; align-items: center; justify-content: center; background: rgba(0,0,0,0.85); backdrop-filter: blur(4px);">
+    <div style="background: #FFF; padding: 24px; border-radius: 20px; max-width: 440px; width: 92%; box-shadow: 0 20px 50px rgba(0,0,0,0.4); position: relative; margin: auto; border: 1.5px solid rgba(46,125,50,0.3);">
+      <button type="button" id="closeInstallAppModalBtn" style="position: absolute; top: 14px; right: 14px; border: none; background: #F0F0F0; border-radius: 50%; width: 34px; height: 34px; font-size: 1.1rem; cursor: pointer; color: #555;">✕</button>
+      
+      <div style="text-align: center; margin-bottom: 16px;">
+        <div style="display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 56px; background: rgba(46,125,50,0.12); border-radius: 50%; margin-bottom: 8px;">
+          <span style="font-size: 28px;">📲</span>
+        </div>
+        <h3 style="margin: 0; font-family: var(--font-serif); font-size: 1.35rem; color: #1B5E20;">Install on Android Device</h3>
+        <p style="margin: 4px 0 0; font-size: 0.85rem; color: var(--text-secondary);">Direct .APK Package • Ready for Phones & Tablets</p>
+        <div style="display: flex; gap: 6px; justify-content: center; margin-top: 8px;">
+          <span style="background: #E8F5E9; color: #2E7D32; font-weight: 700; font-size: 0.72rem; padding: 2px 8px; border-radius: 6px; border: 1px solid #A5D6A7;">Target SDK 36</span>
+          <span style="background: #FFF3E0; color: #E65100; font-weight: 700; font-size: 0.72rem; padding: 2px 8px; border-radius: 6px; border: 1px solid #FFCC80;">v1.0.3 (Code 4)</span>
+          <span style="background: #EDE7F6; color: #512DA8; font-weight: 700; font-size: 0.72rem; padding: 2px 8px; border-radius: 6px; border: 1px solid #D1C4E9;">Release Signed</span>
+        </div>
+      </div>
+
+      <!-- Direct Download Action -->
+      <a href="/download/apk" id="directDownloadApkLink" download="MhareGaamKiRasoi.apk" style="display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; padding: 14px; background: linear-gradient(135deg, #2E7D32, #43A047); color: #FFF; font-weight: 800; font-size: 1rem; border-radius: 12px; text-decoration: none; box-shadow: 0 4px 14px rgba(46,125,50,0.35); border: none; cursor: pointer; box-sizing: border-box; text-align: center;">
+        <span>⬇️</span>
+        <span>Download .APK Directly (~23.7 MB)</span>
+      </a>
+
+      <!-- Divider -->
+      <div style="display: flex; align-items: center; margin: 16px 0; color: #999; font-size: 0.78rem;">
+        <span style="flex: 1; height: 1px; background: #E0E0E0;"></span>
+        <span style="padding: 0 10px; font-weight: 600; text-transform: uppercase;">or install on phone</span>
+        <span style="flex: 1; height: 1px; background: #E0E0E0;"></span>
+      </div>
+
+      <!-- Phone URL Option -->
+      <div style="background: #F9FBE7; border: 1px solid #DCE775; border-radius: 12px; padding: 12px; text-align: center;">
+        <div style="font-size: 0.85rem; font-weight: 700; color: #33691E; margin-bottom: 4px;">🌐 Open in Phone Browser:</div>
+        <div style="font-size: 0.88rem; font-family: monospace; font-weight: 700; color: #1B5E20; background: #FFF; padding: 8px 10px; border-radius: 6px; border: 1px dashed #9CCC65; word-break: break-all;" id="installPhoneUrl">
+          http://192.168.31.133:3000/download/apk
+        </div>
+        <div style="font-size: 0.75rem; color: #558B2F; margin-top: 4px;">Connect phone to same Wi-Fi and open this link</div>
+      </div>
+
+      <!-- 3-Step Install Guide -->
+      <div style="margin-top: 14px; background: #FAFAFA; border: 1px solid #EEEEEE; border-radius: 12px; padding: 12px;">
+        <div style="font-size: 0.8rem; font-weight: 800; color: #333; margin-bottom: 6px;">📋 3 Simple Install Steps:</div>
+        <ol style="margin: 0; padding-left: 20px; font-size: 0.78rem; color: #555; line-height: 1.5;">
+          <li>Tap <strong>Download</strong> above (or open the link on your phone).</li>
+          <li>If Chrome shows <em>"File might be harmful"</em>, tap <strong>"Download anyway"</strong>.</li>
+          <li>Tap <strong>Open</strong> ➔ <strong>Install</strong>.</li>
+        </ol>
+      </div>
+
+      <button type="button" id="dismissInstallAppModalBtn" style="margin-top: 14px; width: 100%; padding: 10px; background: #ECEFF1; color: #455A64; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; font-size: 0.85rem;">Close</button>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-container" id="adminToastContainer"></div>
+
+  <!-- ENLARGED QR LIGHTBOX MODAL FOR ADMIN BILLING -->
+  <div class="modal-overlay" id="adminQrModal" style="display: none; z-index: 10000; align-items: center; justify-content: center; background: rgba(0,0,0,0.8);">
+    <div style="background: #FFF; padding: 22px; border-radius: 16px; max-width: 360px; width: 92%; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.4); position: relative; margin: auto;">
+      <button type="button" id="closeAdminQrModalBtn" style="position: absolute; top: 12px; right: 12px; border: none; background: #EEE; border-radius: 50%; width: 32px; height: 32px; font-size: 1.1rem; cursor: pointer;">✕</button>
+      <div style="display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 12px;">
+        <span style="background: #5f259f; color: #FFF; font-weight: 700; padding: 3px 10px; border-radius: 6px; font-size: 0.85rem;">PhonePe</span>
+        <strong style="font-size: 1.05rem; color: #222;">ADITYA CHAUHAN</strong>
+      </div>
+      <div style="background: #FFF; padding: 10px; border-radius: 12px; border: 2px solid #5f259f; display: inline-block;">
+        <img src="images/phonepe_upi_qr.png" alt="PhonePe QR Code - Aditya Chauhan" style="width: 250px; height: 250px; object-fit: contain; display: block; border-radius: 8px;">
+      </div>
+      <div style="margin-top: 12px; background: #F3E5F5; padding: 10px; border-radius: 8px;">
+        <div style="font-size: 0.78rem; color: #4A148C; font-weight: 600;">Scan with PhonePe, GPay, Paytm, BHIM</div>
+        <div style="font-size: 1rem; font-weight: 800; color: #1A237E; margin-top: 3px; letter-spacing: 0.4px;">7819952799@ybl</div>
+      </div>
+      <div style="margin-top: 10px; font-size: 1.05rem; font-weight: 700; color: #2E7D32;">
+        Payable Amount: <span id="adminQrModalAmount">₹0</span>
+      </div>
+      <button type="button" id="dismissAdminQrModalBtn" style="margin-top: 14px; width: 100%; padding: 10px; background: #5f259f; color: #FFF; border: none; border-radius: 8px; font-weight: 700; cursor: pointer;">Done / Close</button>
+    </div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+
+</html>

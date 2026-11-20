@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mhare Gaam Ki Rasoi • Android App Live Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Rozha+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="device-phone-mode">
+
+  <!-- Desktop Presentation Toolbar -->
+  <header class="preview-toolbar">
+    <div class="toolbar-brand">
+      <img src="images/restaurant_logo.jpg" alt="Logo" class="toolbar-logo">
+      <div>
+        <h1 class="toolbar-title">Mhare Gaam Ki Rasoi</h1>
+        <p class="toolbar-subtitle">Android Application Live Interactive Preview (Kotlin & Jetpack Compose Parity)</p>
+      </div>
+    </div>
+    <div class="toolbar-actions">
+      <div class="view-toggles">
+        <button id="toggleDeviceBtn" class="btn-toggle active" title="Switch between Android Phone Frame and Full Screen">
+          <span class="icon">📱</span> Android View
+        </button>
+        <button id="toggleFullscreenBtn" class="btn-toggle" title="Full Browser View">
+          <span class="icon">🖥️</span> Responsive View
+        </button>
+      </div>
+      <div class="quick-links">
+        <a href="admin.html" class="btn-toggle" style="background: var(--terracotta); color: #FFF; text-decoration: none; font-weight: 700;">
+          <span>⚙️</span> Admin Panel
+        </a>
+        <span class="badge-tag">Pure Desi Ghee</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Device Simulator Container -->
+  <main class="simulator-wrapper">
+    <div class="phone-frame" id="phoneFrame">
+      
+      <!-- Android Phone Status Bar -->
+      <div class="android-status-bar">
+        <span class="status-time" id="statusTime">12:30</span>
+        <div class="camera-notch"></div>
+        <div class="status-icons">
+          <span class="icon-wifi">📶</span>
+          <span class="icon-signal">5G</span>
+          <span class="icon-battery">🔋 98%</span>
+        </div>
+      </div>
+
+      <!-- Slide Bar / Navigation Drawer (Triggered by clicking logo) -->
+      <div class="slide-drawer-backdrop" id="slideDrawerBackdrop"></div>
+      <aside class="slide-drawer" id="slideDrawer" aria-label="Portal Navigation Drawer">
+        <div class="drawer-header">
+          <div class="drawer-header-top">
+            <div class="drawer-logo-ring">
+              <img src="images/restaurant_logo.jpg" alt="Rasoi Logo">
+            </div>
+            <button class="drawer-close-btn" id="drawerCloseBtn" title="Close Drawer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+          </div>
+          <h3 class="drawer-brand-name">Mhare Gaam Ki Rasoi</h3>
+          <p class="drawer-tagline">ghar jaisa swaad • <span>घर जैसा स्वाद</span></p>
+          <div class="drawer-badge-pill">🌾 Pure Bilona Desi Ghee • Woodfire Chulha</div>
+        </div>
+
+        <div class="drawer-body">
+          <div class="drawer-section-title">
+            <span class="lock-icon">🔒</span> MANAGEMENT & PORTAL LOGINS
+            <small>अधिकृत कर्मचारी एवं प्रबंधन प्रवेश</small>
+          </div>
+
+          <div class="drawer-menu-list">
+            <!-- 1. Admin Login -->
+            <a href="admin.html?role=admin" class="drawer-item role-admin" id="drawerAdminLoginBtn">
+              <div class="drawer-item-icon">👑</div>
+              <div class="drawer-item-content">
+                <div class="drawer-item-title-row">
+                  <span class="drawer-item-title">Admin Login</span>
+                  <span class="drawer-pill pill-admin">Full Access</span>
+                </div>
+                <div class="drawer-item-hindi">प्रबंधक / सुपर एडमिन</div>
+                <div class="drawer-item-desc">Full control, menu catalog, revenue reports, orders & staff permissions</div>
+              </div>
+              <span class="drawer-item-arrow">➔</span>
+            </a>
+
+            <!-- 2. Staff Login -->
+            <a href="admin.html?role=staff" class="drawer-item role-staff" id="drawerStaffLoginBtn">
+              <div class="drawer-item-icon">🍽️</div>
+              <div class="drawer-item-content">
+                <div class="drawer-item-title-row">
+                  <span class="drawer-item-title">Staff Login</span>
+                  <span class="drawer-pill pill-staff">POS Desk</span>
+                </div>
+                <div class="drawer-item-hindi">स्टाफ काउंटर (POS)</div>
+                <div class="drawer-item-desc">Take orders, dine-in table bookings & billing</div>
+              </div>
+              <span class="drawer-item-arrow">➔</span>
+            </a>
+
+            <!-- 3. Kitchen Login -->
+            <a href="admin.html?role=kitchen" class="drawer-item role-kitchen" id="drawerKitchenLoginBtn">
+              <div class="drawer-item-icon">🔥</div>
+              <div class="drawer-item-content">
+                <div class="drawer-item-title-row">
+                  <span class="drawer-item-title">Kitchen Login</span>
+                  <span class="drawer-pill pill-kitchen">Live Chulha</span>
+                </div>
+                <div class="drawer-item-hindi">रसोई चूल्हा मास्टर (KDS)</div>
+                <div class="drawer-item-desc">Live Chulha orders, cooking timer & food prep</div>
+              </div>
+              <span class="drawer-item-arrow">➔</span>
+            </a>
+
+            <!-- 4. Delivery Login -->
+            <a href="admin.html?role=delivery" class="drawer-item role-delivery" id="drawerDeliveryLoginBtn">
+              <div class="drawer-item-icon">🛵</div>
+              <div class="drawer-item-content">
+                <div class="drawer-item-title-row">
+                  <span class="drawer-item-title">Delivery Login</span>
+                  <span class="drawer-pill pill-delivery">Rider Partner</span>
+                </div>
+                <div class="drawer-item-hindi">डिलीवरी राइडर पार्टनर</div>
+                <div class="drawer-item-desc">Assigned orders, route navigation & drop status</div>
+              </div>
+              <span class="drawer-item-arrow">➔</span>
+            </a>
+          </div>
+
+          <div class="drawer-divider"></div>
+
+          <!-- Return to Customer App -->
+          <div class="drawer-return-store" id="drawerReturnStoreBtn">
+            <span class="store-icon">🛒</span>
+            <div style="flex: 1;">
+              <strong>Customer Storefront</strong>
+              <small>ग्राहक ऐप पर वापस जाएं</small>
+            </div>
+            <span class="arrow-right">➔</span>
+          </div>
+
+          <div class="drawer-footer">
+            <p>📍 Sai Plaza, Meerut, Uttar Pradesh</p>
+            <p>100% Pure Vegetarian Traditional Food</p>
+            <span class="version-tag">Mhare Gaam Ki Rasoi • v1.0.0</span>
+          </div>
+        </div>
+      </aside>
+
+      <!-- App Header / Top App Bar -->
+      <header class="app-top-bar" id="appTopBar">
+        <div class="top-bar-left">
+          <button class="nav-back-btn" id="navBackBtn" style="display: none;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          </button>
+          <div class="brand-info" id="brandInfo">
+            <div class="logo-circle clickable-logo" id="topLogoBtn" title="Click to open Admin, Staff, Kitchen & Delivery Logins">
+              <img src="images/restaurant_logo.jpg" alt="Rasoi Logo">
+              <span class="logo-ripple-hint"></span>
+            </div>
+            <div class="brand-text">
+              <h2 class="restaurant-name">Mhare Gaam Ki Rasoi</h2>
+              <p class="tagline">ghar jaisa swaad • <span class="hindi-tag">घर जैसा स्वाद</span></p>
+            </div>
+          </div>
+          <h2 class="screen-title" id="screenTitle" style="display: none;">Menu</h2>
+        </div>
+
+        <div class="top-bar-right">
+          <button class="top-cart-btn" id="topCartBtn" title="View Thali">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            <span class="cart-badge" id="cartBadge" style="display: none;">0</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Main Screen Content Area -->
+      <div class="app-viewport" id="appViewport">
+
+        <!-- 1. HOME SCREEN (Active by default, instant load with zero delay) -->
+        <section class="screen active" id="homeScreen">
+          <!-- Search Bar -->
+          <div class="search-box-container">
+            <div class="search-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <input type="text" id="homeSearchInput" placeholder="Search Bajra Roti, Handi Dal, Churma...">
+            </div>
+          </div>
+
+          <!-- Hero Village Banner -->
+          <div class="hero-banner">
+            <img src="images/hero_village_rasoi.jpg" alt="Village Rasoi Ambiance" class="hero-bg">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+              <div class="hero-pill">🔥 असली देसी स्वाद • Woodfire Chulha</div>
+              <h2 class="hero-title">Mhare Gaam Ki Rasoi</h2>
+              <p class="hero-desc">Slow-cooked in clay pots with pure Bilona Desi Cow Ghee</p>
+              <div class="hero-btns">
+                <button class="btn btn-primary btn-sm" id="heroOrderBtn">Order Food</button>
+                <button class="btn btn-glass btn-sm" id="heroBookBtn">Book Baithak</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Promo Coupon Card -->
+          <div class="promo-card" id="promoCardGaam">
+            <div class="promo-icon">🏷️</div>
+            <div class="promo-info">
+              <h4 class="promo-title">Flat ₹100 OFF with code 'GAAM100'</h4>
+              <p class="promo-desc">On orders above ₹399 • Tap to apply</p>
+            </div>
+            <button class="btn-coupon-apply" id="applyGaamPromoBtn">APPLY</button>
+          </div>
+
+          <!-- Category Chips Carousel -->
+          <div class="section-header">
+            <h3 class="section-title">Rasoi Categories</h3>
+            <button class="section-link" id="viewAllCategoriesBtn">View All →</button>
+          </div>
+          <div class="category-carousel" id="homeCategoryCarousel"></div>
+
+          <!-- Signature Specialties -->
+          <div class="section-header">
+            <div>
+              <h3 class="section-title">Gaam Signature Specialties</h3>
+              <p class="section-subtitle">Simmered overnight on traditional earthen chulhas</p>
+            </div>
+          </div>
+          <div class="dishes-list" id="homeSignatureList"></div>
+
+          <!-- Why Mhare Gaam Ki Rasoi -->
+          <div class="heritage-card">
+            <h4 class="heritage-title">Why Mhare Gaam Ki Rasoi?</h4>
+            <div class="heritage-items">
+              <div class="heritage-item">🏺 <strong>Earthen Clay Pots (Handi)</strong>: 18-hour slow dum simmering</div>
+              <div class="heritage-item">🔥 <strong>Firewood Mud Chulha</strong>: Imparts authentic rustic smokiness</div>
+              <div class="heritage-item">🧈 <strong>100% Pure Desi Ghee</strong>: Hand-churned Vedic Bilona cow ghee</div>
+              <div class="heritage-item">🌾 <strong>Stone Ground Grains</strong>: Fresh Bajra, Jowar & Makka rotis</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3. MENU SCREEN -->
+        <section class="screen" id="menuScreen">
+          <!-- Search & Veg Toggle -->
+          <div class="menu-filters-bar">
+            <div class="search-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <input type="text" id="menuSearchInput" placeholder="Search dishes, thalis, lassi...">
+            </div>
+            <div class="veg-toggle-row">
+              <div class="veg-label">
+                <span class="veg-badge-dot"></span>
+                <span>Pure Veg Only / शुद्ध शाकाहारी</span>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="vegFilterToggle">
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Category Tabs -->
+          <div class="category-carousel menu-categories" id="menuTabsContainer"></div>
+
+          <!-- Items Count Header -->
+          <div class="menu-items-header">
+            <span id="menuResultsCount">Showing 8 dishes</span>
+          </div>
+
+          <!-- Menu Items List -->
+          <div class="dishes-list" id="menuItemsList"></div>
+        </section>
+
+        <!-- 4. CART SCREEN (RASOI THALI) -->
+        <section class="screen" id="cartScreen">
+          <!-- Order Type Switcher -->
+          <div class="order-type-tabs">
+            <button class="order-type-btn active" data-type="delivery">
+              <span class="type-main">Delivery</span>
+              <span class="type-sub">घर पर</span>
+            </button>
+            <button class="order-type-btn" data-type="dine_in">
+              <span class="type-main">Dine-In</span>
+              <span class="type-sub">बैठक में</span>
+            </button>
+            <button class="order-type-btn" data-type="takeaway">
+              <span class="type-main">Takeaway</span>
+              <span class="type-sub">पार्सल</span>
+            </button>
+          </div>
+
+          <div id="cartContentContainer">
+            <!-- Items injected by JS -->
+          </div>
+        </section>
+
+        <!-- 5. CHECKOUT SCREEN -->
+        <section class="screen" id="checkoutScreen">
+          <div class="checkout-form">
+            <!-- Destination Box -->
+            <div class="card checkout-card">
+              <div class="card-header-row">
+                <span class="icon">📍</span>
+                <h4 id="checkoutDestTitle">Delivery Address</h4>
+              </div>
+              <div id="checkoutDestInputWrapper">
+                <textarea id="checkoutAddress" class="input-text" rows="2">Plot 42, Green Avenue, Sector 14, Near Village Chowk</textarea>
+              </div>
+            </div>
+
+            <!-- Contact Box -->
+            <div class="card checkout-card">
+              <div class="card-header-row">
+                <span class="icon">👤</span>
+                <h4>Contact Details</h4>
+              </div>
+              <div class="form-group">
+                <label>Guest Name</label>
+                <input type="text" id="checkoutName" class="input-text" value="Gaurav Singh">
+              </div>
+              <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" id="checkoutPhone" class="input-text" value="8979753636">
+              </div>
+            </div>
+
+            <!-- Payment Methods -->
+            <div class="card checkout-card">
+              <div class="card-header-row">
+                <span class="icon">💳</span>
+                <h4>Payment Method / भुगतान</h4>
+              </div>
+              <div class="payment-options">
+                <label class="payment-option selected" data-method="UPI">
+                  <input type="radio" name="paymentMethod" value="UPI" checked>
+                  <span class="pay-icon">📱</span>
+                  <div class="pay-text">
+                    <strong>PhonePe Scanner / UPI (7819952799@ybl)</strong>
+                    <span>Scan PhonePe QR Code, GPay, Paytm or transfer to UPI ID</span>
+                  </div>
+                </label>
+                <label class="payment-option" data-method="CASH">
+                  <input type="radio" name="paymentMethod" value="CASH">
+                  <span class="pay-icon">💵</span>
+                  <div class="pay-text">
+                    <strong id="cashOptionText">Cash on Delivery (COD)</strong>
+                    <span>Pay in cash to delivery rider on arrival</span>
+                  </div>
+                </label>
+                <label class="payment-option" data-method="CARD">
+                  <input type="radio" name="paymentMethod" value="CARD">
+                  <span class="pay-icon">💳</span>
+                  <div class="pay-text">
+                    <strong>Credit / Debit Card</strong>
+                    <span>Visa, Mastercard, RuPay</span>
+                  </div>
+                </label>
+              </div>
+
+              <!-- Dedicated PhonePe / UPI Scanner Payment Section -->
+              <div class="upi-payment-box" id="upiPaymentBox">
+                <div class="upi-box-header">
+                  <div class="upi-live-title">
+                    <span class="upi-live-dot"></span>
+                    <strong>Scan QR Code & Pay</strong>
+                  </div>
+                  <span class="upi-payable-pill">Pay Exactly: <strong id="upiPayAmountDisplay">₹0</strong></span>
+                </div>
+
+                <div class="upi-qr-card-body">
+                  <!-- PhonePe Official Merchant Header -->
+                  <div class="phonepe-merchant-header">
+                    <div class="phonepe-brand-chip">
+                      <span class="phonepe-brand-icon">पे</span>
+                      <span>PhonePe</span>
+                    </div>
+                    <div class="phonepe-merchant-name">
+                      Verified: <strong>ADITYA CHAUHAN</strong>
+                    </div>
+                  </div>
+
+                  <!-- Scanner View Tabs -->
+                  <div class="scanner-mode-tabs">
+                    <button type="button" class="scanner-tab-btn active" id="tabPhonepeScanner">
+                      <span>📱</span> PhonePe QR Scanner
+                    </button>
+                    <button type="button" class="scanner-tab-btn" id="tabDynamicQr">
+                      <span>⚡</span> Instant Amount QR
+                    </button>
+                  </div>
+
+                  <!-- 1. Official PhonePe Scanner Box -->
+                  <div class="phonepe-scanner-standee-box" id="phonepeScannerBox">
+                    <div class="phonepe-scanner-card-frame" id="phonepeScannerCardFrame" title="Tap to view full scanner" style="background: #FFF; padding: 12px; border: 2px solid #5f259f; border-radius: 12px;">
+                      <img src="images/phonepe_upi_qr.png" alt="PhonePe QR Scanner - Aditya Chauhan" class="phonepe-scanner-img" id="phonepeScannerImg" style="width: 100%; max-width: 240px; border-radius: 8px;">
+                      <div class="scanner-zoom-hint">🔍 Tap to Zoom</div>
+                    </div>
+                    <div class="scanner-action-buttons">
+                      <button type="button" class="btn-scanner-action" id="btnZoomScanner">🔍 Enlarge Scanner</button>
+                      <a href="images/phonepe_upi_qr.png" download="PhonePe_QR_Aditya_Chauhan.png" class="btn-scanner-action">⬇️ Save QR</a>
+                    </div>
+                  </div>
+
+                  <!-- 2. Dynamic Amount QR Box -->
+                  <div class="dynamic-qr-box" id="dynamicQrBox" style="display: none;">
+                    <div class="upi-qr-frame">
+                      <img id="checkoutUpiQrImg" src="" alt="Dynamic UPI QR Code" class="upi-qr-img">
+                      <div class="upi-qr-center-logo">
+                        <img src="images/restaurant_logo.jpg" alt="Logo">
+                      </div>
+                    </div>
+                    <span class="dynamic-qr-amount-tag">Exact Order Total Encoded</span>
+                  </div>
+
+                  <p class="upi-scan-note">Scan with PhonePe, Google Pay, Paytm, BHIM, Cred or any UPI app</p>
+
+                  <div class="upi-apps-badges">
+                    <span class="upi-app-badge phonepe">PhonePe</span>
+                    <span class="upi-app-badge gpay">GPay</span>
+                    <span class="upi-app-badge paytm">Paytm</span>
+                    <span class="upi-app-badge bhim">BHIM</span>
+                    <span class="upi-app-badge cred">Cred</span>
+                  </div>
+
+                  <div class="upi-info-col">
+                    <!-- UPI ID Box with One-Click Copy -->
+                    <div class="upi-id-badge-box">
+                      <div class="upi-id-details">
+                        <span class="upi-id-label">OFFICIAL RESTAURANT UPI ID:</span>
+                        <code class="upi-id-code" id="upiIdValue">7819952799@ybl</code>
+                      </div>
+                      <button type="button" class="btn-copy-upi" id="btnCopyUpiId" title="Copy UPI ID to clipboard">
+                        <span id="copyIcon">📋</span> <span id="copyText">Copy</span>
+                      </button>
+                    </div>
+
+                    <!-- Direct Mobile App Pay Link -->
+                    <a href="#" id="directUpiPayLink" class="btn-open-upi-app">
+                      <span>📱</span> <span>Tap to Pay in PhonePe / UPI App</span>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Mandatory Payment Verification Section (Don't confirm without payment) -->
+                <div class="upi-verification-panel">
+                  <div class="upi-verify-header">
+                    <span class="verify-icon">🛡️</span>
+                    <div>
+                      <strong>Payment Confirmation (Mandatory / अनिवार्य)</strong>
+                      <p>Transfer the exact amount, then enter the 12-digit UTR/Ref No. from your UPI receipt below to confirm.</p>
+                    </div>
+                  </div>
+
+                  <div class="utr-input-group">
+                    <div class="utr-label-row">
+                      <label for="checkoutUpiUtr">
+                        <span>12-Digit UPI Transaction / UTR:</span>
+                        <span class="required-star">*</span>
+                      </label>
+                      <button type="button" class="btn-utr-help" id="btnUtrHelp">❓ Where is UTR?</button>
+                    </div>
+                    <input type="text" id="checkoutUpiUtr" class="input-text utr-input"
+                      placeholder="Enter 12-digit UTR No. (e.g. 423589124567)" maxlength="16" autocomplete="off">
+                  </div>
+
+                  <!-- Guide popup / helper -->
+                  <div class="utr-help-card" id="utrHelpCard" style="display: none;">
+                    <strong>💡 Where to find your 12-digit UTR Number:</strong>
+                    <ul>
+                      <li><strong>PhonePe:</strong> View transaction history &rarr; Transfer Details &rarr; Look for "UTR" (12 digits)</li>
+                      <li><strong>Google Pay:</strong> Open payment receipt &rarr; Look for "UPI transaction ID"</li>
+                      <li><strong>Paytm:</strong> Open order details &rarr; Look for "UPI Reference No."</li>
+                    </ul>
+                  </div>
+
+                  <label class="upi-confirm-check-label">
+                    <input type="checkbox" id="upiConfirmPaidCheckbox">
+                    <span>I confirm that I have transferred <strong id="upiCheckboxAmountText">₹0</strong> to <code>7819952799@ybl</code> (Aditya Chauhan)</span>
+                  </label>
+
+                  <!-- Warning alert box if user tries to submit without payment -->
+                  <div class="upi-unpaid-warning" id="upiUnpaidWarning" style="display: none;">
+                    <span class="warning-icon">⚠️</span>
+                    <span id="upiWarningText"><strong>Payment Required:</strong> Order cannot be confirmed without completing the UPI payment and entering your 12-digit UTR number.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Final Order Total Bar (Separated pill badge) -->
+            <button class="btn btn-primary btn-block btn-lg" id="confirmOrderBtn">
+              <span>🔒 Place Order & Light Chulha</span>
+              <strong id="checkoutTotalBtnText" class="btn-price-tag">₹0</strong>
+            </button>
+          </div>
+        </section>
+
+        <!-- 6. ORDER SUCCESS SCREEN -->
+        <section class="screen" id="orderSuccessScreen">
+          <div class="success-box">
+            <div class="success-check-circle">✓</div>
+            <h2 class="success-title">Order Placed Successfully!</h2>
+            <p class="success-hindi">चूल्हा जल चुका है - भोजन की तैयारी शुरू!</p>
+
+            <div class="card order-pass-card">
+              <span class="pass-label">ORDER ID</span>
+              <h3 class="pass-id" id="successOrderId">#MGK-849201</h3>
+              <div class="pass-brand">
+                <img src="images/restaurant_logo.jpg" alt="Logo">
+                <div>
+                  <strong>Mhare Gaam Ki Rasoi</strong>
+                  <span class="est-tag">Est: 25 - 35 mins</span>
+                </div>
+              </div>
+              <div class="pass-payment-status" id="successPaymentBox">
+                <span class="pay-icon-tag">💳</span>
+                <span id="successPaymentText">Paid via UPI • Verified</span>
+              </div>
+            </div>
+
+            <button class="btn btn-primary btn-block btn-lg" id="trackOrderActionBtn">Track Live Chulha Status</button>
+            <button class="btn btn-secondary btn-block" id="successHomeBtn">Back to Home</button>
+          </div>
+        </section>
+
+        <!-- 7. ORDER TRACKING SCREEN -->
+        <section class="screen" id="orderTrackingScreen">
+          <!-- Active Order Progress -->
+          <div class="card tracking-hero-card">
+            <div class="tracking-top-row">
+              <div>
+                <h3 class="est-time" id="trackingEstTime">Estimated: 30 mins</h3>
+                <p class="tracking-status-text" id="trackingStatusText">Kitchen received your order</p>
+              </div>
+              <span class="order-type-badge" id="trackingOrderTypeBadge">Delivery</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" id="trackingProgressFill" style="width: 20%;"></div>
+            </div>
+          </div>
+
+          <!-- Chulha Stages Timeline -->
+          <div class="card timeline-card">
+            <h4 class="card-title">Rasoi Live Progress / चूल्हे का हाल</h4>
+            <div class="timeline" id="trackingTimeline">
+              <!-- Steps injected via JS -->
+            </div>
+          </div>
+
+          <!-- Simulation Advance Button -->
+          <div class="card demo-sim-card">
+            <div class="demo-sim-text">
+              <strong>Interactive Demo Simulation</strong>
+              <p>Advance cooking stage to preview the live experience</p>
+            </div>
+            <button class="btn btn-primary btn-sm" id="advanceStageBtn">Advance Stage</button>
+          </div>
+
+          <!-- Restaurant Contact -->
+          <div class="card chef-contact-card">
+            <div class="chef-info">
+              <img src="images/restaurant_logo.jpg" alt="Restaurant Logo" class="chef-avatar">
+              <div>
+                <strong>Mhare Gaam Ki Rasoi</strong>
+                <span>Helpdesk & Orders: +91 89797 53636</span>
+              </div>
+            </div>
+            <button class="btn btn-secondary btn-sm" id="callRestaurantBtn">📞 Call Restaurant</button>
+          </div>
+
+          <!-- Order Summary Items -->
+          <div class="card order-items-summary-card" id="trackingItemsSummary"></div>
+        </section>
+
+        <!-- 8. BAITHAK TABLE BOOKING SCREEN -->
+        <section class="screen" id="tableBookingScreen">
+          <div class="baithak-wrapper">
+            <div class="card baithak-hero-card">
+              <h3 class="card-title">Gaam Baithak Booking</h3>
+              <p class="hindi-sub">देसी खाट, चौकी व पारिवारिक बैठक का आनंद लें</p>
+              <p class="desc-text">Reserve a private rustic dining space under neem trees with live folk music and fresh rotis served right to your khatiya.</p>
+            </div>
+
+            <!-- Booking Confirmation Alert (if booked) -->
+            <div class="card booking-success-card" id="bookingConfirmedCard" style="display: none;">
+              <div class="booking-success-icon">✓</div>
+              <div>
+                <h4 id="confirmedBookingCode">Baithak Confirmed!</h4>
+                <p id="confirmedBookingDetails">4 Guests • 08:00 PM • Village Charpai</p>
+              </div>
+            </div>
+
+            <!-- Seating Options -->
+            <div class="card">
+              <h4 class="card-title">Select Village Seating Style</h4>
+              <div class="seating-options">
+                <label class="seating-option selected">
+                  <input type="radio" name="seatingStyle" value="charpai" checked>
+                  <span class="seating-icon">🛏️</span>
+                  <div class="seating-text">
+                    <strong>Village Charpai / Khatiya (देसी खाट)</strong>
+                    <span class="sub">Outdoor breezy seating under rustic neem trees</span>
+                  </div>
+                </label>
+                <label class="seating-option">
+                  <input type="radio" name="seatingStyle" value="chowki">
+                  <span class="seating-icon">🪵</span>
+                  <div class="seating-text">
+                    <strong>Floor Chowki Baithak (चौकी बैठक)</strong>
+                    <span class="sub">Traditional floor dining on wooden carved chowkis</span>
+                  </div>
+                </label>
+                <label class="seating-option">
+                  <input type="radio" name="seatingStyle" value="table">
+                  <span class="seating-icon">🪑</span>
+                  <div class="seating-text">
+                    <strong>Heritage Family Table (लकड़ी की मेज)</strong>
+                    <span class="sub">Large rustic wooden table for family & group celebrations</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Guests Count -->
+            <div class="card">
+              <h4 class="card-title">Number of Guests</h4>
+              <div class="guest-chips" id="guestCountChips">
+                <button class="chip" data-count="2">2</button>
+                <button class="chip active" data-count="4">4</button>
+                <button class="chip" data-count="6">6</button>
+                <button class="chip" data-count="8">8</button>
+                <button class="chip" data-count="12">12+</button>
+              </div>
+            </div>
+
+            <!-- Date & Time -->
+            <div class="card">
+              <h4 class="card-title">Choose Date & Time</h4>
+              <label class="label-sub">Date</label>
+              <div class="date-chips" id="dateChips">
+                <button class="chip active" data-date="Today, Evening">Today, Evening</button>
+                <button class="chip" data-date="Tomorrow">Tomorrow</button>
+                <button class="chip" data-date="Sunday Feast">Sunday Feast</button>
+              </div>
+
+              <label class="label-sub" style="margin-top: 12px;">Time Slot</label>
+              <div class="time-chips" id="timeChips">
+                <button class="chip" data-time="01:00 PM">01:00 PM</button>
+                <button class="chip" data-time="02:00 PM">02:00 PM</button>
+                <button class="chip" data-time="07:30 PM">07:30 PM</button>
+                <button class="chip active" data-time="08:30 PM">08:30 PM</button>
+                <button class="chip" data-time="09:30 PM">09:30 PM</button>
+              </div>
+            </div>
+
+            <!-- Guest Details -->
+            <div class="card">
+              <h4 class="card-title">Reservation Details</h4>
+              <div class="form-group">
+                <label>Name</label>
+                <input type="text" id="baithakName" class="input-text" value="Gaurav Singh">
+              </div>
+              <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" id="baithakPhone" class="input-text" value="8979753636">
+              </div>
+              <div class="form-group">
+                <label>Special Requests (Optional)</label>
+                <input type="text" id="baithakNotes" class="input-text" placeholder="e.g. Birthday celebration, extra lantern, cot in corner">
+              </div>
+            </div>
+
+            <button class="btn btn-primary btn-block btn-lg" id="submitBaithakBtn">Reserve Village Baithak</button>
+          </div>
+        </section>
+
+        <!-- 9. MY ORDERS SCREEN -->
+        <section class="screen" id="ordersScreen">
+          <div class="orders-wrapper">
+            <h3 class="orders-title">Your Rasoi Orders</h3>
+            <div class="orders-list" id="pastOrdersList"></div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Sticky Floating Cart Bar -->
+      <div class="floating-cart-bar" id="floatingCartBar" style="display: none;">
+        <div class="cart-bar-left">
+          <div class="cart-icon-box">🛍️</div>
+          <div>
+            <span class="cart-items-count" id="cartBarItemsText">1 item in Thali</span>
+            <h4 class="cart-total-price" id="cartBarTotalText">₹349</h4>
+          </div>
+        </div>
+        <button class="btn-view-thali" id="cartBarViewBtn">
+          <span>View Rasoi Thali</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+
+      <!-- Android Bottom Navigation Bar -->
+      <nav class="app-bottom-nav" id="appBottomNav">
+        <button class="nav-item active" data-screen="homeScreen">
+          <span class="nav-icon">🏠</span>
+          <span class="nav-label">Home</span>
+        </button>
+        <button class="nav-item" data-screen="menuScreen">
+          <span class="nav-icon">🍲</span>
+          <span class="nav-label">Menu</span>
+        </button>
+        <button class="nav-item" data-screen="tableBookingScreen">
+          <span class="nav-icon">🛏️</span>
+          <span class="nav-label">Baithak</span>
+        </button>
+        <button class="nav-item" data-screen="ordersScreen">
+          <span class="nav-icon">📜</span>
+          <span class="nav-label">Orders</span>
+        </button>
+      </nav>
+
+      <!-- Android Home Bar / Navigation Pill -->
+      <div class="android-nav-bar">
+        <div class="home-pill"></div>
+      </div>
+
+      <!-- Scanner Lightbox Modal for Enlarge View -->
+      <div class="scanner-lightbox-modal" id="scannerLightboxModal" style="display: none;">
+        <div class="scanner-lightbox-content">
+          <button class="scanner-lightbox-close" id="closeScannerLightboxBtn" title="Close">✕</button>
+          <img src="images/phonepe_upi_qr.png" alt="Official PhonePe QR Scanner - Aditya Chauhan" class="scanner-lightbox-img" style="max-width: 320px; border-radius: 12px;">
+          <div class="scanner-lightbox-footer">
+            <span class="lightbox-name">ADITYA CHAUHAN • 7819952799@ybl</span>
+            <a href="images/phonepe_upi_qr.png" download="PhonePe_QR_Aditya_Chauhan.png" class="btn-lightbox-download">⬇️ Download QR Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item Customization Modal Bottom Sheet -->
+      <div class="modal-backdrop" id="itemDetailModal" style="display: none;">
+        <div class="bottom-sheet">
+          <div class="sheet-image-wrapper">
+            <img src="" alt="Dish" id="modalDishImage">
+            <button class="sheet-close-btn" id="modalCloseBtn">✕</button>
+          </div>
+          <div class="sheet-body">
+            <div class="sheet-header">
+              <div class="badge-row">
+                <span class="veg-badge-dot"></span>
+                <span class="badge-ghee" id="modalGheeBadge">शुद्ध देसी घी</span>
+              </div>
+              <h3 class="sheet-title" id="modalDishTitle">Gaam Ki Thali</h3>
+              <p class="sheet-hindi" id="modalDishHindi">गाम की थाली</p>
+              <p class="sheet-desc" id="modalDishDesc"></p>
+            </div>
+
+            <div class="custom-section">
+              <h5 class="custom-title">Choose Spice Level / तीखापन चुनें</h5>
+              <div class="spice-options" id="modalSpiceOptions">
+                <!-- injected by JS -->
+              </div>
+            </div>
+
+            <div class="custom-section">
+              <h5 class="custom-title">Gaam Add-ons / अतिरिक्त स्वाद</h5>
+              <div class="addons-list" id="modalAddonsList">
+                <!-- injected by JS -->
+              </div>
+            </div>
+
+            <div class="custom-section">
+              <h5 class="custom-title">Special Note for Chulha Chef</h5>
+              <input type="text" id="modalChefNote" class="input-text" placeholder="e.g. Crisp roti, extra ghee, less chillies...">
+            </div>
+
+            <div class="sheet-footer">
+              <div class="quantity-stepper">
+                <button id="modalQtyMinus">-</button>
+                <span id="modalQtyText">1</span>
+                <button id="modalQtyPlus">+</button>
+              </div>
+              <button class="btn btn-primary btn-lg" id="modalAddToCartBtn">
+                Add to Thali • <span id="modalAddPriceText">₹349</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Toast Notification Container -->
+      <div class="toast-container" id="toastContainer"></div>
+
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

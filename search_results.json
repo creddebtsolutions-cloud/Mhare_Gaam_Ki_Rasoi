@@ -1,0 +1,119 @@
+{
+  "dish_mg_thali": {
+    "query": "Special Indian Thali",
+    "match": {
+      "title": "File:'8' A Thali, a traditional style of serving meal in India.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/%278%27_A_Thali%2C_a_traditional_style_of_serving_meal_in_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "width": 5184,
+      "height": 3456
+    }
+  },
+  "dish_deluxe_thali": {
+    "query": "North Indian Thali vegetarian",
+    "match": {
+      "title": "File:Non Veg Thali - Gandhi Nagar Jammu - Jammu & Kashmir - 01.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Non_Veg_Thali_-_Gandhi_Nagar_Jammu_-_Jammu_%26_Kashmir_-_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "width": 4032,
+      "height": 3024
+    }
+  },
+  "dish_gaam_thali": {
+    "query": "Simple Indian Thali",
+    "match": {
+      "title": "File:A thali with daal roti bhindi ki sabzi and mango pickle.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/A_thali_with_daal_roti_bhindi_ki_sabzi_and_mango_pickle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "width": 3648,
+      "height": 2736
+    }
+  },
+  "dish_pbm": {
+    "query": "Paneer butter masala",
+    "match": {
+      "title": "File:Paneer Butter Masala 3.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Paneer_Butter_Masala_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "width": 12240,
+      "height": 16320
+    }
+  },
+  "dish_kadhai_paneer": {
+    "query": "Kadai paneer",
+    "match": {
+      "title": "File:Kadai Paneer (15913018051).jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Kadai_Paneer_%2815913018051%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "width": 3484,
+      "height": 2319
+    }
+  },
+  "dish_shahi_paneer": {
+    "query": "Shahi paneer",
+    "match": {
+      "title": "File:Naan shahi paneer.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Naan_shahi_paneer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "width": 3000,
+      "height": 4000
+    }
+  },
+  "dish_paneer_tikka": {
+    "query": "Paneer tikka tandoori",
+    "match": {
+      "title": "File:Barbequed Paneer Tikka.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Barbequed_Paneer_Tikka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "width": 6000,
+      "height": 4000
+    }
+  },
+  "dish_dal_makhani": {
+    "query": "Dal makhani",
+    "match": {
+      "title": "File:Dal Makhani..JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Dal_Makhani..JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "width": 4896,
+      "height": 3672
+    }
+  },
+  "dish_dal_tadka": {
+    "query": "Dal tadka",
+    "match": {
+      "title": "File:Dal Tadka-Delhi.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Dal_Tadka-Delhi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "width": 6000,
+      "height": 4000
+    }
+  },
+  "dish_mix_veg": {
+    "query": "Mix veg curry",
+    "match": {
+      "title": "File:Lamb, Lentils, Pumpkin, Mix Veg Curries on Turmeric Rice, Chilli, Chutney and Papadum - Sheni's Curries (1267178418).jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Lamb%2C_Lentils%2C_Pumpkin%2C_Mix_Veg_Curries_on_Turmeric_Rice%2C_Chilli%2C_Chutney_and_Papadum_-_Sheni%27s_Curries_%281267178418%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "width": 1280,
+      "height": 960
+    }
+  },
+  "dish_jeera_aloo": {
+    "query": "Jeera aloo",
+    "match": {
+      "title": "File:Aalu Jeera 1.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Aalu_Jeera_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "width": 3024,
+      "height": 4032
+    }
+  },
+  "dish_chole_bhature": {
+    "query": "Chole bhature",
+    "match": {
+      "title": "File:Chole Bhature 1.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Chole_Bhature_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "width": 4032,
+      "height": 3024
+    }
+  },
+  "dish_rajma_chawal": {
+    "query": "Rajma chawal",
+    "match": {
+      "title": "File:Rajma Chawal Rajma Rice.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Rajma_Chawal_Rajma_Rice.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "width": 3552,
+      "height": 2000
+    }
+  }
+}

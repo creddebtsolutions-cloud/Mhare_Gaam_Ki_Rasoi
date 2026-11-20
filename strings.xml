@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Mhare Gaam Ki Rasoi</string>
+    <string name="tagline">ghar jaisa swaad</string>
+    <string name="tagline_hindi">घर जैसा स्वाद</string>
+    <string name="app_name_hindi">म्‍हारे गाम की रसोई</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_menu">Rasoi Menu</string>
+    <string name="nav_baithak">Baithak Booking</string>
+    <string name="nav_orders">My Orders</string>
+
+    <!-- Features -->
+    <string name="desi_ghee_badge">शुद्ध देसी घी</string>
+    <string name="chulha_special">चूल्हे की सौंधी रोटी</string>
+    <string name="handi_special">मिट्टी की हांडी में पका</string>
+</resources>

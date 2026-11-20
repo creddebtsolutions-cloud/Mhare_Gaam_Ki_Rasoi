@@ -1,0 +1,12 @@
+<resources>
+    <!-- Mhare Gaam Ki Rasoi Rustic Village Palette -->
+    <color name="primary_terracotta">#8C3B1E</color>
+    <color name="primary_variant">#682A13</color>
+    <color name="secondary_green">#3F6338</color>
+    <color name="accent_gold">#D4881A</color>
+    <color name="background_cream">#FBF8F2</color>
+    <color name="surface_warm">#FFFDF9</color>
+    <color name="text_dark">#281914</color>
+    <color name="text_muted">#6D5950</color>
+    <color name="border_clay">#E5D9CC</color>
+</resources>

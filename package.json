@@ -1,0 +1,12 @@
+{
+  "name": "mhare-gaam-ki-rasoi-backend",
+  "version": "1.0.4",
+  "description": "Backend API & Web Admin Server for Mhare Gaam Ki Rasoi",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
